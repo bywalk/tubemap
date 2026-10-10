@@ -77,6 +77,7 @@ const REGION_COORDINATES = {
 document.addEventListener('DOMContentLoaded', () => {
   loadInitialData();
   initMap();
+  renderCreatorChips();
   initEventListeners();
   renderFilteredList();
   renderMapMarkers();
@@ -245,6 +246,7 @@ function renderFilteredList() {
         ${video.tip ? `<div class="card-tip-snippet">💡 ${video.tip}</div>` : ''}
         <div class="video-card-meta">
           <span class="channel-name">${video.locationName}</span>
+          <span style="font-size: 0.72rem; color: #64748b;">📅 ${video.publishedAt || '1년 이내'}</span>
         </div>
         ${video.tags && video.tags.length > 0 ? `
           <div class="video-tags">
@@ -397,6 +399,7 @@ function renderTableView() {
       <td>
         ${(item.tags || []).slice(0, 2).map(t => `<span class="tag-badge">#${t}</span>`).join(' ')}
       </td>
+      <td style="font-size: 0.8rem; color: #64748b; white-space: nowrap;">${item.publishedAt || '1년 이내'}</td>
       <td>
         <div class="table-actions">
           <button class="table-btn table-btn-play" onclick="openVideoModal('${item.id}')">▶ 영상</button>
@@ -414,7 +417,7 @@ function jumpToSpotOnMap(videoId) {
 
 // Export CSV Function (Excel UTF-8 BOM support)
 function exportToCsv() {
-  const headers = ["유튜버", "국가", "도시", "장소명", "영상제목", "유튜브ID", "위도", "경도", "추천팁", "태그"];
+  const headers = ["유튜버", "국가", "도시", "장소명", "영상제목", "유튜브ID", "위도", "경도", "업로드일", "추천팁", "태그"];
   const rows = travelVideos.map(v => [
     `"${(v.creator || '').replace(/"/g, '""')}"`,
     `"${(v.country || '').replace(/"/g, '""')}"`,
@@ -424,6 +427,7 @@ function exportToCsv() {
     `"${v.youtubeId || ''}"`,
     v.lat,
     v.lng,
+    `"${v.publishedAt || '1년 이내'}"`,
     `"${(v.tip || '').replace(/"/g, '""')}"`,
     `"${(v.tags || []).join(', ')}"`
   ]);
@@ -453,6 +457,38 @@ function showToast(message, icon = '✅') {
   setTimeout(() => {
     toast.classList.remove('show');
   }, 3000);
+}
+
+// Dynamic Creator Chips Renderer
+function renderCreatorChips() {
+  const container = document.getElementById('creatorChipsContainer');
+  if (!container) return;
+
+  const creators = Array.from(new Set(travelVideos.map(v => v.creator).filter(Boolean)));
+  
+  container.innerHTML = `
+    <button class="chip ${currentCreatorFilter === 'all' ? 'active' : ''}" data-creator="all">전체 유튜버</button>
+    ${creators.map(c => `
+      <button class="chip ${currentCreatorFilter === c ? 'active' : ''}" data-creator="${c}">${c}</button>
+    `).join('')}
+  `;
+
+  // Attach click listener to newly rendered chips
+  container.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      container.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentCreatorFilter = chip.getAttribute('data-creator');
+      renderFilteredList();
+      renderMapMarkers();
+
+      const creatorVideos = travelVideos.filter(v => currentCreatorFilter === 'all' || v.creator === currentCreatorFilter);
+      if (creatorVideos.length > 0) {
+        const bounds = L.latLngBounds(creatorVideos.map(v => [v.lat, v.lng]));
+        map.fitBounds(bounds, { padding: [60, 60], maxZoom: 10, animate: true });
+      }
+    });
+  });
 }
 
 // Event Listeners
@@ -489,25 +525,6 @@ function initEventListeners() {
     currentTab = 'region';
     renderFilteredList();
     renderMapMarkers();
-  });
-
-  // Creator Chips
-  const creatorChips = document.querySelectorAll('#creatorChipsContainer .chip');
-  creatorChips.forEach(chip => {
-    chip.addEventListener('click', () => {
-      creatorChips.forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      currentCreatorFilter = chip.getAttribute('data-creator');
-      renderFilteredList();
-      renderMapMarkers();
-
-      // If specific creator, zoom to bounds of their videos
-      const creatorVideos = travelVideos.filter(v => currentCreatorFilter === 'all' || v.creator === currentCreatorFilter);
-      if (creatorVideos.length > 0) {
-        const bounds = L.latLngBounds(creatorVideos.map(v => [v.lat, v.lng]));
-        map.fitBounds(bounds, { padding: [60, 60], maxZoom: 10, animate: true });
-      }
-    });
   });
 
   // Region Chips

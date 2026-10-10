@@ -26,9 +26,12 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 
 # =============================================================================
-# 1. 모니터링 대상 한국 대표 여행 유튜버 목록
+# 1. 수집 설정 및 모니터링 대상 한국 대표 여행 유튜버 (구독자 5만~100만+)
 # =============================================================================
+MAX_VIDEO_AGE_DAYS = 365  # 여행 정보 최신성 유지를 위해 1년(365일) 이내 영상만 수집
+
 CHANNELS = [
+    # 기존 대표 크리에이터
     {
         "name": "빠니보틀",
         "handle": "panibottle",
@@ -57,6 +60,42 @@ CHANNELS = [
     {
         "name": "잰잰바리",
         "handle": "jaeye0nyy",
+        "channel_id": ""
+    },
+    # 5만~100만+ 신규 모니터링 크리에이터
+    {
+        "name": "노마드션",
+        "handle": "nomadshaun",
+        "channel_id": ""
+    },
+    {
+        "name": "캡틴따거",
+        "handle": "CaptainTtaggo",
+        "channel_id": ""
+    },
+    {
+        "name": "캐럿맨 여행기",
+        "handle": "Carrotman_Travel",
+        "channel_id": ""
+    },
+    {
+        "name": "희철리즘",
+        "handle": "heechulism",
+        "channel_id": ""
+    },
+    {
+        "name": "또떠남",
+        "handle": "ddoddunam",
+        "channel_id": ""
+    },
+    {
+        "name": "쏘이 The World",
+        "handle": "SoyTheWorld",
+        "channel_id": ""
+    },
+    {
+        "name": "뜨우",
+        "handle": "ddeu_travel",
         "channel_id": ""
     }
 ]
@@ -240,6 +279,24 @@ def analyze_video_location(title, description, creator_name):
 
     return matched_spot
 
+def is_within_max_age(published_str, max_days=MAX_VIDEO_AGE_DAYS):
+    """영상이 최근 N일(기본 365일 = 1년) 이내에 업로드되었는지 검사"""
+    if not published_str:
+        return True
+    try:
+        clean_str = published_str.replace("Z", "+00:00")
+        pub_dt = datetime.fromisoformat(clean_str)
+        now = datetime.now(pub_dt.tzinfo)
+        diff = (now - pub_dt).days
+        return diff <= max_days
+    except Exception:
+        try:
+            pub_date = datetime.strptime(published_str[:10], "%Y-%m-%d")
+            diff = (datetime.now() - pub_date).days
+            return diff <= max_days
+        except Exception:
+            return True
+
 def append_to_data_js(new_entries):
     """새로 발견된 여행 영상 목록을 data.js 파일에 추가"""
     if not new_entries or not os.path.exists(DATA_JS_PATH):
@@ -262,8 +319,9 @@ def append_to_data_js(new_entries):
         escaped_loc = item['locationName'].replace('"', '\\"')
         escaped_tip = item['tip'].replace('"', '\\"')
         tags_json = json.dumps(item['tags'], ensure_ascii=False)
+        pub_date = item.get('publishedAt', '')
         entry_str = f"""
-  // [신규 자동 수집] {item['creator']} - {escaped_loc}
+  // [신규 자동 수집] {item['creator']} - {escaped_loc} ({pub_date})
   {{
     id: "auto-{item['youtubeId']}",
     creator: "{item['creator']}",
@@ -277,6 +335,7 @@ def append_to_data_js(new_entries):
     lng: {item['lng']},
     tags: {tags_json},
     tip: "{escaped_tip}",
+    publishedAt: "{pub_date}",
     description: "{escaped_title}",
     highlights: []
   }},"""
@@ -296,6 +355,7 @@ def main():
     print("=" * 65)
     print("📍 TubeMap Travel - 한국 여행 유튜버 신규 영상 수집기 시작")
     print(f"⏰ 실행 시각: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"📅 필터 기준: 최근 {MAX_VIDEO_AGE_DAYS}일(1년) 이내 최신 영상만 수집")
     print("=" * 65)
 
     existing_ids = load_existing_video_ids()
@@ -331,6 +391,12 @@ def main():
         print(f"   ✨ 미등록 신규 영상 {len(unregistered_videos)}편 발견!")
 
         for v in unregistered_videos:
+            pub_date_str = v.get("published", "")[:10]
+            # 1년(365일) 이내 최신 영상인지 확인
+            if not is_within_max_age(v.get("published", "")):
+                print(f"   [⏳] 1년 이상 경과된 과거 영상 스킵 ({pub_date_str}): {v['title'][:35]}...")
+                continue
+
             spot_info = analyze_video_location(v["title"], v["description"], name)
             
             if spot_info:
@@ -344,10 +410,11 @@ def main():
                     "lat": spot_info["lat"],
                     "lng": spot_info["lng"],
                     "tags": spot_info["tags"],
-                    "tip": spot_info["tip"]
+                    "tip": spot_info["tip"],
+                    "publishedAt": pub_date_str
                 }
                 new_discovered_spots.append(entry)
-                print(f"   [+] 장소 감지 성공: {entry['country']} {entry['city']} ({entry['lat']}, {entry['lng']})")
+                print(f"   [+] 최신 여행지 감지 ({pub_date_str}): {entry['country']} {entry['city']} ({entry['lat']}, {entry['lng']})")
                 print(f"       영상 제목: {v['title'][:40]}...")
             else:
                 print(f"   [-] 위치 키워드 미감지: {v['title'][:40]}... (일상/토크 영상 추정)")
