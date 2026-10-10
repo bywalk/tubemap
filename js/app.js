@@ -106,6 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMap();
   renderCreatorChips();
   initEventListeners();
+  initDragToScroll();
   renderFilteredList();
   renderMapMarkers();
 });
@@ -865,4 +866,39 @@ function handleLocationPicked(lat, lng) {
 
   document.getElementById('addVideoModal').classList.add('active');
   showToast(`좌표가 선택되었습니다: (${lat.toFixed(4)}, ${lng.toFixed(4)})`, '📍');
+}
+
+// Drag to scroll for filter chips
+function initDragToScroll() {
+  const containers = document.querySelectorAll('.filter-chips');
+  containers.forEach(container => {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    container.addEventListener('mousedown', (e) => {
+      isDown = true;
+      container.classList.add('active');
+      startX = e.pageX - container.offsetLeft;
+      scrollLeft = container.scrollLeft;
+    });
+
+    container.addEventListener('mouseleave', () => {
+      isDown = false;
+      container.classList.remove('active');
+    });
+
+    container.addEventListener('mouseup', () => {
+      isDown = false;
+      container.classList.remove('active');
+    });
+
+    container.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - container.offsetLeft;
+      const walk = (x - startX) * 2; // scroll-fast multiplier
+      container.scrollLeft = scrollLeft - walk;
+    });
+  });
 }

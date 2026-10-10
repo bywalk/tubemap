@@ -321,6 +321,11 @@ body {
   overflow-x: auto;
   padding-bottom: 4px;
   scrollbar-width: none;
+  cursor: grab;
+}
+
+.filter-chips.active {
+  cursor: grabbing;
 }
 
 .filter-chips::-webkit-scrollbar {
