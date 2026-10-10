@@ -121,21 +121,28 @@ function initMap() {
   L.control.zoom({ position: 'topright' }).addTo(map);
 
   // Free Tile Layers (No API key needed)
-  const esriLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19,
-    attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, TomTom'
+  const cartoPositron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 20,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  });
+
+  const cartoVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    maxZoom: 20,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
   });
 
   const osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attribution: '&copy; OpenStreetMap contributors'
   });
 
-  esriLayer.addTo(map);
+  // Set default to the cleanest map
+  cartoPositron.addTo(map);
 
   L.control.layers({
-    "Esri Street (깔끔한 지도)": esriLayer,
-    "OpenStreetMap (표준)": osmLayer
+    "심플한 지도 (기본)": cartoPositron,
+    "여행 지도 (컬러)": cartoVoyager,
+    "오픈스트리트맵": osmLayer
   }, null, { position: 'topright' }).addTo(map);
 
   // Marker Cluster Group
