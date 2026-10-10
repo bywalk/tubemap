@@ -1164,6 +1164,7 @@ body {
 
   .brand {
     gap: 6px;
+    min-width: 0;
   }
 
   .brand-icon {
@@ -1171,11 +1172,14 @@ body {
     height: 32px;
     font-size: 16px;
     border-radius: 8px;
+    flex-shrink: 0;
   }
 
   .brand-title {
     font-size: 1rem;
     gap: 4px;
+    min-width: 0;
+    white-space: nowrap;
   }
 
   .brand-title span.badge-kr {
@@ -1189,6 +1193,7 @@ body {
   .header-actions {
     gap: 4px;
     flex-shrink: 0;
+    min-width: 0;
   }
 
   .desktop-only {
@@ -1221,7 +1226,6 @@ body {
   /* App Layout on Mobile */
   .app-container {
     height: calc(100vh - 56px);
-    height: calc(100dvh - 56px);
   }
 
   /* Sidebar Drawer on Mobile */
