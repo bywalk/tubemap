@@ -121,14 +121,15 @@ function initMap() {
   L.control.zoom({ position: 'topright' }).addTo(map);
 
   // Free Tile Layers (No API key needed)
-  const cartoPositron = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    maxZoom: 20,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  const esriGray = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    maxNativeZoom: 16,
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ'
   });
 
-  const cartoVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-    maxZoom: 20,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+  const esriTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+    maxZoom: 19,
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
   });
 
   const osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -137,11 +138,11 @@ function initMap() {
   });
 
   // Set default to the cleanest map
-  cartoPositron.addTo(map);
+  esriGray.addTo(map);
 
   L.control.layers({
-    "심플한 지도 (기본)": cartoPositron,
-    "여행 지도 (컬러)": cartoVoyager,
+    "심플한 지도 (기본)": esriGray,
+    "여행 지도 (지형)": esriTopo,
     "오픈스트리트맵": osmLayer
   }, null, { position: 'topright' }).addTo(map);
 
