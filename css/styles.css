@@ -34,6 +34,7 @@ body {
   background: var(--bg-main);
   overflow: hidden;
   height: 100vh;
+  height: 100dvh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -197,6 +198,19 @@ body {
   color: var(--text-main);
 }
 
+.btn-compact {
+  padding: 7px 13px;
+  font-size: 0.85rem;
+}
+
+.btn-label {
+  display: inline;
+}
+
+.desktop-only {
+  display: inline-flex;
+}
+
 .mobile-menu-btn {
   display: none;
 }
@@ -208,6 +222,50 @@ body {
   position: relative;
   overflow: hidden;
   height: calc(100vh - var(--header-height));
+  height: calc(100dvh - var(--header-height));
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+.sidebar-mobile-bar {
+  display: none;
+}
+
+.sidebar-search-box {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sidebar-search-box .search-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.sidebar-search-box .search-input {
+  width: 100%;
+  padding: 8px 12px 8px 34px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: #f1f5f9;
+  font-size: 0.88rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar-search-box .search-input:focus {
+  background: #ffffff;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.12);
+}
+
+.floating-list-btn {
+  display: none;
 }
 
 /* ================= Sidebar ================= */
@@ -1094,36 +1152,386 @@ body {
   opacity: 1;
 }
 
-/* ================= Responsive ================= */
+/* ================= Responsive Styles ================= */
 @media (max-width: 768px) {
-  .mobile-menu-btn {
-    display: flex;
+  /* Header Mobile Optimization */
+  .app-header {
+    height: 56px;
+    padding: 0 10px;
+    gap: 8px;
+    justify-content: space-between;
   }
 
+  .brand {
+    gap: 6px;
+  }
+
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .brand-title {
+    font-size: 1rem;
+    gap: 4px;
+  }
+
+  .brand-title span.badge-kr {
+    display: none !important;
+  }
+
+  .header-center {
+    display: none !important;
+  }
+
+  .header-actions {
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .btn-label {
+    display: none !important;
+  }
+
+  .btn-compact {
+    padding: 0 9px;
+    min-width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+    justify-content: center;
+    border-radius: var(--radius-sm);
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+  }
+
+  /* App Layout on Mobile */
+  .app-container {
+    height: calc(100vh - 56px);
+    height: calc(100dvh - 56px);
+  }
+
+  /* Sidebar Drawer on Mobile */
   .sidebar {
     position: absolute;
     top: 0;
     left: 0;
     width: 88%;
-    max-width: 380px;
+    max-width: 390px;
     height: 100%;
     transform: translateX(-100%);
-    box-shadow: var(--shadow-xl);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.35);
+    z-index: 1050;
+    border-right: none;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .sidebar.open {
     transform: translateX(0);
   }
 
-  .header-center {
+  /* Mobile Backdrop */
+  .sidebar-backdrop {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 1040;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+  }
+
+  .sidebar-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .sidebar-header {
+    padding: 12px 14px 10px;
+  }
+
+  .sidebar-mobile-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-mobile-title {
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  .sidebar-search-box {
+    margin-bottom: 10px;
+  }
+
+  .filter-tab-bar {
+    margin-bottom: 8px;
+  }
+
+  .filter-chips {
+    gap: 5px;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chip {
+    padding: 5px 11px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Video List Cards on Mobile */
+  .video-list-container {
+    padding: 10px 12px;
+    gap: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .video-card {
+    border-radius: 10px;
+  }
+
+  .video-thumb-wrapper {
+    width: 110px;
+    min-width: 110px;
+  }
+
+  .video-card-content {
+    padding: 8px 10px;
+    gap: 4px;
+  }
+
+  .video-card-title {
+    font-size: 0.83rem;
+    line-height: 1.35;
+    -webkit-line-clamp: 2;
+    margin-bottom: 4px;
+  }
+
+  .card-tip-snippet {
     display: none;
   }
 
+  .video-location-badge {
+    max-width: 120px;
+    font-size: 0.7rem;
+  }
+
+  .video-creator-pill {
+    font-size: 0.7rem;
+  }
+
+  /* Floating List Toggle Button */
+  .floating-list-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+    background: #0f172a;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-full);
+    padding: 11px 20px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .floating-list-btn:active {
+    transform: translateX(-50%) scale(0.96);
+    background: #1e293b;
+  }
+
+  .floating-list-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(20px);
+  }
+
+  /* Modals on Mobile */
+  .modal-content {
+    width: 95%;
+    max-height: 92vh;
+    border-radius: 14px;
+  }
+
+  .modal-header {
+    padding: 12px 14px;
+  }
+
+  .modal-title {
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .modal-body {
+    padding: 14px;
+  }
+
+  .modal-footer {
+    padding: 10px 14px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .modal-footer .btn {
+    flex: 1;
+    min-width: 120px;
+    justify-content: center;
+  }
+
+  /* Table Modal on Mobile */
+  .table-modal-content {
+    width: 96%;
+    height: 92vh;
+    max-height: 92vh;
+    border-radius: 14px;
+  }
+
+  .table-modal-content .modal-header {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 14px;
+  }
+
+  .table-modal-content .modal-title {
+    font-size: 0.92rem;
+  }
+
+  .table-toolbar {
+    padding: 10px 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .table-toolbar .search-box {
+    max-width: 100% !important;
+  }
+
+  .table-responsive-container {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .data-table th,
+  .data-table td {
+    padding: 8px 10px;
+    font-size: 0.78rem;
+  }
+
+  /* Add Form on Mobile */
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .form-group.full-width {
     grid-column: span 1;
+  }
+
+  .coord-group {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .coord-group input {
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .coord-group button {
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .preview-thumb-box {
+    height: 130px;
+  }
+
+  /* Map Picker Banner */
+  .map-mode-banner {
+    width: 90%;
+    max-width: 360px;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  /* Leaflet Popups on Mobile */
+  .leaflet-popup-content {
+    width: 240px !important;
+  }
+
+  .popup-thumb-wrapper {
+    height: 120px;
+  }
+
+  /* Toast Notification */
+  .toast {
+    bottom: 80px;
+    right: 50%;
+    transform: translateX(50%) translateY(100px);
+    width: max-content;
+    max-width: 90vw;
+    font-size: 0.82rem;
+    padding: 10px 16px;
+  }
+
+  .toast.show {
+    transform: translateX(50%) translateY(0);
+  }
+}
+
+/* Extra small devices (phones under 380px) */
+@media (max-width: 380px) {
+  .brand-title {
+    font-size: 0.92rem;
+  }
+
+  .btn-compact {
+    padding: 0 7px;
+    min-width: 30px;
+    height: 32px;
+  }
+
+  .sidebar {
+    width: 94%;
+  }
+
+  .floating-list-btn {
+    padding: 10px 16px;
+    font-size: 0.82rem;
   }
 }

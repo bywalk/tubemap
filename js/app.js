@@ -241,9 +241,13 @@ function getFilteredVideos() {
 function renderFilteredList() {
   const container = document.getElementById('videoListContainer');
   const countBadge = document.getElementById('videoCountBadge');
+  const floatingCount = document.getElementById('floatingCountBadge');
   const filtered = getFilteredVideos();
 
   countBadge.textContent = `${filtered.length}곳`;
+  if (floatingCount) {
+    floatingCount.textContent = filtered.length;
+  }
 
   if (filtered.length === 0) {
     container.innerHTML = `
@@ -285,11 +289,30 @@ function renderFilteredList() {
   `).join('');
 }
 
+// Sidebar Drawer Controls
+function openSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+  const floatingListBtn = document.getElementById('floatingListBtn');
+  if (sidebar) sidebar.classList.add('open');
+  if (sidebarBackdrop) sidebarBackdrop.classList.add('active');
+  if (floatingListBtn) floatingListBtn.classList.add('hidden');
+}
+
+function closeSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+  const floatingListBtn = document.getElementById('floatingListBtn');
+  if (sidebar) sidebar.classList.remove('open');
+  if (sidebarBackdrop) sidebarBackdrop.classList.remove('active');
+  if (floatingListBtn) floatingListBtn.classList.remove('hidden');
+}
+
 // Video Card Click (Center map & open popup)
 function handleCardClick(videoId) {
   highlightActiveVideo(videoId, true);
   if (window.innerWidth <= 768) {
-    document.getElementById('sidebar').classList.remove('open');
+    closeSidebar();
   }
 }
 
@@ -520,13 +543,24 @@ function renderCreatorChips() {
 
 // Event Listeners
 function initEventListeners() {
-  // Search Input
+  // Search Inputs (Desktop header & Sidebar sync)
   const searchInput = document.getElementById('searchInput');
-  searchInput.addEventListener('input', (e) => {
-    currentSearchQuery = e.target.value;
+  const sidebarSearchInput = document.getElementById('sidebarSearchInput');
+
+  function handleSearch(val) {
+    currentSearchQuery = val;
+    if (searchInput && searchInput.value !== val) searchInput.value = val;
+    if (sidebarSearchInput && sidebarSearchInput.value !== val) sidebarSearchInput.value = val;
     renderFilteredList();
     renderMapMarkers();
-  });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', (e) => handleSearch(e.target.value));
+  }
+  if (sidebarSearchInput) {
+    sidebarSearchInput.addEventListener('input', (e) => handleSearch(e.target.value));
+  }
 
   // Filter Tabs (유튜버별 vs 국가/지역별)
   const tabCreatorBtn = document.getElementById('tabCreatorBtn');
@@ -575,19 +609,42 @@ function initEventListeners() {
 
   // Brand click -> reset
   document.getElementById('brandBtn').addEventListener('click', () => {
-    searchInput.value = '';
+    if (searchInput) searchInput.value = '';
+    if (sidebarSearchInput) sidebarSearchInput.value = '';
     currentSearchQuery = '';
     tabCreatorBtn.click();
     const allChip = document.querySelector('#creatorChipsContainer .chip[data-creator="all"]');
     if (allChip) allChip.click();
   });
 
-  // Mobile Menu Toggle
+  // Mobile Menu & Drawer Controls
   const mobileToggle = document.getElementById('mobileMenuToggle');
+  const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+  const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+  const floatingListBtn = document.getElementById('floatingListBtn');
   const sidebar = document.getElementById('sidebar');
-  mobileToggle.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-  });
+
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', () => {
+      if (sidebar && sidebar.classList.contains('open')) {
+        closeSidebar();
+      } else {
+        openSidebar();
+      }
+    });
+  }
+
+  if (floatingListBtn) {
+    floatingListBtn.addEventListener('click', openSidebar);
+  }
+
+  if (closeSidebarBtn) {
+    closeSidebarBtn.addEventListener('click', closeSidebar);
+  }
+
+  if (sidebarBackdrop) {
+    sidebarBackdrop.addEventListener('click', closeSidebar);
+  }
 
   // Video Modal Close
   document.getElementById('closeVideoModalBtn').addEventListener('click', closeVideoModal);

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css?v=20261010_3">
 </head>
 <body>
 
@@ -31,17 +31,21 @@
     </div>
 
     <div class="header-actions">
-      <button class="btn btn-outline" id="refreshDataBtn" title="최신 데이터로 강제 동기화">
-        🔄 최신화
+      <button class="btn btn-outline btn-compact" id="refreshDataBtn" title="최신 데이터로 강제 동기화">
+        <span class="btn-icon-text">🔄</span>
+        <span class="btn-label">최신화</span>
       </button>
-      <button class="btn btn-outline" id="openTableModalBtn" title="전체 데이터를 표로 확인">
-        📊 테이블 표 보기
+      <button class="btn btn-outline btn-compact" id="openTableModalBtn" title="전체 데이터를 표로 확인">
+        <span class="btn-icon-text">📊</span>
+        <span class="btn-label">테이블 표</span>
       </button>
-      <button class="btn btn-outline" id="exportBtn" title="데이터 백업">
-        💾 백업
+      <button class="btn btn-outline btn-compact desktop-only" id="exportBtn" title="데이터 백업">
+        <span class="btn-icon-text">💾</span>
+        <span class="btn-label">백업</span>
       </button>
-      <button class="btn btn-primary" id="openAddModalBtn">
-        <span>+</span> 새 영상 등록
+      <button class="btn btn-primary btn-compact" id="openAddModalBtn" title="새 여행지 등록">
+        <span>+</span>
+        <span class="btn-label">등록</span>
       </button>
       <button class="btn-icon mobile-menu-btn" id="mobileMenuToggle" title="목록 열기/닫기">
         ☰
@@ -52,10 +56,25 @@
   <!-- Main Container -->
   <div class="app-container">
     
+    <!-- Sidebar Backdrop for Mobile -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
     <!-- Sidebar: Creator Filter & Video List -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
         
+        <!-- Mobile Sidebar Top Bar (Visible only on mobile) -->
+        <div class="sidebar-mobile-bar">
+          <div class="sidebar-mobile-title">📍 여행 영상 & 코스 목록</div>
+          <button class="btn-icon" id="closeSidebarBtn" title="목록 닫기">✕</button>
+        </div>
+
+        <!-- Search Box inside Sidebar (Mobile & Desktop accessible) -->
+        <div class="sidebar-search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="sidebarSearchInput" class="search-input" placeholder="유튜버, 국가, 명소 검색...">
+        </div>
+
         <!-- Filter Tabs: Creator vs Region -->
         <div class="filter-tab-bar">
           <button class="tab-btn active" id="tabCreatorBtn">👤 유튜버별</button>
@@ -111,6 +130,11 @@
         <span>📍 지도에서 등록할 위치를 클릭하세요!</span>
         <button class="btn btn-outline" style="padding: 4px 10px; font-size: 0.78rem; background: #fff; color: #000;" id="cancelPickBtn">취소</button>
       </div>
+
+      <!-- Mobile Floating View Toggle -->
+      <button class="floating-list-btn" id="floatingListBtn" title="목록 보기">
+        <span>📋</span> 목록 보기 (<span id="floatingCountBadge">0</span>곳)
+      </button>
     </main>
 
   </div>
@@ -310,7 +334,7 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
   <!-- App Data & Scripts -->
-  <script src="js/data.js?v=20261010_2"></script>
-  <script src="js/app.js?v=20261010_2"></script>
+  <script src="js/data.js?v=20261010_3"></script>
+  <script src="js/app.js?v=20261010_3"></script>
 </body>
 </html>
