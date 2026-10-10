@@ -234,7 +234,7 @@ body {
 }
 
 .sidebar-search-box {
-  display: flex;
+  display: none; /* Hidden on desktop */
   position: relative;
   align-items: center;
   margin-bottom: 12px;
@@ -1297,6 +1297,7 @@ body {
   }
 
   .sidebar-search-box {
+    display: flex;
     margin-bottom: 10px;
   }
 
