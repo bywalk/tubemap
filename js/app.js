@@ -877,38 +877,45 @@ function initDragToScroll() {
     let scrollLeft;
     let dragged = false;
 
+    const onMouseMove = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX;
+      const walk = (x - startX) * 1.5;
+      if (Math.abs(walk) > 5) dragged = true;
+      container.scrollLeft = scrollLeft - walk;
+    };
+
+    const onMouseUp = () => {
+      isDown = false;
+      container.classList.remove('active');
+      window.removeEventListener('mousemove', onMouseMove);
+      window.removeEventListener('mouseup', onMouseUp);
+    };
+
     container.addEventListener('mousedown', (e) => {
       isDown = true;
       dragged = false;
       container.classList.add('active');
       startX = e.pageX;
       scrollLeft = container.scrollLeft;
+      
+      window.addEventListener('mousemove', onMouseMove, { passive: false });
+      window.addEventListener('mouseup', onMouseUp);
     });
 
-    container.addEventListener('mouseleave', () => {
-      isDown = false;
-      container.classList.remove('active');
+    container.addEventListener('dragstart', (e) => {
+      e.preventDefault(); // Stop ghost drag
     });
 
-    container.addEventListener('mouseup', () => {
-      isDown = false;
-      container.classList.remove('active');
-    });
-
-    container.addEventListener('mousemove', (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX;
-      const walk = (x - startX) * 1.5; // smoother multiplier
-      if (Math.abs(walk) > 5) dragged = true;
-      container.scrollLeft = scrollLeft - walk;
-    });
-
+    // Handle touch/click edge cases for dragging
     container.addEventListener('click', (e) => {
       if (dragged) {
         e.preventDefault();
         e.stopPropagation();
       }
+      // reset for next click
+      setTimeout(() => { dragged = false; }, 50);
     }, true);
   });
 }
