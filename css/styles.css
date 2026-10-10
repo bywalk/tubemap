@@ -326,6 +326,8 @@ body {
 
 .filter-chips.active {
   cursor: grabbing;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .filter-chips::-webkit-scrollbar {
