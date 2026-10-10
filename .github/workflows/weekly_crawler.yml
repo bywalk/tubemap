@@ -1,0 +1,38 @@
+name: Weekly YouTube Travel Spots Update
+
+on:
+  schedule:
+    # 매주 월요일 오전 9시 (KST = UTC 00:00) 자동 실행
+    - cron: '0 0 * * 1'
+  workflow_dispatch: # GitHub 웹 버튼으로 언제든 수동 실행 가능
+
+jobs:
+  update-videos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Travel Spot Collector
+        run: |
+          python collector.py --auto
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add js/data.js
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update travel spots from Korean YouTube creators [skip ci]"
+            git push
+          fi

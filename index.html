@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TubeMap Travel | 한국 여행 유튜버 지도 & 테이블</title>
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <!-- Leaflet MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand" id="brandBtn">
+      <div class="brand-icon">📍</div>
+      <div class="brand-title">TubeMap <span>Travel</span> <span class="badge-kr">K-Creator</span></div>
+    </div>
+
+    <div class="header-center">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="유튜버, 국가, 스팟, 키워드 검색... (예: 빠니보틀, 다합, 양꼬치, 게르)">
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="btn btn-outline" id="openTableModalBtn" title="전체 데이터를 표로 확인">
+        📊 테이블 표 보기
+      </button>
+      <button class="btn btn-outline" id="exportBtn" title="데이터 백업">
+        💾 백업
+      </button>
+      <button class="btn btn-primary" id="openAddModalBtn">
+        <span>+</span> 새 영상 등록
+      </button>
+      <button class="btn-icon mobile-menu-btn" id="mobileMenuToggle" title="목록 열기/닫기">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <div class="app-container">
+    
+    <!-- Sidebar: Creator Filter & Video List -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        
+        <!-- Filter Tabs: Creator vs Region -->
+        <div class="filter-tab-bar">
+          <button class="tab-btn active" id="tabCreatorBtn">👤 유튜버별</button>
+          <button class="tab-btn" id="tabRegionBtn">🌍 국가/지역별</button>
+        </div>
+
+        <!-- Creator Chips Container -->
+        <div class="filter-chips" id="creatorChipsContainer">
+          <button class="chip active" data-creator="all">전체 유튜버</button>
+          <button class="chip" data-creator="빠니보틀">빠니보틀</button>
+          <button class="chip" data-creator="곽튜브">곽튜브</button>
+          <button class="chip" data-creator="원지의 하루">원지의 하루</button>
+          <button class="chip" data-creator="채코제">채코제</button>
+          <button class="chip" data-creator="여행가 제이">여행가 제이</button>
+          <button class="chip" data-creator="잰잰바리">잰잰바리</button>
+        </div>
+
+        <!-- Region Chips Container (Hidden by default) -->
+        <div class="filter-chips hidden" id="regionChipsContainer">
+          <button class="chip active" data-region="all">전체 지역</button>
+          <button class="chip" data-region="동남아">태국/라오스</button>
+          <button class="chip" data-region="중앙아시아">우즈벡/몽골</button>
+          <button class="chip" data-region="코카서스">아제르/조지아</button>
+          <button class="chip" data-region="중동/아프리카">이집트/모로코</button>
+          <button class="chip" data-region="남아시아">인도</button>
+        </div>
+
+        <div class="stats-row">
+          <span>등록된 추천 여행지</span>
+          <span class="stats-count" id="videoCountBadge">0곳</span>
+        </div>
+      </div>
+
+      <!-- Scrollable Video Cards -->
+      <div class="video-list-container" id="videoListContainer">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </aside>
+
+    <!-- Map View -->
+    <main class="map-container">
+      <div id="map"></div>
+
+      <!-- Coordinate Picker Banner -->
+      <div class="map-mode-banner hidden" id="pickerBanner">
+        <span>📍 지도에서 등록할 위치를 클릭하세요!</span>
+        <button class="btn btn-outline" style="padding: 4px 10px; font-size: 0.78rem; background: #fff; color: #000;" id="cancelPickBtn">취소</button>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Video Player Modal -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalVideoTitle">영상 제목</h3>
+        <button class="btn-icon" id="closeVideoModalBtn" style="font-size: 1.2rem;">✕</button>
+      </div>
+
+      <div class="video-frame-container">
+        <iframe id="videoPlayerFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-meta-row">
+          <div class="modal-location-tag" id="modalLocationTag">
+            📍 위치 정보
+          </div>
+          <div class="creator-badge" id="modalCreatorBadge">
+            👤 유튜버
+          </div>
+        </div>
+
+        <!-- YouTuber Tip Box -->
+        <div class="tip-box" id="modalTipBox">
+          <div class="tip-title">💡 유튜버 추천 꿀팁 & 후기</div>
+          <p class="tip-content" id="modalTipContent"></p>
+        </div>
+
+        <p class="modal-desc" id="modalDescription">영상 상세 설명</p>
+
+        <!-- Highlights / Chapters -->
+        <div class="highlights-section" id="modalHighlightsContainer">
+          <div class="highlights-title">
+            <span>⏱️</span> 주요 타임스탬프 바로가기
+          </div>
+          <div class="highlights-list" id="modalHighlightsList">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" target="_blank" class="btn btn-outline" id="googleMapsLink">
+          🗺️ 구글 지도에서 보기
+        </a>
+        <button class="btn btn-primary" id="modalDoneBtn">
+          확인
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Table View Modal -->
+  <div class="modal-overlay" id="tableModal">
+    <div class="modal-content table-modal-content">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <h3 class="modal-title">📊 한국 여행 유튜버 여행지 데이터 테이블</h3>
+          <span class="table-count-tag" id="tableCountTag">0개 스팟</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="btn btn-outline" id="downloadCsvBtn" style="font-size: 0.8rem; padding: 6px 12px;">
+            📥 CSV 다운로드
+          </button>
+          <button class="btn-icon" id="closeTableModalBtn" style="font-size: 1.2rem;">✕</button>
+        </div>
+      </div>
+
+      <div class="table-toolbar">
+        <div class="search-box" style="max-width: 380px;">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="tableSearchInput" class="search-input" placeholder="테이블 내 실시간 검색...">
+        </div>
+        <div style="font-size: 0.82rem; color: var(--text-muted);">
+          * 컬럼 헤더를 클릭하면 정렬됩니다
+        </div>
+      </div>
+
+      <div class="table-responsive-container">
+        <table class="data-table" id="travelDataTable">
+          <thead>
+            <tr>
+              <th data-sort="creator">유튜버 ⇕</th>
+              <th data-sort="country">국가 / 도시 ⇕</th>
+              <th data-sort="locationName">추천 스팟명 ⇕</th>
+              <th>영상 제목</th>
+              <th>유튜버 꿀팁 & 후기</th>
+              <th>테마</th>
+              <th style="text-align: center;">액션</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Rendered dynamically -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="modal-footer" style="justify-content: space-between;">
+        <span style="font-size: 0.82rem; color: var(--text-muted);">
+          💡 액션의 [지도] 버튼을 누르면 해당 위치로 이동하며, [영상]을 누르면 즉시 재생됩니다.
+        </span>
+        <button class="btn btn-primary" id="closeTableModalBottomBtn">닫기</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Video Modal -->
+  <div class="modal-overlay" id="addVideoModal">
+    <div class="modal-content" style="max-width: 580px;">
+      <div class="modal-header">
+        <h3 class="modal-title">✨ 새 여행 유튜브 영상 등록</h3>
+        <button class="btn-icon" id="closeAddModalBtn" style="font-size: 1.2rem;">✕</button>
+      </div>
+
+      <form id="addVideoForm" style="display: flex; flex-direction: column;">
+        <div class="modal-body">
+          <div class="form-grid">
+            
+            <div class="form-group full-width">
+              <label class="form-label">유튜브 영상 URL 또는 ID *</label>
+              <input type="text" id="inputYoutubeUrl" class="form-input" placeholder="https://www.youtube.com/watch?v=... 또는 단축 URL" required>
+            </div>
+
+            <!-- Preview Box -->
+            <div class="form-group full-width">
+              <div class="preview-thumb-box" id="thumbnailPreviewBox">
+                <span>URL을 입력하면 썸네일 미리보기가 표시됩니다</span>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">영상 제목 *</label>
+              <input type="text" id="inputTitle" class="form-input" placeholder="예: [빠니보틀] 인도 기차 1등칸 탑승기" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">유튜버 크리에이터 *</label>
+              <input type="text" id="inputCreator" class="form-input" placeholder="예: 빠니보틀, 곽튜브" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">국가 / 도시 *</label>
+              <input type="text" id="inputCountry" class="form-input" placeholder="예: 이집트 다합" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">장소/명소 이름 *</label>
+              <input type="text" id="inputLocationName" class="form-input" placeholder="예: 라이트하우스 해변" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">위치 좌표 (위도, 경도) *</label>
+              <div class="coord-group">
+                <input type="number" step="any" id="inputLat" class="form-input" placeholder="위도 (Latitude)" required>
+                <input type="number" step="any" id="inputLng" class="form-input" placeholder="경도 (Longitude)" required>
+                <button type="button" class="btn btn-outline" id="pickOnMapBtn" style="white-space: nowrap;">
+                  🎯 지도에서 선택
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">유튜버 꿀팁 / 후기 메모</label>
+              <input type="text" id="inputTip" class="form-input" placeholder="예: 일출 보트 투어 추천, 현금만 가능">
+            </div>
+
+            <div class="form-group full-width">
+              <label class="form-label">태그 (쉼표로 구분)</label>
+              <input type="text" id="inputTags" class="form-input" placeholder="예: 배낭여행, 갠지스강, 로컬">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="cancelAddBtn">취소</button>
+          <button type="submit" class="btn btn-primary">지도에 등록하기</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span id="toastIcon">✅</span>
+    <span id="toastMessage">안내 메시지</span>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Leaflet MarkerCluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <!-- App Data & Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
