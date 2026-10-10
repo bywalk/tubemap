@@ -19,17 +19,44 @@ let currentSortColumn = 'creator';
 let currentSortDirection = 'asc';
 
 // Load Data from LocalStorage or Defaults
-const STORAGE_KEY = 'tubemap_travel_videos_k_creators_v2';
+const STORAGE_KEY = 'tubemap_travel_videos_k_creators_v3';
 let travelVideos = [];
 
 function loadInitialData() {
-  const saved = localStorage.getItem(STORAGE_KEY);
+  const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem('tubemap_travel_videos_k_creators_v2');
   if (saved) {
     try {
-      travelVideos = JSON.parse(saved);
+      const localList = JSON.parse(saved);
+      // 사용자 수동 등록 영상(custom-*) 보존
+      const userCustomVideos = localList.filter(v => v.id && String(v.id).startsWith('custom-'));
+      
+      const seenIds = new Set();
+      const merged = [];
+      
+      // 1. 사용자 등록 커스텀 영상 우선 유지
+      for (const v of userCustomVideos) {
+        const idKey = v.youtubeId || v.id;
+        if (!seenIds.has(idKey)) {
+          seenIds.add(idKey);
+          merged.push(v);
+        }
+      }
+      
+      // 2. data.js의 최신 INITIAL_TRAVEL_VIDEOS 전체 병합 (신규 수집 영상 즉시 반영)
+      for (const v of INITIAL_TRAVEL_VIDEOS) {
+        const idKey = v.youtubeId || v.id;
+        if (!seenIds.has(idKey)) {
+          seenIds.add(idKey);
+          merged.push(v);
+        }
+      }
+      
+      travelVideos = merged;
+      saveToStorage();
     } catch (e) {
       console.error('Failed to parse localStorage data:', e);
       travelVideos = [...INITIAL_TRAVEL_VIDEOS];
+      saveToStorage();
     }
   } else {
     travelVideos = [...INITIAL_TRAVEL_VIDEOS];
@@ -740,6 +767,23 @@ function initEventListeners() {
     downloadAnchor.remove();
     showToast('데이터가 JSON으로 백업되었습니다.', '💾');
   });
+
+  // Re-sync / Refresh Data to Latest
+  const refreshBtn = document.getElementById('refreshDataBtn');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => {
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem('tubemap_travel_videos_k_creators_v2');
+      loadInitialData();
+      renderFilteredList();
+      renderMapMarkers();
+      renderCreatorChips();
+      if (typeof renderTableRows === 'function') {
+        renderTableRows();
+      }
+      showToast(`총 ${travelVideos.length}곳의 최신 여행지로 동기화되었습니다!`, '🔄');
+    });
+  }
 
   // Keydown Escape
   window.addEventListener('keydown', (e) => {
