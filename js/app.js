@@ -114,7 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Map Initialization
 function initMap() {
   map = L.map('map', {
-    zoomControl: false
+    zoomControl: false,
+    worldCopyJump: true, // Fixes pins not showing when panning across the world
+    minZoom: 2           // Prevents zooming out too far to see multiple empty worlds
   }).setView([32.0, 60.0], 4); // Eurasia centered view
 
   // Zoom control at top-right
