@@ -29,6 +29,7 @@ from datetime import datetime, timedelta
 # 1. 수집 설정 및 모니터링 대상 한국 대표 여행 유튜버 (구독자 5만~100만+)
 # =============================================================================
 MAX_VIDEO_AGE_DAYS = 365  # 여행 정보 최신성 유지를 위해 1년(365일) 이내 영상만 수집
+MIN_SUBSCRIBER_COUNT = 50000  # 최소 구독자 수 필터 (5만 명 이상 채널만 자동 수집)
 
 CHANNELS = [
     # 1. 빠니보틀 (240만+)
@@ -305,6 +306,8 @@ COUNTRY_FLAGS = {
 }
 
 DATA_JS_PATH = os.path.join(os.path.dirname(__file__), "js", "data.js")
+DATA_RECENT_PATH = os.path.join(os.path.dirname(__file__), "js", "data", "videos_recent.js")
+DATA_ARCHIVE_PATH = os.path.join(os.path.dirname(__file__), "js", "data", "videos_archive.js")
 
 # SSL 컨텍스트 준비 (macOS 및 호스트 인증서 오류 안전 방어)
 def get_ssl_context():
@@ -387,6 +390,52 @@ def parse_relative_time(rel_text):
 
     return 0, now.strftime("%Y-%m-%d")
 
+def parse_subscriber_count(html):
+    """
+    유튜브 채널 메타데이터에서 구독자 수를 파싱하여 정수로 반환.
+    예: '구독자 245만명' -> 2450000, '52.3만명' -> 523000, '1.2M' -> 1200000, '50K' -> 50000
+    """
+    # 1. '구독자 X만명' 패턴 (한국어)
+    m = re.search(r'구독자\s*([\d\.]+)\s*만명', html)
+    if m:
+        try:
+            return int(float(m.group(1)) * 10000)
+        except ValueError:
+            pass
+
+    # 2. '구독자 X천명'
+    m = re.search(r'구독자\s*([\d\.]+)\s*천명', html)
+    if m:
+        try:
+            return int(float(m.group(1)) * 1000)
+        except ValueError:
+            pass
+
+    # 3. '구독자 X명' (단순 숫자)
+    m = re.search(r'구독자\s*([\d,]+)\s*명', html)
+    if m:
+        try:
+            return int(m.group(1).replace(',', ''))
+        except ValueError:
+            pass
+
+    # 4. 영문 표기: 'subscriberCountText': '2.45M subscribers' 또는 '50K subscribers'
+    m = re.search(r'([\d\.]+)\s*M\s*subscribers', html, re.IGNORECASE)
+    if m:
+        try:
+            return int(float(m.group(1)) * 1000000)
+        except ValueError:
+            pass
+
+    m = re.search(r'([\d\.]+)\s*K\s*subscribers', html, re.IGNORECASE)
+    if m:
+        try:
+            return int(float(m.group(1)) * 1000)
+        except ValueError:
+            pass
+
+    return None
+
 def fetch_channel_videos(channel_info):
     """
     유튜브 채널의 최신 영상 목록을 가져옴:
@@ -410,6 +459,15 @@ def fetch_channel_videos(channel_info):
             with urllib.request.urlopen(req, timeout=12, context=SAFE_SSL_CONTEXT) as resp:
                 html = resp.read().decode("utf-8", errors="ignore")
                 
+                # 구독자 수 실시간 검증 (5만 명 이상 기준)
+                subs = parse_subscriber_count(html)
+                if subs is not None:
+                    if subs < MIN_SUBSCRIBER_COUNT:
+                        print(f"      [!] ❌ 구독자 수 미달 ({subs:,}명 < {MIN_SUBSCRIBER_COUNT:,}명 기준) -> 채널 자동 제외")
+                        return []
+                    else:
+                        print(f"      [i] 👥 구독자 수: {subs:,}명 (기준 5만+ 통과)")
+
                 # ytInitialData 추출
                 idx = html.find("var ytInitialData = ")
                 if idx != -1:
@@ -533,14 +591,14 @@ def fetch_channel_videos(channel_info):
     return videos
 
 def load_existing_video_ids():
-    """기존 data.js 파일에서 이미 등록된 youtubeId 목록을 로드"""
-    if not os.path.exists(DATA_JS_PATH):
-        return set()
-    
-    with open(DATA_JS_PATH, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    existing_ids = set(re.findall(r'youtubeId:\s*["\']([a-zA-Z0-9_-]{11})["\']', content))
+    """기존 데이터 파일들에서 이미 등록된 youtubeId 목록을 로드"""
+    existing_ids = set()
+    for path in [DATA_RECENT_PATH, DATA_ARCHIVE_PATH, DATA_JS_PATH]:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                content = f.read()
+            ids = set(re.findall(r'youtubeId:\s*["\']([a-zA-Z0-9_-]{11})["\']', content))
+            existing_ids.update(ids)
     return existing_ids
 
 def geocode_location(place_query):
@@ -561,6 +619,85 @@ def geocode_location(place_query):
     except Exception:
         pass
     return None, None
+
+def load_local_env():
+    """로컬 .env 파일에서 환경변수 로드"""
+    env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".env")
+    if os.path.exists(env_path):
+        with open(env_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    os.environ[k.strip()] = v.strip().strip("'\"")
+
+def extract_with_gemini_api(title, description, creator_name):
+    """
+    사전 매칭에 실패한 영상에 대해 Gemini API로 장소 및 위경도 자동 추출
+    """
+    load_local_env()
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        return None
+
+    prompt = f"""
+당신은 여행 영상 정보 분석 전문가입니다.
+주어진 YouTube 영상 제목과 설명란을 분석하여, 실제로 여행하고 있는 장소 정보를 다음 JSON 형식으로만 추출하세요.
+국내/해외 무관하며, 모호하거나 특정 여행지가 아니라면 "is_travel": false로 반환하세요.
+
+반환 형식 (반드시 유효한 JSON만 반환):
+{{
+  "is_travel": true,
+  "country": "국가명 (예: 인도, 아랍에미리트, 미국)",
+  "city": "도시/지역명 (예: 바라나시, 두바이, 샌프란시스코)",
+  "spot": "구체적인 명소명 (예: 갠지스강, 버즈 알아랍, 소살리토)",
+  "lat": 위도(실수, 예: 25.3176),
+  "lng": 경도(실수, 예: 83.0062),
+  "tip": "영상에서 알 수 있는 핵심 꿀팁/특징 (한 줄 요약)"
+}}
+
+영상 제목: {title}
+영상 설명: {description}
+"""
+
+    models_to_try = ["gemini-flash-latest", "gemini-2.5-flash", "gemini-pro-latest"]
+    for model_name in models_to_try:
+        try:
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+            payload = {
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {
+                    "response_mime_type": "application/json",
+                    "temperature": 0.1
+                }
+            }
+            req = urllib.request.Request(
+                url,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={"Content-Type": "application/json"}
+            )
+            with urllib.request.urlopen(req, timeout=12, context=SAFE_SSL_CONTEXT) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                text_out = data["candidates"][0]["content"]["parts"][0]["text"]
+                parsed = json.loads(text_out)
+                if parsed.get("is_travel") and parsed.get("lat") and parsed.get("lng"):
+                    city = parsed.get("city") or "여행지"
+                    country = parsed.get("country") or "해외"
+                    spot = parsed.get("spot") or city
+                    tip = parsed.get("tip") or f"{creator_name}의 {city} 여행 추천 스팟입니다."
+                    return {
+                        "country": country,
+                        "city": city,
+                        "locationName": f"{city} {spot}" if spot != city else city,
+                        "lat": float(parsed["lat"]),
+                        "lng": float(parsed["lng"]),
+                        "tags": [city, country, "유튜브추천", "Gemini추출"],
+                        "tip": tip
+                    }
+        except Exception:
+            continue
+
+    return None
 
 def analyze_video_location(title, description, creator_name):
     """
@@ -653,19 +790,28 @@ def analyze_video_location(title, description, creator_name):
                 "tip": f"{creator_name}의 추천 여행 스팟."
             }
 
+    # 4. 사전 매칭 실패 시: Gemini LLM Fallback (AI 기반 위치 및 위경도 추출)
+    gemini_result = extract_with_gemini_api(title, description, creator_name)
+    if gemini_result:
+        return gemini_result
+
     return None
 
 def append_to_data_js(new_entries):
-    """새로 발견된 여행 영상 목록을 data.js 파일 상단에 깔끔하게 추가"""
-    if not new_entries or not os.path.exists(DATA_JS_PATH):
+    """새로 발견된 여행 영상 목록을 videos_recent.js 파일 상단에 깔끔하게 추가"""
+    target_path = DATA_RECENT_PATH if os.path.exists(DATA_RECENT_PATH) else DATA_JS_PATH
+    if not new_entries or not os.path.exists(target_path):
         return
 
-    with open(DATA_JS_PATH, "r", encoding="utf-8") as f:
+    with open(target_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    insert_pos = content.find("const INITIAL_TRAVEL_VIDEOS = [")
+    # RECENT_VIDEOS 또는 INITIAL_TRAVEL_VIDEOS 배열 위치 찾기
+    insert_pos = content.find("const RECENT_VIDEOS = [")
     if insert_pos == -1:
-        print("❌ data.js 파일에서 INITIAL_TRAVEL_VIDEOS 배열을 찾을 수 없습니다.")
+        insert_pos = content.find("const INITIAL_TRAVEL_VIDEOS = [")
+    if insert_pos == -1:
+        print(f"❌ {target_path} 파일에서 대상 배열을 찾을 수 없습니다.")
         return
 
     bracket_pos = content.find("[", insert_pos) + 1
@@ -701,10 +847,11 @@ def append_to_data_js(new_entries):
 
     new_content = content[:bracket_pos] + "".join(formatted_entries) + content[bracket_pos:]
 
-    with open(DATA_JS_PATH, "w", encoding="utf-8") as f:
+    with open(target_path, "w", encoding="utf-8") as f:
         f.write(new_content)
 
-    print(f"\n🎉 data.js 파일에 총 {len(new_entries)}개의 최신 여행지가 성공적으로 추가되었습니다!")
+    file_basename = os.path.basename(target_path)
+    print(f"\n🎉 {file_basename} 파일에 총 {len(new_entries)}개의 최신 여행지가 성공적으로 추가되었습니다!")
 
 # =============================================================================
 # 4. 메인 실행 흐름
