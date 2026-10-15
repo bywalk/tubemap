@@ -18,7 +18,12 @@ let activeMarkerId = null;
 let currentSortColumn = 'creator';
 let currentSortDirection = 'asc';
 
-// Load Data from LocalStorage or Defaults
+// Combined travel videos dataset (Modular data: recent + archive)
+const INITIAL_TRAVEL_VIDEOS = [
+  ...(typeof RECENT_VIDEOS !== 'undefined' ? RECENT_VIDEOS : []),
+  ...(typeof ARCHIVE_VIDEOS !== 'undefined' ? ARCHIVE_VIDEOS : [])
+];
+
 const STORAGE_KEY = 'tubemap_travel_videos_k_creators_v3';
 let travelVideos = [];
 

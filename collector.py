@@ -29,88 +29,46 @@ from datetime import datetime, timedelta
 # 1. 수집 설정 및 모니터링 대상 한국 대표 여행 유튜버 (구독자 5만~100만+)
 # =============================================================================
 MAX_VIDEO_AGE_DAYS = 365  # 여행 정보 최신성 유지를 위해 1년(365일) 이내 영상만 수집
-MIN_SUBSCRIBER_COUNT = 50000  # 최소 구독자 수 필터 (5만 명 이상 채널만 자동 수집)
+MIN_SUBSCRIBER_COUNT = 50000  # 최소 구독자 수 필터 (5만 명 이상 채널만 수집)
+DISCOVER_MIN_SUBSCRIBER_COUNT = 100000  # 브이로그 자동 발굴 시 엄격한 기준 (10만 명 이상)
 
-CHANNELS = [
-    # 1. 빠니보틀 (240만+)
-    {
-        "name": "빠니보틀",
-        "handle": "PaniBottle",
-        "channel_id": "UCNhofiqfw5nl-NeDJkXtPvw"
-    },
-    # 2. 곽튜브 (210만+)
-    {
-        "name": "곽튜브",
-        "handle": "JBKWAK",
-        "channel_id": "UC-7PJA1XKjPc5pIWKyEDx3Q"
-    },
-    # 3. 원지의 하루 (90만+)
-    {
-        "name": "원지의 하루",
-        "handle": "im1G",
-        "channel_id": "UC9gxOp_-R78phMHmv2bW_sg"
-    },
-    # 4. 채코제 (80만+)
-    {
-        "name": "채코제",
-        "handle": "koreanjay",
-        "channel_id": "UCaoqDZPllYXLAH_5OBRLLrw"
-    },
-    # 5. 여행가 제이 (70만+)
-    {
-        "name": "여행가 제이",
-        "handle": "jayworldtraveler",
-        "channel_id": "UCxU8QX7IRRIW0VLuoWWoxbw"
-    },
-    # 6. 잰잰바리 (60만+)
-    {
-        "name": "잰잰바리",
-        "handle": "jaeye0nyy",
-        "channel_id": "UCSxhYq6K0mxF24SmMGeNNQA"
-    },
-    # 7. 노마드션 (60만+)
-    {
-        "name": "노마드션",
-        "handle": "NomadShaun",
-        "channel_id": "UCfCOEG2kjX_x4KAdWX-YUcA"
-    },
-    # 8. 캡틴따거 (50만+)
-    {
-        "name": "캡틴따거",
-        "handle": "captainbrother",
-        "channel_id": "UCt_7uH4Igz0T_K3Qzbs1Wig"
-    },
-    # 9. 캐럿맨 여행기 (40만+)
-    {
-        "name": "캐럿맨 여행기",
-        "handle": "carrotman1198",
-        "channel_id": "UC_4hHKHUcs9bGpl_zDAOxvg"
-    },
-    # 10. 희철리즘 (100만+)
-    {
-        "name": "희철리즘",
-        "handle": "HeechulismTV",
-        "channel_id": "UCwjMQYL9vgbqGzxYW6dVhTw"
-    },
-    # 11. 또떠남 (30만+)
-    {
-        "name": "또떠남",
-        "handle": "ddoddunam",
-        "channel_id": "UCldwUablgk8KPcFPQlKnB-w"
-    },
-    # 12. 쏘이 The World (40만+)
-    {
-        "name": "쏘이 The World",
-        "handle": "soy_the_world",
-        "channel_id": "UCugz3-UlkX2P77PtK1Ju0RA"
-    },
-    # 13. 초마드 (80만+)
-    {
-        "name": "초마드",
-        "handle": "CHOMAD",
-        "channel_id": "UCvuwlY4fWkWMuzRkj5MAK9Q"
-    }
+CHANNELS_JSON_PATH = os.path.join(os.path.dirname(__file__), "channels.json")
+
+DEFAULT_CHANNELS = [
+    {"name": "빠니보틀", "handle": "PaniBottle"},
+    {"name": "곽튜브", "handle": "JBKWAK"},
+    {"name": "원지의 하루", "handle": "im1G"},
+    {"name": "채코제", "handle": "koreanjay"},
+    {"name": "여행가 제이", "handle": "jayworldtraveler"},
+    {"name": "잰잰바리", "handle": "jaeye0nyy"},
+    {"name": "노마드션", "handle": "NomadShaun"},
+    {"name": "캡틴따거", "handle": "captainbrother"},
+    {"name": "캐럿맨 여행기", "handle": "carrotman1198"},
+    {"name": "희철리즘", "handle": "HeechulismTV"},
+    {"name": "또떠남", "handle": "ddoddunam"},
+    {"name": "쏘이 The World", "handle": "soy_the_world"},
+    {"name": "초마드", "handle": "CHOMAD"}
 ]
+
+def load_channels():
+    """channels.json 파일에서 모니터링 대상 채널 목록 로드"""
+    if os.path.exists(CHANNELS_JSON_PATH):
+        try:
+            with open(CHANNELS_JSON_PATH, "r", encoding="utf-8") as f:
+                ch_list = json.load(f)
+                if isinstance(ch_list, list) and ch_list:
+                    return ch_list
+        except Exception as e:
+            print(f"⚠️ channels.json 로드 중 오류: {e}")
+    return DEFAULT_CHANNELS
+
+def save_channels(channels):
+    """channels.json 파일에 채널 목록 저장"""
+    try:
+        with open(CHANNELS_JSON_PATH, "w", encoding="utf-8") as f:
+            json.dump(channels, f, ensure_ascii=False, indent=2)
+    except Exception as e:
+        print(f"❌ channels.json 저장 실패: {e}")
 
 # =============================================================================
 # 2. 대표 여행지 키워드 사전 (120+ 주요 여행지 고정밀 좌표 매핑)
@@ -305,7 +263,6 @@ COUNTRY_FLAGS = {
     "🇵🇭": "필리핀", "🇲🇾": "말레이시아", "🇸🇬": "싱가포르", "🇩🇪": "독일"
 }
 
-DATA_JS_PATH = os.path.join(os.path.dirname(__file__), "js", "data.js")
 DATA_RECENT_PATH = os.path.join(os.path.dirname(__file__), "js", "data", "videos_recent.js")
 DATA_ARCHIVE_PATH = os.path.join(os.path.dirname(__file__), "js", "data", "videos_archive.js")
 
@@ -462,6 +419,7 @@ def fetch_channel_videos(channel_info):
                 # 구독자 수 실시간 검증 (5만 명 이상 기준)
                 subs = parse_subscriber_count(html)
                 if subs is not None:
+                    channel_info["subscribers"] = subs
                     if subs < MIN_SUBSCRIBER_COUNT:
                         print(f"      [!] ❌ 구독자 수 미달 ({subs:,}명 < {MIN_SUBSCRIBER_COUNT:,}명 기준) -> 채널 자동 제외")
                         return []
@@ -593,7 +551,7 @@ def fetch_channel_videos(channel_info):
 def load_existing_video_ids():
     """기존 데이터 파일들에서 이미 등록된 youtubeId 목록을 로드"""
     existing_ids = set()
-    for path in [DATA_RECENT_PATH, DATA_ARCHIVE_PATH, DATA_JS_PATH]:
+    for path in [DATA_RECENT_PATH, DATA_ARCHIVE_PATH]:
         if os.path.exists(path):
             with open(path, "r", encoding="utf-8") as f:
                 content = f.read()
@@ -799,19 +757,17 @@ def analyze_video_location(title, description, creator_name):
 
 def append_to_data_js(new_entries):
     """새로 발견된 여행 영상 목록을 videos_recent.js 파일 상단에 깔끔하게 추가"""
-    target_path = DATA_RECENT_PATH if os.path.exists(DATA_RECENT_PATH) else DATA_JS_PATH
+    target_path = DATA_RECENT_PATH
     if not new_entries or not os.path.exists(target_path):
         return
 
     with open(target_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # RECENT_VIDEOS 또는 INITIAL_TRAVEL_VIDEOS 배열 위치 찾기
+    # RECENT_VIDEOS 배열 위치 찾기
     insert_pos = content.find("const RECENT_VIDEOS = [")
     if insert_pos == -1:
-        insert_pos = content.find("const INITIAL_TRAVEL_VIDEOS = [")
-    if insert_pos == -1:
-        print(f"❌ {target_path} 파일에서 대상 배열을 찾을 수 없습니다.")
+        print(f"❌ {target_path} 파일에서 RECENT_VIDEOS 배열을 찾을 수 없습니다.")
         return
 
     bracket_pos = content.find("[", insert_pos) + 1
@@ -854,25 +810,370 @@ def append_to_data_js(new_entries):
     print(f"\n🎉 {file_basename} 파일에 총 {len(new_entries)}개의 최신 여행지가 성공적으로 추가되었습니다!")
 
 # =============================================================================
-# 4. 메인 실행 흐름
+# 4. 유튜버 실시간 검색 및 추가 워크플로우
+# =============================================================================
+def search_youtube_channel(query):
+    """
+    유튜브에서 유튜버 이름/핸들/URL을 검색하여 채널 정보 추출
+    반환: {"name": str, "handle": str, "channel_id": str} 또는 None
+    """
+    query = query.strip()
+    # 1. URL 형태인 경우
+    if "youtube.com/" in query:
+        m = re.search(r'youtube\.com/@([^/?&#\s]+)', query)
+        if m:
+            h = urllib.parse.unquote(m.group(1))
+            return {"name": h, "handle": h, "channel_id": ""}
+            
+    # 2. @핸들 형태인 경우
+    if query.startswith("@"):
+        h = query[1:]
+        return {"name": h, "handle": h, "channel_id": ""}
+
+    # 3. 유튜버 이름으로 채널 검색
+    url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}&sp=EgIQAg%3D%3D"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+    }
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=12, context=SAFE_SSL_CONTEXT) as r:
+            html = r.read().decode("utf-8", errors="ignore")
+
+        idx = html.find("var ytInitialData = ")
+        if idx == -1:
+            return None
+        end = html.find(";</script>", idx)
+        data = json.loads(html[idx + len("var ytInitialData = "):end])
+        contents = data.get("contents", {}).get("twoColumnSearchResultsRenderer", {}).get("primaryContents", {}).get("sectionListRenderer", {}).get("contents", [])
+        for sec in contents:
+            for it in sec.get("itemSectionRenderer", {}).get("contents", []):
+                cr = it.get("channelRenderer")
+                if cr:
+                    name = cr.get("title", {}).get("simpleText") or query
+                    channel_id = cr.get("channelId", "")
+                    nav = cr.get("navigationEndpoint", {}).get("commandMetadata", {}).get("webCommandMetadata", {}).get("url", "")
+                    raw_handle = nav.replace("/@", "").replace("/", "")
+                    handle = urllib.parse.unquote(raw_handle)
+                    return {"name": name, "handle": handle, "channel_id": channel_id}
+    except Exception as e:
+        print(f"⚠️ 채널 검색 중 오류 발생: {e}")
+
+    return None
+
+def add_channel_workflow(query, is_auto=False):
+    """
+    유튜버 이름을 입력받아:
+    1. 채널 자동 검색
+    2. 구독자 5만+ 실시간 검증
+    3. channels.json에 신규 등록
+    4. 최근 1년 여행 영상 즉시 수집 & 위치 추출 후 데이터 파일에 추가
+    """
+    print("=" * 70)
+    print(f"🔍 유튜버 추가 탐색: '{query}'")
+    print("=" * 70)
+
+    found = search_youtube_channel(query)
+    if not found:
+        print(f"❌ 유튜브에서 '{query}' 관련 채널을 찾을 수 없습니다.")
+        return False
+
+    print(f"   [+] 탐색된 채널: {found['name']} (@{found['handle']})")
+    
+    channels = load_channels()
+    existing_match = None
+    for ch in channels:
+        if ch.get("handle", "").lower() == found["handle"].lower() or (found.get("channel_id") and ch.get("channel_id") == found.get("channel_id")):
+            existing_match = ch
+            break
+
+    if existing_match:
+        print(f"   💡 이미 등록된 채널입니다: {existing_match['name']} (@{existing_match['handle']})")
+        target_channel = existing_match
+    else:
+        target_channel = found
+
+    print(f"\n📡 채널 페이지 접속 및 구독자 수 실시간 검증 중...")
+    videos = fetch_channel_videos(target_channel)
+
+    if not videos:
+        print(f"❌ 영상을 가져오지 못했거나 구독자 수 기준(5만+) 미달로 수집이 중단되었습니다.")
+        return False
+
+    # 신규 채널인 경우 channels.json에 영구 등록
+    if not existing_match:
+        channels.append({"name": target_channel["name"], "handle": target_channel["handle"]})
+        save_channels(channels)
+        print(f"🎉 '{target_channel['name']}' (@{target_channel['handle']}) 채널이 channels.json에 신규 등록되었습니다! (총 {len(channels)}개 채널)")
+
+    # 기존 등록 영상 중복 체크
+    existing_ids = load_existing_video_ids()
+    unregistered = [v for v in videos if v["youtube_id"] not in existing_ids and v.get("days_ago", 0) <= MAX_VIDEO_AGE_DAYS]
+
+    if not unregistered:
+        print(f"💡 최근 {MAX_VIDEO_AGE_DAYS}일(1년) 이내에 등록할 새로운 신규 영상이 없습니다.")
+        return True
+
+    print(f"\n✨ 미등록 최신 영상 {len(unregistered)}편에서 여행지 분석 중...")
+    new_spots = []
+    for v in unregistered:
+        spot_info = analyze_video_location(v["title"], v["description"], target_channel["name"])
+        if spot_info:
+            entry = {
+                "creator": target_channel["name"],
+                "youtubeId": v["youtube_id"],
+                "title": v["title"],
+                "country": spot_info["country"],
+                "city": spot_info["city"],
+                "locationName": spot_info["locationName"],
+                "lat": spot_info["lat"],
+                "lng": spot_info["lng"],
+                "tags": spot_info["tags"],
+                "tip": spot_info["tip"],
+                "publishedAt": v.get("published", "")
+            }
+            new_spots.append(entry)
+            print(f"      [+] 📍 {spot_info['country']} {spot_info['city']} ({v.get('published')}): {v['title'][:38]}...")
+
+    if not new_spots:
+        print("[-] 영상들에서 구체적인 여행지 키워드가 감지되지 않았습니다.")
+        return True
+
+    print(f"\n📊 총 {len(new_spots)}개의 여행지가 추출되었습니다.")
+    if not is_auto:
+        try:
+            ans = input("\n👉 지도 데이터(videos_recent.js)에 바로 반영할까요? (Y/n): ").strip().lower()
+            if ans not in ["y", "yes", ""]:
+                print("데이터 반영이 취소되었습니다. (channels.json에는 채널이 보존됩니다)")
+                return True
+        except EOFError:
+            pass
+
+    append_to_data_js(new_spots)
+    return True
+
+# =============================================================================
+# 5. 10만+ 유튜버 여행 브이로그 자동 발굴 (Discover)
+# =============================================================================
+def search_youtube_videos(query, max_results=20):
+    """
+    유튜브에서 검색어로 최신 영상 목록 검색
+    반환: [{"youtube_id": str, "title": str, "channel_name": str, "handle": str, "description": str}]
+    """
+    url = f"https://www.youtube.com/results?search_query={urllib.parse.quote(query)}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
+    }
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=12, context=SAFE_SSL_CONTEXT) as r:
+            html = r.read().decode("utf-8", errors="ignore")
+
+        idx = html.find("var ytInitialData = ")
+        if idx == -1:
+            return []
+        end = html.find(";</script>", idx)
+        data = json.loads(html[idx + len("var ytInitialData = "):end])
+        contents = data.get("contents", {}).get("twoColumnSearchResultsRenderer", {}).get("primaryContents", {}).get("sectionListRenderer", {}).get("contents", [])
+        
+        videos = []
+        for sec in contents:
+            for it in sec.get("itemSectionRenderer", {}).get("contents", []):
+                vr = it.get("videoRenderer")
+                if vr:
+                    vid = vr.get("videoId")
+                    title = vr.get("title", {}).get("runs", [{}])[0].get("text", "")
+                    owner_runs = vr.get("ownerText", {}).get("runs", [{}])
+                    owner_name = owner_runs[0].get("text", "") if owner_runs else ""
+                    nav = owner_runs[0].get("navigationEndpoint", {}).get("commandMetadata", {}).get("webCommandMetadata", {}).get("url", "") if owner_runs else ""
+                    raw_handle = nav.replace("/@", "").replace("/", "")
+                    handle = urllib.parse.unquote(raw_handle)
+                    
+                    snippet = ""
+                    for run in vr.get("detailedMetadataSnippets", [{}])[0].get("snippetText", {}).get("runs", []):
+                        snippet += run.get("text", "")
+
+                    if vid and title and handle:
+                        videos.append({
+                            "youtube_id": vid,
+                            "title": title,
+                            "channel_name": owner_name or handle,
+                            "handle": handle,
+                            "description": snippet or title
+                        })
+                    if len(videos) >= max_results:
+                        break
+            if len(videos) >= max_results:
+                break
+        return videos
+    except Exception as e:
+        print(f"⚠️ 영상 검색 중 오류 발생: {e}")
+        return []
+
+def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_videos=20):
+    """
+    키워드로 여행 브이로그를 검색하고:
+    1. 유튜버의 구독자가 10만 이상인지 실시간 검증
+    2. 10만 이상이면 여행지 위치/좌표 추출
+    3. channels.json에 신규 유튜버 자동 등록 및 지도 데이터(videos_recent.js)에 핀 추가
+    """
+    print("=" * 70)
+    print(f"🌍 10만+ 유튜버 여행 브이로그 자동 발굴 모드")
+    print(f"🔍 검색 키워드: '{query}'")
+    print(f"🎯 자격 조건: 채널 구독자 {DISCOVER_MIN_SUBSCRIBER_COUNT:,}명(10만+) 이상")
+    print("=" * 70)
+
+    videos = search_youtube_videos(query, max_results=max_videos)
+    if not videos:
+        print(f"❌ '{query}' 관련 영상을 찾지 못했습니다.")
+        return False
+
+    print(f"📡 총 {len(videos)}편의 후보 브이로그 영상 탐색 완료. 검증 시작...\n")
+
+    existing_ids = load_existing_video_ids()
+    channels = load_channels()
+    known_handles = {ch.get("handle", "").lower(): ch for ch in channels}
+    
+    channel_subs_cache = {}  # handle -> subs count
+    new_spots = []
+    new_channels_added = 0
+
+    for idx, v in enumerate(videos, 1):
+        vid = v["youtube_id"]
+        title = v["title"]
+        handle = v["handle"]
+        cname = v["channel_name"]
+
+        # 이미 등록된 영상인지 체크
+        if vid in existing_ids:
+            continue
+
+        print(f"[{idx:2d}/{len(videos)}] {cname} (@{handle})")
+        print(f"     영상: {title[:45]}...")
+
+        # 채널 구독자 수 확인 (10만 이상인지)
+        if handle in channel_subs_cache:
+            subs = channel_subs_cache[handle]
+        else:
+            time.sleep(0.3)
+            ch_url = f"https://www.youtube.com/@{handle}/videos"
+            headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+            req = urllib.request.Request(ch_url, headers=headers)
+            try:
+                with urllib.request.urlopen(req, timeout=10, context=SAFE_SSL_CONTEXT) as r:
+                    html = r.read().decode("utf-8", errors="ignore")
+                subs = parse_subscriber_count(html)
+            except Exception:
+                subs = None
+            channel_subs_cache[handle] = subs
+
+        if subs is None or subs < DISCOVER_MIN_SUBSCRIBER_COUNT:
+            subs_str = f"{subs:,}명" if subs else "미확인"
+            print(f"     [-] ❌ 구독자 10만 미달 ({subs_str} < {DISCOVER_MIN_SUBSCRIBER_COUNT:,}명) -> 제외")
+            continue
+
+        print(f"     [i] 👥 구독자 수: {subs:,}명 (✅ 10만+ 기준 통과!)")
+
+        # 여행지 위치 및 좌표 분석 (사전 매칭 -> Gemini AI 폴백)
+        spot_info = analyze_video_location(title, v["description"], cname)
+        if spot_info:
+            entry = {
+                "creator": cname,
+                "youtubeId": vid,
+                "title": title,
+                "country": spot_info["country"],
+                "city": spot_info["city"],
+                "locationName": spot_info["locationName"],
+                "lat": spot_info["lat"],
+                "lng": spot_info["lng"],
+                "tags": spot_info["tags"],
+                "tip": spot_info["tip"],
+                "publishedAt": datetime.now().strftime("%Y-%m-%d")
+            }
+            new_spots.append(entry)
+            existing_ids.add(vid)
+            print(f"     [+] 📍 여행지 식별 성공: {spot_info['country']} {spot_info['city']} ({spot_info['locationName']})")
+
+            # 신규 유튜버라면 channels.json에도 등록
+            if handle.lower() not in known_handles:
+                channels.append({"name": cname, "handle": handle})
+                known_handles[handle.lower()] = True
+                new_channels_added += 1
+                print(f"     🎉 '{cname}' 채널이 channels.json에 신규 유튜버로 등록되었습니다!")
+        else:
+            print(f"     [-] 명확한 여행지 정보 미감지 (일상/토크 등)")
+
+    print("\n" + "=" * 70)
+    print(f"📊 탐색 결과: 총 {len(new_spots)}개의 새로운 10만+ 유튜버 여행 핀 추출 완료")
+    if new_channels_added > 0:
+        print(f"👥 신규 발굴된 10만+ 유튜버: {new_channels_added}팀")
+    print("=" * 70)
+
+    if not new_spots:
+        print("💡 조건(10만+ 구독자 & 명확한 여행지)에 부합하는 새로운 영상이 없습니다.")
+        return True
+
+    if not is_auto:
+        try:
+            ans = input("\n👉 지도 데이터(videos_recent.js)에 바로 반영할까요? (Y/n): ").strip().lower()
+            if ans not in ["y", "yes", ""]:
+                print("데이터 반영이 취소되었습니다.")
+                return True
+        except EOFError:
+            pass
+
+    append_to_data_js(new_spots)
+    save_channels(channels)
+    return True
+
+# =============================================================================
+# 6. 메인 실행 흐름
 # =============================================================================
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="TubeMap Travel - 한국 대표 여행 유튜버 영상 자동 수집기")
+    parser.add_argument("--add", type=str, help="유튜버 이름 또는 @핸들을 입력하여 채널 등록 및 영상 수집")
+    parser.add_argument("--discover", type=str, nargs="?", const="해외여행 브이로그", help="10만 이상 유튜버의 여행 브이로그 영상 자동 발굴 (기본값: '해외여행 브이로그')")
+    parser.add_argument("--list", action="store_true", help="현재 등록된 모니터링 채널 목록 조회")
+    parser.add_argument("--auto", action="store_true", help="프롬프트 없이 자동으로 데이터 파일에 반영")
+    args = parser.parse_args()
+
+    channels = load_channels()
+
+    if args.list:
+        print("=" * 70)
+        print(f"📋 TubeMap 등록 모니터링 채널 목록 (총 {len(channels)}개)")
+        print("=" * 70)
+        for i, ch in enumerate(channels, 1):
+            print(f"  {i:2d}. {ch['name']} (@{ch.get('handle', '-')})")
+        return
+
+    if args.add:
+        add_channel_workflow(args.add, is_auto=args.auto)
+        return
+
+    if args.discover:
+        discover_travel_vlogs(args.discover, is_auto=args.auto)
+        return
+
     print("=" * 70)
-    print("📍 TubeMap Travel - 한국 대표 여행 유튜버 (13팀) 최신 영상 자동 수집기")
+    print(f"📍 TubeMap Travel - 한국 대표 여행 유튜버 ({len(channels)}팀) 최신 영상 자동 수집기")
     print(f"⏰ 실행 시각: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"📅 필터 기준: 최근 {MAX_VIDEO_AGE_DAYS}일(1년) 이내 최신 영상만 수집")
     print("=" * 70)
 
     existing_ids = load_existing_video_ids()
-    print(f"📦 현재 data.js에 등록된 여행 영상 수: {len(existing_ids)}편\n")
+    print(f"📦 현재 등록된 여행 영상 수: {len(existing_ids)}편\n")
 
     new_discovered_spots = []
 
-    for idx, ch in enumerate(CHANNELS, 1):
+    for idx, ch in enumerate(channels, 1):
         name = ch["name"]
         handle = ch["handle"]
 
-        print(f"📡 [{idx:2d}/{len(CHANNELS)}] {name} (@{handle}) 최신 영상 수집 중...")
+        print(f"📡 [{idx:2d}/{len(channels)}] {name} (@{handle}) 최신 영상 수집 중...")
         videos = fetch_channel_videos(ch)
         time.sleep(0.3)  # 정중한 요청 간격 준수
 
@@ -930,17 +1231,15 @@ def main():
         print("💡 새로 추가할 여행 영상이 없습니다. 지도가 이미 최신 상태입니다.")
         return
 
-    # CLI 인자 검사: --auto 여부
-    is_auto = "--auto" in sys.argv
-    if not is_auto:
-        print("\n아래 항목들을 data.js에 추가하시겠습니까?")
+    if not args.auto:
+        print("\n아래 항목들을 지도 데이터(videos_recent.js)에 추가하시겠습니까?")
         for idx, s in enumerate(new_discovered_spots[:10], 1):
             print(f"  {idx:2d}. [{s['creator']}] {s['country']} {s['city']} - {s['title'][:40]}...")
         if len(new_discovered_spots) > 10:
             print(f"  ... 외 {len(new_discovered_spots) - 10}개 추가")
         
         try:
-            answer = input("\n👉 data.js에 반영할까요? (Y/n): ").strip().lower()
+            answer = input("\n👉 지도 데이터에 반영할까요? (Y/n): ").strip().lower()
             if answer not in ["y", "yes", ""]:
                 print("작업이 취소되었습니다.")
                 return
