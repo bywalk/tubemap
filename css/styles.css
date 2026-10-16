@@ -776,10 +776,10 @@ body {
 
 .card-icon-btn {
   border: 1px solid var(--border);
-  background: #ffffff;
-  color: #64748b;
+  background: var(--card-bg, #ffffff);
+  color: var(--text-muted, #64748b);
   border-radius: 6px;
-  padding: 2px 6px;
+  padding: 3px 6px;
   font-size: 0.72rem;
   font-weight: 700;
   cursor: pointer;
@@ -787,11 +787,12 @@ body {
   align-items: center;
   gap: 2px;
   transition: all 0.15s ease;
+  outline: none;
 }
 
 .card-icon-btn:hover {
-  background: #f1f5f9;
-  color: #0f172a;
+  background: var(--bg-sub, #f1f5f9);
+  color: var(--text-main, #0f172a);
   border-color: #cbd5e1;
 }
 
@@ -1844,6 +1845,24 @@ body {
 
 [data-theme="dark"] .channel-name {
   color: #cbd5e1;
+}
+
+[data-theme="dark"] .card-icon-btn {
+  background: #161f30;
+  border-color: #27354f;
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .card-icon-btn:hover {
+  background: #223048;
+  color: #ffffff;
+  border-color: #3b4d6b;
+}
+
+[data-theme="dark"] .card-icon-btn.bookmarked {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: rgba(245, 158, 11, 0.35);
+  color: #fbbf24;
 }
 
 [data-theme="dark"] .video-card {
