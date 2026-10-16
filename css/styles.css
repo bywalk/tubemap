@@ -495,7 +495,6 @@ body {
 }
 
 .video-card:hover {
-  transform: translateY(-2px);
   border-color: #cbd5e1;
   box-shadow: var(--shadow-md);
 }
