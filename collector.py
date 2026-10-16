@@ -86,6 +86,15 @@ DESTINATION_DICTIONARY = {
     "전주": {"country": "대한민국", "city": "전주", "lat": 35.8242, "lng": 127.1480},
     "인천": {"country": "대한민국", "city": "인천", "lat": 37.4563, "lng": 126.7052},
     "서울": {"country": "대한민국", "city": "서울", "lat": 37.5665, "lng": 126.9780},
+    "거제도": {"country": "대한민국", "city": "거제", "lat": 34.8806, "lng": 128.6211},
+    "경산": {"country": "대한민국", "city": "경산", "lat": 35.8251, "lng": 128.7414},
+    "담양": {"country": "대한민국", "city": "담양", "lat": 35.3211, "lng": 126.9882},
+    "나주": {"country": "대한민국", "city": "나주", "lat": 35.0158, "lng": 126.7108},
+    "무안": {"country": "대한민국", "city": "무안", "lat": 34.9904, "lng": 126.4817},
+    "광양": {"country": "대한민국", "city": "광양", "lat": 34.9407, "lng": 127.6959},
+    "영주": {"country": "대한민국", "city": "영주", "lat": 36.8057, "lng": 128.6241},
+    "용인": {"country": "대한민국", "city": "용인", "lat": 37.2411, "lng": 127.1776},
+    "광주": {"country": "대한민국", "city": "광주", "lat": 35.1595, "lng": 126.8526},
 
     # --- 일본 ---
     "도쿄": {"country": "일본", "city": "도쿄", "lat": 35.6762, "lng": 139.6503},
@@ -96,12 +105,25 @@ DESTINATION_DICTIONARY = {
     "나고야": {"country": "일본", "city": "나고야", "lat": 35.1815, "lng": 136.9066},
     "오키나와": {"country": "일본", "city": "오키나와", "lat": 26.2124, "lng": 127.6809},
     "유후인": {"country": "일본", "city": "유후인", "lat": 33.2647, "lng": 131.3558},
+    "센다이": {"country": "일본", "city": "센다이", "lat": 38.2682, "lng": 140.8694},
+    "미야자키": {"country": "일본", "city": "미야자키", "lat": 31.9077, "lng": 131.4202},
+    "가고시마": {"country": "일본", "city": "가고시마", "lat": 31.5966, "lng": 130.5571},
+    "오비히로": {"country": "일본", "city": "오비히로", "lat": 42.9239, "lng": 143.1966},
+    "고토열도": {"country": "일본", "city": "나가사키 고토열도", "lat": 32.6953, "lng": 128.8419},
+    "스즈카": {"country": "일본", "city": "미에현 스즈카", "lat": 34.8431, "lng": 136.5407},
+    "기타큐슈": {"country": "일본", "city": "기타큐슈", "lat": 33.8835, "lng": 130.8752},
+    "오이타": {"country": "일본", "city": "오이타", "lat": 33.2382, "lng": 131.6126},
+    "왓카나이": {"country": "일본", "city": "왓카나이", "lat": 45.4156, "lng": 141.6731},
     "홋카이도": {"country": "일본", "city": "삿포로", "lat": 43.0618, "lng": 141.3545},
     "일본": {"country": "일본", "city": "도쿄", "lat": 35.6762, "lng": 139.6503},
 
     # --- 대만 / 홍콩 / 마카오 / 중국 ---
     "타이베이": {"country": "대만", "city": "타이베이", "lat": 25.0330, "lng": 121.5654},
     "가오슝": {"country": "대만", "city": "가오슝", "lat": 22.6273, "lng": 120.3014},
+    "타이난": {"country": "대만", "city": "타이난", "lat": 22.9997, "lng": 120.2270},
+    "지룽": {"country": "대만", "city": "지룽", "lat": 25.1276, "lng": 121.7392},
+    "금문도": {"country": "대만", "city": "진먼(금문도)", "lat": 24.4493, "lng": 118.3767},
+    "진먼": {"country": "대만", "city": "진먼(금문도)", "lat": 24.4493, "lng": 118.3767},
     "대만": {"country": "대만", "city": "타이베이", "lat": 25.0330, "lng": 121.5654},
     "홍콩": {"country": "홍콩", "city": "홍콩", "lat": 22.3193, "lng": 114.1694},
     "마카오": {"country": "마카오", "city": "마카오", "lat": 22.1987, "lng": 113.5439},
@@ -110,12 +132,19 @@ DESTINATION_DICTIONARY = {
     "상하이": {"country": "중국", "city": "상하이", "lat": 31.2304, "lng": 121.4737},
     "베이징": {"country": "중국", "city": "베이징", "lat": 39.9042, "lng": 116.4074},
     "칭다오": {"country": "중국", "city": "칭다오", "lat": 36.0671, "lng": 120.3826},
+    "웨이하이": {"country": "중국", "city": "웨이하이", "lat": 37.5131, "lng": 122.1204},
+    "청두": {"country": "중국", "city": "청두", "lat": 30.5728, "lng": 104.0668},
+    "사천": {"country": "중국", "city": "청두", "lat": 30.5728, "lng": 104.0668},
+    "이우": {"country": "중국", "city": "이우", "lat": 29.3069, "lng": 120.0750},
+    "중국": {"country": "중국", "city": "상하이", "lat": 31.2304, "lng": 121.4737},
 
     # --- 동남아시아 ---
     "방콕": {"country": "태국", "city": "방콕", "lat": 13.7563, "lng": 100.5018},
     "치앙마이": {"country": "태국", "city": "치앙마이", "lat": 18.7883, "lng": 98.9853},
     "푸켓": {"country": "태국", "city": "푸켓", "lat": 7.8804, "lng": 98.3923},
     "파타야": {"country": "태국", "city": "파타야", "lat": 12.9276, "lng": 100.8771},
+    "후아힌": {"country": "태국", "city": "후아힌", "lat": 12.5684, "lng": 99.9577},
+    "차암": {"country": "태국", "city": "차암·후아힌", "lat": 12.7997, "lng": 99.9669},
     "태국": {"country": "태국", "city": "방콕", "lat": 13.7563, "lng": 100.5018},
     "다낭": {"country": "베트남", "city": "다낭", "lat": 16.0544, "lng": 108.2022},
     "하노이": {"country": "베트남", "city": "하노이", "lat": 21.0285, "lng": 105.8542},
@@ -123,21 +152,30 @@ DESTINATION_DICTIONARY = {
     "나트랑": {"country": "베트남", "city": "나트랑", "lat": 12.2388, "lng": 109.1967},
     "푸꾸옥": {"country": "베트남", "city": "푸꾸옥", "lat": 10.2899, "lng": 103.9840},
     "달랏": {"country": "베트남", "city": "달랏", "lat": 11.9404, "lng": 108.4583},
+    "하롱베이": {"country": "베트남", "city": "하롱베이", "lat": 20.9101, "lng": 107.1839},
+    "하장": {"country": "베트남", "city": "하장", "lat": 22.8233, "lng": 104.9836},
+    "푸꾸이": {"country": "베트남", "city": "푸꾸이섬", "lat": 10.5206, "lng": 108.9383},
+    "판랑": {"country": "베트남", "city": "판랑탑짬", "lat": 11.5649, "lng": 108.9886},
     "베트남": {"country": "베트남", "city": "다낭", "lat": 16.0544, "lng": 108.2022},
     "방비엥": {"country": "라오스", "city": "방비엥", "lat": 18.9224, "lng": 102.4475},
     "루앙프라방": {"country": "라오스", "city": "루앙프라방", "lat": 19.8893, "lng": 102.1340},
     "비엔티안": {"country": "라오스", "city": "비엔티안", "lat": 17.9757, "lng": 102.6331},
     "라오스": {"country": "라오스", "city": "방비엥", "lat": 18.9224, "lng": 102.4475},
     "발리": {"country": "인도네시아", "city": "발리", "lat": -8.4095, "lng": 115.1889},
+    "라부안바조": {"country": "인도네시아", "city": "라부안바조", "lat": -8.4964, "lng": 119.8877},
+    "마나도": {"country": "인도네시아", "city": "마나도", "lat": 1.4748, "lng": 124.8421},
     "인도네시아": {"country": "인도네시아", "city": "발리", "lat": -8.4095, "lng": 115.1889},
     "세부": {"country": "필리핀", "city": "세부", "lat": 10.3157, "lng": 123.8854},
     "보라카이": {"country": "필리핀", "city": "보라카이", "lat": 11.9674, "lng": 121.9248},
     "마닐라": {"country": "필리핀", "city": "마닐라", "lat": 14.5995, "lng": 120.9842},
+    "시아르가오": {"country": "필리핀", "city": "시아르가오", "lat": 9.8482, "lng": 126.0458},
+    "보홀": {"country": "필리핀", "city": "보홀", "lat": 9.8500, "lng": 124.1435},
     "필리핀": {"country": "필리핀", "city": "세부", "lat": 10.3157, "lng": 123.8854},
     "싱가포르": {"country": "싱가포르", "city": "싱가포르", "lat": 1.3521, "lng": 103.8198},
     "쿠알라룸푸르": {"country": "말레이시아", "city": "쿠알라룸푸르", "lat": 3.1390, "lng": 101.6869},
     "코타키나발루": {"country": "말레이시아", "city": "코타키나발루", "lat": 5.9804, "lng": 116.0735},
     "말레이시아": {"country": "말레이시아", "city": "쿠알라룸푸르", "lat": 3.1390, "lng": 101.6869},
+    "브루나이": {"country": "브루나이", "city": "반다르스리브가완", "lat": 4.9031, "lng": 114.9398},
 
     # --- 남아시아 ---
     "바라나시": {"country": "인도", "city": "바라나시", "lat": 25.3176, "lng": 82.9739},
@@ -145,12 +183,16 @@ DESTINATION_DICTIONARY = {
     "델리": {"country": "인도", "city": "뉴델리", "lat": 28.6139, "lng": 77.2090},
     "뭄바이": {"country": "인도", "city": "뭄바이", "lat": 19.0760, "lng": 72.8777},
     "자이푸르": {"country": "인도", "city": "자이푸르", "lat": 26.9124, "lng": 75.7873},
+    "첸나이": {"country": "인도", "city": "첸나이", "lat": 13.0827, "lng": 80.2707},
+    "마두라이": {"country": "인도", "city": "마두라이", "lat": 9.9252, "lng": 78.1198},
+    "마이소르": {"country": "인도", "city": "마이소르", "lat": 12.2958, "lng": 76.6394},
     "인도": {"country": "인도", "city": "바라나시", "lat": 25.3176, "lng": 82.9739},
     "방글라데시": {"country": "방글라데시", "city": "다카", "lat": 23.8103, "lng": 90.4125},
     "다카": {"country": "방글라데시", "city": "다카", "lat": 23.8103, "lng": 90.4125},
     "카트만두": {"country": "네팔", "city": "카트만두", "lat": 27.7172, "lng": 85.3240},
     "네팔": {"country": "네팔", "city": "카트만두", "lat": 27.7172, "lng": 85.3240},
     "스리랑카": {"country": "스리랑카", "city": "콜롬보", "lat": 6.9271, "lng": 79.8612},
+    "몰디브": {"country": "몰디브", "city": "말레", "lat": 4.1755, "lng": 73.5093},
 
     # --- 중앙아시아 & 몽골 ---
     "타슈켄트": {"country": "우즈베키스탄", "city": "타슈켄트", "lat": 41.2995, "lng": 69.2401},
@@ -161,9 +203,11 @@ DESTINATION_DICTIONARY = {
     "아스타나": {"country": "카자흐스탄", "city": "아스타나", "lat": 51.1694, "lng": 71.4491},
     "카자흐스탄": {"country": "카자흐스탄", "city": "알마티", "lat": 43.2389, "lng": 76.8897},
     "비슈케크": {"country": "키르기스스탄", "city": "비슈케크", "lat": 42.8746, "lng": 74.5698},
+    "이식쿨": {"country": "키르기스스탄", "city": "이식쿨", "lat": 42.6500, "lng": 77.0833},
     "키르기스스탄": {"country": "키르기스스탄", "city": "비슈케크", "lat": 42.8746, "lng": 74.5698},
     "울란바토르": {"country": "몽골", "city": "울란바토르", "lat": 47.9212, "lng": 106.9186},
     "테를지": {"country": "몽골", "city": "울란바토르", "lat": 47.8864, "lng": 107.4258},
+    "홉스골": {"country": "몽골", "city": "홉스골", "lat": 51.0167, "lng": 100.5167},
     "몽골": {"country": "몽골", "city": "울란바토르", "lat": 47.9212, "lng": 106.9186},
 
     # --- 코카서스 ---
@@ -176,10 +220,11 @@ DESTINATION_DICTIONARY = {
     "예레반": {"country": "아르메니아", "city": "예레반", "lat": 40.1792, "lng": 44.4991},
     "아르메니아": {"country": "아르메니아", "city": "예레반", "lat": 40.1792, "lng": 44.4991},
 
-    # --- 중동 & 북아프리카 & 튀르키예 ---
+    # --- 중동 & 아프리카 & 튀르키예 ---
     "이스탄불": {"country": "튀르키예", "city": "이스탄불", "lat": 41.0082, "lng": 28.9784},
     "카파도키아": {"country": "튀르키예", "city": "카파도키아", "lat": 38.6431, "lng": 34.8289},
     "안탈리아": {"country": "튀르키예", "city": "안탈리아", "lat": 36.8969, "lng": 30.7133},
+    "알라니아": {"country": "튀르키예", "city": "알라니아", "lat": 36.5444, "lng": 31.9954},
     "튀르키예": {"country": "튀르키예", "city": "이스탄불", "lat": 41.0082, "lng": 28.9784},
     "터키": {"country": "튀르키예", "city": "이스탄불", "lat": 41.0082, "lng": 28.9784},
     "다합": {"country": "이집트", "city": "다합", "lat": 28.5097, "lng": 34.5136},
@@ -191,7 +236,15 @@ DESTINATION_DICTIONARY = {
     "카사블랑카": {"country": "모로코", "city": "카사블랑카", "lat": 33.5731, "lng": -7.5898},
     "모로코": {"country": "모로코", "city": "마라케시", "lat": 31.6295, "lng": -7.9811},
     "두바이": {"country": "아랍에미리트", "city": "두바이", "lat": 25.2048, "lng": 55.2708},
+    "알울라": {"country": "사우디아라비아", "city": "알울라", "lat": 26.6084, "lng": 37.9232},
+    "사우디아라비아": {"country": "사우디아라비아", "city": "리야드", "lat": 24.7136, "lng": 46.6753},
+    "요하네스버그": {"country": "남아프리카공화국", "city": "요하네스버그", "lat": -26.2041, "lng": 28.0473},
+    "케이프타운": {"country": "남아프리카공화국", "city": "케이프타운", "lat": -33.9249, "lng": 18.4241},
     "남아공": {"country": "남아프리카공화국", "city": "케이프타운", "lat": -33.9249, "lng": 18.4241},
+    "에티오피아": {"country": "에티오피아", "city": "아디스아바바", "lat": 9.0320, "lng": 38.7469},
+    "르완다": {"country": "르완다", "city": "키갈리", "lat": -1.9441, "lng": 30.0619},
+    "우간다": {"country": "우간다", "city": "캄팔라", "lat": 0.3476, "lng": 32.5825},
+    "카보베르데": {"country": "카보베르데", "city": "프라이아", "lat": 14.9330, "lng": -23.5133},
 
     # --- 유럽 ---
     "파리": {"country": "프랑스", "city": "파리", "lat": 48.8566, "lng": 2.3522},
@@ -203,16 +256,25 @@ DESTINATION_DICTIONARY = {
     "베네치아": {"country": "이탈리아", "city": "베네치아", "lat": 45.4408, "lng": 12.3155},
     "피렌체": {"country": "이탈리아", "city": "피렌체", "lat": 43.7696, "lng": 11.2558},
     "밀라노": {"country": "이탈리아", "city": "밀라노", "lat": 45.4642, "lng": 9.1900},
+    "나폴리": {"country": "이탈리아", "city": "나폴리", "lat": 40.8518, "lng": 14.2681},
+    "아말피": {"country": "이탈리아", "city": "아말피", "lat": 40.6340, "lng": 14.6027},
+    "포지타노": {"country": "이탈리아", "city": "포지타노", "lat": 40.6281, "lng": 14.4850},
+    "소렌토": {"country": "이탈리아", "city": "소렌토", "lat": 40.6263, "lng": 14.3758},
+    "벨라지오": {"country": "이탈리아", "city": "벨라지오", "lat": 45.9866, "lng": 9.2619},
     "이탈리아": {"country": "이탈리아", "city": "로마", "lat": 41.9028, "lng": 12.4964},
     "바르셀로나": {"country": "스페인", "city": "바르셀로나", "lat": 41.3851, "lng": 2.1734},
     "마드리드": {"country": "스페인", "city": "마드리드", "lat": 40.4168, "lng": -3.7038},
     "세비야": {"country": "스페인", "city": "세비야", "lat": 37.3891, "lng": -5.9845},
+    "산세바스티안": {"country": "스페인", "city": "산세바스티안", "lat": 43.3183, "lng": -1.9812},
     "스페인": {"country": "스페인", "city": "바르셀로나", "lat": 41.3851, "lng": 2.1734},
     "인터라켄": {"country": "스위스", "city": "인터라켄", "lat": 46.6863, "lng": 7.8632},
     "취리히": {"country": "스위스", "city": "취리히", "lat": 47.3769, "lng": 8.5417},
     "제네바": {"country": "스위스", "city": "제네바", "lat": 46.2044, "lng": 6.1432},
     "스위스": {"country": "스위스", "city": "인터라켄", "lat": 46.6863, "lng": 7.8632},
+    "파두츠": {"country": "리히텐슈타인", "city": "파두츠", "lat": 47.1410, "lng": 9.5209},
+    "리히텐슈타인": {"country": "리히텐슈타인", "city": "파두츠", "lat": 47.1410, "lng": 9.5209},
     "암스테르담": {"country": "네덜란드", "city": "암스테르담", "lat": 52.3676, "lng": 4.9041},
+    "헤이그": {"country": "네덜란드", "city": "헤이그", "lat": 52.0705, "lng": 4.3007},
     "네덜란드": {"country": "네덜란드", "city": "암스테르담", "lat": 52.3676, "lng": 4.9041},
     "룩셈부르크": {"country": "룩셈부르크", "city": "룩셈부르크", "lat": 49.6116, "lng": 6.1319},
     "더블린": {"country": "아일랜드", "city": "더블린", "lat": 53.3498, "lng": -6.2603},
@@ -231,26 +293,38 @@ DESTINATION_DICTIONARY = {
     "포르투": {"country": "포르투갈", "city": "포르투", "lat": 41.1579, "lng": -8.6291},
     "리스본": {"country": "포르투갈", "city": "리스본", "lat": 38.7223, "lng": -9.1393},
     "포르투갈": {"country": "포르투갈", "city": "리스본", "lat": 38.7223, "lng": -9.1393},
-    "지중해": {"country": "남유럽", "city": "지중해", "lat": 35.0, "lng": 18.0},
 
     # --- 아메리카 & 오세아니아 ---
     "뉴욕": {"country": "미국", "city": "뉴욕", "lat": 40.7128, "lng": -74.0060},
     "로스앤젤레스": {"country": "미국", "city": "로스앤젤레스", "lat": 34.0522, "lng": -118.2437},
+    "LA": {"country": "미국", "city": "로스앤젤레스", "lat": 34.0522, "lng": -118.2437},
+    "산타모니카": {"country": "미국", "city": "로스앤젤레스", "lat": 34.0195, "lng": -118.4912},
     "마이애미": {"country": "미국", "city": "마이애미", "lat": 25.7617, "lng": -80.1918},
     "하와이": {"country": "미국", "city": "하와이", "lat": 21.3069, "lng": -157.8583},
     "라스베이거스": {"country": "미국", "city": "라스베이거스", "lat": 36.1699, "lng": -115.1398},
     "샌프란시스코": {"country": "미국", "city": "샌프란시스코", "lat": 37.7749, "lng": -122.4194},
+    "미국": {"country": "미국", "city": "뉴욕", "lat": 40.7128, "lng": -74.0060},
+    "몬테레이": {"country": "멕시코", "city": "몬테레이", "lat": 25.6866, "lng": -100.3161},
+    "과달라하라": {"country": "멕시코", "city": "과달라하라", "lat": 20.6597, "lng": -103.3496},
+    "멕시코시티": {"country": "멕시코", "city": "멕시코시티", "lat": 19.4326, "lng": -99.1332},
+    "멕시코": {"country": "멕시코", "city": "멕시코시티", "lat": 19.4326, "lng": -99.1332},
     "시드니": {"country": "호주", "city": "시드니", "lat": -33.8688, "lng": 151.2093},
     "멜버른": {"country": "호주", "city": "멜버른", "lat": -37.8136, "lng": 144.9631},
     "호주": {"country": "호주", "city": "시드니", "lat": -33.8688, "lng": 151.2093},
     "부에노스아이레스": {"country": "아르헨티나", "city": "부에노스아이레스", "lat": -34.6037, "lng": -58.3816},
-    "파타고니아": {"country": "아르헨티나", "city": "파타고니아", "lat": -50.0, "lng": -70.0},
+    "파타고니아": {"country": "아르헨티나", "city": "파타고니아", "lat": -50.3379, "lng": -72.2648},
     "아르헨티나": {"country": "아르헨티나", "city": "부에노스아이레스", "lat": -34.6037, "lng": -58.3816},
     "리우데자네이루": {"country": "브라질", "city": "리우데자네이루", "lat": -22.9068, "lng": -43.1729},
     "브라질": {"country": "브라질", "city": "리우데자네이루", "lat": -22.9068, "lng": -43.1729},
     "리마": {"country": "페루", "city": "리마", "lat": -12.0464, "lng": -77.0428},
     "쿠스코": {"country": "페루", "city": "쿠스코", "lat": -13.5319, "lng": -71.9675},
-    "페루": {"country": "페루", "city": "리마", "lat": -12.0464, "lng": -77.0428}
+    "와카치나": {"country": "페루", "city": "와카치나", "lat": -14.0875, "lng": -75.7626},
+    "페루": {"country": "페루", "city": "리마", "lat": -12.0464, "lng": -77.0428},
+    "우유니": {"country": "볼리비아", "city": "우유니", "lat": -20.4604, "lng": -66.8261},
+    "볼리비아": {"country": "볼리비아", "city": "우유니", "lat": -20.4604, "lng": -66.8261},
+    "칠레": {"country": "칠레", "city": "산티아고", "lat": -33.4489, "lng": -70.6693},
+    "카르타헤나": {"country": "콜롬비아", "city": "카르타헤나", "lat": 10.3910, "lng": -75.4794},
+    "콜롬비아": {"country": "콜롬비아", "city": "보고타", "lat": 4.7110, "lng": -74.0721}
 }
 
 COUNTRY_FLAGS = {
@@ -260,7 +334,8 @@ COUNTRY_FLAGS = {
     "🇱🇺": "룩셈부르크", "🇦🇷": "아르헨티나", "🇫🇮": "핀란드", "🇺🇸": "미국",
     "🇬🇧": "영국", "🇫🇷": "프랑스", "🇪🇸": "스페인", "🇲🇳": "몽골",
     "🇪🇬": "이집트", "🇮🇳": "인도", "🇬🇪": "조지아", "🇺🇿": "우즈베키스탄",
-    "🇵🇭": "필리핀", "🇲🇾": "말레이시아", "🇸🇬": "싱가포르", "🇩🇪": "독일"
+    "🇵🇭": "필리핀", "🇲🇾": "말레이시아", "🇸🇬": "싱가포르", "🇩🇪": "독일",
+    "🇧🇴": "볼리비아", "🇨🇱": "칠레", "🇨🇴": "콜롬비아", "🇲🇽": "멕시코", "🇵🇪": "페루"
 }
 
 DATA_RECENT_PATH = os.path.join(os.path.dirname(__file__), "js", "data", "videos_recent.js")
@@ -660,93 +735,116 @@ def extract_with_gemini_api(title, description, creator_name):
 def analyze_video_location(title, description, creator_name):
     """
     영상 제목 및 설명에서 여행 국가, 도시, 스팟명, 좌표, 꿀팁, 태그 추출
-    - 정밀 키워드 사전 (DESTINATION_DICTIONARY)
-    - 국가 깃발 이모지 (COUNTRY_FLAGS)
-    - 제목 대괄호/말머리 패턴 ([...], 【...】) 자동 파싱
+    - 비여행 영상(기내 좌석/기내식 리뷰, 홈메이드 요리, 단순 일상) 자동 제외
+    - 부정어('교토 아님'), 오매칭 단어('비즈니스' -> 니스, '남아공전' -> 남아공) 사전 제거
+    - 구체 도시 키워드 우선 매칭 후 광역 국가 키워드 폴백
     """
-    full_text = f"{title} {description}"
+    # 0. 비여행 영상 필터링 (항공 좌석 리뷰, 홈쿠킹, 자취 일상 등)
+    non_travel_patterns = [
+        r'기내식\s*최대',
+        r'비즈니스석.*탑승',
+        r'비즈니스\s*탑승기',
+        r'일등석.*탑승',
+        r'홈메이드',
+        r'출국.*노쇼',
+        r'월세체험',
+        r'자취생활',
+        r'집\s*정리'
+    ]
+    for pat in non_travel_patterns:
+        if re.search(pat, title):
+            return None
 
-    # 1. 길이 역순 정렬된 정밀 사전 키워드 매칭
-    sorted_keywords = sorted(DESTINATION_DICTIONARY.keys(), key=lambda k: len(k), reverse=True)
-    for kw in sorted_keywords:
-        if kw in full_text:
-            spot_data = DESTINATION_DICTIONARY[kw]
-            country = spot_data["country"]
-            city = spot_data["city"]
-            location_name = f"{city} {kw}" if kw != city and kw != country else f"{city} 주요 명소"
+    def sanitize_location_text(text):
+        cleaned = text or ""
+        # 오매칭 유발 부분 문자열 및 비유/부정 표현 제거
+        cleaned = re.sub(r'비즈니스(?:석|클래스)?', ' ', cleaned)
+        cleaned = re.sub(r'[가-힣A-Za-z]+\s*(?:아님|아닌|말고|다음으로|못지않은)', ' ', cleaned)
+        cleaned = re.sub(r'[가-힣A-Za-z]+의\s*[가-힣A-Za-z]+', lambda m: m.group(0).split('의')[0], cleaned)
+        cleaned = re.sub(r'(?:남아공|체코|일본|중국|브라질|멕시코)전', ' ', cleaned)
+        cleaned = re.sub(r'(?:일본|브라질|러시아|미국|한국|대만)\s*(?:여사친|남사친|여자|남자|친구|관광객)', ' ', cleaned)
+        cleaned = re.sub(r'(?:일본인|한국인|중국인|미국인|외국인)', ' ', cleaned)
+        return cleaned
 
-            tip_templates = {
-                "빠니보틀": f"빠니보틀이 방문한 {city} 현지 로컬 추천 코스입니다.",
-                "곽튜브": f"곽튜브가 강력 추천한 {city} 가성비 맛집 & 명소입니다.",
-                "원지의 하루": f"원지가 경험한 {city} 소소하고 아늑한 힐링 스팟입니다.",
-                "채코제": f"채코제가 소개한 {city} 현지 분위기 가득한 로컬 스팟입니다.",
-                "여행가 제이": f"여행가 제이의 실전 노하우가 담긴 {city} 여행지입니다.",
-                "잰잰바리": f"잰잰바리가 만난 {city}의 따뜻하고 정겨운 여행지입니다.",
-                "노마드션": f"노마드션의 로드트립 추천 {city} 여행 코스입니다.",
-                "캡틴따거": f"캡틴따거가 전하는 {city}의 역사와 숨은 이야기 명소입니다.",
-                "캐럿맨 여행기": f"캐럿맨의 생생한 모험이 담긴 {city} 추천 스팟입니다.",
-                "희철리즘": f"희철리즘이 인터뷰한 {city} 현지인들의 진짜 삶의 현장입니다.",
-                "또떠남": f"또떠남의 프리미엄 호텔 & 최적 동선 가이드 추천 스팟입니다.",
-                "쏘이 The World": f"쏘이가 경험한 {city} 안전하고 매력적인 추천 여행지입니다.",
-                "초마드": f"초마드가 소개한 {city} 럭셔리 호캉스 & 핫플레이스입니다."
-            }
-            tip = tip_templates.get(creator_name, f"{creator_name}의 {city} 여행 영상 추천 스팟입니다.")
+    clean_title = sanitize_location_text(title)
+    clean_full = sanitize_location_text(f"{title} {description}")
 
-            return {
-                "country": country,
-                "city": city,
-                "locationName": location_name,
-                "lat": spot_data["lat"],
-                "lng": spot_data["lng"],
-                "tags": [city, country, "유튜브추천", "여행"],
-                "tip": tip
-            }
+    tip_templates = {
+        "빠니보틀": lambda city: f"빠니보틀이 방문한 {city} 현지 로컬 추천 코스입니다.",
+        "곽튜브": lambda city: f"곽튜브가 강력 추천한 {city} 가성비 맛집 & 명소입니다.",
+        "원지의 하루": lambda city: f"원지가 경험한 {city} 소소하고 아늑한 힐링 스팟입니다.",
+        "채코제": lambda city: f"채코제가 소개한 {city} 현지 분위기 가득한 로컬 스팟입니다.",
+        "여행가 제이": lambda city: f"여행가 제이의 실전 노하우가 담긴 {city} 여행지입니다.",
+        "잰잰바리": lambda city: f"잰잰바리가 만난 {city}의 따뜻하고 정겨운 여행지입니다.",
+        "노마드션": lambda city: f"노마드션의 로드트립 추천 {city} 여행 코스입니다.",
+        "캡틴따거": lambda city: f"캡틴따거가 전하는 {city}의 역사와 숨은 이야기 명소입니다.",
+        "캐럿맨 여행기": lambda city: f"캐럿맨의 생생한 모험이 담긴 {city} 추천 스팟입니다.",
+        "희철리즘": lambda city: f"희철리즘이 인터뷰한 {city} 현지인들의 진짜 삶의 현장입니다.",
+        "또떠남": lambda city: f"또떠남의 프리미엄 호텔 & 최적 동선 가이드 추천 스팟입니다.",
+        "쏘이 The World": lambda city: f"쏘이가 경험한 {city} 안전하고 매력적인 추천 여행지입니다.",
+        "초마드": lambda city: f"초마드가 소개한 {city} 럭셔리 호캉스 & 핫플레이스입니다."
+    }
+
+    def match_keyword(kw, target_text):
+        # 영문 약어(예: LA)는 단어 경계 확인
+        if re.match(r'^[A-Za-z]+$', kw):
+            return bool(re.search(rf'(?<![A-Za-z]){re.escape(kw)}(?![A-Za-z])', target_text))
+        return kw in target_text
+
+    def build_result(kw, spot_data):
+        country = spot_data["country"]
+        city = spot_data["city"]
+        location_name = f"{city} {kw}" if kw != city and kw != country else f"{city} 주요 명소"
+        tip_fn = tip_templates.get(creator_name)
+        tip = tip_fn(city) if tip_fn else f"{creator_name}의 {city} 여행 영상 추천 스팟입니다."
+        return {
+            "country": country,
+            "city": city,
+            "locationName": location_name,
+            "lat": spot_data["lat"],
+            "lng": spot_data["lng"],
+            "tags": [city, country, "유튜브추천", "여행"],
+            "tip": tip
+        }
+
+    # 1. 구체 도시/명소 키워드 우선 매칭 (국가 대표 폴백 키워드보다 먼저 검사)
+    city_keywords = sorted(
+        [k for k, v in DESTINATION_DICTIONARY.items() if k != v["country"]],
+        key=lambda k: len(k),
+        reverse=True
+    )
+    country_keywords = sorted(
+        [k for k, v in DESTINATION_DICTIONARY.items() if k == v["country"]],
+        key=lambda k: len(k),
+        reverse=True
+    )
+
+    # 1-A. 제목에서 구체 도시 우선 탐색 -> 본문 전체에서 구체 도시 탐색
+    for target in (clean_title, clean_full):
+        for kw in city_keywords:
+            if match_keyword(kw, target):
+                return build_result(kw, DESTINATION_DICTIONARY[kw])
+
+    # 1-B. 제목/본문에서 국가명 키워드 탐색
+    for target in (clean_title, clean_full):
+        for kw in country_keywords:
+            if match_keyword(kw, target):
+                return build_result(kw, DESTINATION_DICTIONARY[kw])
 
     # 2. 제목 내 국가 국기 이모지 파싱
     for flag, country in COUNTRY_FLAGS.items():
         if flag in title:
-            # 해당 국가의 대표 도시 확인
             for kw, spot_data in DESTINATION_DICTIONARY.items():
                 if spot_data["country"] == country:
-                    return {
-                        "country": country,
-                        "city": spot_data["city"],
-                        "locationName": f"{country} {spot_data['city']}",
-                        "lat": spot_data["lat"],
-                        "lng": spot_data["lng"],
-                        "tags": [spot_data["city"], country, "여행"],
-                        "tip": f"{creator_name}의 {country} 여행기 추천 명소."
-                    }
+                    return build_result(kw, spot_data)
 
-    # 3. 괄호 안의 후보명 추출 및 지오코딩 시도 (예: 【방글라데시2】 -> 방글라데시)
-    bracket_match = re.search(r'\[(.*?)\]|【(.*?)】|\((.*?)\)', title)
+    # 3. 대괄호/말머리 패턴 ([...], 【...】)에서 사전 등록 지명 매칭
+    bracket_match = re.search(r'\[(.*?)\]|【(.*?)】', title)
     if bracket_match:
         raw_candidate = next(c for c in bracket_match.groups() if c)
-        clean_candidate = re.sub(r'[\d_#\s下上]+$', '', raw_candidate).strip()
+        clean_candidate = re.sub(r'[\d_#\s下上편탄]+$', '', raw_candidate).strip()
         if clean_candidate in DESTINATION_DICTIONARY:
-            spot_data = DESTINATION_DICTIONARY[clean_candidate]
-            return {
-                "country": spot_data["country"],
-                "city": spot_data["city"],
-                "locationName": f"{spot_data['city']} ({clean_candidate})",
-                "lat": spot_data["lat"],
-                "lng": spot_data["lng"],
-                "tags": [spot_data["city"], spot_data["country"], "여행"],
-                "tip": f"{creator_name}의 추천 여행 스팟."
-            }
-        
-        # 외부 지오코딩 시도
-        lat, lng = geocode_location(clean_candidate)
-        if lat and lng:
-            return {
-                "country": "해외",
-                "city": clean_candidate,
-                "locationName": clean_candidate,
-                "lat": lat,
-                "lng": lng,
-                "tags": [clean_candidate, "여행"],
-                "tip": f"{creator_name}의 추천 여행 스팟."
-            }
+            return build_result(clean_candidate, DESTINATION_DICTIONARY[clean_candidate])
 
     # 4. 사전 매칭 실패 시: Gemini LLM Fallback (AI 기반 위치 및 위경도 추출)
     gemini_result = extract_with_gemini_api(title, description, creator_name)

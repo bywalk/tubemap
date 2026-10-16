@@ -1,0 +1,56 @@
+name: 📍 여행지 위치 수정 / 신규 유튜브 제보
+description: 실제 영상 속 정확한 장소 좌표 수정 또는 새로운 여행 유튜브 영상을 제보합니다.
+title: "[제보] "
+labels: ["spot-contribution"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🌏 TubeMap 공식 지도 기여에 감사드립니다!
+        제보해주신 데이터는 GitHub Actions의 AI 팩트체크 시스템을 거쳐 공식 지도에 신속히 반영됩니다.
+  - type: input
+    id: youtube_url
+    attributes:
+      label: 1. 유튜브 영상 URL 또는 영상 ID
+      placeholder: "https://www.youtube.com/watch?v=... 또는 uaBHe5P4JF8"
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: 2. 유튜버 크리에이터명
+      placeholder: "예: 빠니보틀, 곽튜브, 원지의 하루"
+    validations:
+      required: true
+  - type: input
+    id: location_name
+    attributes:
+      label: 3. 정확한 여행지 / 맛집 / 명소 이름
+      placeholder: "예: 이집트 다합 라이트하우스 해변, 튀르키예 안탈리아 칼레이치 구시가지"
+    validations:
+      required: true
+  - type: input
+    id: coordinates
+    attributes:
+      label: 4. 위도 및 경도 좌표 (구글맵 또는 TubeMap 지도 선택값)
+      placeholder: "예: 28.5097, 34.5136"
+    validations:
+      required: true
+  - type: textarea
+    id: tip
+    attributes:
+      label: 5. 유튜버 꿀팁 / 추천 포인트
+      placeholder: "영상에서 언급된 예약 팁, 추천 메뉴, 주의사항 등"
+  - type: textarea
+    id: reason
+    attributes:
+      label: 6. 수정 또는 추가 사유
+      placeholder: "예: 기존에는 다낭으로 되어 있으나 실제 영상 12분 30초에서 방문한 곳은 푸꾸이섬 항구입니다."
+    validations:
+      required: true
+  - type: textarea
+    id: json_data
+    attributes:
+      label: 7. TubeMap 생성 데이터 코드 (선택사항)
+      description: "TubeMap 웹에서 '공식 지도에 제보' 클릭 시 자동 복사된 코드가 있다면 붙여넣어 주세요."
+      render: javascript
