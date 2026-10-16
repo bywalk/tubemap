@@ -52,7 +52,6 @@ function renderFilteredList() {
         ${video.tip ? `<div class="card-tip-snippet"><span class="material-symbols-rounded icon-xs" style="vertical-align: -2px;">lightbulb</span> ${video.tip}</div>` : ''}
         <div class="video-card-meta">
           <span class="channel-name"><span class="material-symbols-rounded icon-xs filled" style="vertical-align: -2px; color: var(--accent);">location_on</span> ${video.country || ''} · ${video.locationName}</span>
-          <span style="font-size: 0.72rem; color: #64748b; display: inline-flex; align-items: center; gap: 2px;"><span class="material-symbols-rounded" style="font-size: 13px;">calendar_today</span> ${video.publishedAt || '1년 이내'}</span>
         </div>
         ${video.tags && video.tags.length > 0 ? `
           <div class="video-tags">
@@ -129,6 +128,17 @@ function openVideoModal(videoId, startTime = 0) {
   title.textContent = video.title;
   locationTag.innerHTML = `<span class="material-symbols-rounded icon-sm filled">location_on</span> ${video.country || ''} ${video.city || ''} · ${video.locationName}`;
   creatorBadge.innerHTML = `<span class="material-symbols-rounded icon-sm" style="vertical-align: -3px;">person</span> ${video.creator || video.channel}`;
+  
+  const dateBadge = document.getElementById('modalDateBadge');
+  if (dateBadge) {
+    if (video.publishedAt) {
+      dateBadge.innerHTML = `<span class="material-symbols-rounded icon-xs" style="vertical-align: -2px;">calendar_today</span> ${video.publishedAt}`;
+      dateBadge.style.display = 'inline-flex';
+    } else {
+      dateBadge.style.display = 'none';
+    }
+  }
+
   updateModalBookmarkBtn(video);
 
   if (video.tip) {

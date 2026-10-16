@@ -1015,13 +1015,32 @@ body {
   font-weight: 700;
 }
 
+.modal-meta-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .creator-badge {
   font-size: 0.85rem;
   font-weight: 800;
-  color: #0f172a;
-  background: #f1f5f9;
+  color: var(--text-main);
+  background: var(--bg-sub);
   padding: 4px 12px;
   border-radius: var(--radius-full);
+}
+
+.modal-date-badge {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: var(--bg-sub);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 /* YouTuber Tip Box */
