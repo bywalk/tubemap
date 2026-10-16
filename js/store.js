@@ -24,8 +24,45 @@ const INITIAL_TRAVEL_VIDEOS = [
 
 const STORAGE_KEY = 'tubemap_travel_videos_k_creators_v3';
 const DELETED_IDS_KEY = 'tubemap_deleted_video_ids_v1';
+const THEME_KEY = 'tubemap_theme';
 let travelVideos = [];
 let deletedVideoIds = new Set();
+let currentTheme = 'light';
+
+function initTheme() {
+  const saved = localStorage.getItem(THEME_KEY);
+  if (saved === 'dark' || saved === 'light') {
+    currentTheme = saved;
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    currentTheme = 'dark';
+  } else {
+    currentTheme = 'light';
+  }
+  applyTheme(currentTheme, false);
+}
+
+function applyTheme(theme, save = true) {
+  currentTheme = theme;
+  document.documentElement.setAttribute('data-theme', theme);
+  const icon = document.getElementById('themeToggleIcon');
+  if (icon) {
+    icon.textContent = theme === 'dark' ? 'light_mode' : 'dark_mode';
+  }
+  if (save) {
+    localStorage.setItem(THEME_KEY, theme);
+  }
+  if (typeof setMapTheme === 'function') {
+    setMapTheme(theme === 'dark');
+  }
+}
+
+function toggleTheme() {
+  const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  applyTheme(nextTheme, true);
+  if (typeof showToast === 'function') {
+    showToast(nextTheme === 'dark' ? '다크 모드가 적용되었습니다.' : '라이트 모드가 적용되었습니다.', nextTheme === 'dark' ? 'dark_mode' : 'light_mode');
+  }
+}
 
 function isCustomVideo(v) {
   return Boolean(v && v.id && String(v.id).startsWith('custom-'));

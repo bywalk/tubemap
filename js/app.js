@@ -4,6 +4,7 @@
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
+  initTheme();
   loadInitialData();
   initMap();
   renderCreatorChips();
@@ -15,6 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Event Listeners
 function initEventListeners() {
+  // Theme Toggle Button (Dark / Light Mode)
+  const themeToggleBtn = document.getElementById('themeToggleBtn');
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', toggleTheme);
+  }
+
   // Search Inputs (Desktop header & Sidebar sync)
   const searchInput = document.getElementById('searchInput');
   const sidebarSearchInput = document.getElementById('sidebarSearchInput');
