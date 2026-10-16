@@ -419,28 +419,42 @@ body {
 }
 
 .chip {
-  padding: 5px 12px;
+  padding: 6px 13px;
   border-radius: var(--radius-full);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
   font-weight: 600;
   background: #f1f5f9;
-  color: var(--text-muted);
-  border: 1px solid transparent;
+  color: #475569;
+  border: 1px solid #e2e8f0;
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  outline: none;
 }
 
 .chip:hover {
   background: #e2e8f0;
-  color: var(--text-main);
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+.chip:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .chip.active {
   background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.25);
+}
+
+.chip.active:hover {
+  background: #1e293b;
   color: #ffffff;
 }
 
@@ -1774,21 +1788,35 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-[data-theme="dark"] .filter-chip {
+[data-theme="dark"] .chip {
   background: #161f30;
-  color: #cbd5e1;
+  color: #94a3b8;
   border-color: #27354f;
 }
 
-[data-theme="dark"] .filter-chip:hover {
+[data-theme="dark"] .chip:hover,
+[data-theme="dark"] .chip:focus {
   background: #223048;
   color: #ffffff;
+  border-color: #3b4d6b;
 }
 
-[data-theme="dark"] .filter-chip.active {
+[data-theme="dark"] .chip:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .chip.active {
   background: var(--primary);
   color: #ffffff;
   border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(255, 59, 48, 0.4);
+}
+
+[data-theme="dark"] .chip.active:hover,
+[data-theme="dark"] .chip.active:focus {
+  background: var(--primary-hover);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .region-item {
@@ -1797,13 +1825,25 @@ body {
   color: #f8fafc;
 }
 
-[data-theme="dark"] .region-item:hover {
+[data-theme="dark"] .region-item:hover,
+[data-theme="dark"] .region-item:focus {
   background: #223048;
+  color: #ffffff;
 }
 
 [data-theme="dark"] .region-count {
   background: #0b1120;
   color: #94a3b8;
+}
+
+[data-theme="dark"] .video-creator-pill {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+[data-theme="dark"] .channel-name {
+  color: #cbd5e1;
 }
 
 [data-theme="dark"] .video-card {
