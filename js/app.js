@@ -123,22 +123,11 @@ function initEventListeners() {
     if (allChip) allChip.click();
   });
 
-  // Mobile Menu & Drawer Controls
-  const mobileToggle = document.getElementById('mobileMenuToggle');
+  // Mobile Drawer & Controls
   const closeSidebarBtn = document.getElementById('closeSidebarBtn');
   const sidebarBackdrop = document.getElementById('sidebarBackdrop');
   const floatingListBtn = document.getElementById('floatingListBtn');
   const sidebar = document.getElementById('sidebar');
-
-  if (mobileToggle) {
-    mobileToggle.addEventListener('click', () => {
-      if (sidebar && sidebar.classList.contains('open')) {
-        closeSidebar();
-      } else {
-        openSidebar();
-      }
-    });
-  }
 
   if (floatingListBtn) {
     floatingListBtn.addEventListener('click', openSidebar);

@@ -261,10 +261,6 @@ body {
   display: inline-flex;
 }
 
-.mobile-menu-btn {
-  display: none;
-}
-
 /* ================= App Layout ================= */
 .app-container {
   display: flex;
@@ -1379,16 +1375,6 @@ body {
     font-size: 0.85rem;
     justify-content: center;
     border-radius: var(--radius-sm);
-  }
-
-  .mobile-menu-btn {
-    display: inline-flex;
-    width: 34px;
-    height: 34px;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.15rem;
   }
 
   /* App Layout on Mobile */
