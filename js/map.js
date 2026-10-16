@@ -16,11 +16,11 @@ function initMap() {
   // Zoom control at top-right
   L.control.zoom({ position: 'topright' }).addTo(map);
 
-  // Free Tile Layers (No API key needed)
-  const cartoDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', {
+  // Free Tile Layers (No API key needed, no watermarks)
+  const esriDark = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
     maxZoom: 19,
-    subdomains: 'abcd',
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'
+    maxNativeZoom: 16,
+    attribution: 'Tiles &copy; Esri'
   });
 
   const esriGray = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
@@ -39,18 +39,18 @@ function initMap() {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
   });
 
-  window.baseLayers = { esriGray, cartoDark, esriTopo, osmLayer };
+  window.baseLayers = { esriGray, esriDark, esriTopo, osmLayer };
 
   // Set default tile according to currentTheme
   if (typeof currentTheme !== 'undefined' && currentTheme === 'dark') {
-    cartoDark.addTo(map);
+    esriDark.addTo(map);
   } else {
     esriGray.addTo(map);
   }
 
   L.control.layers({
     "심플한 지도 (기본)": esriGray,
-    "다크 지도 (Dark)": cartoDark,
+    "다크 지도 (Dark)": esriDark,
     "여행 지도 (지형)": esriTopo,
     "오픈스트리트맵": osmLayer
   }, null, { position: 'topright' }).addTo(map);
@@ -73,16 +73,16 @@ function initMap() {
 
 // Switch map base tile layer according to dark/light theme
 function setMapTheme(isDark) {
-  if (!map || !window.baseLayers || !window.baseLayers.esriGray || !window.baseLayers.cartoDark) return;
-  const { esriGray, cartoDark } = window.baseLayers;
+  if (!map || !window.baseLayers || !window.baseLayers.esriGray || !window.baseLayers.esriDark) return;
+  const { esriGray, esriDark } = window.baseLayers;
   if (isDark) {
     if (map.hasLayer(esriGray)) {
       map.removeLayer(esriGray);
-      cartoDark.addTo(map);
+      esriDark.addTo(map);
     }
   } else {
-    if (map.hasLayer(cartoDark)) {
-      map.removeLayer(cartoDark);
+    if (map.hasLayer(esriDark)) {
+      map.removeLayer(esriDark);
       esriGray.addTo(map);
     }
   }
