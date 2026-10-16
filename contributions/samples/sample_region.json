@@ -1,0 +1,19 @@
+{
+  "category": "region",
+  "name": "일본 교토",
+  "videos": [
+    {
+      "youtubeId": "QkX3bO0Z8xk",
+      "creator": "원지의하루 Wonji's Life",
+      "title": "혼자 떠난 교토 골목길 힐링 여행",
+      "country": "일본",
+      "city": "교토",
+      "locationName": "기온 시라카와 골목길",
+      "lat": 35.0055,
+      "lng": 135.7738,
+      "tip": "이른 아침이나 해질녘에 산책하면 고즈넉한 정취를 제대로 즐길 수 있습니다.",
+      "tags": ["교토", "산책", "일본", "골목길"],
+      "publishedAt": "2023-09-18"
+    }
+  ]
+}

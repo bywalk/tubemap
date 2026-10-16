@@ -36,6 +36,79 @@ ALLOWED_DATA_FILES = {
     "channels.json"
 }
 
+def is_allowed_file(filepath):
+    """허용된 데이터 및 기여 파일 여부 검사"""
+    if filepath in ALLOWED_DATA_FILES:
+        return True
+    if filepath.startswith("contributions/") and (
+        filepath.endswith(".json") or filepath.endswith(".md") or filepath.endswith(".gitkeep")
+    ):
+        return True
+    return False
+
+def parse_contribution_json_str(content):
+    """기여 JSON 문자열을 스팟 목록으로 파싱"""
+    if not content or not content.strip():
+        return []
+    try:
+        data = json.loads(content)
+    except Exception:
+        return None
+
+    raw_spots = []
+    if isinstance(data, list):
+        raw_spots = data
+    elif isinstance(data, dict):
+        if "videos" in data and isinstance(data["videos"], list):
+            raw_spots = data["videos"]
+        elif "spots" in data and isinstance(data["spots"], list):
+            raw_spots = data["spots"]
+        elif "data" in data and isinstance(data["data"], list):
+            raw_spots = data["data"]
+        elif "youtubeId" in data or "youtube_id" in data:
+            raw_spots = [data]
+
+    spots = []
+    for idx, item in enumerate(raw_spots):
+        if not isinstance(item, dict):
+            continue
+        yt_id = item.get("youtubeId") or item.get("youtube_id") or item.get("ytId")
+        lat = item.get("lat")
+        lng = item.get("lng")
+        try:
+            lat = float(lat) if lat is not None else None
+            lng = float(lng) if lng is not None else None
+        except (TypeError, ValueError):
+            lat, lng = None, None
+
+        creator = (item.get("creator") or item.get("channel") or "").strip()
+        location_name = (item.get("locationName") or item.get("location_name") or item.get("spot") or "").strip()
+        country = (item.get("country") or "").strip() or "기타"
+        city = (item.get("city") or "").strip() or country
+        title = (item.get("title") or location_name or f"{creator} 여행 영상").strip()
+        tip = (item.get("tip") or "").strip()
+        tags = item.get("tags") or []
+        if isinstance(tags, str):
+            tags = [t.strip() for t in tags.split(",") if t.strip()]
+        pub_date = item.get("publishedAt") or item.get("published") or ""
+
+        spot_id = item.get("id") or f"contrib-{yt_id}-{idx}"
+        spots.append({
+            "id": spot_id,
+            "creator": creator,
+            "youtubeId": yt_id,
+            "title": title,
+            "country": country,
+            "city": city,
+            "locationName": location_name,
+            "lat": lat,
+            "lng": lng,
+            "tags": tags,
+            "tip": tip,
+            "publishedAt": pub_date
+        })
+    return spots
+
 def run_cmd(cmd):
     try:
         res = subprocess.run(cmd, shell=True, capture_output=True, text=True, check=True)
@@ -214,7 +287,7 @@ def validate_pr(base_ref, head_ref):
     report_lines.append(f"PR 검증 대상 커밋: `{head_ref[:7] if len(head_ref) >= 7 else head_ref}` (기준: `{base_ref[:7] if len(base_ref) >= 7 else base_ref}`)\n")
 
     # 1. 파일 검증
-    code_files = [f for f in changed_files if f not in ALLOWED_DATA_FILES]
+    code_files = [f for f in changed_files if not is_allowed_file(f)]
     has_code_changes = len(code_files) > 0
     if has_code_changes:
         report_lines.append("⚠️ **주의: 데이터 파일 외에 코드 파일이 포함되어 있습니다.**")
@@ -319,6 +392,101 @@ def validate_pr(base_ref, head_ref):
         except Exception as e:
             overall_passed = False
             report_lines.append(f"❌ `channels.json` JSON 문법 파싱 오류: {e}")
+
+    # 4. contributions/**/*.json 기여 파일 검증
+    contrib_files = [
+        f for f in changed_files 
+        if f.startswith("contributions/") and f.endswith(".json") and "samples/" not in f
+    ]
+    for filepath in contrib_files:
+        head_content = get_file_content(head_ref, filepath)
+        head_spots = parse_contribution_json_str(head_content)
+        if head_spots is None:
+            overall_passed = False
+            report_lines.append(f"❌ `{filepath}` JSON 문법 오류가 발생했습니다. 올바른 JSON 형식인지 확인해 주세요.")
+            continue
+
+        base_content = get_file_content(base_ref, filepath)
+        base_spots = parse_contribution_json_str(base_content) or []
+        base_spot_map = {s["id"]: s for s in base_spots}
+
+        for spot in head_spots:
+            base_entry = base_spot_map.get(spot["id"])
+            if base_entry == spot:
+                continue
+
+            checked_count += 1
+            if checked_count > MAX_ITEMS:
+                report_lines.append(f"\nℹ️ 변경 항목이 {MAX_ITEMS}개를 초과하여 상위 {MAX_ITEMS}개만 대표로 자동 검증했습니다.")
+                break
+
+            print(f"[validate_pr] 기여 항목 검증 ({checked_count}/{MAX_ITEMS}): {spot.get('locationName')} ({spot.get('creator')})", file=sys.stderr)
+
+            is_new = base_entry is None
+            change_type = "신규 기여" if is_new else "기여 정보 수정"
+
+            # 정적 유효성 검사
+            errors = []
+            lat = spot.get("lat")
+            lng = spot.get("lng")
+            yt_id = spot.get("youtubeId")
+
+            if not spot.get("title"):
+                errors.append("제목 누락")
+            if not spot.get("creator"):
+                errors.append("크리에이터 누락")
+            if lat is None or lng is None:
+                errors.append("위도/경도 좌표 누락")
+            elif not (-90 <= lat <= 90 and -180 <= lng <= 180):
+                errors.append(f"좌표 범위 비정상 (lat: {lat}, lng: {lng})")
+
+            # YouTube oEmbed 검사
+            yt_ok, yt_msg, yt_meta = check_youtube_oembed(yt_id)
+            if not yt_ok:
+                errors.append(f"YouTube 영상 검증 실패: {yt_msg}")
+
+            # OSM 역지오코딩
+            geo_meta = reverse_geocode(lat, lng) if lat and lng else None
+
+            # Gemini AI 검증
+            if not errors:
+                ai_res = verify_with_gemini(spot, yt_meta, geo_meta)
+                if not ai_res["passed"]:
+                    errors.append(f"AI 신뢰도 기준 미달 ({ai_res['score']}점): {ai_res['reason']}")
+            else:
+                ai_res = {"score": 20, "passed": False, "reason": ", ".join(errors)}
+
+            item_status = len(errors) == 0 and ai_res["passed"]
+            if not item_status:
+                overall_passed = False
+
+            validated_items.append({
+                "file": filepath,
+                "type": change_type,
+                "entry": spot,
+                "base_entry": base_entry,
+                "yt_meta": yt_meta,
+                "geo_meta": geo_meta,
+                "ai_res": ai_res,
+                "passed": item_status,
+                "errors": errors
+            })
+
+    # 5. contributions 컴파일 시뮬레이션
+    if contrib_files:
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            from build_data import build_contributions
+            sim_res = build_contributions(dry_run=True, verbose=False)
+            report_lines.append("\n### 📦 기여 데이터 자동 컴파일 시뮬레이션")
+            report_lines.append(f"- **신규 추가 예정**: {sim_res['added']}곳")
+            report_lines.append(f"- **정보 갱신 예정**: {sim_res['updated']}곳")
+            report_lines.append(f"- **머지 후 전체 여행지**: {sim_res['total']}곳")
+            if sim_res.get("new_creators"):
+                report_lines.append(f"- **신규 감지 유튜버**: {', '.join(sim_res['new_creators'])}")
+            report_lines.append("> 💡 이 PR이 `main` 브랜치에 머지되면 `scripts/build_data.py`가 자동 실행되어 `videos_recent.js`에 컴파일됩니다.\n")
+        except Exception as e:
+            print(f"[validate_pr] 시뮬레이션 오류 (무시 가능): {e}", file=sys.stderr)
 
     # 리포트 테이블 작성
     if not validated_items and not has_code_changes:

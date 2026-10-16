@@ -6,3 +6,4 @@ __pycache__/
 .env
 .env.*
 *.key
+pr_report.md
