@@ -643,6 +643,19 @@ def load_existing_video_ids():
             existing_ids.update(ids)
     return existing_ids
 
+def load_existing_video_spots():
+    """기존 데이터 파일들에서 이미 등록된 (youtubeId, locationName.lower()) 셋 반환"""
+    existing_spots = set()
+    for path in [DATA_RECENT_PATH, DATA_ARCHIVE_PATH]:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                content = f.read()
+            pattern = r'youtubeId:\s*["\']([a-zA-Z0-9_-]{11})["\'].*?locationName:\s*["\'](.*?)["\']'
+            matches = re.findall(pattern, content, re.DOTALL)
+            for y_id, loc in matches:
+                existing_spots.add((y_id, loc.strip().lower()))
+    return existing_spots
+
 def geocode_location(place_query):
     """지오코딩 API 폴백 (Nominatim & Photon 지원)"""
     try:
@@ -864,6 +877,172 @@ def analyze_video_location(title, description, creator_name):
 
     return None
 
+_VIDEO_DESC_CACHE = {}
+
+def fetch_video_description(youtube_id):
+    """유튜브 영상 상세 페이지에서 전체 설명란(더보기 내용)을 가져옴"""
+    if youtube_id in _VIDEO_DESC_CACHE:
+        return _VIDEO_DESC_CACHE[youtube_id]
+
+    url = f"https://www.youtube.com/watch?v={youtube_id}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
+    }
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=8, context=SAFE_SSL_CONTEXT) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+            m = re.search(r'\"description\":\{\"simpleText\":\"(.*?)\"\}', html)
+            if m:
+                try:
+                    desc = json.loads(f'"{m.group(1)}"')
+                    _VIDEO_DESC_CACHE[youtube_id] = desc
+                    return desc
+                except Exception:
+                    pass
+    except Exception:
+        pass
+    _VIDEO_DESC_CACHE[youtube_id] = ""
+    return ""
+
+def parse_timestamp_seconds(ts_str):
+    """03:25 또는 01:15:30 형식의 타임스탬프를 초 단위 정수로 변환"""
+    parts = ts_str.strip().split(":")
+    try:
+        if len(parts) == 2:
+            return int(parts[0]) * 60 + int(parts[1])
+        elif len(parts) == 3:
+            return int(parts[0]) * 3600 + int(parts[1]) * 60 + int(parts[2])
+    except ValueError:
+        pass
+    return 0
+
+def extract_granular_locations(youtube_id, title, description, creator_name):
+    """
+    영상 설명란의 핀 마커(📍) 및 타임라인(03:20) 챕터를 분석하여,
+    한 영상 내에 존재하는 여러 세부 스팟 목록(List[dict])을 자동 추출.
+    세부 스팟이 없으면 1개 대표 스팟 반환.
+    """
+    full_desc = description
+    if not full_desc or len(full_desc.strip()) <= len(title.strip()):
+        fetched = fetch_video_description(youtube_id)
+        if fetched:
+            full_desc = fetched
+
+    base_spot = analyze_video_location(title, full_desc, creator_name)
+    base_city = base_spot["city"] if base_spot else ""
+    base_country = base_spot["country"] if base_spot else ""
+    base_lat = base_spot["lat"] if base_spot else None
+    base_lng = base_spot["lng"] if base_spot else None
+
+    granular_spots = []
+
+    # 1. 📍 / 📌 핀 마커 섹션 파싱 (예: 잡식맨, 육식맨 등)
+    if full_desc and re.search(r'[📍📌]', full_desc):
+        sections = re.split(r'[📍📌]\s*', full_desc)[1:]
+        for idx, sec in enumerate(sections, 1):
+            lines = [l.strip() for l in sec.splitlines() if l.strip()]
+            if not lines:
+                continue
+            raw_name = lines[0]
+            spot_name = re.sub(r'\(.*?\)|\[.*?\]', '', raw_name).strip() or raw_name
+            if len(spot_name) < 2 or len(spot_name) > 35 or any(b in spot_name for b in ["http", "구독", "인스타", "채널"]):
+                continue
+
+            tip = ""
+            address = ""
+            for l in lines[1:5]:
+                if l.startswith("주소:") or l.startswith("위치:"):
+                    address = re.sub(r'^(?:주소|위치):\s*', '', l).strip()
+                elif not tip and not l.startswith("링크") and not l.startswith("http") and not l.startswith("구글"):
+                    tip = l
+
+            query = address if address else f"{spot_name}, {base_city}"
+            lat, lng = geocode_location(query)
+            if not lat and base_city:
+                lat, lng = geocode_location(f"{spot_name} {base_city}")
+            if not lat and base_lat and base_lng:
+                offset_lat = ((idx % 3) - 1) * 0.003
+                offset_lng = ((idx // 3) - 1) * 0.003
+                lat = round(base_lat + offset_lat, 4)
+                lng = round(base_lng + offset_lng, 4)
+
+            if lat and lng:
+                granular_spots.append({
+                    "id": f"auto-{youtube_id}-{idx}",
+                    "creator": creator_name,
+                    "youtubeId": youtube_id,
+                    "title": title,
+                    "country": base_country or "기타",
+                    "city": base_city or "기타",
+                    "locationName": spot_name,
+                    "lat": lat,
+                    "lng": lng,
+                    "startTime": 0,
+                    "tags": [base_city, base_country, "로컬추천", "유튜브추천"] if base_city else ["유튜브추천"],
+                    "tip": tip or f"{creator_name}의 {spot_name} 추천 스팟입니다."
+                })
+
+    # 2. 타임라인 / 챕터 파싱 (03:20 [장소])
+    if not granular_spots and full_desc:
+        ts_matches = re.findall(r'(?:^|\n)\s*(?:\[|\()?(\d{1,2}:\d{2}(?::\d{2})?)(?:\]|\))?\s+([^\n\r]+)', full_desc)
+        ignore_kw = ["오프닝", "출발", "귀국", "비행기", "공항", "인트로", "에필로그", "엔딩", "아웃트로", "마무리", "도착", "환전", "준비", "쿠키"]
+        for idx, (ts_str, label) in enumerate(ts_matches, 1):
+            clean_lbl = re.sub(r'\[.*?\]|\(.*?\)', '', label).strip()
+            if any(ig in clean_lbl for ig in ignore_kw) or len(clean_lbl) < 2 or len(clean_lbl) > 35:
+                continue
+
+            sec = parse_timestamp_seconds(ts_str)
+            query = f"{clean_lbl}, {base_city}" if base_city else clean_lbl
+            lat, lng = geocode_location(query)
+            if not lat and base_city:
+                lat, lng = geocode_location(f"{clean_lbl} {base_city}")
+            if not lat and base_lat and base_lng:
+                offset_lat = ((idx % 3) - 1) * 0.003
+                offset_lng = ((idx // 3) - 1) * 0.003
+                lat = round(base_lat + offset_lat, 4)
+                lng = round(base_lng + offset_lng, 4)
+
+            if lat and lng:
+                granular_spots.append({
+                    "id": f"auto-{youtube_id}-{idx}",
+                    "creator": creator_name,
+                    "youtubeId": youtube_id,
+                    "title": title,
+                    "country": base_country or "기타",
+                    "city": base_city or "기타",
+                    "locationName": clean_lbl,
+                    "lat": lat,
+                    "lng": lng,
+                    "startTime": sec,
+                    "tags": [base_city, base_country, "타임라인", "유튜브추천"] if base_city else ["타임라인"],
+                    "tip": f"[{ts_str}] 영상 {clean_lbl} 방문 구간입니다."
+                })
+
+    # 세부 스팟이 2개 이상 추출된 경우 다중 핀 반환
+    if len(granular_spots) >= 2:
+        return granular_spots
+
+    # 세부 스팟 추출 실패 시 기본 1개 대표 스팟 반환
+    if base_spot:
+        return [{
+            "id": f"auto-{youtube_id}",
+            "creator": creator_name,
+            "youtubeId": youtube_id,
+            "title": title,
+            "country": base_spot["country"],
+            "city": base_spot["city"],
+            "locationName": base_spot["locationName"],
+            "lat": base_spot["lat"],
+            "lng": base_spot["lng"],
+            "startTime": 0,
+            "tags": base_spot["tags"],
+            "tip": base_spot["tip"]
+        }]
+
+    return []
+
 def append_to_data_js(new_entries):
     """새로 발견된 여행 영상 목록을 videos_recent.js 파일 상단에 깔끔하게 추가"""
     target_path = DATA_RECENT_PATH
@@ -888,11 +1067,13 @@ def append_to_data_js(new_entries):
         escaped_tip = item['tip'].replace('"', '\\"')
         tags_json = json.dumps(item['tags'], ensure_ascii=False)
         pub_date = item.get('publishedAt', datetime.now().strftime("%Y-%m-%d"))
-        
+        start_time_line = f"\n    startTime: {int(item['startTime'])}," if item.get('startTime') else ""
+        spot_id = item.get('id') or f"auto-{item['youtubeId']}"
+
         entry_str = f"""
   // [신규 자동 수집] {item['creator']} - {escaped_loc} ({pub_date})
   {{
-    id: "auto-{item['youtubeId']}",
+    id: "{spot_id}",
     creator: "{item['creator']}",
     youtubeId: "{item['youtubeId']}",
     title: "{escaped_title}",
@@ -901,7 +1082,7 @@ def append_to_data_js(new_entries):
     city: "{item['city']}",
     locationName: "{escaped_loc}",
     lat: {item['lat']},
-    lng: {item['lng']},
+    lng: {item['lng']},{start_time_line}
     tags: {tags_json},
     tip: "{escaped_tip}",
     publishedAt: "{pub_date}",
@@ -1026,24 +1207,17 @@ def add_channel_workflow(query, is_auto=False):
 
     print(f"\n✨ 미등록 최신 영상 {len(unregistered)}편에서 여행지 분석 중...")
     new_spots = []
+    existing_spots = load_existing_video_spots()
     for v in unregistered:
-        spot_info = analyze_video_location(v["title"], v["description"], target_channel["name"])
-        if spot_info:
-            entry = {
-                "creator": target_channel["name"],
-                "youtubeId": v["youtube_id"],
-                "title": v["title"],
-                "country": spot_info["country"],
-                "city": spot_info["city"],
-                "locationName": spot_info["locationName"],
-                "lat": spot_info["lat"],
-                "lng": spot_info["lng"],
-                "tags": spot_info["tags"],
-                "tip": spot_info["tip"],
-                "publishedAt": v.get("published", "")
-            }
-            new_spots.append(entry)
-            print(f"      [+] 📍 {spot_info['country']} {spot_info['city']} ({v.get('published')}): {v['title'][:38]}...")
+        extracted = extract_granular_locations(v["youtube_id"], v["title"], v.get("description", ""), target_channel["name"])
+        for s in extracted:
+            key = (v["youtube_id"], s["locationName"].strip().lower())
+            if key not in existing_spots:
+                s["publishedAt"] = v.get("published", "")
+                new_spots.append(s)
+                existing_spots.add(key)
+                start_label = f" (⏱️ {s['startTime']//60}:{s['startTime']%60:02d})" if s.get("startTime") else ""
+                print(f"      [+] 📍 [{s['country']} {s['city']}] {s['locationName']}{start_label} ({v.get('published')}): {v['title'][:38]}...")
 
     if not new_spots:
         print("[-] 영상들에서 구체적인 여행지 키워드가 감지되지 않았습니다.")
@@ -1142,6 +1316,7 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
     print(f"📡 총 {len(videos)}편의 후보 브이로그 영상 탐색 완료. 검증 시작...\n")
 
     existing_ids = load_existing_video_ids()
+    existing_spots = load_existing_video_spots()
     channels = load_channels()
     known_handles = {ch.get("handle", "").lower(): ch for ch in channels}
     
@@ -1185,32 +1360,28 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
 
         print(f"     [i] 👥 구독자 수: {subs:,}명 (✅ 10만+ 기준 통과!)")
 
-        # 여행지 위치 및 좌표 분석 (사전 매칭 -> Gemini AI 폴백)
-        spot_info = analyze_video_location(title, v["description"], cname)
-        if spot_info:
-            entry = {
-                "creator": cname,
-                "youtubeId": vid,
-                "title": title,
-                "country": spot_info["country"],
-                "city": spot_info["city"],
-                "locationName": spot_info["locationName"],
-                "lat": spot_info["lat"],
-                "lng": spot_info["lng"],
-                "tags": spot_info["tags"],
-                "tip": spot_info["tip"],
-                "publishedAt": datetime.now().strftime("%Y-%m-%d")
-            }
-            new_spots.append(entry)
-            existing_ids.add(vid)
-            print(f"     [+] 📍 여행지 식별 성공: {spot_info['country']} {spot_info['city']} ({spot_info['locationName']})")
+        # 여행지 위치 및 좌표 분석 (다중 세부 스팟/타임스탬프 추출 -> Gemini AI 폴백)
+        extracted = extract_granular_locations(vid, title, v.get("description", ""), cname)
+        if extracted:
+            added_for_vid = 0
+            for s in extracted:
+                key = (vid, s["locationName"].strip().lower())
+                if key not in existing_spots:
+                    s["publishedAt"] = datetime.now().strftime("%Y-%m-%d")
+                    new_spots.append(s)
+                    existing_spots.add(key)
+                    added_for_vid += 1
+                    start_label = f" (⏱️ {s['startTime']//60}:{s['startTime']%60:02d})" if s.get("startTime") else ""
+                    print(f"     [+] 📍 여행지 식별 성공: {s['country']} {s['city']} ({s['locationName']}){start_label}")
 
-            # 신규 유튜버라면 channels.json에도 등록
-            if handle.lower() not in known_handles:
-                channels.append({"name": cname, "handle": handle})
-                known_handles[handle.lower()] = True
-                new_channels_added += 1
-                print(f"     🎉 '{cname}' 채널이 channels.json에 신규 유튜버로 등록되었습니다!")
+            if added_for_vid > 0:
+                existing_ids.add(vid)
+                # 신규 유튜버라면 channels.json에도 등록
+                if handle.lower() not in known_handles:
+                    channels.append({"name": cname, "handle": handle})
+                    known_handles[handle.lower()] = True
+                    new_channels_added += 1
+                    print(f"     🎉 '{cname}' 채널이 channels.json에 신규 유튜버로 등록되었습니다!")
         else:
             print(f"     [-] 명확한 여행지 정보 미감지 (일상/토크 등)")
 
@@ -1274,7 +1445,8 @@ def main():
     print("=" * 70)
 
     existing_ids = load_existing_video_ids()
-    print(f"📦 현재 등록된 여행 영상 수: {len(existing_ids)}편\n")
+    existing_spots = load_existing_video_spots()
+    print(f"📦 현재 등록된 여행 영상 수: {len(existing_ids)}편 (등록된 여행 스팟: {len(existing_spots)}곳)\n")
 
     new_discovered_spots = []
 
@@ -1307,27 +1479,18 @@ def main():
             if days_ago > MAX_VIDEO_AGE_DAYS:
                 continue
 
-            spot_info = analyze_video_location(v["title"], v["description"], name)
-            
-            if spot_info:
-                entry = {
-                    "creator": name,
-                    "youtubeId": v["youtube_id"],
-                    "title": v["title"],
-                    "country": spot_info["country"],
-                    "city": spot_info["city"],
-                    "locationName": spot_info["locationName"],
-                    "lat": spot_info["lat"],
-                    "lng": spot_info["lng"],
-                    "tags": spot_info["tags"],
-                    "tip": spot_info["tip"],
-                    "publishedAt": pub_date
-                }
-                new_discovered_spots.append(entry)
-                # 동일 실행 내 중복 추가 방지
+            extracted = extract_granular_locations(v["youtube_id"], v["title"], v.get("description", ""), name)
+            if extracted:
+                for s in extracted:
+                    key = (v["youtube_id"], s["locationName"].strip().lower())
+                    if key not in existing_spots:
+                        s["publishedAt"] = pub_date
+                        new_discovered_spots.append(s)
+                        existing_spots.add(key)
+                        creator_matched_count += 1
+                        start_label = f" (⏱️ {s['startTime']//60}:{s['startTime']%60:02d})" if s.get("startTime") else ""
+                        print(f"      [+] 📍 {s['country']} {s['city']} ({s['locationName']}){start_label} ({pub_date}): {v['title'][:38]}...")
                 existing_ids.add(v["youtube_id"])
-                creator_matched_count += 1
-                print(f"      [+] 📍 {spot_info['country']} {spot_info['city']} ({pub_date}): {v['title'][:38]}...")
 
         if creator_matched_count == 0:
             print(f"      [-] 최근 영상 중 명확한 여행지 키워드 미감지 (토크/일상 콘텐츠 등)")

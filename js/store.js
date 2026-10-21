@@ -16,6 +16,14 @@ let currentModalVideoId = null;
 let markersMap = new Map(); // id -> L.marker
 let activeMarkerId = null;
 
+// Utility: Format seconds to MM:SS
+function formatTime(seconds) {
+  if (!seconds || seconds <= 0) return '';
+  const m = Math.floor(seconds / 60);
+  const s = String(seconds % 60).padStart(2, '0');
+  return `${m}:${s}`;
+}
+
 // Combined travel videos dataset (Modular data: recent + archive)
 const INITIAL_TRAVEL_VIDEOS = [
   ...(typeof RECENT_VIDEOS !== 'undefined' ? RECENT_VIDEOS : []),

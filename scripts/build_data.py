@@ -74,7 +74,10 @@ def extract_video_entries_from_js(js_content):
             except Exception:
                 pass
 
-        entries.append({
+        start_time_m = re.search(r'startTime:\s*(\d+)', body)
+        start_time = int(start_time_m.group(1)) if start_time_m else None
+
+        entry = {
             "id": vid_id,
             "creator": get_field("creator"),
             "youtubeId": get_field("youtubeId"),
@@ -90,7 +93,10 @@ def extract_video_entries_from_js(js_content):
             "publishedAt": get_field("publishedAt") or datetime.now().strftime("%Y-%m-%d"),
             "description": get_field("description") or get_field("title"),
             "highlights": highlights
-        })
+        }
+        if start_time is not None:
+            entry["startTime"] = start_time
+        entries.append(entry)
     return entries
 
 def parse_contribution_file(filepath):
@@ -140,6 +146,13 @@ def parse_contribution_file(filepath):
             tags = []
             
         pub_date = item.get("publishedAt") or item.get("published") or datetime.now().strftime("%Y-%m-%d")
+
+        start_time = item.get("startTime") or item.get("start_time")
+        if start_time is not None:
+            try:
+                start_time = int(start_time)
+            except (ValueError, TypeError):
+                start_time = None
         
         # 고유 ID 생성 (없을 경우)
         spot_id = item.get("id")
@@ -147,7 +160,7 @@ def parse_contribution_file(filepath):
             safe_loc = re.sub(r'[^a-zA-Z0-9]', '', location_name)[:8]
             spot_id = f"contrib-{yt_id}-{safe_loc or idx}"
 
-        normalized.append({
+        entry = {
             "id": spot_id,
             "creator": creator or "여행 유튜버",
             "youtubeId": yt_id,
@@ -163,7 +176,11 @@ def parse_contribution_file(filepath):
             "publishedAt": pub_date,
             "description": item.get("description") or title,
             "highlights": item.get("highlights") or []
-        })
+        }
+        if start_time is not None:
+            entry["startTime"] = start_time
+
+        normalized.append(entry)
         
     return normalized
 
@@ -190,6 +207,8 @@ def format_js_file(entries):
         highlights_json = json.dumps(item.get('highlights', []), ensure_ascii=False)
         pub_date = item.get('publishedAt', datetime.now().strftime("%Y-%m-%d"))
 
+        start_time_line = f"\n    startTime: {int(item['startTime'])}," if item.get('startTime') is not None else ""
+
         entry_code = f"""  // [{item.get('creator', '')}] {item.get('country', '')} {item.get('city', '')} - {item.get('locationName', '')} ({pub_date})
   {{
     id: "{item['id']}",
@@ -201,7 +220,7 @@ def format_js_file(entries):
     city: {escaped_city},
     locationName: {escaped_loc},
     lat: {float(item['lat'])},
-    lng: {float(item['lng'])},
+    lng: {float(item['lng'])},{start_time_line}
     tags: {tags_json},
     tip: {escaped_tip},
     publishedAt: "{pub_date}",
@@ -307,6 +326,9 @@ def build_contributions(dry_run=False, verbose=False):
                     if merged_tags != target_entry.get("tags"):
                         target_entry["tags"] = merged_tags
                         has_diff = True
+                if spot.get("startTime") is not None and spot["startTime"] != target_entry.get("startTime"):
+                    target_entry["startTime"] = spot["startTime"]
+                    has_diff = True
 
                 if has_diff:
                     file_updated += 1

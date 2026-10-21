@@ -32,9 +32,10 @@ function renderFilteredList() {
     <div class="video-card ${video.id === activeMarkerId ? 'active' : ''}" 
          id="card-${video.id}" 
          onclick="handleCardClick('${video.id}')">
-      <div class="video-thumb-wrapper" onclick="event.stopPropagation(); openVideoModal('${video.id}')">
+      <div class="video-thumb-wrapper" onclick="event.stopPropagation(); openVideoModal('${video.id}', ${video.startTime || 0})">
         <img class="video-thumb" src="https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg" alt="${video.title}" loading="lazy" />
         <div class="play-badge"><span class="material-symbols-rounded filled" style="font-size: 18px;">play_arrow</span></div>
+        ${video.startTime ? `<span class="thumb-time-badge">${formatTime(video.startTime)}</span>` : ''}
       </div>
       <div class="video-card-content">
         <div class="card-top-row">
@@ -151,7 +152,8 @@ function openVideoModal(videoId, startTime = 0) {
   desc.textContent = video.description || '등록된 상세 설명이 없습니다.';
   googleLink.href = `https://www.google.com/maps/search/?api=1&query=${video.lat},${video.lng}`;
 
-  const embedUrl = `https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&start=${startTime}`;
+  const playStart = startTime || video.startTime || 0;
+  const embedUrl = `https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&start=${playStart}`;
   iframe.src = embedUrl;
 
   // Highlights

@@ -116,9 +116,10 @@ function renderMapMarkers() {
 
     const popupContent = `
       <div class="popup-card">
-        <div class="popup-thumb-wrapper" onclick="openVideoModal('${video.id}')">
+        <div class="popup-thumb-wrapper" onclick="openVideoModal('${video.id}', ${video.startTime || 0})">
           <img class="popup-thumb" src="https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg" alt="${video.title}" loading="lazy" />
           <div class="popup-play-btn"><span class="material-symbols-rounded filled">play_arrow</span></div>
+          ${video.startTime ? `<span class="thumb-time-badge">${formatTime(video.startTime)}</span>` : ''}
         </div>
         <div class="popup-body">
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px;">
@@ -137,7 +138,7 @@ function renderMapMarkers() {
           ${video.tip ? `<div class="popup-tip-text"><span class="material-symbols-rounded icon-xs" style="vertical-align: -2px;">lightbulb</span> ${video.tip}</div>` : ''}
           <div class="popup-footer">
             <span class="popup-channel">${video.city || ''}</span>
-            <button class="popup-btn-play" onclick="openVideoModal('${video.id}')">영상 보기</button>
+            <button class="popup-btn-play" onclick="openVideoModal('${video.id}', ${video.startTime || 0})">영상 보기</button>
           </div>
         </div>
       </div>
