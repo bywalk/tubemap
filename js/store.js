@@ -216,9 +216,17 @@ const REGION_COORDINATES = {
   '남아시아': { center: [24.0000, 78.0000], zoom: 5 }
 };
 
+// Date Sort State ('desc': 최신순, 'asc': 오래된순)
+let currentDateSortOrder = 'desc';
+
+function toggleDateSortOrder() {
+  currentDateSortOrder = currentDateSortOrder === 'desc' ? 'asc' : 'desc';
+  return currentDateSortOrder;
+}
+
 // Filter Logic
 function getFilteredVideos() {
-  return travelVideos.filter(item => {
+  const filtered = travelVideos.filter(item => {
     // Tab filter
     let matchesCategory = true;
     if (currentTab === 'creator') {
@@ -254,5 +262,23 @@ function getFilteredVideos() {
       (item.tags && item.tags.some(t => t.toLowerCase().includes(q)));
 
     return matchesCategory && matchesQuery;
+  });
+
+  // 날짜 기준 정렬 (기본: 최신 발행일순 내림차순, 토글 시 오래된순 오름차순)
+  return filtered.sort((a, b) => {
+    const dateA = a.publishedAt || '';
+    const dateB = b.publishedAt || '';
+    if (dateA !== dateB) {
+      if (!dateA) return 1;
+      if (!dateB) return -1;
+      return currentDateSortOrder === 'asc'
+        ? dateA.localeCompare(dateB)
+        : dateB.localeCompare(dateA);
+    }
+    // 동일 날짜 & 동일 영상 내 스팟일 경우 타임라인(startTime) 순서대로 정렬
+    if (a.youtubeId === b.youtubeId && (a.startTime !== undefined || b.startTime !== undefined)) {
+      return (a.startTime || 0) - (b.startTime || 0);
+    }
+    return (a.title || '').localeCompare(b.title || '');
   });
 }

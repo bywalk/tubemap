@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20261022_1">
+  <link rel="stylesheet" href="css/styles.css?v=20261022_2">
 </head>
 <body>
 
@@ -113,8 +113,14 @@
         </div>
 
         <div class="stats-row">
-          <span>등록된 추천 여행지</span>
-          <span class="stats-count" id="videoCountBadge">0곳</span>
+          <div class="stats-info">
+            <span>추천 여행지</span>
+            <span class="stats-count" id="videoCountBadge">0곳</span>
+          </div>
+          <button type="button" class="btn-sort" id="sortOrderBtn" title="날짜 정렬 순서 변경 (최신순 / 오래된순)">
+            <span class="material-symbols-rounded icon-xs" id="sortOrderIcon">arrow_downward</span>
+            <span id="sortOrderLabel">최신순</span>
+          </button>
         </div>
       </div>
 
@@ -360,11 +366,11 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
   <!-- App Data & Scripts (Modularized) -->
-  <script src="js/data/videos_recent.js?v=20261022_1"></script>
-  <script src="js/data/videos_archive.js?v=20261022_1"></script>
-  <script src="js/store.js?v=20261022_1"></script>
-  <script src="js/map.js?v=20261022_1"></script>
-  <script src="js/ui.js?v=20261022_1"></script>
-  <script src="js/app.js?v=20261022_1"></script>
+  <script src="js/data/videos_recent.js?v=20261022_2"></script>
+  <script src="js/data/videos_archive.js?v=20261022_2"></script>
+  <script src="js/store.js?v=20261022_2"></script>
+  <script src="js/map.js?v=20261022_2"></script>
+  <script src="js/ui.js?v=20261022_2"></script>
+  <script src="js/app.js?v=20261022_2"></script>
 </body>
 </html>

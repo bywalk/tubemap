@@ -462,8 +462,41 @@ body {
   color: var(--text-muted);
 }
 
+.stats-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .stats-count {
   font-weight: 700;
+  color: var(--primary);
+}
+
+.btn-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 3px 8px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.btn-sort:hover {
+  background: var(--bg-hover);
+  color: var(--text-main);
+  border-color: var(--text-muted);
+}
+
+.btn-sort .material-symbols-rounded {
+  font-size: 13px;
   color: var(--primary);
 }
 

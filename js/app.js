@@ -123,6 +123,25 @@ function initEventListeners() {
     if (allChip) allChip.click();
   });
 
+  // Date Sort Toggle Button (최신순 / 오래된순)
+  const sortBtn = document.getElementById('sortOrderBtn');
+  const sortIcon = document.getElementById('sortOrderIcon');
+  const sortLabel = document.getElementById('sortOrderLabel');
+
+  if (sortBtn) {
+    sortBtn.addEventListener('click', () => {
+      const newOrder = toggleDateSortOrder();
+      if (sortIcon) {
+        sortIcon.textContent = newOrder === 'desc' ? 'arrow_downward' : 'arrow_upward';
+      }
+      if (sortLabel) {
+        sortLabel.textContent = newOrder === 'desc' ? '최신순' : '오래된순';
+      }
+      renderFilteredList();
+      renderMapMarkers();
+    });
+  }
+
   // Mobile Drawer & Controls
   const closeSidebarBtn = document.getElementById('closeSidebarBtn');
   const sidebarBackdrop = document.getElementById('sidebarBackdrop');
