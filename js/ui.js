@@ -156,6 +156,14 @@ function openVideoModal(videoId, startTime = 0) {
   const embedUrl = `https://www.youtube.com/embed/${video.youtubeId}?autoplay=1&start=${playStart}`;
   iframe.src = embedUrl;
 
+  if (window.umami) {
+    window.umami.track('play-video', {
+      creator: video.creator || video.channel,
+      spot: video.locationName,
+      country: video.country || ''
+    });
+  }
+
   // Highlights
   if (video.highlights && video.highlights.length > 0) {
     highlightsContainer.style.display = 'block';
@@ -281,6 +289,10 @@ function renderCreatorChips() {
       currentCreatorFilter = chip.getAttribute('data-creator');
       renderFilteredList();
       renderMapMarkers();
+
+      if (window.umami) {
+        window.umami.track('filter-creator', { creator: currentCreatorFilter });
+      }
 
       const creatorVideos = travelVideos.filter(v => currentCreatorFilter === 'all' || v.creator === currentCreatorFilter);
       if (creatorVideos.length > 0) {

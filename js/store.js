@@ -182,6 +182,14 @@ function toggleBookmark(videoId, event) {
   } else {
     showToast(`'${video.locationName}' 찜을 해제했습니다.`, 'bookmark_remove');
   }
+
+  if (window.umami) {
+    window.umami.track(video.bookmarked ? 'bookmark-add' : 'bookmark-remove', {
+      creator: video.creator,
+      spot: video.locationName,
+      country: video.country || ''
+    });
+  }
 }
 
 // YouTube URL parser

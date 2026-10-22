@@ -25,6 +25,7 @@ function initEventListeners() {
   // Search Inputs (Desktop header & Sidebar sync)
   const searchInput = document.getElementById('searchInput');
   const sidebarSearchInput = document.getElementById('sidebarSearchInput');
+  let searchTrackTimer = null;
 
   function handleSearch(val) {
     currentSearchQuery = val;
@@ -32,6 +33,13 @@ function initEventListeners() {
     if (sidebarSearchInput && sidebarSearchInput.value !== val) sidebarSearchInput.value = val;
     renderFilteredList();
     renderMapMarkers();
+
+    if (window.umami && val && val.trim().length >= 2) {
+      clearTimeout(searchTrackTimer);
+      searchTrackTimer = setTimeout(() => {
+        window.umami.track('search', { query: val.trim() });
+      }, 1000);
+    }
   }
 
   if (searchInput) {
@@ -61,6 +69,10 @@ function initEventListeners() {
 
     renderFilteredList();
     renderMapMarkers();
+
+    if (window.umami) {
+      window.umami.track('tab-switch', { tab: tabName });
+    }
   }
 
   tabCreatorBtn.addEventListener('click', () => activateTab('creator'));
@@ -86,6 +98,10 @@ function initEventListeners() {
       renderFilteredList();
       renderMapMarkers();
 
+      if (window.umami) {
+        window.umami.track('filter-region', { region: currentRegionFilter });
+      }
+
       if (REGION_COORDINATES[currentRegionFilter]) {
         const coord = REGION_COORDINATES[currentRegionFilter];
         map.flyTo(coord.center, coord.zoom, { duration: 1.5 });
@@ -104,6 +120,10 @@ function initEventListeners() {
       currentMyMapFilter = chip.getAttribute('data-mymap');
       renderFilteredList();
       renderMapMarkers();
+
+      if (window.umami) {
+        window.umami.track('filter-mymap', { filter: currentMyMapFilter });
+      }
 
       const filtered = getFilteredVideos();
       if (filtered.length > 0) {
