@@ -489,7 +489,8 @@ def fetch_channel_videos(channel_info):
 
     # 1차 방식: 채널 동영상 탭 직접 HTML/JSON 파싱
     if handle:
-        url = f"https://www.youtube.com/@{handle}/videos"
+        safe_handle = urllib.parse.quote(handle)
+        url = f"https://www.youtube.com/@{safe_handle}/videos"
         headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
@@ -1342,7 +1343,8 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
             subs = channel_subs_cache[handle]
         else:
             time.sleep(0.3)
-            ch_url = f"https://www.youtube.com/@{handle}/videos"
+            safe_handle = urllib.parse.quote(handle)
+            ch_url = f"https://www.youtube.com/@{safe_handle}/videos"
             headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
             req = urllib.request.Request(ch_url, headers=headers)
             try:

@@ -30,7 +30,7 @@ const INITIAL_TRAVEL_VIDEOS = [
   ...(typeof ARCHIVE_VIDEOS !== 'undefined' ? ARCHIVE_VIDEOS : [])
 ];
 
-const STORAGE_KEY = 'tubemap_travel_videos_k_creators_v4';
+const STORAGE_KEY = 'tubemap_travel_videos_k_creators_v5';
 const DELETED_IDS_KEY = 'tubemap_deleted_video_ids_v1';
 const THEME_KEY = 'tubemap_theme';
 let travelVideos = [];
@@ -95,7 +95,7 @@ function loadInitialData() {
     deletedVideoIds = new Set();
   }
 
-  const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem('tubemap_travel_videos_k_creators_v3');
+  const saved = localStorage.getItem(STORAGE_KEY) || localStorage.getItem('tubemap_travel_videos_k_creators_v4') || localStorage.getItem('tubemap_travel_videos_k_creators_v3');
   if (saved) {
     try {
       const localList = JSON.parse(saved);

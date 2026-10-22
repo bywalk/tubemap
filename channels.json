@@ -74,5 +74,60 @@
   {
     "name": "시칠리안",
     "handle": "sicilian1"
+  },
+  {
+    "name": "오사카에사는사람들TV",
+    "handle": "osaka544",
+    "subscribers": 1170000
+  },
+  {
+    "name": "뜨랑낄로",
+    "handle": "trankilo",
+    "subscribers": 529000
+  },
+  {
+    "name": "여락이들",
+    "handle": "여락이들",
+    "subscribers": 535000
+  },
+  {
+    "name": "모칠레로",
+    "handle": "Mochilero_korean",
+    "subscribers": 431000
+  },
+  {
+    "name": "테디여행기",
+    "handle": "TeddyTravelog",
+    "subscribers": 220000
+  },
+  {
+    "name": "삐까뚱씨",
+    "handle": "PKDC",
+    "subscribers": 114000
+  },
+  {
+    "name": "신아로미",
+    "handle": "sinaromi",
+    "subscribers": 220000
+  },
+  {
+    "name": "Joe튜브",
+    "handle": "조튜브",
+    "subscribers": 778000
+  },
+  {
+    "name": "유이뿅",
+    "handle": "일본인_유이뿅",
+    "subscribers": 682000
+  },
+  {
+    "name": "조조캠핑",
+    "handle": "jojocamping",
+    "subscribers": 805000
+  },
+  {
+    "name": "은하캠핑",
+    "handle": "eunhacamping",
+    "subscribers": 526000
   }
 ]
