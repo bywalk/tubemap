@@ -2,6 +2,150 @@
  * 최신 여행 영상 데이터 (2026년~)
  */
 const RECENT_VIDEOS = [
+  // [신규 자동 수집] 빠니보틀 - 뉴욕 주요 명소 (2026-10-21)
+  {
+    id: "auto-J543v1EnWGI",
+    creator: "빠니보틀",
+    youtubeId: "J543v1EnWGI",
+    title: "한국인이 이해하기 어려운 초대형 미국 축제【네바다】",
+    channel: "빠니보틀",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "빠니보틀이 방문한 뉴욕 현지 로컬 추천 코스입니다.",
+    publishedAt: "2026-10-21",
+    description: "한국인이 이해하기 어려운 초대형 미국 축제【네바다】",
+    highlights: []
+  },
+  // [신규 자동 수집] 곽튜브 - 타이베이 주요 명소 (2026-10-21)
+  {
+    id: "auto-C5fSM-oBRLU",
+    creator: "곽튜브",
+    youtubeId: "C5fSM-oBRLU",
+    title: "세계에서 가장 괴상한 먹방 여행기 - 대만(下)",
+    channel: "곽튜브",
+    country: "대만",
+    city: "타이베이",
+    locationName: "타이베이 주요 명소",
+    lat: 25.033,
+    lng: 121.5654,
+    tags: ["타이베이", "대만", "유튜브추천", "여행"],
+    tip: "곽튜브가 강력 추천한 타이베이 가성비 맛집 & 명소입니다.",
+    publishedAt: "2026-10-21",
+    description: "세계에서 가장 괴상한 먹방 여행기 - 대만(下)",
+    highlights: []
+  },
+  // [신규 자동 수집] 캡틴따거 - 파리 주요 명소 (2026-10-25)
+  {
+    id: "auto-FiWxkXXXsT0",
+    creator: "캡틴따거",
+    youtubeId: "FiWxkXXXsT0",
+    title: "프랑스 파리 시위 3일 뒤의 모습 - [66]",
+    channel: "캡틴따거",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "캡틴따거가 전하는 파리의 역사와 숨은 이야기 명소입니다.",
+    publishedAt: "2026-10-25",
+    description: "프랑스 파리 시위 3일 뒤의 모습 - [66]",
+    highlights: []
+  },
+  // [신규 자동 수집] 초마드 - 오사카 주요 명소 (2026-10-20)
+  {
+    id: "auto-8WKIgb3AiKM",
+    creator: "초마드",
+    youtubeId: "8WKIgb3AiKM",
+    title: "오사카 여기어디야?🤩🍡한국인은 잘모르는 오사카 카페&맛집 BEST5🍧🇯🇵 (ft. 후회안함⚡️)",
+    channel: "초마드",
+    country: "일본",
+    city: "오사카",
+    locationName: "오사카 주요 명소",
+    lat: 34.6937,
+    lng: 135.5023,
+    tags: ["오사카", "일본", "유튜브추천", "여행"],
+    tip: "초마드가 소개한 오사카 럭셔리 호캉스 & 핫플레이스입니다.",
+    publishedAt: "2026-10-20",
+    description: "오사카 여기어디야?🤩🍡한국인은 잘모르는 오사카 카페&맛집 BEST5🍧🇯🇵 (ft. 후회안함⚡️)",
+    highlights: []
+  },
+  // [신규 자동 수집] 육식맨 YOOXICMAN - 포르투 주요 명소 (2026-10-23)
+  {
+    id: "auto-u_1meMigiik",
+    creator: "육식맨 YOOXICMAN",
+    youtubeId: "u_1meMigiik",
+    title: "포르투갈 고기빵 특집 : 유럽 음식은 건강할 거란 편견을 깨 드리겠습니다 (포르투 올로케)",
+    channel: "육식맨 YOOXICMAN",
+    country: "포르투갈",
+    city: "포르투",
+    locationName: "포르투 주요 명소",
+    lat: 41.1579,
+    lng: -8.6291,
+    tags: ["포르투", "포르투갈", "유튜브추천", "여행"],
+    tip: "육식맨 YOOXICMAN의 포르투 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-10-23",
+    description: "포르투갈 고기빵 특집 : 유럽 음식은 건강할 거란 편견을 깨 드리겠습니다 (포르투 올로케)",
+    highlights: []
+  },
+  // [신규 자동 수집] 트립콤파니 - 파리 주요 명소 (2025-10-26)
+  {
+    id: "auto-SF2TN28NLWk",
+    creator: "트립콤파니",
+    youtubeId: "SF2TN28NLWk",
+    title: "🇨🇵 몽생미셸의 24시간",
+    channel: "트립콤파니",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "트립콤파니의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2025-10-26",
+    description: "🇨🇵 몽생미셸의 24시간",
+    highlights: []
+  },
+  // [신규 자동 수집] 시칠리안 - 도쿄 주요 명소 (2026-10-25)
+  {
+    id: "auto-eYXehhzE4qo",
+    creator: "시칠리안",
+    youtubeId: "eYXehhzE4qo",
+    title: "도쿄에서 한 시간, 도쿄보다 더 좋았던 2박 3일 소도시 여행기",
+    channel: "시칠리안",
+    country: "일본",
+    city: "도쿄",
+    locationName: "도쿄 주요 명소",
+    lat: 35.6762,
+    lng: 139.6503,
+    tags: ["도쿄", "일본", "유튜브추천", "여행"],
+    tip: "시칠리안 부부가 추천하는 도쿄 실속 가성비 & 힐링 스팟입니다.",
+    publishedAt: "2026-10-25",
+    description: "도쿄에서 한 시간, 도쿄보다 더 좋았던 2박 3일 소도시 여행기",
+    highlights: []
+  },
+  // [신규 자동 수집] Joe튜브 - 부산 주요 명소 (2026-10-26)
+  {
+    id: "auto-pmpdoxn_93A",
+    creator: "Joe튜브",
+    youtubeId: "pmpdoxn_93A",
+    title: "친구에게 부부관계 강의 해주는 부산 여동생",
+    channel: "Joe튜브",
+    country: "대한민국",
+    city: "부산",
+    locationName: "부산 주요 명소",
+    lat: 35.1796,
+    lng: 129.0756,
+    tags: ["부산", "대한민국", "유튜브추천", "여행"],
+    tip: "Joe튜브의 부산 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-10-26",
+    description: "친구에게 부부관계 강의 해주는 부산 여동생",
+    highlights: []
+  },
   // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-DuioLcHkGQQ",
