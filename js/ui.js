@@ -107,6 +107,11 @@ function updateModalBookmarkBtn(video) {
   }
 }
 
+function updateModalBodyLock() {
+  const hasActiveModal = Boolean(document.querySelector('.modal-overlay.active'));
+  document.body.classList.toggle('modal-open', hasActiveModal);
+}
+
 // Open Video Player Modal
 function openVideoModal(videoId, startTime = 0) {
   const video = travelVideos.find(v => v.id === videoId);
@@ -182,6 +187,7 @@ function openVideoModal(videoId, startTime = 0) {
   }
 
   modal.classList.add('active');
+  updateModalBodyLock();
 }
 
 function jumpToVideoTime(youtubeId, seconds) {
@@ -195,6 +201,7 @@ function closeVideoModal() {
   iframe.src = '';
   currentModalVideoId = null;
   modal.classList.remove('active');
+  updateModalBodyLock();
 }
 
 // Open Edit Modal for an existing or custom spot
@@ -233,6 +240,7 @@ function openEditVideoModal(videoId, event) {
   }
 
   document.getElementById('addVideoModal').classList.add('active');
+  updateModalBodyLock();
 }
 
 function openAddModeModal() {
@@ -250,6 +258,7 @@ function openAddModeModal() {
   if (thumbPreviewBox) thumbPreviewBox.innerHTML = `<span>URL을 입력하면 썸네일 미리보기가 표시됩니다</span>`;
 
   document.getElementById('addVideoModal').classList.add('active');
+  updateModalBodyLock();
 }
 
 // Toast Notification

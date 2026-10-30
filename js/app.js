@@ -221,6 +221,7 @@ function initEventListeners() {
 
   const closeAddModal = () => {
     addModal.classList.remove('active');
+    if (typeof updateModalBodyLock === 'function') updateModalBodyLock();
   };
 
   closeAddBtn.addEventListener('click', closeAddModal);
@@ -394,6 +395,7 @@ function initEventListeners() {
 
   const closeContribModal = () => {
     if (contribModal) contribModal.classList.remove('active');
+    if (typeof updateModalBodyLock === 'function') updateModalBodyLock();
   };
 
   if (closeContribModalBtn) closeContribModalBtn.addEventListener('click', closeContribModal);
@@ -433,6 +435,7 @@ function initEventListeners() {
     }
 
     contribModal.classList.add('active');
+    if (typeof updateModalBodyLock === 'function') updateModalBodyLock();
   };
 
   if (copyContribDataBtn) {
