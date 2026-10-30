@@ -7,7 +7,8 @@ function initMap() {
   map = L.map('map', {
     zoomControl: false,
     worldCopyJump: true, // Fixes pins not showing when panning across the world
-    minZoom: 2           // Prevents zooming out too far to see multiple empty worlds
+    minZoom: 2,          // Prevents zooming out too far to see multiple empty worlds
+    maxZoom: 15          // Prevents over-zooming and missing tile placeholders
   }).setView([32.0, 60.0], 4); // Eurasia centered view
 
   // Remove 'Leaflet' prefix while keeping required tile provider attribution
@@ -17,25 +18,29 @@ function initMap() {
   L.control.zoom({ position: 'topright' }).addTo(map);
 
   // Free Tile Layers (No API key needed, no watermarks)
+  // Note: Esri canvas/topo tiles only provide native data up to zoom 13 in Korea and many global regions.
+  // Setting maxNativeZoom: 13 scales zoom 13 tiles for zoom 14-15, eliminating 'Map data not yet available' placeholders.
   const esriDark = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19,
-    maxNativeZoom: 16,
+    maxZoom: 15,
+    maxNativeZoom: 13,
     attribution: 'Tiles &copy; Esri'
   });
 
   const esriGray = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19,
-    maxNativeZoom: 16,
+    maxZoom: 15,
+    maxNativeZoom: 13,
     attribution: 'Tiles &copy; Esri'
   });
 
   const esriTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-    maxZoom: 19,
+    maxZoom: 15,
+    maxNativeZoom: 13,
     attribution: 'Tiles &copy; Esri'
   });
 
   const osmLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 15,
+    maxNativeZoom: 15,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
   });
 
