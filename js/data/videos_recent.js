@@ -2,6 +2,150 @@
  * 최신 여행 영상 데이터 (2026년~)
  */
 const RECENT_VIDEOS = [
+  // [신규 자동 수집] 곽튜브 - 런던 주요 명소 (2026-11-07)
+  {
+    id: "auto-HSSSd3kz8LE",
+    creator: "곽튜브",
+    youtubeId: "HSSSd3kz8LE",
+    title: "세계에서 가장 유명한 시상식에 초대된 사연 - 영국(1)",
+    channel: "곽튜브",
+    country: "영국",
+    city: "런던",
+    locationName: "런던 주요 명소",
+    lat: 51.5074,
+    lng: -0.1278,
+    tags: ["런던", "영국", "유튜브추천", "여행"],
+    tip: "곽튜브가 강력 추천한 런던 가성비 맛집 & 명소입니다.",
+    publishedAt: "2026-11-07",
+    description: "세계에서 가장 유명한 시상식에 초대된 사연 - 영국(1)",
+    highlights: []
+  },
+  // [신규 자동 수집] 원지의 하루 - 부산 주요 명소 (2026-11-06)
+  {
+    id: "auto-Td7KfR0_2lI",
+    creator: "원지의 하루",
+    youtubeId: "Td7KfR0_2lI",
+    title: "부산 최고의 맛도리를 찾아서",
+    channel: "원지의 하루",
+    country: "대한민국",
+    city: "부산",
+    locationName: "부산 주요 명소",
+    lat: 35.1796,
+    lng: 129.0756,
+    tags: ["부산", "대한민국", "유튜브추천", "여행"],
+    tip: "원지가 경험한 부산 소소하고 아늑한 힐링 스팟입니다.",
+    publishedAt: "2026-11-06",
+    description: "부산 최고의 맛도리를 찾아서",
+    highlights: []
+  },
+  // [신규 자동 수집] 시칠리안 - 뉴욕 주요 명소 (2026-11-08)
+  {
+    id: "auto-X8gDOtYdzYI",
+    creator: "시칠리안",
+    youtubeId: "X8gDOtYdzYI",
+    title: "인생 첫 퍼스트 클래스 타고 세계 1위 도시, 뉴욕 여행 시작합니다",
+    channel: "시칠리안",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "시칠리안 부부가 추천하는 뉴욕 실속 가성비 & 힐링 스팟입니다.",
+    publishedAt: "2026-11-08",
+    description: "인생 첫 퍼스트 클래스 타고 세계 1위 도시, 뉴욕 여행 시작합니다",
+    highlights: []
+  },
+  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-11-03)
+  {
+    id: "auto-ONaLLrc0F6o",
+    creator: "삐까뚱씨",
+    youtubeId: "ONaLLrc0F6o",
+    title: "엔저시대에 일본 코스트코 털러 가야하는 이유!!🛒 (와규 요리 파티!!🥩🎉🇯🇵)",
+    channel: "삐까뚱씨",
+    country: "일본",
+    city: "도쿄",
+    locationName: "도쿄 주요 명소",
+    lat: 35.6762,
+    lng: 139.6503,
+    tags: ["도쿄", "일본", "유튜브추천", "여행"],
+    tip: "삐까뚱씨의 도쿄 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-03",
+    description: "엔저시대에 일본 코스트코 털러 가야하는 이유!!🛒 (와규 요리 파티!!🥩🎉🇯🇵)",
+    highlights: []
+  },
+  // [신규 자동 수집] Joe튜브 - 발리 주요 명소 (2026-11-09)
+  {
+    id: "auto-9ockIQAGzYU",
+    creator: "Joe튜브",
+    youtubeId: "9ockIQAGzYU",
+    title: "발리 비치클럽 갔다가 인도인들 때문에 도망쳐 나온 태국 여사친ㅋㅋㅋㅋ",
+    channel: "Joe튜브",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "Joe튜브의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-09",
+    description: "발리 비치클럽 갔다가 인도인들 때문에 도망쳐 나온 태국 여사친ㅋㅋㅋㅋ",
+    highlights: []
+  },
+  // [신규 자동 수집] Joe튜브 - 발리 주요 명소 (2026-11-06)
+  {
+    id: "auto-1DqiqX7vNfU",
+    creator: "Joe튜브",
+    youtubeId: "1DqiqX7vNfU",
+    title: "와이프 없이 유부남들끼리 발리에서 디지털노마드의 삶 살아보기",
+    channel: "Joe튜브",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "Joe튜브의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-06",
+    description: "와이프 없이 유부남들끼리 발리에서 디지털노마드의 삶 살아보기",
+    highlights: []
+  },
+  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-11-04)
+  {
+    id: "auto-2qR54ery2jQ",
+    creator: "Joe튜브",
+    youtubeId: "2qR54ery2jQ",
+    title: "와이프 없는 유부남들 여행에 태국 여사친 부르면 생기는 일ㅋㅋㅋ",
+    channel: "Joe튜브",
+    country: "태국",
+    city: "방콕",
+    locationName: "방콕 주요 명소",
+    lat: 13.7563,
+    lng: 100.5018,
+    tags: ["방콕", "태국", "유튜브추천", "여행"],
+    tip: "Joe튜브의 방콕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-04",
+    description: "와이프 없는 유부남들 여행에 태국 여사친 부르면 생기는 일ㅋㅋㅋ",
+    highlights: []
+  },
+  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-11-09)
+  {
+    id: "auto-Qwj5x98gIs8",
+    creator: "은하캠핑",
+    youtubeId: "Qwj5x98gIs8",
+    title: "살면서 가장 후회했던 순간들 베스트5",
+    channel: "은하캠핑",
+    country: "프랑스",
+    city: "니스",
+    locationName: "니스 주요 명소",
+    lat: 43.7102,
+    lng: 7.262,
+    tags: ["니스", "프랑스", "유튜브추천", "여행"],
+    tip: "은하캠핑의 니스 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-09",
+    description: "살면서 가장 후회했던 순간들 베스트5",
+    highlights: []
+  },
   // [신규 자동 수집] 곽튜브 - 바라나시 주요 명소 (2026-10-30)
   {
     id: "auto-zURt9hkHck4",
