@@ -60,12 +60,30 @@ function initMap() {
     "오픈스트리트맵": osmLayer
   }, null, { position: 'topright' }).addTo(map);
 
-  // Marker Cluster Group
+  // Marker Cluster Group with Controlled Zooming
   markerClusterGroup = L.markerClusterGroup({
     showCoverageOnHover: false,
     maxClusterRadius: 45,
-    spiderfyOnMaxZoom: true
+    zoomToBoundsOnClick: false, // 과도한 줌인 방지를 위해 커스텀 핸들러 사용
+    spiderfyOnMaxZoom: true,
+    spiderfyDistanceMultiplier: 1.6
   });
+
+  // 숫자(클러스터) 클릭 시 과도하게 확대되어 핀들이 한 건물에 뭉쳐보이는 현상 방지
+  // 도시/지역 광역 뷰(최대 zoom 11)까지만 부드럽게 확대하고, 
+  // 그 이상에서는 한 점에 뭉친 핀들을 스파이더파이(원형 펼침)로 깔끔하게 분산
+  markerClusterGroup.on('clusterclick', function (a) {
+    const currentZoom = map.getZoom();
+    const MAX_CLUSTER_ZOOM = 11;
+
+    if (currentZoom >= MAX_CLUSTER_ZOOM) {
+      a.layer.spiderfy();
+    } else {
+      const nextZoom = Math.min(currentZoom + 2, MAX_CLUSTER_ZOOM);
+      map.flyTo(a.latlng, nextZoom, { duration: 0.6 });
+    }
+  });
+
   map.addLayer(markerClusterGroup);
 
   // Map Click Listener (for Coordinate Picker)
@@ -191,12 +209,15 @@ function highlightActiveVideo(videoId, panMap = true) {
   // Pan Map
   const marker = markersMap.get(videoId);
   if (marker && panMap) {
-    map.flyTo([video.lat, video.lng], Math.max(map.getZoom(), 13), {
-      duration: 1.2
+    // 과도한 골목/건물 단위 줌인(13+) 방지하고 도시 광역 뷰(zoom 11)로 부드럽게 이동
+    const currentZoom = map.getZoom();
+    const targetZoom = Math.min(Math.max(currentZoom, 10), 11);
+    map.flyTo([video.lat, video.lng], targetZoom, {
+      duration: 1.0
     });
     setTimeout(() => {
       marker.openPopup();
-    }, 1200);
+    }, 1000);
   }
 }
 
