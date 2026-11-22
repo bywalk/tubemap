@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   loadInitialData();
   initMap();
   renderCreatorChips();
+  renderRegionChips();
+  renderMyMapChips();
   initEventListeners();
   initDragToScroll();
   renderFilteredList();
@@ -54,7 +56,7 @@ function initEventListeners() {
   const tabCreatorBtn = document.getElementById('tabCreatorBtn');
   const tabRegionBtn = document.getElementById('tabRegionBtn');
   const tabMyMapBtn = document.getElementById('tabMyMapBtn');
-  const creatorChipsContainer = document.getElementById('creatorChipsContainer');
+  const creatorFilterWrap = document.getElementById('creatorFilterWrap') || document.getElementById('creatorChipsContainer');
   const regionChipsContainer = document.getElementById('regionChipsContainer');
   const myMapChipsContainer = document.getElementById('myMapChipsContainer');
 
@@ -65,9 +67,17 @@ function initEventListeners() {
     tabRegionBtn.classList.toggle('active', tabName === 'region');
     if (tabMyMapBtn) tabMyMapBtn.classList.toggle('active', tabName === 'mymap');
 
-    creatorChipsContainer.classList.toggle('hidden', tabName !== 'creator');
-    regionChipsContainer.classList.toggle('hidden', tabName !== 'region');
+    if (creatorFilterWrap) creatorFilterWrap.classList.toggle('hidden', tabName !== 'creator');
+    if (regionChipsContainer) regionChipsContainer.classList.toggle('hidden', tabName !== 'region');
     if (myMapChipsContainer) myMapChipsContainer.classList.toggle('hidden', tabName !== 'mymap');
+
+    if (tabName === 'creator') {
+      renderCreatorChips();
+    } else if (tabName === 'region') {
+      renderRegionChips();
+    } else if (tabName === 'mymap') {
+      renderMyMapChips();
+    }
 
     renderFilteredList();
     renderMapMarkers();
@@ -89,53 +99,6 @@ function initEventListeners() {
       }
     });
   }
-
-  // Region Chips
-  const regionChips = document.querySelectorAll('#regionChipsContainer .chip');
-  regionChips.forEach(chip => {
-    chip.addEventListener('click', () => {
-      regionChips.forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      currentRegionFilter = chip.getAttribute('data-region');
-      currentPage = 1;
-      renderFilteredList();
-      renderMapMarkers();
-
-      if (window.umami) {
-        window.umami.track('filter-region', { region: currentRegionFilter });
-      }
-
-      if (REGION_COORDINATES[currentRegionFilter]) {
-        const coord = REGION_COORDINATES[currentRegionFilter];
-        map.flyTo(coord.center, coord.zoom, { duration: 1.5 });
-      } else if (currentRegionFilter === 'all') {
-        map.flyTo([32.0, 60.0], 4, { duration: 1.5 });
-      }
-    });
-  });
-
-  // My Map Chips
-  const myMapChips = document.querySelectorAll('#myMapChipsContainer .chip');
-  myMapChips.forEach(chip => {
-    chip.addEventListener('click', () => {
-      myMapChips.forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      currentMyMapFilter = chip.getAttribute('data-mymap');
-      currentPage = 1;
-      renderFilteredList();
-      renderMapMarkers();
-
-      if (window.umami) {
-        window.umami.track('filter-mymap', { filter: currentMyMapFilter });
-      }
-
-      const filtered = getFilteredVideos();
-      if (filtered.length > 0) {
-        const bounds = L.latLngBounds(filtered.map(v => [v.lat, v.lng]));
-        map.fitBounds(bounds, { padding: [60, 60], maxZoom: 10, animate: true });
-      }
-    });
-  });
 
   // Brand click -> reset
   document.getElementById('brandBtn').addEventListener('click', () => {

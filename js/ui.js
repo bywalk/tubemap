@@ -368,37 +368,196 @@ function showToast(message, icon = 'check_circle') {
   }, 3000);
 }
 
-// Dynamic Creator Chips Renderer
+// Dynamic Creator Chips & Dropdown Selector
 function renderCreatorChips() {
   const container = document.getElementById('creatorChipsContainer');
+  const select = document.getElementById('creatorSelect');
   if (!container) return;
 
-  const creators = Array.from(new Set(travelVideos.map(v => v.creator).filter(Boolean)));
-  
+  // 영상 개수 집계
+  const creatorCounts = new Map();
+  travelVideos.forEach(v => {
+    if (v.creator) {
+      creatorCounts.set(v.creator, (creatorCounts.get(v.creator) || 0) + 1);
+    }
+  });
+
+  const sortedCreators = Array.from(creatorCounts.entries())
+    .sort((a, b) => b[1] - a[1]); // [ [creator, count], ... ]
+
+  // 1. 드롭다운(Select)에는 가나다순으로 전체 유튜버 채우기
+  if (select) {
+    const alphabetical = Array.from(creatorCounts.keys()).sort((a, b) => a.localeCompare(b, 'ko'));
+    const totalCount = travelVideos.length;
+    select.innerHTML = `
+      <option value="all">🔍 전체 유튜버 목록 (${alphabetical.length}명 / ${totalCount}개 영상)</option>
+      ${alphabetical.map(c => `
+        <option value="${c}" ${currentCreatorFilter === c ? 'selected' : ''}>${c} (${creatorCounts.get(c)}곳)</option>
+      `).join('')}
+    `;
+
+    // Dropdown change listener
+    select.onchange = (e) => {
+      setCreatorFilter(e.target.value);
+    };
+  }
+
+  // 2. 칩에는 상위 Top 12 유튜버 표시 (+ 선택된 유튜버가 Top 12 외라면 맨 앞에 추가)
+  const top12 = sortedCreators.slice(0, 12).map(item => item[0]);
+  const isSelectedInTop = top12.includes(currentCreatorFilter);
+  const chipsToShow = [...top12];
+  if (currentCreatorFilter !== 'all' && !isSelectedInTop) {
+    chipsToShow.unshift(currentCreatorFilter);
+  }
+
+  const allCount = travelVideos.length;
   container.innerHTML = `
-    <button class="chip ${currentCreatorFilter === 'all' ? 'active' : ''}" data-creator="all">전체 유튜버</button>
-    ${creators.map(c => `
-      <button class="chip ${currentCreatorFilter === c ? 'active' : ''}" data-creator="${c}">${c}</button>
-    `).join('')}
+    <button class="chip ${currentCreatorFilter === 'all' ? 'active' : ''}" data-creator="all">
+      전체 <span class="chip-count">${allCount}</span>
+    </button>
+    ${chipsToShow.map(c => {
+      const count = creatorCounts.get(c) || 0;
+      return `
+        <button class="chip ${currentCreatorFilter === c ? 'active' : ''}" data-creator="${c}">
+          ${c} <span class="chip-count">${count}</span>
+        </button>
+      `;
+    }).join('')}
   `;
 
   // Attach click listener to newly rendered chips
   container.querySelectorAll('.chip').forEach(chip => {
     chip.addEventListener('click', () => {
+      const creator = chip.getAttribute('data-creator');
+      setCreatorFilter(creator);
+    });
+  });
+}
+
+function setCreatorFilter(creator) {
+  currentCreatorFilter = creator;
+  currentPage = 1;
+
+  const select = document.getElementById('creatorSelect');
+  if (select && select.value !== creator) {
+    select.value = creator;
+  }
+
+  renderCreatorChips();
+  renderFilteredList();
+  renderMapMarkers();
+
+  if (window.umami) {
+    window.umami.track('filter-creator', { creator });
+  }
+
+  const creatorVideos = travelVideos.filter(v => creator === 'all' || v.creator === creator);
+  if (creatorVideos.length > 0) {
+    const bounds = L.latLngBounds(creatorVideos.map(v => [v.lat, v.lng]));
+    map.fitBounds(bounds, { padding: [60, 60], maxZoom: 10, animate: true });
+  }
+}
+
+// Dynamic Region Chips Renderer
+function renderRegionChips() {
+  const container = document.getElementById('regionChipsContainer');
+  if (!container) return;
+
+  const regionCounts = {
+    'all': travelVideos.length,
+    '동아시아': 0,
+    '동남아': 0,
+    '유럽': 0,
+    '아메리카': 0,
+    '오세아니아': 0,
+    '중동/아프리카': 0,
+    '중앙/남아시아': 0
+  };
+
+  travelVideos.forEach(v => {
+    const r = getRegionForCountry(v.country);
+    if (regionCounts[r] !== undefined) {
+      regionCounts[r]++;
+    }
+  });
+
+  const regions = ['동아시아', '동남아', '유럽', '아메리카', '오세아니아', '중동/아프리카', '중앙/남아시아'];
+
+  container.innerHTML = `
+    <button class="chip ${currentRegionFilter === 'all' ? 'active' : ''}" data-region="all">
+      전체 지역 <span class="chip-count">${regionCounts['all']}</span>
+    </button>
+    ${regions.map(r => `
+      <button class="chip ${currentRegionFilter === r ? 'active' : ''}" data-region="${r}">
+        ${r} <span class="chip-count">${regionCounts[r] || 0}</span>
+      </button>
+    `).join('')}
+  `;
+
+  container.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
       container.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
-      currentCreatorFilter = chip.getAttribute('data-creator');
+      currentRegionFilter = chip.getAttribute('data-region');
       currentPage = 1;
       renderFilteredList();
       renderMapMarkers();
 
       if (window.umami) {
-        window.umami.track('filter-creator', { creator: currentCreatorFilter });
+        window.umami.track('filter-region', { region: currentRegionFilter });
       }
 
-      const creatorVideos = travelVideos.filter(v => currentCreatorFilter === 'all' || v.creator === currentCreatorFilter);
-      if (creatorVideos.length > 0) {
-        const bounds = L.latLngBounds(creatorVideos.map(v => [v.lat, v.lng]));
+      if (REGION_COORDINATES[currentRegionFilter]) {
+        const coord = REGION_COORDINATES[currentRegionFilter];
+        map.flyTo(coord.center, coord.zoom, { duration: 1.2 });
+      } else if (currentRegionFilter === 'all') {
+        map.flyTo([30.0, 40.0], 3, { duration: 1.2 });
+      }
+    });
+  });
+}
+
+// Dynamic My Map Chips Renderer
+function renderMyMapChips() {
+  const container = document.getElementById('myMapChipsContainer');
+  if (!container) return;
+
+  const totalMyMap = travelVideos.filter(isMyMapVideo).length;
+  const bookmarkedCount = travelVideos.filter(v => v.bookmarked).length;
+  const customCount = travelVideos.filter(isCustomVideo).length;
+  const editedCount = travelVideos.filter(v => v.isEdited).length;
+
+  container.innerHTML = `
+    <button class="chip ${currentMyMapFilter === 'all' ? 'active' : ''}" data-mymap="all">
+      전체 내 장소 <span class="chip-count">${totalMyMap}</span>
+    </button>
+    <button class="chip ${currentMyMapFilter === 'bookmarked' ? 'active' : ''}" data-mymap="bookmarked">
+      <span class="material-symbols-rounded icon-xs filled">star</span> 찜한 곳 <span class="chip-count">${bookmarkedCount}</span>
+    </button>
+    <button class="chip ${currentMyMapFilter === 'custom' ? 'active' : ''}" data-mymap="custom">
+      <span class="material-symbols-rounded icon-xs">add_location_alt</span> 직접 등록 <span class="chip-count">${customCount}</span>
+    </button>
+    <button class="chip ${currentMyMapFilter === 'edited' ? 'active' : ''}" data-mymap="edited">
+      <span class="material-symbols-rounded icon-xs">edit_location_alt</span> 수정한 곳 <span class="chip-count">${editedCount}</span>
+    </button>
+  `;
+
+  container.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      container.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      currentMyMapFilter = chip.getAttribute('data-mymap');
+      currentPage = 1;
+      renderFilteredList();
+      renderMapMarkers();
+
+      if (window.umami) {
+        window.umami.track('filter-mymap', { filter: currentMyMapFilter });
+      }
+
+      const filtered = getFilteredVideos();
+      if (filtered.length > 0) {
+        const bounds = L.latLngBounds(filtered.map(v => [v.lat, v.lng]));
         map.fitBounds(bounds, { padding: [60, 60], maxZoom: 10, animate: true });
       }
     });

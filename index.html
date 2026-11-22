@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   
   <!-- Custom Styles -->
-  <link rel="stylesheet" href="css/styles.css?v=20261122_3">
+  <link rel="stylesheet" href="css/styles.css?v=20261122_9">
 
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="669f070a-616f-44b1-b985-f2b5d6052b1c"></script>
@@ -92,27 +92,25 @@
           <button class="tab-btn" id="tabMyMapBtn"><span class="material-symbols-rounded icon-xs filled">star</span> 나만의 맵 <span class="mymap-count-pill" id="myMapTabCount">0</span></button>
         </div>
 
-        <!-- Creator Chips Container -->
-        <div class="filter-chips" id="creatorChipsContainer">
-          <button class="chip active" data-creator="all">전체 유튜버</button>
+        <!-- Creator Chips Container & Dropdown Selector -->
+        <div class="creator-filter-wrap" id="creatorFilterWrap">
+          <div class="creator-select-bar">
+            <span class="material-symbols-rounded select-icon">person_search</span>
+            <select id="creatorSelect" class="creator-select" aria-label="전체 유튜버 선택">
+              <option value="all">전체 유튜버 목록 (379명)</option>
+            </select>
+          </div>
+          <div class="filter-chips" id="creatorChipsContainer">
+            <button class="chip active" data-creator="all">전체 유튜버</button>
+          </div>
         </div>
 
-        <!-- Region Chips Container (Hidden by default) -->
+        <!-- Region Chips Container (Dynamically rendered) -->
         <div class="filter-chips hidden" id="regionChipsContainer">
-          <button class="chip active" data-region="all">전체 지역</button>
-          <button class="chip" data-region="동남아">태국/라오스</button>
-          <button class="chip" data-region="중앙아시아">우즈벡/몽골</button>
-          <button class="chip" data-region="코카서스">아제르/조지아</button>
-          <button class="chip" data-region="중동/아프리카">이집트/모로코</button>
-          <button class="chip" data-region="남아시아">인도</button>
         </div>
 
-        <!-- My Map Chips Container (Hidden by default) -->
+        <!-- My Map Chips Container (Dynamically rendered) -->
         <div class="filter-chips hidden" id="myMapChipsContainer">
-          <button class="chip active" data-mymap="all">전체 내 장소</button>
-          <button class="chip" data-mymap="bookmarked"><span class="material-symbols-rounded icon-xs filled">star</span> 찜한 곳</button>
-          <button class="chip" data-mymap="custom"><span class="material-symbols-rounded icon-xs">add_location_alt</span> 직접 등록</button>
-          <button class="chip" data-mymap="edited"><span class="material-symbols-rounded icon-xs">edit_location_alt</span> 수정한 곳</button>
         </div>
 
         <div class="stats-row">
@@ -372,11 +370,11 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 
   <!-- App Data & Scripts (Modularized) -->
-  <script src="js/data/videos_recent.js?v=20261122_8"></script>
-  <script src="js/data/videos_archive.js?v=20261122_8"></script>
-  <script src="js/store.js?v=20261122_8"></script>
-  <script src="js/map.js?v=20261122_8"></script>
-  <script src="js/ui.js?v=20261122_8"></script>
-  <script src="js/app.js?v=20261122_8"></script>
+  <script src="js/data/videos_recent.js?v=20261122_9"></script>
+  <script src="js/data/videos_archive.js?v=20261122_9"></script>
+  <script src="js/store.js?v=20261122_9"></script>
+  <script src="js/map.js?v=20261122_9"></script>
+  <script src="js/ui.js?v=20261122_9"></script>
+  <script src="js/app.js?v=20261122_9"></script>
 </body>
 </html>

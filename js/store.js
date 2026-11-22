@@ -207,23 +207,33 @@ function extractYoutubeId(urlOrId) {
 }
 
 // Region categorization helper
+const REGION_MAP = {
+  '동아시아': ['일본', '대만', '홍콩', '대한민국', '한국', '몽골', '중국', '마카오'],
+  '동남아': ['태국', '인도네시아', '베트남', '필리핀', '라오스', '말레이시아', '싱가포르', '캄보디아'],
+  '유럽': ['프랑스', '스페인', '스위스', '튀르키예', '이탈리아', '영국', '체코', '헝가리', '오스트리아', '포르투갈', '아일랜드', '핀란드', '네덜란드', '독일', '덴마크', '폴란드', '크로아티아', '노르웨이', '스웨덴', '아이슬란드', '그리스', '벨기에', '리히텐슈타인', '룩셈부르크'],
+  '아메리카': ['미국', '캐나다', '칠레', '아르헨티나', '멕시코', '페루', '콜롬비아', '볼리비아', '브라질'],
+  '오세아니아': ['호주', '뉴질랜드', '괌'],
+  '중동/아프리카': ['이집트', '아랍에미리트', '모로코', '에티오피아', '카보베르데', '남아프리카공화국', '요르단', '사우디아라비아'],
+  '중앙/남아시아': ['인도', '방글라데시', '키르기스스탄', '네팔', '우즈베키스탄', '카자흐스탄', '조지아', '아제르바이잔', '아르메니아']
+};
+
 function getRegionForCountry(country) {
   if (!country) return '기타';
-  if (['태국', '라오스', '베트남', '인도네시아'].includes(country)) return '동남아';
-  if (['우즈베키스탄', '몽골', '카자흐스탄'].includes(country)) return '중앙아시아';
-  if (['아제르바이잔', '조지아', '아르메니아'].includes(country)) return '코카서스';
-  if (['이집트', '모로코', '튀르키예', '요르단'].includes(country)) return '중동/아프리카';
-  if (['인도', '네팔'].includes(country)) return '남아시아';
+  for (const [region, countries] of Object.entries(REGION_MAP)) {
+    if (countries.includes(country)) return region;
+  }
   return '기타';
 }
 
-// Region Zoom Coordinates
+// Region Zoom Coordinates (6 Continents & Key Hubs)
 const REGION_COORDINATES = {
-  '동남아': { center: [15.8700, 100.9925], zoom: 6 },
-  '중앙아시아': { center: [43.0000, 75.0000], zoom: 5 },
-  '코카서스': { center: [41.5000, 47.0000], zoom: 6 },
-  '중동/아프리카': { center: [30.0000, 20.0000], zoom: 4 },
-  '남아시아': { center: [24.0000, 78.0000], zoom: 5 }
+  '동아시아': { center: [34.0, 131.0], zoom: 5 },
+  '동남아': { center: [13.5, 105.0], zoom: 5 },
+  '유럽': { center: [48.0, 12.0], zoom: 4 },
+  '아메리카': { center: [20.0, -85.0], zoom: 3 },
+  '오세아니아': { center: [-25.0, 135.0], zoom: 4 },
+  '중동/아프리카': { center: [20.0, 30.0], zoom: 4 },
+  '중앙/남아시아': { center: [28.0, 77.0], zoom: 4 }
 };
 
 // Date Sort State ('desc': 최신순, 'asc': 오래된순)
