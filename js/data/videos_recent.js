@@ -2,7 +2,4615 @@
  * 최신 여행 영상 데이터 (2026년~)
  */
 const RECENT_VIDEOS = [
-  // [신규 자동 수집] 규진 - 울란바토르 주요 명소 (2026-11-22)
+  {
+    id: "auto-lb5BASFnX60",
+    creator: "Heejoo 희주",
+    youtubeId: "lb5BASFnX60",
+    title: "(Sub) 없는게 없는 두바이 여행 vlog.🐫 세계에서 제일 빠른 롤코 타기•••",
+    channel: "Heejoo 희주",
+    country: "아랍에미리트",
+    city: "두바이",
+    locationName: "두바이 주요 명소",
+    lat: 25.2048,
+    lng: 55.2708,
+    tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
+    tip: "Heejoo 희주의 두바이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "(Sub) 없는게 없는 두바이 여행 vlog.🐫 세계에서 제일 빠른 롤코 타기•••",
+    highlights: []
+  },
+  {
+    id: "auto-mGDFTf23YMQ",
+    creator: "이개은",
+    youtubeId: "mGDFTf23YMQ",
+    title: "Vlog 꿈 같았던 9박 11일 몰디브 두바이 신혼여행 브이로그",
+    channel: "이개은",
+    country: "아랍에미리트",
+    city: "두바이",
+    locationName: "두바이 주요 명소",
+    lat: 25.2048,
+    lng: 55.2708,
+    tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
+    tip: "이개은의 두바이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "Vlog 꿈 같았던 9박 11일 몰디브 두바이 신혼여행 브이로그",
+    highlights: []
+  },
+  {
+    id: "auto-zKVtwaUP0uY",
+    creator: "LeoJ Makeup",
+    youtubeId: "zKVtwaUP0uY",
+    title: "나라에서 집도 준다구요…??❗️유튜브 최초❗️ \"두바이 집\" 들어왔습니다…😎 | 레오제이 여행브이로그",
+    channel: "LeoJ Makeup",
+    country: "아랍에미리트",
+    city: "두바이",
+    locationName: "두바이 주요 명소",
+    lat: 25.2048,
+    lng: 55.2708,
+    tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
+    tip: "LeoJ Makeup의 두바이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나라에서 집도 준다구요…??❗️유튜브 최초❗️ \"두바이 집\" 들어왔습니다…😎 | 레오제이 여행브이로그",
+    highlights: []
+  },
+  {
+    id: "auto-jpcV39dY1ho",
+    creator: "Heejoo 희주",
+    youtubeId: "jpcV39dY1ho",
+    title: "여기에서 살고 싶어요.. 그저 감탄만 나오는 두바이🏜️ feat. 효진,에바",
+    channel: "Heejoo 희주",
+    country: "아랍에미리트",
+    city: "두바이",
+    locationName: "두바이 주요 명소",
+    lat: 25.2048,
+    lng: 55.2708,
+    tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
+    tip: "Heejoo 희주의 두바이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "여기에서 살고 싶어요.. 그저 감탄만 나오는 두바이🏜️ feat. 효진,에바",
+    highlights: []
+  },
+  {
+    id: "auto-oZM8sZOcQws",
+    creator: "지윤일기Jiyundiary",
+    youtubeId: "oZM8sZOcQws",
+    title: "vlog. 곧 결혼하는 커플의 두바이에서 생긴 일..🐪 | 4박6일 여행 브이로그 | 미슐랭 식당 추천, 가성비 호텔, 사막투어, 보트투어, 두바이몰 분수쇼",
+    channel: "지윤일기Jiyundiary",
+    country: "아랍에미리트",
+    city: "두바이",
+    locationName: "두바이 주요 명소",
+    lat: 25.2048,
+    lng: 55.2708,
+    tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
+    tip: "지윤일기Jiyundiary의 두바이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog. 곧 결혼하는 커플의 두바이에서 생긴 일..🐪 | 4박6일 여행 브이로그 | 미슐랭 식당 추천, 가성비 호텔, 사막투어, 보트투어, 두바이몰 분수쇼",
+    highlights: []
+  },
+  {
+    id: "auto-BqwKi9GC5i8",
+    creator: "강쥐G",
+    youtubeId: "BqwKi9GC5i8",
+    title: "🐪 새벽에 떠난...부와아아아아앙🏎🏎 테토녀의 두바이 여행 VLOG ",
+    channel: "강쥐G",
+    country: "아랍에미리트",
+    city: "두바이",
+    locationName: "두바이 주요 명소",
+    lat: 25.2048,
+    lng: 55.2708,
+    tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
+    tip: "강쥐G의 두바이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🐪 새벽에 떠난...부와아아아아앙🏎🏎 테토녀의 두바이 여행 VLOG ",
+    highlights: []
+  },
+  {
+    id: "auto-joaMlbhL_tk",
+    creator: "세이영Sayyoung",
+    youtubeId: "joaMlbhL_tk",
+    title: "지금부터 두바이 여행하기 딱! 좋은 계절🇦🇪 요즘 전세계 1위✨ 아틀란티스 더 로얄,  럭셔리하고 고급스러운 리츠 칼튼 알카이마 🏜️ l 두바이 맛집 추천 ㅣ dubai vlog",
+    channel: "세이영Sayyoung",
+    country: "아랍에미리트",
+    city: "두바이",
+    locationName: "두바이 주요 명소",
+    lat: 25.2048,
+    lng: 55.2708,
+    tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
+    tip: "세이영Sayyoung의 두바이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "지금부터 두바이 여행하기 딱! 좋은 계절🇦🇪 요즘 전세계 1위✨ 아틀란티스 더 로얄,  럭셔리하고 고급스러운 리츠 칼튼 알카이마 🏜️ l 두바이 맛집 추천 ㅣ dubai vlog",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-1",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "시작",
+    lat: 30.0444,
+    lng: 31.2327,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[00:00] 영상 시작 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-2",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "크루즈 체크인",
+    lat: 30.0474,
+    lng: 31.2327,
+    startTime: 50,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[00:50] 영상 크루즈 체크인 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-3",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "소피텔 레전드 올드 카타락 아스완",
+    lat: 30.0414,
+    lng: 31.2357,
+    startTime: 187,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[03:07] 영상 소피텔 레전드 올드 카타락 아스완 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-4",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "모터보트 투어",
+    lat: 30.0444,
+    lng: 31.2357,
+    startTime: 301,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[05:01] 영상 모터보트 투어 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-5",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "누비안 빌리지",
+    lat: 30.0474,
+    lng: 31.2357,
+    startTime: 384,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[06:24] 영상 누비안 빌리지 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-6",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "아부심벨",
+    lat: 30.0414,
+    lng: 31.2387,
+    startTime: 568,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[09:28] 영상 아부심벨 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-7",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "콤옴보 신전",
+    lat: 30.0444,
+    lng: 31.2387,
+    startTime: 829,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[13:49] 영상 콤옴보 신전 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-9",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "룩소르 시장",
+    lat: 30.0414,
+    lng: 31.2417,
+    startTime: 1079,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[17:59] 영상 룩소르 시장 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-10",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "벌룬 투어",
+    lat: 30.0444,
+    lng: 31.2417,
+    startTime: 1267,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[21:07] 영상 벌룬 투어 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-11",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "동서안 투어 시작",
+    lat: 30.0474,
+    lng: 31.2417,
+    startTime: 1405,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[23:25] 영상 동서안 투어 시작 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-12",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "왕가의 계곡",
+    lat: 30.0414,
+    lng: 31.2447,
+    startTime: 1420,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[23:40] 영상 왕가의 계곡 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-13",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "하트셉수트 장제전",
+    lat: 30.0444,
+    lng: 31.2447,
+    startTime: 1500,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[25:00] 영상 하트셉수트 장제전 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-14",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "카르락 신전",
+    lat: 30.0474,
+    lng: 31.2447,
+    startTime: 1606,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[26:46] 영상 카르락 신전 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-15",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "이베로텔 룩소르 체크인",
+    lat: 30.0414,
+    lng: 31.2477,
+    startTime: 1717,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[28:37] 영상 이베로텔 룩소르 체크인 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-17",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "메리어트 메나 체크인",
+    lat: 30.0474,
+    lng: 31.2477,
+    startTime: 1917,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[31:57] 영상 메리어트 메나 체크인 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-18",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "칼릴리 시장",
+    lat: 30.0414,
+    lng: 31.2507,
+    startTime: 2028,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[33:48] 영상 칼릴리 시장 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-19",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "피라미드, 스핑크스",
+    lat: 30.0444,
+    lng: 31.2507,
+    startTime: 2239,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[37:19] 영상 피라미드, 스핑크스 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-20",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "이집트 대박물관",
+    lat: 30.0474,
+    lng: 31.2507,
+    startTime: 2415,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[40:15] 영상 이집트 대박물관 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-ZO2ipJXAj3o-21",
+    creator: "묵화mookwa",
+    youtubeId: "ZO2ipJXAj3o",
+    title: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    channel: "묵화mookwa",
+    country: "이집트",
+    city: "카이로",
+    locationName: "마지막 만찬",
+    lat: 30.0414,
+    lng: 31.2537,
+    startTime: 2533,
+    tags: ["카이로", "이집트", "타임라인", "유튜브추천"],
+    tip: "[42:13] 영상 마지막 만찬 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog) 할 수 있는건 다 한 🐶빡센 이집트 여행 브이로그🐫🇪🇬 관광의 끝을 보여드릴게요  | 나일강 크루즈, 벌룬투어, 왕가의 계곡, 피라미드, 대박물관, 칼릴리 시장",
+    highlights: []
+  },
+  {
+    id: "auto-0z6SZ_dAiEc",
+    creator: "유정 YUJEONG",
+    youtubeId: "0z6SZ_dAiEc",
+    title: "서둘러라 곱셈왕 실사판 이집트..🇪🇬 이 여자가 왜이리 무리를 할까😁💦 난이도 별 5개! 10박 11일 나 홀로 아프리카 ep.1🏜️ 피라미드, 스핑크스, 파라오 보고 낙타도 탐🐪",
+    channel: "유정 YUJEONG",
+    country: "이집트",
+    city: "카이로",
+    locationName: "카이로 피라미드 & 스핑크스",
+    lat: 29.9792,
+    lng: 31.1342,
+    startTime: 0,
+    tags: ["카이로", "이집트", "유튜브추천", "여행"],
+    tip: "유정 YUJEONG의 카이로 피라미드 & 스핑크스 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "서둘러라 곱셈왕 실사판 이집트..🇪🇬 이 여자가 왜이리 무리를 할까😁💦 난이도 별 5개! 10박 11일 나 홀로 아프리카 ep.1🏜️ 피라미드, 스핑크스, 파라오 보고 낙타도 탐🐪",
+    highlights: []
+  },
+  {
+    id: "auto-vdlDran6WvM",
+    creator: "빛이나*pearlena*",
+    youtubeId: "vdlDran6WvM",
+    title: "쉽지 않다 ..... 이.집.트........🐫🏜️ㅣEgypt VLOG",
+    channel: "빛이나*pearlena*",
+    country: "이집트",
+    city: "카이로",
+    locationName: "카이로 주요 명소",
+    lat: 30.0444,
+    lng: 31.2357,
+    tags: ["카이로", "이집트", "유튜브추천", "여행"],
+    tip: "빛이나*pearlena*의 카이로 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "쉽지 않다 ..... 이.집.트........🐫🏜️ㅣEgypt VLOG",
+    highlights: []
+  },
+  {
+    id: "auto-4x_5DY7boSI",
+    creator: "빠니보틀 Pani Bottle",
+    youtubeId: "4x_5DY7boSI",
+    title: "이집트 고대 유적 가보기 【유라시아96】",
+    channel: "빠니보틀 Pani Bottle",
+    country: "이집트",
+    city: "카이로",
+    locationName: "카이로 주요 명소",
+    lat: 30.0444,
+    lng: 31.2357,
+    tags: ["카이로", "이집트", "유튜브추천", "여행"],
+    tip: "빠니보틀 Pani Bottle의 카이로 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "이집트 고대 유적 가보기 【유라시아96】",
+    highlights: []
+  },
+  {
+    id: "auto-v7bL2aoGacA-1",
+    creator: "민제 meenje",
+    youtubeId: "v7bL2aoGacA",
+    title: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    channel: "민제 meenje",
+    country: "튀르키예",
+    city: "카파도키아",
+    locationName: "인생 여행지 튀르키예🇹🇷🕌",
+    lat: 38.6431,
+    lng: 34.8259,
+    tags: ["카파도키아", "튀르키예", "타임라인", "유튜브추천"],
+    tip: "[00:00] 영상 인생 여행지 튀르키예🇹🇷🕌 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    highlights: []
+  },
+  {
+    id: "auto-v7bL2aoGacA-2",
+    creator: "민제 meenje",
+    youtubeId: "v7bL2aoGacA",
+    title: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    channel: "민제 meenje",
+    country: "튀르키예",
+    city: "카파도키아",
+    locationName: "카파도키아",
+    lat: 38.6461,
+    lng: 34.8259,
+    startTime: 12,
+    tags: ["카파도키아", "튀르키예", "타임라인", "유튜브추천"],
+    tip: "[00:12] 영상 카파도키아 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    highlights: []
+  },
+  {
+    id: "auto-v7bL2aoGacA-3",
+    creator: "민제 meenje",
+    youtubeId: "v7bL2aoGacA",
+    title: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    channel: "민제 meenje",
+    country: "튀르키예",
+    city: "카파도키아",
+    locationName: "안탈리아",
+    lat: 38.6401,
+    lng: 34.8289,
+    startTime: 894,
+    tags: ["카파도키아", "튀르키예", "타임라인", "유튜브추천"],
+    tip: "[14:54] 영상 안탈리아 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    highlights: []
+  },
+  {
+    id: "auto-v7bL2aoGacA-4",
+    creator: "민제 meenje",
+    youtubeId: "v7bL2aoGacA",
+    title: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    channel: "민제 meenje",
+    country: "튀르키예",
+    city: "카파도키아",
+    locationName: "카쉬",
+    lat: 38.6431,
+    lng: 34.8289,
+    startTime: 1119,
+    tags: ["카파도키아", "튀르키예", "타임라인", "유튜브추천"],
+    tip: "[18:39] 영상 카쉬 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    highlights: []
+  },
+  {
+    id: "auto-v7bL2aoGacA-5",
+    creator: "민제 meenje",
+    youtubeId: "v7bL2aoGacA",
+    title: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    channel: "민제 meenje",
+    country: "튀르키예",
+    city: "카파도키아",
+    locationName: "이스탄불",
+    lat: 38.6461,
+    lng: 34.8289,
+    startTime: 1384,
+    tags: ["카파도키아", "튀르키예", "타임라인", "유튜브추천"],
+    tip: "[23:04] 영상 이스탄불 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "인생여행지 바뀔거예요..🇹🇷🕌 튀르키예 10박 12일 | 안탈리아, 카쉬, 카파도키아, 이스탄불 몽땅 간 (ᵔ꒳ ᵔマ੭  터키 여행 브이로그 | Türkiye vlog",
+    highlights: []
+  },
+  {
+    id: "auto-rLQEilCvM2w",
+    creator: "령령 Ryeongryeong",
+    youtubeId: "rLQEilCvM2w",
+    title: "낭만 가득했던 튀르키예 여행.∗̥✩⁺˚♡🇹🇷 이스탄불,안탈리아,카쉬까지! 인생여행지 등극이실게 ~ 🌟",
+    channel: "령령 Ryeongryeong",
+    country: "튀르키예",
+    city: "이스탄불",
+    locationName: "이스탄불 주요 명소",
+    lat: 41.0082,
+    lng: 28.9784,
+    tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
+    tip: "령령 Ryeongryeong의 이스탄불 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "낭만 가득했던 튀르키예 여행.∗̥✩⁺˚♡🇹🇷 이스탄불,안탈리아,카쉬까지! 인생여행지 등극이실게 ~ 🌟",
+    highlights: []
+  },
+  {
+    id: "auto-CHSyAOGWKDY",
+    creator: "트래블 메이커 Travel Maker",
+    youtubeId: "CHSyAOGWKDY",
+    title: "🇹🇷 튀르키예만 10년 판매한 여행사 직원이 말아주는 '튀르키예' 가이드",
+    channel: "트래블 메이커 Travel Maker",
+    country: "튀르키예",
+    city: "이스탄불",
+    locationName: "이스탄불 주요 명소",
+    lat: 41.0082,
+    lng: 28.9784,
+    tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
+    tip: "트래블 메이커 Travel Maker의 이스탄불 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇹🇷 튀르키예만 10년 판매한 여행사 직원이 말아주는 '튀르키예' 가이드",
+    highlights: []
+  },
+  {
+    id: "auto-8D2bgaDJ33U",
+    creator: "서록 seorok",
+    youtubeId: "8D2bgaDJ33U",
+    title: "터키 여행 브이로그🇹🇷동굴호텔, 열기구투어, 그랜드바자르 쇼핑꿀팁까지 •• 🔥",
+    channel: "서록 seorok",
+    country: "튀르키예",
+    city: "이스탄불",
+    locationName: "이스탄불 터키",
+    lat: 41.0082,
+    lng: 28.9784,
+    tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
+    tip: "서록 seorok의 이스탄불 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "터키 여행 브이로그🇹🇷동굴호텔, 열기구투어, 그랜드바자르 쇼핑꿀팁까지 •• 🔥",
+    highlights: []
+  },
+  {
+    id: "auto-txGdg7Cyujw",
+    creator: "유네린LIN",
+    youtubeId: "txGdg7Cyujw",
+    title: "튀르키예 여행 브이로그 🇹🇷 입이 떡 벌어지는 신기한 유적지, 자연 투어 | 파묵칼레, 고대로마, 지하도시? 🕊️ | 가족여행 패키지",
+    channel: "유네린LIN",
+    country: "튀르키예",
+    city: "파묵칼레",
+    locationName: "파묵칼레",
+    lat: 37.9255,
+    lng: 29.1213,
+    startTime: 0,
+    tags: ["파묵칼레", "튀르키예", "유튜브추천", "여행"],
+    tip: "유네린LIN의 파묵칼레 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "튀르키예 여행 브이로그 🇹🇷 입이 떡 벌어지는 신기한 유적지, 자연 투어 | 파묵칼레, 고대로마, 지하도시? 🕊️ | 가족여행 패키지",
+    highlights: []
+  },
+  {
+    id: "auto-Yq21JH7YlUI",
+    creator: "미서MISEO",
+    youtubeId: "Yq21JH7YlUI",
+    title: "개고생 하고 온 튀르키예 여행 브이로그🇹🇷",
+    channel: "미서MISEO",
+    country: "튀르키예",
+    city: "이스탄불",
+    locationName: "이스탄불 주요 명소",
+    lat: 41.0082,
+    lng: 28.9784,
+    tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
+    tip: "미서MISEO의 이스탄불 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "개고생 하고 온 튀르키예 여행 브이로그🇹🇷",
+    highlights: []
+  },
+  {
+    id: "auto-xTRo-XDHJHg",
+    creator: "소윤키친 | Soyun",
+    youtubeId: "xTRo-XDHJHg",
+    title: "이스탄불 여행, 왜 이제야 왔을까? | 튀르키예 여행 브이로그 1부",
+    channel: "소윤키친 | Soyun",
+    country: "튀르키예",
+    city: "이스탄불",
+    locationName: "이스탄불 주요 명소",
+    lat: 41.0082,
+    lng: 28.9784,
+    tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
+    tip: "소윤키친 | Soyun의 이스탄불 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "이스탄불 여행, 왜 이제야 왔을까? | 튀르키예 여행 브이로그 1부",
+    highlights: []
+  },
+  {
+    id: "auto-aQfJphSd1cg",
+    creator: "여행윤Tripyun",
+    youtubeId: "aQfJphSd1cg",
+    title: "여자 둘이 터키 갔다가 진짜 안 돌아오고 싶었던 이유.. 🇹🇷 🕌 터키 5박7일 Vlog ✈️ #이스탄불 #카파도키아 #페티예",
+    channel: "여행윤Tripyun",
+    country: "튀르키예",
+    city: "카파도키아",
+    locationName: "카파도키아 주요 명소",
+    lat: 38.6431,
+    lng: 34.8289,
+    tags: ["카파도키아", "튀르키예", "유튜브추천", "여행"],
+    tip: "여행윤Tripyun의 카파도키아 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "여자 둘이 터키 갔다가 진짜 안 돌아오고 싶었던 이유.. 🇹🇷 🕌 터키 5박7일 Vlog ✈️ #이스탄불 #카파도키아 #페티예",
+    highlights: []
+  },
+  {
+    id: "auto-vAzmXs8S-T4",
+    creator: "인영 forever young",
+    youtubeId: "vAzmXs8S-T4",
+    title: "우당탕탕 부모님과 해외여행.. 희망편(?)⭐️ 튀르키예 몰아보기🔥 필수코스 싹돌기! 풍경 미쳤다.. 맛있는 건 또 왜이리 많은겨~!",
+    channel: "인영 forever young",
+    country: "튀르키예",
+    city: "이스탄불",
+    locationName: "이스탄불 주요 명소",
+    lat: 41.0082,
+    lng: 28.9784,
+    tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
+    tip: "인영 forever young의 이스탄불 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "우당탕탕 부모님과 해외여행.. 희망편(?)⭐️ 튀르키예 몰아보기🔥 필수코스 싹돌기! 풍경 미쳤다.. 맛있는 건 또 왜이리 많은겨~!",
+    highlights: []
+  },
+  {
+    id: "auto-bC2wMaRLgO0",
+    creator: "소희맨션 soheemansion",
+    youtubeId: "bC2wMaRLgO0",
+    title: "캐나다 밴프 밴쿠버 여행 vlog🇨🇦 (물가. 쇼핑리스트. 코스. 날씨. 맛집. 숙소까지🏞️)",
+    channel: "소희맨션 soheemansion",
+    country: "캐나다",
+    city: "밴쿠버",
+    locationName: "밴쿠버 주요 명소",
+    lat: 49.2827,
+    lng: -123.1207,
+    tags: ["밴쿠버", "캐나다", "유튜브추천", "여행"],
+    tip: "소희맨션 soheemansion의 밴쿠버 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "캐나다 밴프 밴쿠버 여행 vlog🇨🇦 (물가. 쇼핑리스트. 코스. 날씨. 맛집. 숙소까지🏞️)",
+    highlights: []
+  },
+  {
+    id: "auto-WZySkrrBIGo",
+    creator: "아재여행 Ajae Travel",
+    youtubeId: "WZySkrrBIGo",
+    title: "미친 물가의 캐나다 로키, 결국 얼마 썼을까?｜13박 15일 총 경비 공개",
+    channel: "아재여행 Ajae Travel",
+    country: "캐나다",
+    city: "밴프",
+    locationName: "밴프 주요 명소",
+    lat: 51.1784,
+    lng: -115.5708,
+    tags: ["밴프", "캐나다", "유튜브추천", "여행"],
+    tip: "아재여행 Ajae Travel의 밴프 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "미친 물가의 캐나다 로키, 결국 얼마 썼을까?｜13박 15일 총 경비 공개",
+    highlights: []
+  },
+  {
+    id: "auto-zuQp4DuQhvg",
+    creator: "한블루 Hanblue",
+    youtubeId: "zuQp4DuQhvg",
+    title: "캐나다 토론토 여행 vlog🇨🇦 | 여름 감성 낭낭한 토론토에서 5일・・🌳 | 나이아가라 폭포 투어🌊 & 인생 첫 헬기 탑승 | 카사로마• 디스틸러리 디스트릿• 다운타운• 온타리오",
+    channel: "한블루 Hanblue",
+    country: "캐나다",
+    city: "토론토",
+    locationName: "토론토 주요 명소",
+    lat: 43.6532,
+    lng: -79.3832,
+    tags: ["토론토", "캐나다", "유튜브추천", "여행"],
+    tip: "한블루 Hanblue의 토론토 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "캐나다 토론토 여행 vlog🇨🇦 | 여름 감성 낭낭한 토론토에서 5일・・🌳 | 나이아가라 폭포 투어🌊 & 인생 첫 헬기 탑승 | 카사로마• 디스틸러리 디스트릿• 다운타운• 온타리오",
+    highlights: []
+  },
+  {
+    id: "auto-B8TJqI3Kk50",
+    creator: "쏘이Soy The World",
+    youtubeId: "B8TJqI3Kk50",
+    title: "🇨🇦 #1 나홀로 첫 밴쿠버 입국기… 엄청난 물가와 첫인상 충격 그 자체네요",
+    channel: "쏘이Soy The World",
+    country: "캐나다",
+    city: "밴쿠버",
+    locationName: "밴쿠버 주요 명소",
+    lat: 49.2827,
+    lng: -123.1207,
+    tags: ["밴쿠버", "캐나다", "유튜브추천", "여행"],
+    tip: "쏘이Soy The World의 밴쿠버 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇨🇦 #1 나홀로 첫 밴쿠버 입국기… 엄청난 물가와 첫인상 충격 그 자체네요",
+    highlights: []
+  },
+  {
+    id: "auto-qXJQxc3VSuc",
+    creator: "레오티비 LEOTV",
+    youtubeId: "qXJQxc3VSuc",
+    title: "구독자가 떠먹여주는 밴쿠버 날먹 여행",
+    channel: "레오티비 LEOTV",
+    country: "캐나다",
+    city: "밴쿠버",
+    locationName: "밴쿠버 주요 명소",
+    lat: 49.2827,
+    lng: -123.1207,
+    tags: ["밴쿠버", "캐나다", "유튜브추천", "여행"],
+    tip: "레오티비 LEOTV의 밴쿠버 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "구독자가 떠먹여주는 밴쿠버 날먹 여행",
+    highlights: []
+  },
+  {
+    id: "auto-qE_zPzfvwPM",
+    creator: "아재여행 Ajae Travel",
+    youtubeId: "qE_zPzfvwPM",
+    title: "초극성수기 캐나다 로키 로드트립의 서막｜미친 물가, 미친 풍경",
+    channel: "아재여행 Ajae Travel",
+    country: "캐나다",
+    city: "밴쿠버",
+    locationName: "밴쿠버 주요 명소",
+    lat: 49.2827,
+    lng: -123.1207,
+    tags: ["밴쿠버", "캐나다", "유튜브추천", "여행"],
+    tip: "아재여행 Ajae Travel의 밴쿠버 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "초극성수기 캐나다 로키 로드트립의 서막｜미친 물가, 미친 풍경",
+    highlights: []
+  },
+  {
+    id: "auto-c9w6ssBqZbY",
+    creator: "혜리",
+    youtubeId: "c9w6ssBqZbY",
+    title: "누가 밴쿠버를 계획 없이 가? 안녕하세요 누입니다 🇨🇦",
+    channel: "혜리",
+    country: "캐나다",
+    city: "밴쿠버",
+    locationName: "밴쿠버 주요 명소",
+    lat: 49.2827,
+    lng: -123.1207,
+    tags: ["밴쿠버", "캐나다", "유튜브추천", "여행"],
+    tip: "혜리의 밴쿠버 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "누가 밴쿠버를 계획 없이 가? 안녕하세요 누입니다 🇨🇦",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-1",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "시랑해 사드니 🤍",
+    lat: -33.8688,
+    lng: 151.2063,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[0:00] 영상 시랑해 사드니 🤍 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-2",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "브런치 맛집 Single O Surry Hills",
+    lat: -33.8658,
+    lng: 151.2063,
+    startTime: 272,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[4:32] 영상 브런치 맛집 Single O Surry Hills 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-3",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "빵 맛집 A.P House",
+    lat: -33.8718,
+    lng: 151.2093,
+    startTime: 332,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[5:32] 영상 빵 맛집 A.P House 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-4",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "공원 Harmony Park",
+    lat: -33.8688,
+    lng: 151.2093,
+    startTime: 350,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[5:50] 영상 공원 Harmony Park 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-5",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "스투시 집착광공 개큰등장 Stüssy Sydney",
+    lat: -33.8658,
+    lng: 151.2093,
+    startTime: 404,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[6:44] 영상 스투시 집착광공 개큰등장 Stüssy Sydney 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-6",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "또공원 Hyde Park",
+    lat: -33.8718,
+    lng: 151.2123,
+    startTime: 414,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[6:54] 영상 또공원 Hyde Park 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-7",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "또투시 Glue Store QVB",
+    lat: -33.8688,
+    lng: 151.2123,
+    startTime: 457,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[7:37] 영상 또투시 Glue Store QVB 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-8",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "나트륨 파스타 맛집 Fabbrica Pasta Shop CBD",
+    lat: -33.8658,
+    lng: 151.2123,
+    startTime: 510,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[8:30] 영상 나트륨 파스타 맛집 Fabbrica Pasta Shop CBD 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-9",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "마트 털기 Woolworths Town Hall",
+    lat: -33.8718,
+    lng: 151.2153,
+    startTime: 552,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[9:12] 영상 마트 털기 Woolworths Town Hall 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-10",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "위치 개짱 숙소 Hilton Sydney",
+    lat: -33.8688,
+    lng: 151.2153,
+    startTime: 637,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[10:37] 영상 위치 개짱 숙소 Hilton Sydney 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-11",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "오페라하우스 Sydney Opera House",
+    lat: -33.8658,
+    lng: 151.2153,
+    startTime: 732,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[12:12] 영상 오페라하우스 Sydney Opera House 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-12",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "젤라또 맛집 Gelato Messina Circular Quay",
+    lat: -33.8718,
+    lng: 151.2183,
+    startTime: 828,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[13:48] 영상 젤라또 맛집 Gelato Messina Circular Quay 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-13",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "에코백 곁들인 서점 Abbey's Bookshop",
+    lat: -33.8688,
+    lng: 151.2183,
+    startTime: 938,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[15:38] 영상 에코백 곁들인 서점 Abbey's Bookshop 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-14",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "주말시장 The Rocks Market",
+    lat: -33.8658,
+    lng: 151.2183,
+    startTime: 1009,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[16:49] 영상 주말시장 The Rocks Market 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-15",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "에코백 맛집 Squidinki",
+    lat: -33.8718,
+    lng: 151.2213,
+    startTime: 1064,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[17:44] 영상 에코백 맛집 Squidinki 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-17",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "재주도 아님 Gap Park",
+    lat: -33.8658,
+    lng: 151.2213,
+    startTime: 1339,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[22:19] 영상 재주도 아님 Gap Park 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-18",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "본다이비치 Bondi Beach",
+    lat: -33.8718,
+    lng: 151.2243,
+    startTime: 1394,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[23:14] 영상 본다이비치 Bondi Beach 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-21",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "또또투시 Glue Store Bondi Junction",
+    lat: -33.8718,
+    lng: 151.2273,
+    startTime: 1636,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[27:16] 영상 또또투시 Glue Store Bondi Junction 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-22",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "해산물 맛집 Jordon's Seafood",
+    lat: -33.8688,
+    lng: 151.2273,
+    startTime: 1713,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[28:33] 영상 해산물 맛집 Jordon's Seafood 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-BcKus0Krm4o-23",
+    creator: "시오 sio",
+    youtubeId: "BcKus0Krm4o",
+    title: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "불꽃놀이 Pyrmont Bridge",
+    lat: -33.8658,
+    lng: 151.2273,
+    startTime: 1801,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[30:01] 영상 불꽃놀이 Pyrmont Bridge 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺일주일 연차 갈기고 떠난 시드니 여행 vlog❤️| 호주 이렇게 좋아버리면 나보고 어뜩하라고⋯ | 프로계획러의 시드니 찐추천 맛집, 명소, 꿀팁 쌉P들은 이대로만 하셔💭",
+    highlights: []
+  },
+  {
+    id: "auto-3NYlyZyrFP0",
+    creator: "MINDELI민델리",
+    youtubeId: "3NYlyZyrFP0",
+    title: "VLOG🌳 나혼자 시드니 7박 9일✦ ep.01 | 써리힐즈 소품샵, 시드니 브런치 카페, 시드니 일몰뷰 맛집, 어그 쇼핑, 시드니 주말 마켓",
+    channel: "MINDELI민델리",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "MINDELI민델리의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "VLOG🌳 나혼자 시드니 7박 9일✦ ep.01 | 써리힐즈 소품샵, 시드니 브런치 카페, 시드니 일몰뷰 맛집, 어그 쇼핑, 시드니 주말 마켓",
+    highlights: []
+  },
+  {
+    id: "auto-tp6jBqGDGSQ",
+    creator: "모르는지",
+    youtubeId: "tp6jBqGDGSQ",
+    title: "드디어 찾았다 인생 여행지..호주에서 꿈같은 일주일🇦🇺 ",
+    channel: "모르는지",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "모르는지의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "드디어 찾았다 인생 여행지..호주에서 꿈같은 일주일🇦🇺 ",
+    highlights: []
+  },
+  {
+    id: "auto-8HDs4S2nPbg",
+    creator: "이손 eson",
+    youtubeId: "8HDs4S2nPbg",
+    title: "도파민1000% 찍은 대유잼도시 시드니 5박6일🇦🇺🦘|현지인 맛집•소품샵•쇼핑루트",
+    channel: "이손 eson",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "이손 eson의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "도파민1000% 찍은 대유잼도시 시드니 5박6일🇦🇺🦘|현지인 맛집•소품샵•쇼핑루트",
+    highlights: []
+  },
+  {
+    id: "auto-k755izOJ9VQ",
+    creator: "유세이 yusei",
+    youtubeId: "k755izOJ9VQ",
+    title: "성격 안좋은 여자의 나홀로 시드니여행 [1]",
+    channel: "유세이 yusei",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "유세이 yusei의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "성격 안좋은 여자의 나홀로 시드니여행 [1]",
+    highlights: []
+  },
+  {
+    id: "auto-VQQuCSNM_ZE",
+    creator: "yoovlog",
+    youtubeId: "VQQuCSNM_ZE",
+    title: "4살, 돌쟁이와 폭우 속의 시드니🇦🇺 가족해외여행, 아기 이유식은?, 시드니 맛집, 커피 맛집, 시드니 어때?! ",
+    channel: "yoovlog",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "yoovlog의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "4살, 돌쟁이와 폭우 속의 시드니🇦🇺 가족해외여행, 아기 이유식은?, 시드니 맛집, 커피 맛집, 시드니 어때?! ",
+    highlights: []
+  },
+  {
+    id: "auto-Ix__riMh2U0",
+    creator: "아가리어터",
+    youtubeId: "Ix__riMh2U0",
+    title: "혼여행 외롭다니까 바로 담날 호주까지 날라온 찐친 브이로그",
+    channel: "아가리어터",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "아가리어터의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "혼여행 외롭다니까 바로 담날 호주까지 날라온 찐친 브이로그",
+    highlights: []
+  },
+  {
+    id: "auto-iCWQPEfj6qU",
+    creator: "아재여행 Ajae Travel",
+    youtubeId: "iCWQPEfj6qU",
+    title: "[4K] 아재 혼자 18박 20일 호주 여행 몰아보기",
+    channel: "아재여행 Ajae Travel",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "아재여행 Ajae Travel의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[4K] 아재 혼자 18박 20일 호주 여행 몰아보기",
+    highlights: []
+  },
+  {
+    id: "auto-0-7JXIJ9_vA",
+    creator: "샘밧드의 모험",
+    youtubeId: "0-7JXIJ9_vA",
+    title: "호주 여행은 무조건 시드니? 영상을 보면 생각이 달라지실 겁니다",
+    channel: "샘밧드의 모험",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "샘밧드의 모험의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "호주 여행은 무조건 시드니? 영상을 보면 생각이 달라지실 겁니다",
+    highlights: []
+  },
+  {
+    id: "auto-voIFr3n3iUg",
+    creator: "유히로 Yuhiro",
+    youtubeId: "voIFr3n3iUg",
+    title: "내가 내 영혼을 시드니에 두고왔네..호주여행 Vlog🇦🇺",
+    channel: "유히로 Yuhiro",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "유히로 Yuhiro의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "내가 내 영혼을 시드니에 두고왔네..호주여행 Vlog🇦🇺",
+    highlights: []
+  },
+  {
+    id: "auto-I0ynC1fydN8",
+    creator: "신세경 sjkuksee",
+    youtubeId: "I0ynC1fydN8",
+    title: "시드니 여행 브이로그",
+    channel: "신세경 sjkuksee",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "신세경 sjkuksee의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "시드니 여행 브이로그",
+    highlights: []
+  },
+  {
+    id: "auto-Gj7elPvOLwE",
+    creator: "토모토모TomoTomo",
+    youtubeId: "Gj7elPvOLwE",
+    title: "호주 누가 노잼이래👊💥 5일간 시드니에서 먹고 입은 것들.zip🇦🇺 (에어비앤비 감금썰😱 , 가을ootd, 호주남자 플러팅?🐨, 시드니 맛집 추천)",
+    channel: "토모토모TomoTomo",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "토모토모TomoTomo의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "호주 누가 노잼이래👊💥 5일간 시드니에서 먹고 입은 것들.zip🇦🇺 (에어비앤비 감금썰😱 , 가을ootd, 호주남자 플러팅?🐨, 시드니 맛집 추천)",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-1",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 2편 시작",
+    lat: -33.8688,
+    lng: 151.2063,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[0:00] 영상 시드니 2편 시작 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-2",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "스투시무새 개큰등장 Glue Store QVB",
+    lat: -33.8658,
+    lng: 151.2063,
+    startTime: 56,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[0:56] 영상 스투시무새 개큰등장 Glue Store QVB 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-3",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "스투시 실패편 Culture Kings Sydney",
+    lat: -33.8718,
+    lng: 151.2093,
+    startTime: 66,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[1:06] 영상 스투시 실패편 Culture Kings Sydney 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-5",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "또투시 Glue Store Central Park",
+    lat: -33.8658,
+    lng: 151.2093,
+    startTime: 146,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[2:26] 영상 또투시 Glue Store Central Park 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-6",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "쓰떼끼 맛집 Macelleria Newtown",
+    lat: -33.8718,
+    lng: 151.2123,
+    startTime: 156,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[2:36] 영상 쓰떼끼 맛집 Macelleria Newtown 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-7",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "뉴타운 소품샵 Artisans' Nest",
+    lat: -33.8688,
+    lng: 151.2123,
+    startTime: 286,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[4:46] 영상 뉴타운 소품샵 Artisans' Nest 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-8",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "갬성 서점 Elizabeth's Bookshops",
+    lat: -33.8658,
+    lng: 151.2123,
+    startTime: 336,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[5:36] 영상 갬성 서점 Elizabeth's Bookshops 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-9",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "3대 커피 Campos Coffee Newtown",
+    lat: -33.8718,
+    lng: 151.2153,
+    startTime: 411,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[6:51] 영상 3대 커피 Campos Coffee Newtown 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-10",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "호그와트 The University of Sydney",
+    lat: -33.8688,
+    lng: 151.2153,
+    startTime: 451,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[7:31] 영상 호그와트 The University of Sydney 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-11",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "노을 맛집 Observatory Hill Park",
+    lat: -33.8658,
+    lng: 151.2153,
+    startTime: 616,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[10:16] 영상 노을 맛집 Observatory Hill Park 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-13",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "ㅅㅌㅅ.. Glue Store World Square",
+    lat: -33.8688,
+    lng: 151.2183,
+    startTime: 974,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[16:14] 영상 ㅅㅌㅅ.. Glue Store World Square 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-14",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "잠옷 맛집 Peter Alexander World Square",
+    lat: -33.8658,
+    lng: 151.2183,
+    startTime: 999,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[16:39] 영상 잠옷 맛집 Peter Alexander World Square 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-15",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "버거 맛집 Betty's Burger",
+    lat: -33.8718,
+    lng: 151.2213,
+    startTime: 1029,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[17:09] 영상 버거 맛집 Betty's Burger 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-17",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "નુલુંગ Koala Jolla Saranghae",
+    lat: -33.8658,
+    lng: 151.2213,
+    startTime: 1144,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[19:04] 영상 નુલુંગ Koala Jolla Saranghae 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-18",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "🤍🩶🤍🩶Koala Baby Jolla Cute",
+    lat: -33.8718,
+    lng: 151.2243,
+    startTime: 1223,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[20:23] 영상 🤍🩶🤍🩶Koala Baby Jolla Cute 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-19",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "블루마운틴 Lincoln's Rock",
+    lat: -33.8688,
+    lng: 151.2243,
+    startTime: 1340,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[22:20] 영상 블루마운틴 Lincoln's Rock 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-20",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "아이스크림 맛집 Josophan's Fine Chocolates",
+    lat: -33.8658,
+    lng: 151.2243,
+    startTime: 1417,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[23:37] 영상 아이스크림 맛집 Josophan's Fine Chocolates 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-21",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "세자매봉 Echo Point Lookout",
+    lat: -33.8718,
+    lng: 151.2273,
+    startTime: 1467,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[24:27] 영상 세자매봉 Echo Point Lookout 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-TG3V-aXBGOI-22",
+    creator: "시오 sio",
+    youtubeId: "TG3V-aXBGOI",
+    title: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    channel: "시오 sio",
+    country: "호주",
+    city: "시드니",
+    locationName: "마트 털기 Coles World Square",
+    lat: -33.8688,
+    lng: 151.2273,
+    startTime: 1769,
+    tags: ["시드니", "호주", "타임라인", "유튜브추천"],
+    tip: "[29:29] 영상 마트 털기 Coles World Square 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺낭만 도라버린 호주 시드니 여행 vlog ep.2💙| 움직이는 코알라 옹동이 보고 가셔바..🐨| 시티&투어 여행 꿀팁 야무지게 다 아르켜줄게 | 시드니 어뜨케 사랑 안 해 ⋯",
+    highlights: []
+  },
+  {
+    id: "auto-ync8qBqGZY0",
+    creator: "areumsongee아름송이",
+    youtubeId: "ync8qBqGZY0",
+    title: "시드니 ep.1 🇦🇺 호주 여행 너무 재미있으시다 ....꼭 해봐야할 투어와 인생샷스팟 알려드림! [SUB]",
+    channel: "areumsongee아름송이",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "areumsongee아름송이의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "시드니 ep.1 🇦🇺 호주 여행 너무 재미있으시다 ....꼭 해봐야할 투어와 인생샷스팟 알려드림! [SUB]",
+    highlights: []
+  },
+  {
+    id: "auto-eH8t88ImW7s",
+    creator: "살빼조DietJo",
+    youtubeId: "eH8t88ImW7s",
+    title: "[🇦🇺혼.여 브이로그#1] 호주에서 혼자 뭐해요? 드러눕기요 ∠( ᐛ 」∠)＿ 감성 따위 없는💔 현실 시드니 브이로그✈️",
+    channel: "살빼조DietJo",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "살빼조DietJo의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[🇦🇺혼.여 브이로그#1] 호주에서 혼자 뭐해요? 드러눕기요 ∠( ᐛ 」∠)＿ 감성 따위 없는💔 현실 시드니 브이로그✈️",
+    highlights: []
+  },
+  {
+    id: "auto-LMImFb0lUq0",
+    creator: "트립콤파니",
+    youtubeId: "LMImFb0lUq0",
+    title: "🇦🇺 호주 시드니 여행이 좋거나 별로인 16가지 이유",
+    channel: "트립콤파니",
+    country: "호주",
+    city: "시드니",
+    locationName: "시드니 주요 명소",
+    lat: -33.8688,
+    lng: 151.2093,
+    tags: ["시드니", "호주", "유튜브추천", "여행"],
+    tip: "트립콤파니의 시드니 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇺 호주 시드니 여행이 좋거나 별로인 16가지 이유",
+    highlights: []
+  },
+  {
+    id: "auto-x8ZndVvxaEw",
+    creator: " 옛설커플 [yeseol_couple]",
+    youtubeId: "x8ZndVvxaEw",
+    title: "7박 9일 하와이 여행 브이로그🏝️🇺🇸 | 하와이 숨은 맛집 공유 -! | 호놀룰루 | 알로힐라니 | 쿠알로아랜치",
+    channel: " 옛설커플 [yeseol_couple]",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: " 옛설커플 [yeseol_couple]의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "7박 9일 하와이 여행 브이로그🏝️🇺🇸 | 하와이 숨은 맛집 공유 -! | 호놀룰루 | 알로힐라니 | 쿠알로아랜치",
+    highlights: []
+  },
+  {
+    id: "auto-tXgihOZScno",
+    creator: "세빈 SEBIN",
+    youtubeId: "tXgihOZScno",
+    title: "VLOG 하와이에 핫걸 등장~🔥🏝️ 인기스팟 다 점령하고 옴! | SEBIN in Hawaii🌺",
+    channel: "세빈 SEBIN",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: "세빈 SEBIN의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "VLOG 하와이에 핫걸 등장~🔥🏝️ 인기스팟 다 점령하고 옴! | SEBIN in Hawaii🌺",
+    highlights: []
+  },
+  {
+    id: "auto-lg642cEvRKQ",
+    creator: "콩빈Cong Been",
+    youtubeId: "lg642cEvRKQ",
+    title: "찐친들의 가성비 오지는 7박8일 하와이여행 몰아보기🌈🏝️",
+    channel: "콩빈Cong Been",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: "콩빈Cong Been의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "찐친들의 가성비 오지는 7박8일 하와이여행 몰아보기🌈🏝️",
+    highlights: []
+  },
+  {
+    id: "auto-o5PQH-67U2I",
+    creator: "베티 VETI",
+    youtubeId: "o5PQH-67U2I",
+    title: "🇱🇷HAWAii VLOG🌺 “하와이 물가 직접 겪어보니… 진짜 충격인데..?”🙄 미친 물가 체험기..💸 하와이 인기스팟 & 필수 코스 도장 깨고 온 여행, 불꽃놀이 명당🎆",
+    channel: "베티 VETI",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: "베티 VETI의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇱🇷HAWAii VLOG🌺 “하와이 물가 직접 겪어보니… 진짜 충격인데..?”🙄 미친 물가 체험기..💸 하와이 인기스팟 & 필수 코스 도장 깨고 온 여행, 불꽃놀이 명당🎆",
+    highlights: []
+  },
+  {
+    id: "auto-AovWrETL3cw",
+    creator: "얼룩alook",
+    youtubeId: "AovWrETL3cw",
+    title: "하와이 7박 9일 브이로그🌺 하와이 자유여행🌴 하와이 3대 카페 • 하와이 스투시 • 하와이 쇼핑 • Hawaii vlog",
+    channel: "얼룩alook",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: "얼룩alook의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "하와이 7박 9일 브이로그🌺 하와이 자유여행🌴 하와이 3대 카페 • 하와이 스투시 • 하와이 쇼핑 • Hawaii vlog",
+    highlights: []
+  },
+  {
+    id: "auto-euLcRg_e6xc",
+    creator: "LeoJ Makeup",
+    youtubeId: "euLcRg_e6xc",
+    title: "낭만 치사량초과...😳 “혼자가는 하와이” 5박6일 여행...!!",
+    channel: "LeoJ Makeup",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: "LeoJ Makeup의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "낭만 치사량초과...😳 “혼자가는 하와이” 5박6일 여행...!!",
+    highlights: []
+  },
+  {
+    id: "auto-Z-R-IqpocYU",
+    creator: "령령 Ryeongryeong",
+    youtubeId: "Z-R-IqpocYU",
+    title: "행복함에 녹아내려 ..💥₊˚࿐୨୧7주년 기념 하와이 여행 vlog (갓성비 숙소,거북이 해변🐢,포케맛집,인생아사이볼,호오말루히아 식물원,렌트카 드라이브)|령령Ryeongryeong",
+    channel: "령령 Ryeongryeong",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: "령령 Ryeongryeong의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "행복함에 녹아내려 ..💥₊˚࿐୨୧7주년 기념 하와이 여행 vlog (갓성비 숙소,거북이 해변🐢,포케맛집,인생아사이볼,호오말루히아 식물원,렌트카 드라이브)|령령Ryeongryeong",
+    highlights: []
+  },
+  {
+    id: "auto-zObJjoYKP00",
+    creator: "by Misun 바이 미선",
+    youtubeId: "zObJjoYKP00",
+    title: "6번째 하와이🌺 느긋하게 쉬다가 저녁은 맛있게 먹는 휴가를 좋아합니다 🌴, 오아후 여행 브이로그 | 쉐라톤 와이키키, 하와이 맛집 추천, 에르메스 쇼핑, Hawaii vlog",
+    channel: "by Misun 바이 미선",
+    country: "미국",
+    city: "하와이 와이키키",
+    locationName: "하와이 와이키키 와이키키",
+    lat: 21.2766,
+    lng: -157.8275,
+    tags: ["하와이 와이키키", "미국", "유튜브추천", "여행"],
+    tip: "by Misun 바이 미선의 하와이 와이키키 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "6번째 하와이🌺 느긋하게 쉬다가 저녁은 맛있게 먹는 휴가를 좋아합니다 🌴, 오아후 여행 브이로그 | 쉐라톤 와이키키, 하와이 맛집 추천, 에르메스 쇼핑, Hawaii vlog",
+    highlights: []
+  },
+  {
+    id: "auto-ZfaZt3WsL9U",
+    creator: "프리따 PRETTA",
+    youtubeId: "ZfaZt3WsL9U",
+    title: "ep.1 우정 테스트 in 하와이🌴정신줄 놓은 여행 브이로그🤤🩷,, 물가 이거 맞아? 포케•아사이볼 맛집•호텔 추천",
+    channel: "프리따 PRETTA",
+    country: "미국",
+    city: "하와이",
+    locationName: "하와이 주요 명소",
+    lat: 21.3069,
+    lng: -157.8583,
+    tags: ["하와이", "미국", "유튜브추천", "여행"],
+    tip: "프리따 PRETTA의 하와이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "ep.1 우정 테스트 in 하와이🌴정신줄 놓은 여행 브이로그🤤🩷,, 물가 이거 맞아? 포케•아사이볼 맛집•호텔 추천",
+    highlights: []
+  },
+  {
+    id: "auto-oBK7HpJhhrY",
+    creator: "주현주혀니 Joohyuny",
+    youtubeId: "oBK7HpJhhrY",
+    title: "인생 첫! 뉴욕 여행 브이로그🗽🤍 (day 1-2, 전망대 꿀팁, 타임스퀘어, 베이글 맛집🥯)",
+    channel: "주현주혀니 Joohyuny",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "주현주혀니 Joohyuny의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "인생 첫! 뉴욕 여행 브이로그🗽🤍 (day 1-2, 전망대 꿀팁, 타임스퀘어, 베이글 맛집🥯)",
+    highlights: []
+  },
+  {
+    id: "auto-HrfswYec0-M",
+    creator: "끼리 KKIRI",
+    youtubeId: "HrfswYec0-M",
+    title: "뉴욕 여행🗽인생 여행지 갱신••너무 좋아,맛있어,예뻐🇺🇸브루클린 맨하탄 핫한 맛집들",
+    channel: "끼리 KKIRI",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "끼리 KKIRI의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "뉴욕 여행🗽인생 여행지 갱신••너무 좋아,맛있어,예뻐🇺🇸브루클린 맨하탄 핫한 맛집들",
+    highlights: []
+  },
+  {
+    id: "auto-4E8giWr4y-8",
+    creator: "할명수",
+    youtubeId: "4E8giWr4y-8",
+    title: "(ENG) 제가 이민 오고 싶은 나라 소개해드립니다 | 🇺🇸미국 LA 반 바퀴 (w. 광희) | 할명수 ep.305",
+    channel: "할명수",
+    country: "미국",
+    city: "로스앤젤레스",
+    locationName: "로스앤젤레스 LA",
+    lat: 34.0522,
+    lng: -118.2437,
+    tags: ["로스앤젤레스", "미국", "유튜브추천", "여행"],
+    tip: "할명수의 로스앤젤레스 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "(ENG) 제가 이민 오고 싶은 나라 소개해드립니다 | 🇺🇸미국 LA 반 바퀴 (w. 광희) | 할명수 ep.305",
+    highlights: []
+  },
+  {
+    id: "auto-_3IU4Ekql1s",
+    creator: "연우의요일nuuyoil",
+    youtubeId: "_3IU4Ekql1s",
+    title: "뉴욕여행 브이로그 🗽🇺🇸 단연코 내 인생 최고의 순간 .. 안가면 후회할 뉴욕 스팟들 ✶ NYC vlog",
+    channel: "연우의요일nuuyoil",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "연우의요일nuuyoil의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "뉴욕여행 브이로그 🗽🇺🇸 단연코 내 인생 최고의 순간 .. 안가면 후회할 뉴욕 스팟들 ✶ NYC vlog",
+    highlights: []
+  },
+  {
+    id: "auto-5FWoZFIghJg",
+    creator: "엄지렐라 Umjirella",
+    youtubeId: "5FWoZFIghJg",
+    title: "평범한 브이로그는 처음이라",
+    channel: "엄지렐라 Umjirella",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "엄지렐라 Umjirella의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "평범한 브이로그는 처음이라",
+    highlights: []
+  },
+  {
+    id: "auto-4gHeg4RRntI",
+    creator: "샒의 삶Serim's life",
+    youtubeId: "4gHeg4RRntI",
+    title: "🇺🇸미국여행을 초가성비로 떠나보았다!💸 / 왕복 59만원으로 떠난 샌프란시스코 VLOG / 인앤아웃, 보딘베이커리, 요세미티 국립공원 투어까지!✈️",
+    channel: "샒의 삶Serim's life",
+    country: "미국",
+    city: "샌프란시스코",
+    locationName: "샌프란시스코 주요 명소",
+    lat: 37.7749,
+    lng: -122.4194,
+    tags: ["샌프란시스코", "미국", "유튜브추천", "여행"],
+    tip: "샒의 삶Serim's life의 샌프란시스코 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇺🇸미국여행을 초가성비로 떠나보았다!💸 / 왕복 59만원으로 떠난 샌프란시스코 VLOG / 인앤아웃, 보딘베이커리, 요세미티 국립공원 투어까지!✈️",
+    highlights: []
+  },
+  {
+    id: "auto-bStbZd3xryg",
+    creator: "좋은희Joeunhee",
+    youtubeId: "bStbZd3xryg",
+    title: "일주일 LA여행➊🇺🇸 뜨거운 광선 쏟아져 아 따끔해 (에어비앤비추천/미국렌트카/웨이모/인앤아웃/치폴레)",
+    channel: "좋은희Joeunhee",
+    country: "미국",
+    city: "로스앤젤레스",
+    locationName: "로스앤젤레스 LA",
+    lat: 34.0522,
+    lng: -118.2437,
+    tags: ["로스앤젤레스", "미국", "유튜브추천", "여행"],
+    tip: "좋은희Joeunhee의 로스앤젤레스 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "일주일 LA여행➊🇺🇸 뜨거운 광선 쏟아져 아 따끔해 (에어비앤비추천/미국렌트카/웨이모/인앤아웃/치폴레)",
+    highlights: []
+  },
+  {
+    id: "auto-L9SsivhOwo0",
+    creator: "콩빈Cong Been",
+    youtubeId: "L9SsivhOwo0",
+    title: "J들은 상종 못할 미친 P들의 LA 여행 브이로그😰🇺🇸 칠리스 치즈스틱 • LA 근교여행 • 게티센터 • 필즈커피 • 베이글 샌드위치 • 길거리 타코🌮 • UCLA",
+    channel: "콩빈Cong Been",
+    country: "미국",
+    city: "로스앤젤레스",
+    locationName: "로스앤젤레스 LA",
+    lat: 34.0522,
+    lng: -118.2437,
+    tags: ["로스앤젤레스", "미국", "유튜브추천", "여행"],
+    tip: "콩빈Cong Been의 로스앤젤레스 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "J들은 상종 못할 미친 P들의 LA 여행 브이로그😰🇺🇸 칠리스 치즈스틱 • LA 근교여행 • 게티센터 • 필즈커피 • 베이글 샌드위치 • 길거리 타코🌮 • UCLA",
+    highlights: []
+  },
+  {
+    id: "auto-c_NjIzSb244",
+    creator: "전지영",
+    youtubeId: "c_NjIzSb244",
+    title: "21살 부산 촌뜨기가 처음 미국 가면 생기는 일🇺🇸 | LA 브이로그 1",
+    channel: "전지영",
+    country: "미국",
+    city: "로스앤젤레스",
+    locationName: "로스앤젤레스 주요 명소",
+    lat: 34.0522,
+    lng: -118.2437,
+    startTime: 0,
+    tags: ["로스앤젤레스", "미국", "유튜브추천", "여행"],
+    tip: "전지영의 로스앤젤레스 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "21살 부산 촌뜨기가 처음 미국 가면 생기는 일🇺🇸 | LA 브이로그 1",
+    highlights: []
+  },
+  {
+    id: "auto--rRufhj3o68",
+    creator: "AllZero다영",
+    youtubeId: "-rRufhj3o68",
+    title: "버킷리스트 달성 ..!! 인생 첫 뉴욕 🇺🇸🗽🌤️",
+    channel: "AllZero다영",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "AllZero다영의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "버킷리스트 달성 ..!! 인생 첫 뉴욕 🇺🇸🗽🌤️",
+    highlights: []
+  },
+  {
+    id: "auto-gl59w77VdBU",
+    creator: "엄은향",
+    youtubeId: "gl59w77VdBU",
+    title: "엄은향 미국 여행 VLOG",
+    channel: "엄은향",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "엄은향의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "엄은향 미국 여행 VLOG",
+    highlights: []
+  },
+  {
+    id: "auto-WMKeBk5QXZo",
+    creator: "샒의 삶Serim's life",
+    youtubeId: "WMKeBk5QXZo",
+    title: "5년만에 혼자 다시 온 뉴욕..🗽 그리웠던 음식들, 타임스퀘어 한복판 그리고 즉흥 뮤지컬 [ep.1] (tkts+로터리 후기)",
+    channel: "샒의 삶Serim's life",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "샒의 삶Serim's life의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "5년만에 혼자 다시 온 뉴욕..🗽 그리웠던 음식들, 타임스퀘어 한복판 그리고 즉흥 뮤지컬 [ep.1] (tkts+로터리 후기)",
+    highlights: []
+  },
+  {
+    id: "auto-3M5IX9bkrD0",
+    creator: "안소희",
+    youtubeId: "3M5IX9bkrD0",
+    title: "🇺🇸미국 한 달 살기 브이로그 ep.4 | Central Park, 뉴욕 맛집추천, 구겐하임미술관, bemelmans bar, AIME LEONDORE, Vuori, Only NY",
+    channel: "안소희",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "안소희의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇺🇸미국 한 달 살기 브이로그 ep.4 | Central Park, 뉴욕 맛집추천, 구겐하임미술관, bemelmans bar, AIME LEONDORE, Vuori, Only NY",
+    highlights: []
+  },
+  {
+    id: "auto-y1xhYoM2GjU",
+    creator: "해시킴",
+    youtubeId: "y1xhYoM2GjU",
+    title: "🗽1200만원 쓰고 온 뉴욕여행 몰아보기(맨해튼뷰 숙소,연타석홈런직관,뉴욕맛집,트레이더조쇼핑템)",
+    channel: "해시킴",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "해시킴의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🗽1200만원 쓰고 온 뉴욕여행 몰아보기(맨해튼뷰 숙소,연타석홈런직관,뉴욕맛집,트레이더조쇼핑템)",
+    highlights: []
+  },
+  {
+    id: "auto-Wa3bJaZB1M0",
+    creator: "지혜사랑JIHYESARANG",
+    youtubeId: "Wa3bJaZB1M0",
+    title: "나혼자 미국행..! 시카고 여행 브이로그! 긴장의 미국 입국심사 썰 🇺🇸 여행 코스 구글맵 공유 ✶ 진짜 시카고 피자 🍕건축투어. 인생 첫 미국여행 vlog",
+    channel: "지혜사랑JIHYESARANG",
+    country: "미국",
+    city: "시카고",
+    locationName: "시카고 주요 명소",
+    lat: 41.8781,
+    lng: -87.6298,
+    tags: ["시카고", "미국", "유튜브추천", "여행"],
+    tip: "지혜사랑JIHYESARANG의 시카고 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나혼자 미국행..! 시카고 여행 브이로그! 긴장의 미국 입국심사 썰 🇺🇸 여행 코스 구글맵 공유 ✶ 진짜 시카고 피자 🍕건축투어. 인생 첫 미국여행 vlog",
+    highlights: []
+  },
+  {
+    id: "auto-PXNL5XRpKK8",
+    creator: "김무비 MOVIEKIM",
+    youtubeId: "PXNL5XRpKK8",
+    title: "나 홀로 뉴욕 한 달 살기 & 엘에이까지 다녀 온 미국 여행 브이로그 몰아보기🇺🇸🗽 (39박 40일 미국여행)",
+    channel: "김무비 MOVIEKIM",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "김무비 MOVIEKIM의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나 홀로 뉴욕 한 달 살기 & 엘에이까지 다녀 온 미국 여행 브이로그 몰아보기🇺🇸🗽 (39박 40일 미국여행)",
+    highlights: []
+  },
+  {
+    id: "auto-X13nh6eUhzk",
+    creator: "키마이에진",
+    youtubeId: "X13nh6eUhzk",
+    title: "20살 뉴욕 여행 브이로그🇺🇸🗽🍕🛍️",
+    channel: "키마이에진",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "키마이에진의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "20살 뉴욕 여행 브이로그🇺🇸🗽🍕🛍️",
+    highlights: []
+  },
+  {
+    id: "auto-pewK1C-8fJ8",
+    creator: "찰스엔터",
+    youtubeId: "pewK1C-8fJ8",
+    title: "[뉴욕vlog] 18년 만에 고향에 찾아간 찰스! 아니 엔젤라",
+    channel: "찰스엔터",
+    country: "미국",
+    city: "뉴욕",
+    locationName: "뉴욕 주요 명소",
+    lat: 40.7128,
+    lng: -74.006,
+    tags: ["뉴욕", "미국", "유튜브추천", "여행"],
+    tip: "찰스엔터의 뉴욕 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[뉴욕vlog] 18년 만에 고향에 찾아간 찰스! 아니 엔젤라",
+    highlights: []
+  },
+  {
+    id: "auto-adUbLMRBC5U",
+    creator: "여행프로 만프로",
+    youtubeId: "adUbLMRBC5U",
+    title: "동유럽 여행, 이 일정이면 후회 없습니다 체코·오스트리아·헝가리 3국 9일 패키지",
+    channel: "여행프로 만프로",
+    country: "오스트리아",
+    city: "비엔나",
+    locationName: "비엔나 주요 명소",
+    lat: 48.2082,
+    lng: 16.3738,
+    tags: ["비엔나", "오스트리아", "유튜브추천", "여행"],
+    tip: "여행프로 만프로의 비엔나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "동유럽 여행, 이 일정이면 후회 없습니다 체코·오스트리아·헝가리 3국 9일 패키지",
+    highlights: []
+  },
+  {
+    id: "auto-K94twf8zDj4",
+    creator: "남나미",
+    youtubeId: "K94twf8zDj4",
+    title: "🇦🇹 비엔나에서  🇨🇿 프라하까지 | 동유럽 여행 브이로그 | VIENNA to PRAGUE | 맛집, 숙소 추천들",
+    channel: "남나미",
+    country: "체코",
+    city: "프라하",
+    locationName: "프라하 주요 명소",
+    lat: 50.0755,
+    lng: 14.4378,
+    tags: ["프라하", "체코", "유튜브추천", "여행"],
+    tip: "남나미의 프라하 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇦🇹 비엔나에서  🇨🇿 프라하까지 | 동유럽 여행 브이로그 | VIENNA to PRAGUE | 맛집, 숙소 추천들",
+    highlights: []
+  },
+  {
+    id: "auto-a494RtyW9wQ",
+    creator: "유정 YUJEONG",
+    youtubeId: "a494RtyW9wQ",
+    title: "졸업 전 마지막으로..✈️ 나 홀로 떠난 대학생의 12박 14일 동유럽 여행 ep.1 헝가리 부다페스트🇭🇺 연말에 유럽 자유 여행이라니!🍾❤️‍🔥",
+    channel: "유정 YUJEONG",
+    country: "헝가리",
+    city: "부다페스트",
+    locationName: "부다페스트 주요 명소",
+    lat: 47.4979,
+    lng: 19.0402,
+    tags: ["부다페스트", "헝가리", "유튜브추천", "여행"],
+    tip: "유정 YUJEONG의 부다페스트 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "졸업 전 마지막으로..✈️ 나 홀로 떠난 대학생의 12박 14일 동유럽 여행 ep.1 헝가리 부다페스트🇭🇺 연말에 유럽 자유 여행이라니!🍾❤️‍🔥",
+    highlights: []
+  },
+  {
+    id: "auto-AyKvBfoE_54",
+    creator: "해시킴",
+    youtubeId: "AyKvBfoE_54",
+    title: "나 혼자 프라하 여행🇨🇿급발진 드레스덴 당일치기까지. 인생 여행지 등극...🍀",
+    channel: "해시킴",
+    country: "독일",
+    city: "드레스덴",
+    locationName: "드레스덴 주요 명소",
+    lat: 51.0504,
+    lng: 13.7373,
+    tags: ["드레스덴", "독일", "유튜브추천", "여행"],
+    tip: "해시킴의 드레스덴 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나 혼자 프라하 여행🇨🇿급발진 드레스덴 당일치기까지. 인생 여행지 등극...🍀",
+    highlights: []
+  },
+  {
+    id: "auto-1lhMdhUNfGc",
+    creator: "아재여행 Ajae Travel",
+    youtubeId: "1lhMdhUNfGc",
+    title: "[4K] 아재 혼자 21박 23일 동유럽 여행 몰아보기",
+    channel: "아재여행 Ajae Travel",
+    country: "헝가리",
+    city: "부다페스트",
+    locationName: "부다페스트 주요 명소",
+    lat: 47.4979,
+    lng: 19.0402,
+    tags: ["부다페스트", "헝가리", "유튜브추천", "여행"],
+    tip: "아재여행 Ajae Travel의 부다페스트 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[4K] 아재 혼자 21박 23일 동유럽 여행 몰아보기",
+    highlights: []
+  },
+  {
+    id: "auto-McPsKG1j78w",
+    creator: "트래블 메이커 Travel Maker",
+    youtubeId: "McPsKG1j78w",
+    title: "🇪🇺 유럽여행이 단돈 225만원? 여행사 출신이 파헤친 동유럽 패키지의 실체",
+    channel: "트래블 메이커 Travel Maker",
+    country: "체코",
+    city: "프라하",
+    locationName: "프라하 주요 명소",
+    lat: 50.0755,
+    lng: 14.4378,
+    tags: ["프라하", "체코", "유튜브추천", "여행"],
+    tip: "트래블 메이커 Travel Maker의 프라하 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇪🇺 유럽여행이 단돈 225만원? 여행사 출신이 파헤친 동유럽 패키지의 실체",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-1",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "3박 4일 프라하 여행코스",
+    lat: 50.0755,
+    lng: 14.4348,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "0:00 인트로",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-2",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Tradlo  ★★",
+    lat: 50.0785,
+    lng: 14.4348,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "5:21 DAY2",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-3",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Lobkowicz Palace Café  ★★",
+    lat: 50.0725,
+    lng: 14.4378,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "8:56  🚏프라하성곽 ★★",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-4",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Kuchyň  ★",
+    lat: 50.0755,
+    lng: 14.4378,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "11:24",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-5",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Kláštorný pivovar Strahov",
+    lat: 50.0785,
+    lng: 14.4378,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "13:11  🚏수도원 도서관",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-6",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Pork’s  ★★★",
+    lat: 50.0725,
+    lng: 14.4408,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "16:32  🚏프라하성 야경",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-7",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Trdelník Celetná",
+    lat: 50.0755,
+    lng: 14.4408,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "26:36 🚏화약탑 (전경맛집) ★★★",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-8",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Pilsnerka Národní  ★★★",
+    lat: 50.0785,
+    lng: 14.4408,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "30:28 🚏야경산책",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-9",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Café Savoy ★",
+    lat: 50.0725,
+    lng: 14.4438,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "33:34 🚏발트슈타인 궁전",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-RHgx10PKf-U-10",
+    creator: "규진",
+    youtubeId: "RHgx10PKf-U",
+    title: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    channel: "규진",
+    country: "체코",
+    city: "프라하",
+    locationName: "Café Imperial",
+    lat: 50.0755,
+    lng: 14.4438,
+    tags: ["프라하", "체코", "로컬추천", "유튜브추천"],
+    tip: "34:27 🚋 프라하여행 끝",
+    publishedAt: "2026-11-22",
+    description: "🇨🇿 낭만하면 프라하! 가는 곳 마다 눈이 행복한 여행이었다 °•*⁀➷ㅣ엄빠랑 동유럽 여행 EP.1 (현지인 체코식맛집, 프라하전경 최애스팟, 댄싱하우스호텔 스위트룸)",
+    highlights: []
+  },
+  {
+    id: "auto-PV5Rfz6iUSk",
+    creator: "하이슬기 Hi Seulgi",
+    youtubeId: "PV5Rfz6iUSk",
+    title: "우리.. 안 싸울 수 있겠지..?💔 엄마랑 단둘이 유럽 14일 VLOGㅣ코펜하겐,프라하",
+    channel: "하이슬기 Hi Seulgi",
+    country: "덴마크",
+    city: "코펜하겐",
+    locationName: "코펜하겐 주요 명소",
+    lat: 55.6761,
+    lng: 12.5683,
+    tags: ["코펜하겐", "덴마크", "유튜브추천", "여행"],
+    tip: "하이슬기 Hi Seulgi의 코펜하겐 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "우리.. 안 싸울 수 있겠지..?💔 엄마랑 단둘이 유럽 14일 VLOGㅣ코펜하겐,프라하",
+    highlights: []
+  },
+  {
+    id: "auto-MFclcvwbric",
+    creator: "랄루뉴욕 LalouNewYork",
+    youtubeId: "MFclcvwbric",
+    title: "🇫🇷 October Paris Vlog | Shopping, Hermès, Park Hyatt Paris Stay & Restaurants",
+    channel: "랄루뉴욕 LalouNewYork",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "랄루뉴욕 LalouNewYork의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇫🇷 October Paris Vlog | Shopping, Hermès, Park Hyatt Paris Stay & Restaurants",
+    highlights: []
+  },
+  {
+    id: "auto-GNF8f5CrCNo",
+    creator: "HYUNJIN현진",
+    youtubeId: "GNF8f5CrCNo",
+    title: "4일동안 파리 제대로 즐기는 법..🇫🇷🥖",
+    channel: "HYUNJIN현진",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "HYUNJIN현진의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "4일동안 파리 제대로 즐기는 법..🇫🇷🥖",
+    highlights: []
+  },
+  {
+    id: "auto-jBQ01YQlo3k",
+    creator: "포푼젤 Popunzel",
+    youtubeId: "jBQ01YQlo3k",
+    title: "파리 여행 6박 7일 총정리🇫🇷 프랑스 쇼핑 리스트 & 명품 싸게 사는법｜마레지구·몽마르뜨·쁘랭땅백화점·메르시·르메르·셀린느·롱샴·하얏트 리젠시·라파예트",
+    channel: "포푼젤 Popunzel",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "포푼젤 Popunzel의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "파리 여행 6박 7일 총정리🇫🇷 프랑스 쇼핑 리스트 & 명품 싸게 사는법｜마레지구·몽마르뜨·쁘랭땅백화점·메르시·르메르·셀린느·롱샴·하얏트 리젠시·라파예트",
+    highlights: []
+  },
+  {
+    id: "auto-lgu4O2Xa9gY",
+    creator: "때때때 TTT",
+    youtubeId: "lgu4O2Xa9gY",
+    title: "연차없이 프랑스 파리 1박 3일 여행 가능? I 곽범 I 연차없이 어떡행2 EP.5",
+    channel: "때때때 TTT",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "때때때 TTT의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "연차없이 프랑스 파리 1박 3일 여행 가능? I 곽범 I 연차없이 어떡행2 EP.5",
+    highlights: []
+  },
+  {
+    id: "auto-Cl9ILePF_jc",
+    creator: "SongKerbell 송커벨",
+    youtubeId: "Cl9ILePF_jc",
+    title: "나혼자 기깔나게 돌아다니는 파리여행🇫🇷 | 파리 로컬 찐 맛집들 뿌수기🔥| 파리여행 꿀팁📝| 구글맵 공유 | 에펠탑 근처 강추 가성비 숙소 | 혼자찍기 좋은 인생사진 스팟들📸",
+    channel: "SongKerbell 송커벨",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "SongKerbell 송커벨의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나혼자 기깔나게 돌아다니는 파리여행🇫🇷 | 파리 로컬 찐 맛집들 뿌수기🔥| 파리여행 꿀팁📝| 구글맵 공유 | 에펠탑 근처 강추 가성비 숙소 | 혼자찍기 좋은 인생사진 스팟들📸",
+    highlights: []
+  },
+  {
+    id: "auto-c_THdyLQ654",
+    creator: "에바EVA",
+    youtubeId: "c_THdyLQ654",
+    title: "일은 안 하고 파리에서 놀고 먹는 여자",
+    channel: "에바EVA",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "에바EVA의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "일은 안 하고 파리에서 놀고 먹는 여자",
+    highlights: []
+  },
+  {
+    id: "auto-L_NTePlOdiY",
+    creator: "안냐세여 지순데여",
+    youtubeId: "L_NTePlOdiY",
+    title: "40℃ 파리에서 10일동안 살아남기",
+    channel: "안냐세여 지순데여",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "안냐세여 지순데여의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "40℃ 파리에서 10일동안 살아남기",
+    highlights: []
+  },
+  {
+    id: "auto-RSgPFcRdWig",
+    creator: "요정재형",
+    youtubeId: "RSgPFcRdWig",
+    title: "진짜 파리지앙의 농도 짙은 파리 생활..🇫🇷 (구독자 선물 有)",
+    channel: "요정재형",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "요정재형의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "진짜 파리지앙의 농도 짙은 파리 생활..🇫🇷 (구독자 선물 有)",
+    highlights: []
+  },
+  {
+    id: "auto-3MZ0BkWEQN0",
+    creator: "Lonzi론지",
+    youtubeId: "3MZ0BkWEQN0",
+    title: "로맨틱 1월 파리여행🇫🇷💗 꼭 가야할 베이커리, 레스토랑, 카페 총 정리☕️ 파리 쇼핑리스트🛍️ (feat.프렌치 버터) 두아리파 만난썰",
+    channel: "Lonzi론지",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "Lonzi론지의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "로맨틱 1월 파리여행🇫🇷💗 꼭 가야할 베이커리, 레스토랑, 카페 총 정리☕️ 파리 쇼핑리스트🛍️ (feat.프렌치 버터) 두아리파 만난썰",
+    highlights: []
+  },
+  {
+    id: "auto-dfGKvQg9TDE",
+    creator: "해시킴",
+    youtubeId: "dfGKvQg9TDE",
+    title: "내향형 쫄보 혼자 파리여행  9박 10일 몰아보기(벨기에 당일치기, 나혼자 파리디즈니랜드)",
+    channel: "해시킴",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "해시킴의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "내향형 쫄보 혼자 파리여행  9박 10일 몰아보기(벨기에 당일치기, 나혼자 파리디즈니랜드)",
+    highlights: []
+  },
+  {
+    id: "auto-z7aCcapVIrE",
+    creator: "토모토모TomoTomo",
+    youtubeId: "z7aCcapVIrE",
+    title: "🇫🇷일주일동안 파리에서 입은 것과 먹은 것들.zip🧥🕶️ | 대환장 사고친 토모때메 파국으로 치닫는 여행💔, 인생 첫 비즈니스 ✈️, 우리의 화해법, 에어비앤비 추천",
+    channel: "토모토모TomoTomo",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "토모토모TomoTomo의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇫🇷일주일동안 파리에서 입은 것과 먹은 것들.zip🧥🕶️ | 대환장 사고친 토모때메 파국으로 치닫는 여행💔, 인생 첫 비즈니스 ✈️, 우리의 화해법, 에어비앤비 추천",
+    highlights: []
+  },
+  {
+    id: "auto-fU2czYZPbI4-2",
+    creator: "요정재형",
+    youtubeId: "fU2czYZPbI4",
+    title: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    channel: "요정재형",
+    country: "프랑스",
+    city: "파리",
+    locationName: "첫 번째 날",
+    lat: 48.8596,
+    lng: 2.3492,
+    startTime: 196,
+    tags: ["파리", "프랑스", "타임라인", "유튜브추천"],
+    tip: "[03:16] 영상 첫 번째 날 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    highlights: []
+  },
+  {
+    id: "auto-fU2czYZPbI4-3",
+    creator: "요정재형",
+    youtubeId: "fU2czYZPbI4",
+    title: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    channel: "요정재형",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 1구",
+    lat: 48.8536,
+    lng: 2.3522,
+    startTime: 553,
+    tags: ["파리", "프랑스", "타임라인", "유튜브추천"],
+    tip: "[09:13] 영상 파리 1구 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    highlights: []
+  },
+  {
+    id: "auto-fU2czYZPbI4-4",
+    creator: "요정재형",
+    youtubeId: "fU2czYZPbI4",
+    title: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    channel: "요정재형",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 3구",
+    lat: 48.8566,
+    lng: 2.3522,
+    startTime: 696,
+    tags: ["파리", "프랑스", "타임라인", "유튜브추천"],
+    tip: "[11:36] 영상 파리 3구 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    highlights: []
+  },
+  {
+    id: "auto-fU2czYZPbI4-5",
+    creator: "요정재형",
+    youtubeId: "fU2czYZPbI4",
+    title: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    channel: "요정재형",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 2구",
+    lat: 48.8596,
+    lng: 2.3522,
+    startTime: 820,
+    tags: ["파리", "프랑스", "타임라인", "유튜브추천"],
+    tip: "[13:40] 영상 파리 2구 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    highlights: []
+  },
+  {
+    id: "auto-fU2czYZPbI4-6",
+    creator: "요정재형",
+    youtubeId: "fU2czYZPbI4",
+    title: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    channel: "요정재형",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 14구",
+    lat: 48.8536,
+    lng: 2.3552,
+    startTime: 1886,
+    tags: ["파리", "프랑스", "타임라인", "유튜브추천"],
+    tip: "[31:26] 영상 파리 14구 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "이 영상은 한국인 유명 맛집과 관광지를 거의 포함하고 있지 않습니당,, ㅎ",
+    highlights: []
+  },
+  {
+    id: "auto-Kj5nJJrF1m0-1",
+    creator: "깅듀로그",
+    youtubeId: "Kj5nJJrF1m0",
+    title: "스페인 여행 vlog ep.6🇪🇸 | 4일동안 바르셀로나 여행 이 영상으로 종결 | 사그라다파밀라아 뷰 숙소 | 현지인들만 가는 노을스팟 | 필수 관광지부터 맛집까지 다 알려줌",
+    channel: "깅듀로그",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "맛집 map",
+    lat: 41.3851,
+    lng: 2.1704,
+    tags: ["바르셀로나", "스페인", "로컬추천", "유튜브추천"],
+    tip: "・삼부자(한식)",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 vlog ep.6🇪🇸 | 4일동안 바르셀로나 여행 이 영상으로 종결 | 사그라다파밀라아 뷰 숙소 | 현지인들만 가는 노을스팟 | 필수 관광지부터 맛집까지 다 알려줌",
+    highlights: []
+  },
+  {
+    id: "auto-Kj5nJJrF1m0-2",
+    creator: "깅듀로그",
+    youtubeId: "Kj5nJJrF1m0",
+    title: "스페인 여행 vlog ep.6🇪🇸 | 4일동안 바르셀로나 여행 이 영상으로 종결 | 사그라다파밀라아 뷰 숙소 | 현지인들만 가는 노을스팟 | 필수 관광지부터 맛집까지 다 알려줌",
+    channel: "깅듀로그",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "장소 map",
+    lat: 41.3881,
+    lng: 2.1704,
+    tags: ["바르셀로나", "스페인", "로컬추천", "유튜브추천"],
+    tip: "・람블라스거리",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 vlog ep.6🇪🇸 | 4일동안 바르셀로나 여행 이 영상으로 종결 | 사그라다파밀라아 뷰 숙소 | 현지인들만 가는 노을스팟 | 필수 관광지부터 맛집까지 다 알려줌",
+    highlights: []
+  },
+  {
+    id: "auto-hArFRQqgw68",
+    creator: "Mojave 모하비",
+    youtubeId: "hArFRQqgw68",
+    title: "스페인 여행 브이로그 🇪🇸 테라스 문을 열면 세비야 대성당 뷰🕊️ | 그라나다 알함브라, 타파스 잔뜩! 7박 8일 [ENG SUB]",
+    channel: "Mojave 모하비",
+    country: "스페인",
+    city: "그라나다",
+    locationName: "그라나다 주요 명소",
+    lat: 37.1773,
+    lng: -3.5986,
+    tags: ["그라나다", "스페인", "유튜브추천", "여행"],
+    tip: "Mojave 모하비의 그라나다 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그 🇪🇸 테라스 문을 열면 세비야 대성당 뷰🕊️ | 그라나다 알함브라, 타파스 잔뜩! 7박 8일 [ENG SUB]",
+    highlights: []
+  },
+  {
+    id: "auto-cJ2hWb2JLGQ",
+    creator: "바르셀로나 사는 콤마",
+    youtubeId: "cJ2hWb2JLGQ",
+    title: "바르셀로나 여행 괜찮을까요..?",
+    channel: "바르셀로나 사는 콤마",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "바르셀로나 사는 콤마의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "바르셀로나 여행 괜찮을까요..?",
+    highlights: []
+  },
+  {
+    id: "auto-Y0i2AhQDnr0",
+    creator: "도나미-donam e",
+    youtubeId: "Y0i2AhQDnr0",
+    title: "유럽 음식 1등=무조건 스페인🇪🇸 바르셀로나•그라나다•세비야 2주 여행🫒 최고의 뽈뽀를 찾아서..(인생 뽈뽀)",
+    channel: "도나미-donam e",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "도나미-donam e의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "유럽 음식 1등=무조건 스페인🇪🇸 바르셀로나•그라나다•세비야 2주 여행🫒 최고의 뽈뽀를 찾아서..(인생 뽈뽀)",
+    highlights: []
+  },
+  {
+    id: "auto-lobdeR1HG38",
+    creator: "깅듀로그",
+    youtubeId: "lobdeR1HG38",
+    title: "스페인 여행 몰아보기 full vlog🇪🇸 | 12박15일 스페인 자유여행 일정 추천코스 | 마드리드에서 스페인 남부 그리고 바르셀로나까지 | 인생 유럽여행지였다..!",
+    channel: "깅듀로그",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "깅듀로그의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 몰아보기 full vlog🇪🇸 | 12박15일 스페인 자유여행 일정 추천코스 | 마드리드에서 스페인 남부 그리고 바르셀로나까지 | 인생 유럽여행지였다..!",
+    highlights: []
+  },
+  {
+    id: "auto-BOC3MOe4IFQ",
+    creator: "윤재은jaeeun",
+    youtubeId: "BOC3MOe4IFQ",
+    title: "유럽 자유여행 로망은 깨졌다... 바르셀로나 vlog /지로나,스페인 마트 추천템, 까탈루냐 미술관",
+    channel: "윤재은jaeeun",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "윤재은jaeeun의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "유럽 자유여행 로망은 깨졌다... 바르셀로나 vlog /지로나,스페인 마트 추천템, 까탈루냐 미술관",
+    highlights: []
+  },
+  {
+    id: "auto-GfIH7cCAvHc",
+    creator: "서재로36",
+    youtubeId: "GfIH7cCAvHc",
+    title: "대한민국 국민이 가장 만족한 해외여행지 1위",
+    channel: "서재로36",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "서재로36의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "대한민국 국민이 가장 만족한 해외여행지 1위",
+    highlights: []
+  },
+  {
+    id: "auto-IvnVameBSEE",
+    creator: "신세경 sjkuksee",
+    youtubeId: "IvnVameBSEE",
+    title: "스페인 여행 브이로그",
+    channel: "신세경 sjkuksee",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "신세경 sjkuksee의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그",
+    highlights: []
+  },
+  {
+    id: "auto-dCyV9BQLkgo",
+    creator: "아재여행 Ajae Travel",
+    youtubeId: "dCyV9BQLkgo",
+    title: "[4K] 아재 혼자 13박 15일 스페인 여행 몰아보기",
+    channel: "아재여행 Ajae Travel",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "아재여행 Ajae Travel의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[4K] 아재 혼자 13박 15일 스페인 여행 몰아보기",
+    highlights: []
+  },
+  {
+    id: "auto-2z0ha5wyvvg",
+    creator: "홀로나나 NANA",
+    youtubeId: "2z0ha5wyvvg",
+    title: "소매치기 걱정 왜 했냐? 혼자 잘먹고 잘놀고 낭만 뒤집어지는 스페인 여행 (바르셀로나 편)",
+    channel: "홀로나나 NANA",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "홀로나나 NANA의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "소매치기 걱정 왜 했냐? 혼자 잘먹고 잘놀고 낭만 뒤집어지는 스페인 여행 (바르셀로나 편)",
+    highlights: []
+  },
+  {
+    id: "auto-MW3rGgc4oHw",
+    creator: "트래블 메이커 Travel Maker",
+    youtubeId: "MW3rGgc4oHw",
+    title: "🇪🇸 300만원 내고 버스만 30시간? 여행사 출신이 파헤친 스페인 패키지의 실체",
+    channel: "트래블 메이커 Travel Maker",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "트래블 메이커 Travel Maker의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇪🇸 300만원 내고 버스만 30시간? 여행사 출신이 파헤친 스페인 패키지의 실체",
+    highlights: []
+  },
+  {
+    id: "auto-rhuzFCZhvj0",
+    creator: "어또니 Ottoni",
+    youtubeId: "rhuzFCZhvj0",
+    title: "생각보다 관광객이 너무 많아서 놀란 남스페인 세비야의 현실  【스페인 2】",
+    channel: "어또니 Ottoni",
+    country: "스페인",
+    city: "세비야",
+    locationName: "세비야 주요 명소",
+    lat: 37.3891,
+    lng: -5.9845,
+    tags: ["세비야", "스페인", "유튜브추천", "여행"],
+    tip: "어또니 Ottoni의 세비야 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "생각보다 관광객이 너무 많아서 놀란 남스페인 세비야의 현실  【스페인 2】",
+    highlights: []
+  },
+  {
+    id: "auto-ZZF113cR1GQ",
+    creator: "실뱌 silviahome",
+    youtubeId: "ZZF113cR1GQ",
+    title: "같이 떠나요💕 스페인 여행 Vlog 바르셀로나 그라나다 세비야 마드리드 9박 11일",
+    channel: "실뱌 silviahome",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "실뱌 silviahome의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "같이 떠나요💕 스페인 여행 Vlog 바르셀로나 그라나다 세비야 마드리드 9박 11일",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-2",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "안녕 우연이들",
+    lat: 41.3881,
+    lng: 2.1704,
+    startTime: 25,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[00:25] 영상 안녕 우연이들 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-3",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "브이로그 보기 전, 진짜 꿀팁&템 공유",
+    lat: 41.3821,
+    lng: 2.1734,
+    startTime: 49,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[00:49] 영상 브이로그 보기 전, 진짜 꿀팁&템 공유 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-4",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "가습마스크 진짜 필요할까?",
+    lat: 41.3851,
+    lng: 2.1734,
+    startTime: 57,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[00:57] 영상 가습마스크 진짜 필요할까? 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-5",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "아무 목베개 쓰지 마세요!",
+    lat: 41.3881,
+    lng: 2.1734,
+    startTime: 92,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[01:32] 영상 아무 목베개 쓰지 마세요! 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-6",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "잠자리 예민러 이거 하나로 숙면 끝",
+    lat: 41.3826,
+    lng: 2.1771,
+    startTime: 113,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[01:53] 영상 잠자리 예민러 이거 하나로 숙면 끝 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-7",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "의외로 이게 없어요",
+    lat: 41.3851,
+    lng: 2.1764,
+    startTime: 141,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[02:21] 영상 의외로 이게 없어요 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-8",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "이건 절대 필수템!",
+    lat: 41.3881,
+    lng: 2.1764,
+    startTime: 168,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[02:48] 영상 이건 절대 필수템! 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-9",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "없어서 불편했던 이것..!",
+    lat: 41.3821,
+    lng: 2.1794,
+    startTime: 182,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[03:02] 영상 없어서 불편했던 이것..! 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-10",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "문제의 석회수..",
+    lat: 41.3851,
+    lng: 2.1794,
+    startTime: 205,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[03:25] 영상 문제의 석회수.. 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-11",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "여행러 친구가 알려준 찐 꿀템",
+    lat: 41.3826,
+    lng: 2.1771,
+    startTime: 249,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[04:09] 영상 여행러 친구가 알려준 찐 꿀템 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-12",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "소매치기 방지템 써본 후기",
+    lat: 41.3821,
+    lng: 2.1824,
+    startTime: 293,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[04:53] 영상 소매치기 방지템 써본 후기 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-13",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "겨울이어도 필요!",
+    lat: 41.3851,
+    lng: 2.1824,
+    startTime: 420,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[07:00] 영상 겨울이어도 필요! 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-14",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "여행하면서 느낀 정보들",
+    lat: 41.3881,
+    lng: 2.1824,
+    startTime: 439,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[07:19] 영상 여행하면서 느낀 정보들 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-15",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "택시 바가지 꼭 알고가기",
+    lat: 41.3821,
+    lng: 2.1854,
+    startTime: 441,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[07:21] 영상 택시 바가지 꼭 알고가기 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-16",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "스페인 기차 ?🚞",
+    lat: 41.3851,
+    lng: 2.1854,
+    startTime: 469,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[07:49] 영상 스페인 기차 ?🚞 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-17",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "가우디 가이드투어?",
+    lat: 41.3881,
+    lng: 2.1854,
+    startTime: 529,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[08:49] 영상 가우디 가이드투어? 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-18",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "비수기인 11월 말 이후 날씨 어떰?",
+    lat: 41.3821,
+    lng: 2.1884,
+    startTime: 587,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[09:47] 영상 비수기인 11월 말 이후 날씨 어떰? 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-bOPjzvfe4v0-19",
+    creator: "연우",
+    youtubeId: "bOPjzvfe4v0",
+    title: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    channel: "연우",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "브이로그..시..작 💗",
+    lat: 41.3851,
+    lng: 2.1884,
+    startTime: 636,
+    tags: ["바르셀로나", "스페인", "타임라인", "유튜브추천"],
+    tip: "[10:36] 영상 브이로그..시..작 💗 방문 구간입니다.",
+    publishedAt: "2026-11-22",
+    description: "스페인 여행 브이로그ˏˏ  ︠𓈒. .𓈒 ︡🍸ㅣ첫 유럽여행 꿀팁&꿀템 공유ㅣ택시 바가지..🚖ㅣ소매치기?!ㅣ안흔한 맛집ㅣ장기비행 ✈️꿀템ㅣ쇼핑천국 스페인🥂",
+    highlights: []
+  },
+  {
+    id: "auto-HoeVcD8HjKU",
+    creator: "새샘시선",
+    youtubeId: "HoeVcD8HjKU",
+    title: "🇪🇸 세비야 여행하다 만난 존잘 스페인 10살 연하남과 밤 시내 데이트",
+    channel: "새샘시선",
+    country: "스페인",
+    city: "세비야",
+    locationName: "세비야 주요 명소",
+    lat: 37.3891,
+    lng: -5.9845,
+    tags: ["세비야", "스페인", "유튜브추천", "여행"],
+    tip: "새샘시선의 세비야 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇪🇸 세비야 여행하다 만난 존잘 스페인 10살 연하남과 밤 시내 데이트",
+    highlights: []
+  },
+  {
+    id: "auto-MfM6hpYdKU0",
+    creator: "강햄콩",
+    youtubeId: "MfM6hpYdKU0",
+    title: "나홀로 자유를 찾아 떠난 로마에서 벌어진 놀라운 일들 🇮🇹⭐️🍕 (이탈리아 꿀팁 + 현지 분위기 싹 다 모아본🫰🏻) ep.1",
+    channel: "강햄콩",
+    country: "이탈리아",
+    city: "로마",
+    locationName: "로마 주요 명소",
+    lat: 41.9028,
+    lng: 12.4964,
+    tags: ["로마", "이탈리아", "유튜브추천", "여행"],
+    tip: "강햄콩의 로마 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나홀로 자유를 찾아 떠난 로마에서 벌어진 놀라운 일들 🇮🇹⭐️🍕 (이탈리아 꿀팁 + 현지 분위기 싹 다 모아본🫰🏻) ep.1",
+    highlights: []
+  },
+  {
+    id: "auto-W0Sm9brFUNM",
+    creator: "트래블 메이커 Travel Maker",
+    youtubeId: "W0Sm9brFUNM",
+    title: "🇮🇹 여행사 10년경력이 말아주는 '이탈리아' 여행… 이 영상 하나로 끝! (13분순삭 ver)",
+    channel: "트래블 메이커 Travel Maker",
+    country: "이탈리아",
+    city: "로마",
+    locationName: "로마 주요 명소",
+    lat: 41.9028,
+    lng: 12.4964,
+    tags: ["로마", "이탈리아", "유튜브추천", "여행"],
+    tip: "트래블 메이커 Travel Maker의 로마 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇮🇹 여행사 10년경력이 말아주는 '이탈리아' 여행… 이 영상 하나로 끝! (13분순삭 ver)",
+    highlights: []
+  },
+  {
+    id: "auto-fjWnTZqDa-Q",
+    creator: "거누파파네 Dog family",
+    youtubeId: "fjWnTZqDa-Q",
+    title: "시작부터 삐그덕대는 유럽 가족여행..(유럽 처음 간 60대 엄마아빠 현실반응ㅋㅋ l 로마 여행브이로그)",
+    channel: "거누파파네 Dog family",
+    country: "이탈리아",
+    city: "로마",
+    locationName: "로마 주요 명소",
+    lat: 41.9028,
+    lng: 12.4964,
+    tags: ["로마", "이탈리아", "유튜브추천", "여행"],
+    tip: "거누파파네 Dog family의 로마 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "시작부터 삐그덕대는 유럽 가족여행..(유럽 처음 간 60대 엄마아빠 현실반응ㅋㅋ l 로마 여행브이로그)",
+    highlights: []
+  },
+  {
+    id: "auto-1rq2MHv9a9c",
+    creator: "돌돌하",
+    youtubeId: "1rq2MHv9a9c",
+    title: "이탈리아 신혼여행 EP.1 🇮🇹 / 꼬모호수 & 돌로미티⛰️/ 이탈리아 북부 여행 / 이탈리아 숙소 추천🏨",
+    channel: "돌돌하",
+    country: "이탈리아",
+    city: "돌로미티",
+    locationName: "돌로미티 주요 명소",
+    lat: 46.4102,
+    lng: 11.844,
+    tags: ["돌로미티", "이탈리아", "유튜브추천", "여행"],
+    tip: "돌돌하의 돌로미티 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "이탈리아 신혼여행 EP.1 🇮🇹 / 꼬모호수 & 돌로미티⛰️/ 이탈리아 북부 여행 / 이탈리아 숙소 추천🏨",
+    highlights: []
+  },
+  {
+    id: "auto-scZFwBleR7U",
+    creator: "지혜사랑JIHYESARANG",
+    youtubeId: "scZFwBleR7U",
+    title: "맛있는 이탈리아 여행 브이로그~! 눈앞에서 소매치기, 인종차별, 로마에서 피렌체까지! 먹다 끝남,이탈리아 남부투어, 포지타노 당일치기, 3대 젤라또 맛집, 이탈리아 신혼여행",
+    channel: "지혜사랑JIHYESARANG",
+    country: "이탈리아",
+    city: "포지타노",
+    locationName: "포지타노 주요 명소",
+    lat: 40.6281,
+    lng: 14.485,
+    tags: ["포지타노", "이탈리아", "유튜브추천", "여행"],
+    tip: "지혜사랑JIHYESARANG의 포지타노 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "맛있는 이탈리아 여행 브이로그~! 눈앞에서 소매치기, 인종차별, 로마에서 피렌체까지! 먹다 끝남,이탈리아 남부투어, 포지타노 당일치기, 3대 젤라또 맛집, 이탈리아 신혼여행",
+    highlights: []
+  },
+  {
+    id: "auto-kxwdwNXkJ8o",
+    creator: "세빈 SEBIN",
+    youtubeId: "kxwdwNXkJ8o",
+    title: "VLOG🇮🇹 열심히 먹고 돌아다닌 로마 여행 + 남부투어를 곁들인..🍋 인생 젤라또, 쇼핑, 까르보나라까지",
+    channel: "세빈 SEBIN",
+    country: "이탈리아",
+    city: "로마",
+    locationName: "로마 주요 명소",
+    lat: 41.9028,
+    lng: 12.4964,
+    tags: ["로마", "이탈리아", "유튜브추천", "여행"],
+    tip: "세빈 SEBIN의 로마 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "VLOG🇮🇹 열심히 먹고 돌아다닌 로마 여행 + 남부투어를 곁들인..🍋 인생 젤라또, 쇼핑, 까르보나라까지",
+    highlights: []
+  },
+  {
+    id: "auto-wtScHmYSUXo",
+    creator: "거누파파네 Dog family",
+    youtubeId: "wtScHmYSUXo",
+    title: "다시는 딸들이랑 자유여행 안간다..(인내심이 바닥난 유럽 가족여행 브이로그 2탄 l 피렌체&베네치아)",
+    channel: "거누파파네 Dog family",
+    country: "이탈리아",
+    city: "베네치아",
+    locationName: "베네치아 주요 명소",
+    lat: 45.4408,
+    lng: 12.3155,
+    tags: ["베네치아", "이탈리아", "유튜브추천", "여행"],
+    tip: "거누파파네 Dog family의 베네치아 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "다시는 딸들이랑 자유여행 안간다..(인내심이 바닥난 유럽 가족여행 브이로그 2탄 l 피렌체&베네치아)",
+    highlights: []
+  },
+  {
+    id: "auto-KQFPurHa1y0",
+    creator: "아재여행 Ajae Travel",
+    youtubeId: "KQFPurHa1y0",
+    title: "[4K] 아재 혼자 13박 14일 이탈리아 여행 몰아보기",
+    channel: "아재여행 Ajae Travel",
+    country: "이탈리아",
+    city: "로마",
+    locationName: "로마 주요 명소",
+    lat: 41.9028,
+    lng: 12.4964,
+    tags: ["로마", "이탈리아", "유튜브추천", "여행"],
+    tip: "아재여행 Ajae Travel의 로마 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[4K] 아재 혼자 13박 14일 이탈리아 여행 몰아보기",
+    highlights: []
+  },
+  {
+    id: "auto-YobD6OBYToE",
+    creator: "유정 YUJEONG",
+    youtubeId: "YobD6OBYToE",
+    title: "로마에 가면 로마 법을 따르라..🍦 나 홀로 13박14일 유럽 ep.5🇮🇹 이탈리아 최고의 휴양지 포지타노, 폼페이 남부 투어🌞 트레비 분수, 콜로세움, 바티칸 시티 투어까지🍝❤️",
+    channel: "유정 YUJEONG",
+    country: "이탈리아",
+    city: "포지타노",
+    locationName: "포지타노 & 폼페이 남부 투어",
+    lat: 40.6281,
+    lng: 14.485,
+    startTime: 0,
+    tags: ["포지타노", "이탈리아", "유튜브추천", "여행"],
+    tip: "유정 YUJEONG의 포지타노 & 폼페이 남부 투어 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "로마에 가면 로마 법을 따르라..🍦 나 홀로 13박14일 유럽 ep.5🇮🇹 이탈리아 최고의 휴양지 포지타노, 폼페이 남부 투어🌞 트레비 분수, 콜로세움, 바티칸 시티 투어까지🍝❤️",
+    highlights: []
+  },
+  {
+    id: "auto-Uy1f9KN8mYo",
+    creator: "연우의요일nuuyoil",
+    youtubeId: "Uy1f9KN8mYo",
+    title: "이탈리아 브이로그 🇮🇹 그토록 꿈꾸던 이탈리아에 가다 .. 로마 인생 숙소 ✶ 꼭 가야할 느좋 스팟들 다 모음 🏛️ Italy Vlog",
+    channel: "연우의요일nuuyoil",
+    country: "이탈리아",
+    city: "로마",
+    locationName: "로마 주요 명소",
+    lat: 41.9028,
+    lng: 12.4964,
+    tags: ["로마", "이탈리아", "유튜브추천", "여행"],
+    tip: "연우의요일nuuyoil의 로마 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "이탈리아 브이로그 🇮🇹 그토록 꿈꾸던 이탈리아에 가다 .. 로마 인생 숙소 ✶ 꼭 가야할 느좋 스팟들 다 모음 🏛️ Italy Vlog",
+    highlights: []
+  },
+  {
+    id: "auto-L8FPeTIpIgQ",
+    creator: "키마이에진",
+    youtubeId: "L8FPeTIpIgQ",
+    title: "유럽 여행 vlog🇬🇧❤️🥓 -런던-",
+    channel: "키마이에진",
+    country: "영국",
+    city: "런던",
+    locationName: "런던 주요 명소",
+    lat: 51.5074,
+    lng: -0.1278,
+    tags: ["런던", "영국", "유튜브추천", "여행"],
+    tip: "키마이에진의 런던 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "유럽 여행 vlog🇬🇧❤️🥓 -런던-",
+    highlights: []
+  },
+  {
+    id: "auto-yuGfhynS8Uo",
+    creator: "deemd 딤디",
+    youtubeId: "yuGfhynS8Uo",
+    title: "sub) 번아웃 온 장녀를 위한 10일간의 유럽여행🇨🇭🇫🇷🇪🇸 스위스에서 사기당함ㅣ파리패션위크 지옥ㅣ폭우오는 바르셀로나 타파스 맛집ㅣ에르메스백, 반클리프 목걸이 쇼핑",
+    channel: "deemd 딤디",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "deemd 딤디의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "sub) 번아웃 온 장녀를 위한 10일간의 유럽여행🇨🇭🇫🇷🇪🇸 스위스에서 사기당함ㅣ파리패션위크 지옥ㅣ폭우오는 바르셀로나 타파스 맛집ㅣ에르메스백, 반클리프 목걸이 쇼핑",
+    highlights: []
+  },
+  {
+    id: "auto-VAe23alKHEU",
+    creator: "거누파파네 Dog family",
+    youtubeId: "VAe23alKHEU",
+    title: "카드 흘리고 카메라 놓고오고..시작부터 불안한 스위스 여행 (딸아 우리는 이제 집가고 싶다.. l 유럽 브이로그)",
+    channel: "거누파파네 Dog family",
+    country: "스위스",
+    city: "인터라켄",
+    locationName: "인터라켄 주요 명소",
+    lat: 46.6863,
+    lng: 7.8632,
+    tags: ["인터라켄", "스위스", "유튜브추천", "여행"],
+    tip: "거누파파네 Dog family의 인터라켄 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "카드 흘리고 카메라 놓고오고..시작부터 불안한 스위스 여행 (딸아 우리는 이제 집가고 싶다.. l 유럽 브이로그)",
+    highlights: []
+  },
+  {
+    id: "auto-eZyCCJyg57M",
+    creator: "웨이waychannel",
+    youtubeId: "eZyCCJyg57M",
+    title: "14박15일 유럽여행 몰아보기✈️ 파리부터 스위스, 이탈리아까지 | 여름 유럽 여행 | 친구와 떠난 서유럽 자유여행",
+    channel: "웨이waychannel",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "웨이waychannel의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "14박15일 유럽여행 몰아보기✈️ 파리부터 스위스, 이탈리아까지 | 여름 유럽 여행 | 친구와 떠난 서유럽 자유여행",
+    highlights: []
+  },
+  {
+    id: "auto-8KNCUSb-W5A",
+    creator: "HYUNJIN현진",
+    youtubeId: "8KNCUSb-W5A",
+    title: "유럽여행 마지막 편... 바르셀로나와 사랑에 빠진 4일🇪🇸🤩 ",
+    channel: "HYUNJIN현진",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "HYUNJIN현진의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "유럽여행 마지막 편... 바르셀로나와 사랑에 빠진 4일🇪🇸🤩 ",
+    highlights: []
+  },
+  {
+    id: "auto-S3_lQd7kFZ4",
+    creator: "유정 YUJEONG",
+    youtubeId: "S3_lQd7kFZ4",
+    title: "이탈리아에서 피자 먹기!🍕 나 홀로 13박14일 유럽 ep.4🇮🇹 피사의 사탑을 진짜 보다니..🙊 예술의 도시 피렌체로~ 친퀘테레 기차투어까지🚞",
+    channel: "유정 YUJEONG",
+    country: "이탈리아",
+    city: "친퀘테레",
+    locationName: "친퀘테레 주요 명소",
+    lat: 44.1461,
+    lng: 9.6439,
+    tags: ["친퀘테레", "이탈리아", "유튜브추천", "여행"],
+    tip: "유정 YUJEONG의 친퀘테레 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "이탈리아에서 피자 먹기!🍕 나 홀로 13박14일 유럽 ep.4🇮🇹 피사의 사탑을 진짜 보다니..🙊 예술의 도시 피렌체로~ 친퀘테레 기차투어까지🚞",
+    highlights: []
+  },
+  {
+    id: "auto-bybYtAtURCM",
+    creator: "유정 YUJEONG",
+    youtubeId: "bybYtAtURCM",
+    title: "혼자 해외 그만 가고싶은데👉🏻👈🏻💦 또 다시 나 홀로 13박14일 유럽여행 ep.1🇬🇧 LONDON!🎶 쇼디치 빈티지 쇼핑, 베이글 맛집, 애프터눈티, 노팅힐, 레미제라블까지⭐️",
+    channel: "유정 YUJEONG",
+    country: "영국",
+    city: "런던",
+    locationName: "런던 쇼디치 & 노팅힐",
+    lat: 51.5074,
+    lng: -0.1278,
+    startTime: 0,
+    tags: ["런던", "영국", "유튜브추천", "여행"],
+    tip: "유정 YUJEONG의 런던 쇼디치 & 노팅힐 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "혼자 해외 그만 가고싶은데👉🏻👈🏻💦 또 다시 나 홀로 13박14일 유럽여행 ep.1🇬🇧 LONDON!🎶 쇼디치 빈티지 쇼핑, 베이글 맛집, 애프터눈티, 노팅힐, 레미제라블까지⭐️",
+    highlights: []
+  },
+  {
+    id: "auto-xY_wljI_xyI",
+    creator: "강햄콩",
+    youtubeId: "xY_wljI_xyI",
+    title: "나홀로 런던가서 제대로 놀러다니는 브이로그 ep.2 🇬🇧🦊🎶 (여기는 꼬옥 가주시면 되…..)",
+    channel: "강햄콩",
+    country: "영국",
+    city: "런던",
+    locationName: "런던 주요 명소",
+    lat: 51.5074,
+    lng: -0.1278,
+    tags: ["런던", "영국", "유튜브추천", "여행"],
+    tip: "강햄콩의 런던 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나홀로 런던가서 제대로 놀러다니는 브이로그 ep.2 🇬🇧🦊🎶 (여기는 꼬옥 가주시면 되…..)",
+    highlights: []
+  },
+  {
+    id: "auto-my_7f-tY1tA",
+    creator: "Daily Joy조이",
+    youtubeId: "my_7f-tY1tA",
+    title: "[vlog] 파리여행🇫🇷 이 영상을 본 당신은 파리를 앓게 됩니다...| 14시간 비행 | 15구 신상호텔 | 튈르히 가든 | 센강 피크닉 | 오르세 미술관 | 모네의 정원",
+    channel: "Daily Joy조이",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "Daily Joy조이의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[vlog] 파리여행🇫🇷 이 영상을 본 당신은 파리를 앓게 됩니다...| 14시간 비행 | 15구 신상호텔 | 튈르히 가든 | 센강 피크닉 | 오르세 미술관 | 모네의 정원",
+    highlights: []
+  },
+  {
+    id: "auto-2ugFG3cah2g",
+    creator: "잇츠유주 It's yuju",
+    youtubeId: "2ugFG3cah2g",
+    title: "파리여행 브이로그🇫🇷 유럽여행 50만원대에 가는 법, 인천공항 꿀팁✈️ 파리 최애 동네, 파리 에어비앤비 숙소, 티웨이 유럽 후기, 생마르탱ㅣep.1",
+    channel: "잇츠유주 It's yuju",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "잇츠유주 It's yuju의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "파리여행 브이로그🇫🇷 유럽여행 50만원대에 가는 법, 인천공항 꿀팁✈️ 파리 최애 동네, 파리 에어비앤비 숙소, 티웨이 유럽 후기, 생마르탱ㅣep.1",
+    highlights: []
+  },
+  {
+    id: "auto-6jDnV7EeKHY",
+    creator: "아옳이",
+    youtubeId: "6jDnV7EeKHY",
+    title: "물가 실화❓ 소매치기 실화❓ 그래도 행복했던 우당탕탕 스위스 브이로그",
+    channel: "아옳이",
+    country: "스위스",
+    city: "인터라켄",
+    locationName: "인터라켄 주요 명소",
+    lat: 46.6863,
+    lng: 7.8632,
+    tags: ["인터라켄", "스위스", "유튜브추천", "여행"],
+    tip: "아옳이의 인터라켄 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "물가 실화❓ 소매치기 실화❓ 그래도 행복했던 우당탕탕 스위스 브이로그",
+    highlights: []
+  },
+  {
+    id: "auto-F0oH9iYGM80",
+    creator: "콩빈Cong Been",
+    youtubeId: "F0oH9iYGM80",
+    title: "🇫🇷 한 달 유럽여행 전 날 짐 챙긴 극 P의 개노답 [프랑스 여행] 몰아보기 (파리, 니스, 칸, 그라스)",
+    channel: "콩빈Cong Been",
+    country: "프랑스",
+    city: "파리",
+    locationName: "파리 주요 명소",
+    lat: 48.8566,
+    lng: 2.3522,
+    tags: ["파리", "프랑스", "유튜브추천", "여행"],
+    tip: "콩빈Cong Been의 파리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇫🇷 한 달 유럽여행 전 날 짐 챙긴 극 P의 개노답 [프랑스 여행] 몰아보기 (파리, 니스, 칸, 그라스)",
+    highlights: []
+  },
+  {
+    id: "auto-ffDIAkBhK90",
+    creator: "서재로36",
+    youtubeId: "ffDIAkBhK90",
+    title: "한국인이 가야 할 유럽 한 달 살기 1위 국가",
+    channel: "서재로36",
+    country: "포르투갈",
+    city: "포르투",
+    locationName: "포르투 주요 명소",
+    lat: 41.1579,
+    lng: -8.6291,
+    tags: ["포르투", "포르투갈", "유튜브추천", "여행"],
+    tip: "서재로36의 포르투 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "한국인이 가야 할 유럽 한 달 살기 1위 국가",
+    highlights: []
+  },
+  {
+    id: "auto-wrFCYogIVFg",
+    creator: "에바EVA",
+    youtubeId: "wrFCYogIVFg",
+    title: "나혼자 갑자기 스페인으로 떠난 이유",
+    channel: "에바EVA",
+    country: "스페인",
+    city: "바르셀로나",
+    locationName: "바르셀로나 주요 명소",
+    lat: 41.3851,
+    lng: 2.1734,
+    tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
+    tip: "에바EVA의 바르셀로나 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나혼자 갑자기 스페인으로 떠난 이유",
+    highlights: []
+  },
+  {
+    id: "auto-pJz4h2oR1a8",
+    creator: "이디아나 존스",
+    youtubeId: "pJz4h2oR1a8",
+    title: "라오스가 변한걸까? 한국인이 변한걸까?",
+    channel: "이디아나 존스",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "이디아나 존스의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "라오스가 변한걸까? 한국인이 변한걸까?",
+    highlights: []
+  },
+  {
+    id: "auto-Cbiz2mE2sqU",
+    creator: "소풍족",
+    youtubeId: "Cbiz2mE2sqU",
+    title: "물가 저렴한데 태국 느낌난다는 라오스 첫 방문! 🤩 【100만원으로 라오스 1】",
+    channel: "소풍족",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "소풍족의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "물가 저렴한데 태국 느낌난다는 라오스 첫 방문! 🤩 【100만원으로 라오스 1】",
+    highlights: []
+  },
+  {
+    id: "auto-i7MyLZruiz4",
+    creator: "맛쫑tour",
+    youtubeId: "i7MyLZruiz4",
+    title: "🇱🇦라오스 여행 베스트23 싹다 알려드림 (루앙프라방,방비엥,비엔티안)",
+    channel: "맛쫑tour",
+    country: "라오스",
+    city: "루앙프라방",
+    locationName: "루앙프라방 주요 명소",
+    lat: 19.8893,
+    lng: 102.134,
+    tags: ["루앙프라방", "라오스", "유튜브추천", "여행"],
+    tip: "맛쫑tour의 루앙프라방 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇱🇦라오스 여행 베스트23 싹다 알려드림 (루앙프라방,방비엥,비엔티안)",
+    highlights: []
+  },
+  {
+    id: "auto-CLke0gY-hHY",
+    creator: "라오스 오지마을 한국인",
+    youtubeId: "CLke0gY-hHY",
+    title: "남들은 낭만 여행으로 오는 라오스 오지마을… 현지화 완료 된 한국인",
+    channel: "라오스 오지마을 한국인",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "라오스 오지마을 한국인의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "남들은 낭만 여행으로 오는 라오스 오지마을… 현지화 완료 된 한국인",
+    highlights: []
+  },
+  {
+    id: "auto-VXVk4oe78YQ",
+    creator: "꾸준 kkujun",
+    youtubeId: "VXVk4oe78YQ",
+    title: "항공권 9만원인데 왜 아무도 안 가지? 베트남 반값에 가능한 ‘이 나라’ 입국기",
+    channel: "꾸준 kkujun",
+    country: "라오스",
+    city: "비엔티안",
+    locationName: "비엔티안 주요 명소",
+    lat: 17.9757,
+    lng: 102.6331,
+    tags: ["비엔티안", "라오스", "가성비여행", "배낭여행"],
+    tip: "꾸준 kkujun이 소개한 가성비 최고의 라오스 입국 및 현지 여행기입니다.",
+    publishedAt: "2026-11-22",
+    description: "항공권 9만원인데 왜 아무도 안 가지? 베트남 반값에 가능한 ‘이 나라’ 입국기",
+    highlights: []
+  },
+  {
+    id: "auto-2ivW0lor5Ps",
+    creator: "꼬마월드",
+    youtubeId: "2ivW0lor5Ps",
+    title: "라오스 물탱크 설치 전문가 불렀는데 누수가 너무 많습니다.",
+    channel: "꼬마월드",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "꼬마월드의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "라오스 물탱크 설치 전문가 불렀는데 누수가 너무 많습니다.",
+    highlights: []
+  },
+  {
+    id: "auto-NUnk_rRbXHI",
+    creator: "밥알",
+    youtubeId: "NUnk_rRbXHI",
+    title: "총경비 80만원 2주살기 쌉가능! 여자 혼자 라오스 여행 몰아보기",
+    channel: "밥알",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "밥알의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "총경비 80만원 2주살기 쌉가능! 여자 혼자 라오스 여행 몰아보기",
+    highlights: []
+  },
+  {
+    id: "auto-vmwnWtXU49Q",
+    creator: "또떠나용 ddonayoung",
+    youtubeId: "vmwnWtXU49Q",
+    title: "🇱🇦여자 혼자여도 괜찮아! 라오스 여행 2시간 몰아보기",
+    channel: "또떠나용 ddonayoung",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "또떠나용 ddonayoung의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇱🇦여자 혼자여도 괜찮아! 라오스 여행 2시간 몰아보기",
+    highlights: []
+  },
+  {
+    id: "auto-UowcN52yz00",
+    creator: "앤아더",
+    youtubeId: "UowcN52yz00",
+    title: "그때 우리는 라오스에 있었다｜라오스 여행 브이로그 EP.01",
+    channel: "앤아더",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "앤아더의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "그때 우리는 라오스에 있었다｜라오스 여행 브이로그 EP.01",
+    highlights: []
+  },
+  {
+    id: "auto-ltKwqjjVaTA",
+    creator: "Jaelimize 재림",
+    youtubeId: "ltKwqjjVaTA",
+    title: "물가 저렴한 라오스 여행ㅣ액티비티 천국 방비엥ㅣ4년만의 해외 - 🇱🇦라오스1",
+    channel: "Jaelimize 재림",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: "Jaelimize 재림의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "물가 저렴한 라오스 여행ㅣ액티비티 천국 방비엥ㅣ4년만의 해외 - 🇱🇦라오스1",
+    highlights: []
+  },
+  {
+    id: "auto-9XOEf3sW-kM",
+    creator: " Laos 히트맨 Mr Rang ",
+    youtubeId: "9XOEf3sW-kM",
+    title: "라오스 안마장 마트에서 애인만들기 라오스환상 ",
+    channel: " Laos 히트맨 Mr Rang ",
+    country: "라오스",
+    city: "방비엥",
+    locationName: "방비엥 주요 명소",
+    lat: 18.9224,
+    lng: 102.4475,
+    tags: ["방비엥", "라오스", "유튜브추천", "여행"],
+    tip: " Laos 히트맨 Mr Rang 의 방비엥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "라오스 안마장 마트에서 애인만들기 라오스환상 ",
+    highlights: []
+  },
+  {
+    id: "auto-do1S8t5mXCU",
+    creator: "상희sanghui",
+    youtubeId: "do1S8t5mXCU",
+    title: "🇮🇩발리여행 vlog | 극효율주의 J일정 | 짱구 물가 | ✅여행꿀팁 대방출 | 쇼핑스팟, 맛집, 선셋명당, 라브리사 비치클럽, 선데이마켓🛍️",
+    channel: "상희sanghui",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "상희sanghui의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇮🇩발리여행 vlog | 극효율주의 J일정 | 짱구 물가 | ✅여행꿀팁 대방출 | 쇼핑스팟, 맛집, 선셋명당, 라브리사 비치클럽, 선데이마켓🛍️",
+    highlights: []
+  },
+  {
+    id: "auto-XkCJAPCo0aw",
+    creator: "령령 Ryeongryeong",
+    youtubeId: "XkCJAPCo0aw",
+    title: "5Days in Bali🌺 발리여행 브이로그₊⋆°⋆ (먹고 또 먹는 맛집&핫플 투어,인생 숙소,오토바이 렌트,우붓&스미냑&짱구)",
+    channel: "령령 Ryeongryeong",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "령령 Ryeongryeong의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "5Days in Bali🌺 발리여행 브이로그₊⋆°⋆ (먹고 또 먹는 맛집&핫플 투어,인생 숙소,오토바이 렌트,우붓&스미냑&짱구)",
+    highlights: []
+  },
+  {
+    id: "auto-d-pZ7ajDlfg",
+    creator: "하나둘세민 SEMIN",
+    youtubeId: "d-pZ7ajDlfg",
+    title: "VLOG🇮🇩첫 동남아 여행. 나 발리 또 간다 기다려라",
+    channel: "하나둘세민 SEMIN",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "하나둘세민 SEMIN의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "VLOG🇮🇩첫 동남아 여행. 나 발리 또 간다 기다려라",
+    highlights: []
+  },
+  {
+    id: "auto-InYSP5cjVtE",
+    creator: "혜인 HEYNEE",
+    youtubeId: "InYSP5cjVtE",
+    title: "발리 여행🧳 초급부터 고급코스까지 한번에 정리🌴 #쿠타 #우붓 #길리 #창구 #스미냑 #사누르 완전정복",
+    channel: "혜인 HEYNEE",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "혜인 HEYNEE의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "발리 여행🧳 초급부터 고급코스까지 한번에 정리🌴 #쿠타 #우붓 #길리 #창구 #스미냑 #사누르 완전정복",
+    highlights: []
+  },
+  {
+    id: "auto-Bk0BuNFOvrU",
+    creator: "타이거투어 - 나만 알기 아까운 여행정보",
+    youtubeId: "Bk0BuNFOvrU",
+    title: "발리 여행 준비 이걸로 종결! 필수코스 완벽 정리 +꿀팁 대방출",
+    channel: "타이거투어 - 나만 알기 아까운 여행정보",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "타이거투어 - 나만 알기 아까운 여행정보의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "발리 여행 준비 이걸로 종결! 필수코스 완벽 정리 +꿀팁 대방출",
+    highlights: []
+  },
+  {
+    id: "auto-rT8-3wD9Pm4",
+    creator: "우나 woo na",
+    youtubeId: "rT8-3wD9Pm4",
+    title: "vlog | 발리여행 | Bali | 7월 여름휴가",
+    channel: "우나 woo na",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "우나 woo na의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "vlog | 발리여행 | Bali | 7월 여름휴가",
+    highlights: []
+  },
+  {
+    id: "auto-6DZj1kj-MUU",
+    creator: "하이슬기 Hi Seulgi",
+    youtubeId: "6DZj1kj-MUU",
+    title: "계획은 0% 행복은 1000%🏖️슬기의 발리 브이로그 | 발리 숙소,현지 맛집,쇼핑,짱구 카페",
+    channel: "하이슬기 Hi Seulgi",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "하이슬기 Hi Seulgi의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "계획은 0% 행복은 1000%🏖️슬기의 발리 브이로그 | 발리 숙소,현지 맛집,쇼핑,짱구 카페",
+    highlights: []
+  },
+  {
+    id: "auto-7jlM_jBzxYg",
+    creator: "꼴로레colore",
+    youtubeId: "7jlM_jBzxYg",
+    title: "[발리 VLOG] 짱구 3박 알찬코스💟 확바뀐 핀스, 느좋 스팟, 여행 꿀팁, 구글맵 대방출✨",
+    channel: "꼴로레colore",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "꼴로레colore의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[발리 VLOG] 짱구 3박 알찬코스💟 확바뀐 핀스, 느좋 스팟, 여행 꿀팁, 구글맵 대방출✨",
+    highlights: []
+  },
+  {
+    id: "auto-wZW7OPmN_AE",
+    creator: "예소리SSOL",
+    youtubeId: "wZW7OPmN_AE",
+    title: "[여행vlog] 1시간 대하 드라마 발리 꽉찬 일주일 루트👙🌴_ (짱구,스미냑,울루와뚜) 비치클럽+퍼피요가+감성숙소+빈땅데이+현지MZ들이 먹는다는 매운 볶음국수",
+    channel: "예소리SSOL",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "예소리SSOL의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[여행vlog] 1시간 대하 드라마 발리 꽉찬 일주일 루트👙🌴_ (짱구,스미냑,울루와뚜) 비치클럽+퍼피요가+감성숙소+빈땅데이+현지MZ들이 먹는다는 매운 볶음국수",
+    highlights: []
+  },
+  {
+    id: "auto-Ene1yGhKRSQ",
+    creator: "공부왕찐천재 홍진경",
+    youtubeId: "Ene1yGhKRSQ",
+    title: "[여행공부 - 발리1] 다사다난했던 2025년 다 잊고 발리로 떠나버린 홍진경 (10만원 풀빌라, 인생맛집) [발리 1편]",
+    channel: "공부왕찐천재 홍진경",
+    country: "인도네시아",
+    city: "발리",
+    locationName: "발리 주요 명소",
+    lat: -8.4095,
+    lng: 115.1889,
+    tags: ["발리", "인도네시아", "유튜브추천", "여행"],
+    tip: "공부왕찐천재 홍진경의 발리 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[여행공부 - 발리1] 다사다난했던 2025년 다 잊고 발리로 떠나버린 홍진경 (10만원 풀빌라, 인생맛집) [발리 1편]",
+    highlights: []
+  },
+  {
+    id: "auto-NjvqvKzK9Ng",
+    creator: "수쩡민",
+    youtubeId: "NjvqvKzK9Ng",
+    title: "고2 자퇴생 혼자 호치민 3박4일 배낭여행 VLOG 1편",
+    channel: "수쩡민",
+    country: "베트남",
+    city: "호치민",
+    locationName: "호치민 주요 명소",
+    lat: 10.8231,
+    lng: 106.6297,
+    tags: ["호치민", "베트남", "유튜브추천", "여행"],
+    tip: "수쩡민의 호치민 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "고2 자퇴생 혼자 호치민 3박4일 배낭여행 VLOG 1편",
+    highlights: []
+  },
+  {
+    id: "auto-OjE5MnbCsDg",
+    creator: "진짜하늬 Real Hanie",
+    youtubeId: "OjE5MnbCsDg",
+    title: "경기도 다낭시는 옛말? 외면받는 동남아 현실!",
+    channel: "진짜하늬 Real Hanie",
+    country: "베트남",
+    city: "다낭",
+    locationName: "다낭 주요 명소",
+    lat: 16.0544,
+    lng: 108.2022,
+    tags: ["다낭", "베트남", "유튜브추천", "여행"],
+    tip: "진짜하늬 Real Hanie의 다낭 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "경기도 다낭시는 옛말? 외면받는 동남아 현실!",
+    highlights: []
+  },
+  {
+    id: "auto-41gZR7js5RY",
+    creator: "하미마미 Hamimommy",
+    youtubeId: "41gZR7js5RY",
+    title: "동양의 파리, 호찌민으로 떠나요 🇻🇳ㅣ이국적인 카페, 시골 풍경, 나룻배 투어까지ㅣTravel VLOG",
+    channel: "하미마미 Hamimommy",
+    country: "베트남",
+    city: "다낭",
+    locationName: "다낭 주요 명소",
+    lat: 16.0544,
+    lng: 108.2022,
+    tags: ["다낭", "베트남", "유튜브추천", "여행"],
+    tip: "하미마미 Hamimommy의 다낭 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "동양의 파리, 호찌민으로 떠나요 🇻🇳ㅣ이국적인 카페, 시골 풍경, 나룻배 투어까지ㅣTravel VLOG",
+    highlights: []
+  },
+  {
+    id: "auto-Eht_TPcckyA",
+    creator: "프리나미",
+    youtubeId: "Eht_TPcckyA",
+    title: "베트남 여행 어디가 최고일까? 푸꾸옥 vs 나트랑 vs 다낭 총정리",
+    channel: "프리나미",
+    country: "베트남",
+    city: "나트랑",
+    locationName: "나트랑 주요 명소",
+    lat: 12.2388,
+    lng: 109.1967,
+    tags: ["나트랑", "베트남", "유튜브추천", "여행"],
+    tip: "프리나미의 나트랑 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "베트남 여행 어디가 최고일까? 푸꾸옥 vs 나트랑 vs 다낭 총정리",
+    highlights: []
+  },
+  {
+    id: "auto-jiHvummvlrM",
+    creator: "박엥겍 ParkEngKeck",
+    youtubeId: "jiHvummvlrM",
+    title: "돈 걱정 없이 여행 가능해서 유일하게 한국인 1200% 폭등한 대박난 베트남 소도시",
+    channel: "박엥겍 ParkEngKeck",
+    country: "베트남",
+    city: "다낭",
+    locationName: "다낭 주요 명소",
+    lat: 16.0544,
+    lng: 108.2022,
+    tags: ["다낭", "베트남", "유튜브추천", "여행"],
+    tip: "박엥겍 ParkEngKeck의 다낭 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "돈 걱정 없이 여행 가능해서 유일하게 한국인 1200% 폭등한 대박난 베트남 소도시",
+    highlights: []
+  },
+  {
+    id: "auto-WdLZee8fl1g",
+    creator: "헤르미 hermiona",
+    youtubeId: "WdLZee8fl1g",
+    title: "쉬지않고 하루에 13군데 돌아다니는 🥭 다낭 호이안 여행vlog | 한시장 쇼핑도 성공! | 윙크호텔,환전,반미코티엔,안토이,콩카페,라시에스타,센텔라스파,소원배 | ep.1",
+    channel: "헤르미 hermiona",
+    country: "베트남",
+    city: "호이안",
+    locationName: "호이안 주요 명소",
+    lat: 15.8801,
+    lng: 108.338,
+    tags: ["호이안", "베트남", "유튜브추천", "여행"],
+    tip: "헤르미 hermiona의 호이안 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "쉬지않고 하루에 13군데 돌아다니는 🥭 다낭 호이안 여행vlog | 한시장 쇼핑도 성공! | 윙크호텔,환전,반미코티엔,안토이,콩카페,라시에스타,센텔라스파,소원배 | ep.1",
+    highlights: []
+  },
+  {
+    id: "auto-WldNgyQWWYo",
+    creator: "AllZero다영",
+    youtubeId: "WldNgyQWWYo",
+    title: "베트남은 처음이라 …. Vlog",
+    channel: "AllZero다영",
+    country: "베트남",
+    city: "다낭",
+    locationName: "다낭 주요 명소",
+    lat: 16.0544,
+    lng: 108.2022,
+    tags: ["다낭", "베트남", "유튜브추천", "여행"],
+    tip: "AllZero다영의 다낭 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "베트남은 처음이라 …. Vlog",
+    highlights: []
+  },
+  {
+    id: "auto-p1aJ4pGpWho",
+    creator: "sookoh 수코",
+    youtubeId: "p1aJ4pGpWho",
+    title: "나혼자 다낭 몰아보기🇻🇳숙소,한시장, 환전,다낭맛집,롯데마트,소원배 • 베트남 다낭 호이안 여행 브이로그",
+    channel: "sookoh 수코",
+    country: "베트남",
+    city: "호이안",
+    locationName: "호이안 주요 명소",
+    lat: 15.8801,
+    lng: 108.338,
+    tags: ["호이안", "베트남", "유튜브추천", "여행"],
+    tip: "sookoh 수코의 호이안 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "나혼자 다낭 몰아보기🇻🇳숙소,한시장, 환전,다낭맛집,롯데마트,소원배 • 베트남 다낭 호이안 여행 브이로그",
+    highlights: []
+  },
+  {
+    id: "auto-iwQpV-cKgNw",
+    creator: "좋은희Joeunhee",
+    youtubeId: "iwQpV-cKgNw",
+    title: "🇻🇳베트남의 하와이🌴푸꾸옥에서 3박5일 여행로그(제주항공/모벤픽풀빌라/모벤픽호텔/푸꾸옥맛집/킹콩마트/마사지/인천공항스마트패스/트리플)",
+    channel: "좋은희Joeunhee",
+    country: "베트남",
+    city: "푸꾸옥",
+    locationName: "푸꾸옥 주요 명소",
+    lat: 10.2899,
+    lng: 103.984,
+    tags: ["푸꾸옥", "베트남", "유튜브추천", "여행"],
+    tip: "좋은희Joeunhee의 푸꾸옥 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇻🇳베트남의 하와이🌴푸꾸옥에서 3박5일 여행로그(제주항공/모벤픽풀빌라/모벤픽호텔/푸꾸옥맛집/킹콩마트/마사지/인천공항스마트패스/트리플)",
+    highlights: []
+  },
+  {
+    id: "auto-ntYw5Xkz5T4",
+    creator: "Daily Joy조이",
+    youtubeId: "ntYw5Xkz5T4",
+    title: "[vlog] 나트랑 여행 브이로그🌺 로컬 찐맛집과 알찬코스📝| 판랑 사막투어, 신상숙소, 인생 쌀국수, 담시장, 마사지 추천 | Nha Trang vlog",
+    channel: "Daily Joy조이",
+    country: "베트남",
+    city: "나트랑",
+    locationName: "나트랑 주요 명소",
+    lat: 12.2388,
+    lng: 109.1967,
+    tags: ["나트랑", "베트남", "유튜브추천", "여행"],
+    tip: "Daily Joy조이의 나트랑 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[vlog] 나트랑 여행 브이로그🌺 로컬 찐맛집과 알찬코스📝| 판랑 사막투어, 신상숙소, 인생 쌀국수, 담시장, 마사지 추천 | Nha Trang vlog",
+    highlights: []
+  },
+  {
+    id: "auto-XE8Oe3DO4U4",
+    creator: "이자반",
+    youtubeId: "XE8Oe3DO4U4",
+    title: "하노이의 1박2일 고독한 대식가 브이로그 - 베트남(끝)",
+    channel: "이자반",
+    country: "베트남",
+    city: "하노이",
+    locationName: "하노이 주요 명소",
+    lat: 21.0285,
+    lng: 105.8542,
+    tags: ["하노이", "베트남", "유튜브추천", "여행"],
+    tip: "이자반의 하노이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "하노이의 1박2일 고독한 대식가 브이로그 - 베트남(끝)",
+    highlights: []
+  },
+  {
+    id: "auto-JuJfNO8Tj9Q",
+    creator: "예소리SSOL",
+    youtubeId: "JuJfNO8Tj9Q",
+    title: "[여행vlog] 한시간안에 담아온 나홀로 3박4일 다낭여행🇻🇳 _ 쌀국수 러버의 맛집추천,나만리트리트,갬성카페,미케비치,멜리아 빈펄",
+    channel: "예소리SSOL",
+    country: "베트남",
+    city: "다낭",
+    locationName: "다낭 주요 명소",
+    lat: 16.0544,
+    lng: 108.2022,
+    tags: ["다낭", "베트남", "유튜브추천", "여행"],
+    tip: "예소리SSOL의 다낭 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[여행vlog] 한시간안에 담아온 나홀로 3박4일 다낭여행🇻🇳 _ 쌀국수 러버의 맛집추천,나만리트리트,갬성카페,미케비치,멜리아 빈펄",
+    highlights: []
+  },
+  {
+    id: "auto-nqa4ErIG9RA",
+    creator: "월터씨 walterC",
+    youtubeId: "nqa4ErIG9RA",
+    title: "요즘 베트남 한 달 살기, 150만 원이면 충분할까?[몰아보기]",
+    channel: "월터씨 walterC",
+    country: "베트남",
+    city: "다낭",
+    locationName: "다낭 주요 명소",
+    lat: 16.0544,
+    lng: 108.2022,
+    tags: ["다낭", "베트남", "유튜브추천", "여행"],
+    tip: "월터씨 walterC의 다낭 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "요즘 베트남 한 달 살기, 150만 원이면 충분할까?[몰아보기]",
+    highlights: []
+  },
+  {
+    id: "auto-_tXI9hd_o5o",
+    creator: "예소리SSOL",
+    youtubeId: "_tXI9hd_o5o",
+    title: "[여행vlog] 먹고 마시기 여행으로 3박5일 하노이 가야하는 이유🍺🇻🇳 _ 기찻길+맥주거리+숙소추천+바베큐구이+미슐랭맛집+최애 쌀국수 왕창 먹기+생일여행",
+    channel: "예소리SSOL",
+    country: "베트남",
+    city: "하노이",
+    locationName: "하노이 주요 명소",
+    lat: 21.0285,
+    lng: 105.8542,
+    tags: ["하노이", "베트남", "유튜브추천", "여행"],
+    tip: "예소리SSOL의 하노이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[여행vlog] 먹고 마시기 여행으로 3박5일 하노이 가야하는 이유🍺🇻🇳 _ 기찻길+맥주거리+숙소추천+바베큐구이+미슐랭맛집+최애 쌀국수 왕창 먹기+생일여행",
+    highlights: []
+  },
+  {
+    id: "auto-nNR9Hry4Pks",
+    creator: "JIYUN지윤",
+    youtubeId: "nNR9Hry4Pks",
+    title: "[지윤in베트남🇻🇳] 다낭여행 간다구?! 이 영상 필쑤얏 | 4박 6일 로컬맛집 총정리 브이로그, 쇼핑투어, 마사지샵추천, 선짜야시장, 한시장, 호이안, 미용실체험, 미케비치",
+    channel: "JIYUN지윤",
+    country: "베트남",
+    city: "호이안",
+    locationName: "호이안 주요 명소",
+    lat: 15.8801,
+    lng: 108.338,
+    tags: ["호이안", "베트남", "유튜브추천", "여행"],
+    tip: "JIYUN지윤의 호이안 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[지윤in베트남🇻🇳] 다낭여행 간다구?! 이 영상 필쑤얏 | 4박 6일 로컬맛집 총정리 브이로그, 쇼핑투어, 마사지샵추천, 선짜야시장, 한시장, 호이안, 미용실체험, 미케비치",
+    highlights: []
+  },
+  {
+    id: "auto-D8szdqvsbk0",
+    creator: "유유타이거",
+    youtubeId: "D8szdqvsbk0",
+    title: "인생 첫 베트남 여행, 출발 전부터 도착하자마자 계속되는 위기가ㅠㅠ [다낭 가족 여행 1편]",
+    channel: "유유타이거",
+    country: "베트남",
+    city: "다낭",
+    locationName: "다낭 주요 명소",
+    lat: 16.0544,
+    lng: 108.2022,
+    tags: ["다낭", "베트남", "유튜브추천", "여행"],
+    tip: "유유타이거의 다낭 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "인생 첫 베트남 여행, 출발 전부터 도착하자마자 계속되는 위기가ㅠㅠ [다낭 가족 여행 1편]",
+    highlights: []
+  },
+  {
+    id: "auto-CRIp2CYloXs",
+    creator: "꾸나 Kkuna",
+    youtubeId: "CRIp2CYloXs",
+    title: "🇹🇭치앙마이 3회차🌴 실패 없는 사심 듬뿍 찐루트✨| 재즈바에서 낭만 채우고 또간집 털기! | 블루누들 • 현지인맛집 • 올드타운 • 창푸악수끼 • 빈티지샵",
+    channel: "꾸나 Kkuna",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "꾸나 Kkuna의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇹🇭치앙마이 3회차🌴 실패 없는 사심 듬뿍 찐루트✨| 재즈바에서 낭만 채우고 또간집 털기! | 블루누들 • 현지인맛집 • 올드타운 • 창푸악수끼 • 빈티지샵",
+    highlights: []
+  },
+  {
+    id: "auto-vgYDZSIAp2k",
+    creator: "차차세계로",
+    youtubeId: "vgYDZSIAp2k",
+    title: "🇹🇭 모두가 극찬한 나홀로 치앙마이 일주일살기 몰아보기",
+    channel: "차차세계로",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "차차세계로의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇹🇭 모두가 극찬한 나홀로 치앙마이 일주일살기 몰아보기",
+    highlights: []
+  },
+  {
+    id: "auto-LGd2dEIx-5s",
+    creator: "윤티피",
+    youtubeId: "LGd2dEIx-5s",
+    title: "혼자 떠난 치앙마이 여행 vlog 뻔하지 않은 스팟들로만 가득 채운 3박 5일 🥥",
+    channel: "윤티피",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "윤티피의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "혼자 떠난 치앙마이 여행 vlog 뻔하지 않은 스팟들로만 가득 채운 3박 5일 🥥",
+    highlights: []
+  },
+  {
+    id: "auto-d_TgjYQZIlI",
+    creator: "김무비 MOVIEKIM",
+    youtubeId: "d_TgjYQZIlI",
+    title: "치앙마이 가고싶어지는 영상..🥵💦 여자혼자 치앙마이 여행vlog🇹🇭 (무계획, 각종맛집, 갓성비 네일샵, 재즈바, etc,,,)",
+    channel: "김무비 MOVIEKIM",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "김무비 MOVIEKIM의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "치앙마이 가고싶어지는 영상..🥵💦 여자혼자 치앙마이 여행vlog🇹🇭 (무계획, 각종맛집, 갓성비 네일샵, 재즈바, etc,,,)",
+    highlights: []
+  },
+  {
+    id: "auto-iE5zoydvB-Q",
+    creator: "Daily Joy조이",
+    youtubeId: "iE5zoydvB-Q",
+    title: "[vlog] 나 혼자 치앙마이🇹🇭 ’혼여고수‘가 말아주는 찐맛집과 코스 | 4박6일 일정 | 인생 가성비숙소 | 올드타운, 반캉왓, 비프누들, 팟타이••| 치앙마이vlog ep.1",
+    channel: "Daily Joy조이",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "Daily Joy조이의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "[vlog] 나 혼자 치앙마이🇹🇭 ’혼여고수‘가 말아주는 찐맛집과 코스 | 4박6일 일정 | 인생 가성비숙소 | 올드타운, 반캉왓, 비프누들, 팟타이••| 치앙마이vlog ep.1",
+    highlights: []
+  },
+  {
+    id: "auto-IsUqXesU2LQ",
+    creator: "희지 Heezy",
+    youtubeId: "IsUqXesU2LQ",
+    title: "🇹🇭 치앙마이 4박5일 브이로그..✶ | 캐이쁜 카페 - 소품샵 모음집 ☕️ | 치앙마이 숙소 추천 | chiangmai vlog",
+    channel: "희지 Heezy",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "희지 Heezy의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇹🇭 치앙마이 4박5일 브이로그..✶ | 캐이쁜 카페 - 소품샵 모음집 ☕️ | 치앙마이 숙소 추천 | chiangmai vlog",
+    highlights: []
+  },
+  {
+    id: "auto-IOZsyvxehLI",
+    creator: "트립콤파니",
+    youtubeId: "IOZsyvxehLI",
+    title: "🇹🇭 치앙마이 여행을 0부터 제대로 알려드림",
+    channel: "트립콤파니",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "트립콤파니의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇹🇭 치앙마이 여행을 0부터 제대로 알려드림",
+    highlights: []
+  },
+  {
+    id: "auto-_FM7NVrWPPI",
+    creator: "유랑쓰 YOURANGSS",
+    youtubeId: "_FM7NVrWPPI",
+    title: "돌고 돌아 결국엔 다시 치앙마이를 찾는 이유",
+    channel: "유랑쓰 YOURANGSS",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "유랑쓰 YOURANGSS의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "돌고 돌아 결국엔 다시 치앙마이를 찾는 이유",
+    highlights: []
+  },
+  {
+    id: "auto-s0cAStkpcvo",
+    creator: "All about Allie 앨리밸리",
+    youtubeId: "s0cAStkpcvo",
+    title: "🇹🇭 치앙마이 생활을 마무리 하며.. 한국에 미리 보내둔 쇼핑템은? [ENG SUB/ซับไทย]",
+    channel: "All about Allie 앨리밸리",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "All about Allie 앨리밸리의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇹🇭 치앙마이 생활을 마무리 하며.. 한국에 미리 보내둔 쇼핑템은? [ENG SUB/ซับไทย]",
+    highlights: []
+  },
+  {
+    id: "auto-VwuQP1qKTag",
+    creator: "한찌 hanzzzi",
+    youtubeId: "VwuQP1qKTag",
+    title: "🇹🇭치앙마이 브이로그 | 조금 빠른 여름 휴가 4박 6일 일정 전부 다",
+    channel: "한찌 hanzzzi",
+    country: "태국",
+    city: "치앙마이",
+    locationName: "치앙마이 주요 명소",
+    lat: 18.7883,
+    lng: 98.9853,
+    tags: ["치앙마이", "태국", "유튜브추천", "여행"],
+    tip: "한찌 hanzzzi의 치앙마이 여행 영상 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "🇹🇭치앙마이 브이로그 | 조금 빠른 여름 휴가 4박 6일 일정 전부 다",
+    highlights: []
+  },
   {
     id: "auto-mvZyM6UqwSY",
     creator: "규진",
@@ -20,7 +4628,6 @@ const RECENT_VIDEOS = [
     description: "역대급으로 힘든데,,그만큼 좋았다!!!!🇲🇳ㅣ몽골 5박6일 가을여행",
     highlights: []
   },
-  // [신규 자동 수집] 예쓰니콜YesNicole - 고비사막 주요 명소 (2026-11-22)
   {
     id: "auto-jEm4tIpinXM",
     creator: "예쓰니콜YesNicole",
@@ -30,15 +4637,14 @@ const RECENT_VIDEOS = [
     country: "몽골",
     city: "고비사막",
     locationName: "고비사막 주요 명소",
-    lat: 44.0,
-    lng: 105.0,
+    lat: 44,
+    lng: 105,
     tags: ["고비사막", "몽골", "유튜브추천", "여행"],
     tip: "예쓰니콜YesNicole의 고비사막 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-11-22",
     description: "몽골여행 브이로그 | EP.1 낭만과 현실사이💦🇲🇳처음 보는 사람들과 4박5일 고비사막 투어⛰️,벌레..화장실..?",
     highlights: []
   },
-  // [신규 자동 수집] 만빈 - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-WXQtgTTWw2I",
     creator: "만빈",
@@ -56,7 +4662,6 @@ const RECENT_VIDEOS = [
     description: "10년만에 연락 온 친구랑 갑자기 몽골 감",
     highlights: []
   },
-  // [신규 자동 수집] 때때때 TTT - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-tA_qewVfR-w",
     creator: "때때때 TTT",
@@ -74,7 +4679,6 @@ const RECENT_VIDEOS = [
     description: "연차없이 몽골 2박 3일 대자연 여행 시작 I 곽범 I 연차없이 어떡행2 EP.3",
     highlights: []
   },
-  // [신규 자동 수집] 소풍족 - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-Xcsa14oGb78",
     creator: "소풍족",
@@ -92,7 +4696,6 @@ const RECENT_VIDEOS = [
     description: "✦꿀잼보장✦ 21박22일 여름 몽골여행 몰아보기 (5시간 45분)",
     highlights: []
   },
-  // [신규 자동 수집] 살빼조DietJo - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-Ina0oAj_xJU",
     creator: "살빼조DietJo",
@@ -110,7 +4713,6 @@ const RECENT_VIDEOS = [
     description: "처음 보는 사람들과 몽골 일주일 살기 🇲🇳",
     highlights: []
   },
-  // [신규 자동 수집] 이지호이죠_JiHo - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-Vu4Yv_BMnGU",
     creator: "이지호이죠_JiHo",
@@ -128,7 +4730,6 @@ const RECENT_VIDEOS = [
     description: "영하25도🥶겨울몽골 7박8일 투어🇲🇳 울란바토르, 홉스골, 에르데네트, 자르간트, 므릉, 게르 숙소, 푸세식 화장실, 양고기(허르헉)",
     highlights: []
   },
-  // [신규 자동 수집] 혜비 hye bbii - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-qzzCNlMF06o",
     creator: "혜비 hye bbii",
@@ -146,7 +4747,6 @@ const RECENT_VIDEOS = [
     description: "Vlog. 4박 5일 여름 몽골⛧.울란바토르 가자마자 쇼핑으로 시작..! 알찬 패키지. 몽골 음식. 국영백화점. 여행 브이로그",
     highlights: []
   },
-  // [신규 자동 수집] 김메주 - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-kRkNwZpmt7E",
     creator: "김메주",
@@ -164,7 +4764,6 @@ const RECENT_VIDEOS = [
     description: "몽골 편견 다 깨주는~ 깔끔쾌적 꿀잼 몽골여행 보여줄게 🇲🇳 (4박 5일)",
     highlights: []
   },
-  // [신규 자동 수집] 태리태리 taeritaeri - 울란바토르 주요 명소 (2026-11-22)
   {
     id: "auto-yUf4bxCy4wQ",
     creator: "태리태리 taeritaeri",
@@ -182,7 +4781,6 @@ const RECENT_VIDEOS = [
     description: "[SUB] 몽골 4박 5일 패키지 브이로그 🐫 | 초원과 사막의 리얼 여행기",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 맛집 map (2026-11-22)
   {
     id: "auto-BlXbPQuNH2Y-1",
     creator: "깅듀로그",
@@ -200,7 +4798,6 @@ const RECENT_VIDEOS = [
     description: "홍콩 여행 vlog ep.1🇭🇰 | 꽉차게 여행하는 사람의 2박3일 홍콩여행 | 현지인들은 여기서 사진 찍음 | 숨은 트램뷰 카페 | 로컬맛집부터 미슐랭맛집까지",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 장소 map (2026-11-22)
   {
     id: "auto-BlXbPQuNH2Y-2",
     creator: "깅듀로그",
@@ -218,7 +4815,6 @@ const RECENT_VIDEOS = [
     description: "홍콩 여행 vlog ep.1🇭🇰 | 꽉차게 여행하는 사람의 2박3일 홍콩여행 | 현지인들은 여기서 사진 찍음 | 숨은 트램뷰 카페 | 로컬맛집부터 미슐랭맛집까지",
     highlights: []
   },
-  // [신규 자동 수집] gogossi 고고씨 - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto--my-MYdDnjw",
     creator: "gogossi 고고씨",
@@ -236,7 +4832,6 @@ const RECENT_VIDEOS = [
     description: "새벽 4시에 일어나서 혼자 홍콩가는 브이로그",
     highlights: []
   },
-  // [신규 자동 수집] 블루그린42 bg42 - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-3aP5bBH8bcI",
     creator: "블루그린42 bg42",
@@ -254,7 +4849,6 @@ const RECENT_VIDEOS = [
     description: "퇴근하자마자 홍콩여행, 나혼자 홍콩여행 브이로그 몰아보기 🇭🇰",
     highlights: []
   },
-  // [신규 자동 수집] 호온 A piece of life - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-k6gxpZPwAIo",
     creator: "호온 A piece of life",
@@ -272,7 +4866,6 @@ const RECENT_VIDEOS = [
     description: "먹으러 간 홍콩여행. 아니 맛있잖아..! 매일 3만보✌🏻마카오 끼워 알찬 4박5일 🇭🇰 보험없이 홍콩응급실 • 토마토라면 사랑해.. 홍콩야경 스팟. 피크트램. 파리지앵. 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 때때때 TTT - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-BzYZhEqX8Ck",
     creator: "때때때 TTT",
@@ -290,7 +4883,6 @@ const RECENT_VIDEOS = [
     description: "연차없이 홍콩 1박 2일 가성비 풀코스 여행 시작 I 곽범 I 연차없이 어떡행2 EP.10",
     highlights: []
   },
-  // [신규 자동 수집] 규진 - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-6CXTigtnGAQ",
     creator: "규진",
@@ -308,7 +4900,6 @@ const RECENT_VIDEOS = [
     description: "공강에 혼자 떠난 홍콩 🇭🇰 (여긴 오히려 혼자 와야된다...)",
     highlights: []
   },
-  // [신규 자동 수집] Daily Joy조이 - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-lHTJrfoLbxQ",
     creator: "Daily Joy조이",
@@ -326,7 +4917,6 @@ const RECENT_VIDEOS = [
     description: "[vlog] 나 혼자 홍콩여행🇭🇰 마카오 당일치기⛴️ 상지콘지, 밀크티, 딤섬, 아몬드 쿠키, 세나도광장, 해리포터 전시회, 런더너호텔 | 홍콩 ep.2",
     highlights: []
   },
-  // [신규 자동 수집] 인생84 - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-hMKMSRKV1Xg",
     creator: "인생84",
@@ -344,7 +4934,6 @@ const RECENT_VIDEOS = [
     description: "홍콩 2박 3일 여행기 (이시언, 한혜진, 기안84)",
     highlights: []
   },
-  // [신규 자동 수집] 때때때 TTT - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-UiZaXMjSc_8",
     creator: "때때때 TTT",
@@ -362,7 +4951,6 @@ const RECENT_VIDEOS = [
     description: "연차없이 홍콩 1박 2일 시즌2 마지막 여행 최종편 I 곽범 I 연차없이 어떡행2 EP.11",
     highlights: []
   },
-  // [신규 자동 수집] 세빈 SEBIN - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-NkCHVeISuJw",
     creator: "세빈 SEBIN",
@@ -380,7 +4968,6 @@ const RECENT_VIDEOS = [
     description: "홍콩 분위기 차원이 달라❤️ 2박3일 뽕 뽑은 홍콩 여행 브이로그 (쇼핑, 맛집, 포토스팟)",
     highlights: []
   },
-  // [신규 자동 수집] SongKerbell 송커벨 - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-vAJEomGK_K4",
     creator: "SongKerbell 송커벨",
@@ -398,7 +4985,6 @@ const RECENT_VIDEOS = [
     description: "나혼자 홍콩여행🇭🇰 | 혼여행 만랩의 3박4일 코스! | 구글맵 4.0이상 '찐맛집'의 향연 | 구글맵 공유 | 숙소추천 | 여행꿀팁 대방출📝 | 아무도 모를 인생 사진스팟들📸",
     highlights: []
   },
-  // [신규 자동 수집] 쑨디 - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-ByDYaGNuF40",
     creator: "쑨디",
@@ -416,7 +5002,6 @@ const RECENT_VIDEOS = [
     description: "🇭🇰 홍콩에서~ 누가 돌아왔게? 남들이 하는 거 다 하고 온 홍콩 브이로그",
     highlights: []
   },
-  // [신규 자동 수집] 한나네 hanna - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-4OFe8Yde_0Q",
     creator: "한나네 hanna",
@@ -434,7 +5019,6 @@ const RECENT_VIDEOS = [
     description: "혼자 떠난 홍콩여행..너무 좋아🇭🇰 이틀 꽉 채워서 다 보고 다 먹고 오기🥟🍲｜ 홍콩남의 플러팅｜아이폰18프로",
     highlights: []
   },
-  // [신규 자동 수집] 유정 YUJEONG - 홍콩 주요 명소 (2026-11-22)
   {
     id: "auto-P4TFKxLaDN8",
     creator: "유정 YUJEONG",
@@ -452,7 +5036,6 @@ const RECENT_VIDEOS = [
     description: "혼여행 중독자의 나 홀로 홍콩 ep.1🇭🇰 혼자 디즈니랜드도 가고 훠궈도 먹고.. 초이홍빌딩, 피크트램, 미드레벨에스컬레이터••★ 꽉 찬 4박 5일 가성비 홍콩여행✈️🍎",
     highlights: []
   },
-  // [신규 자동 수집] yoovlog - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-5QxsYGqcbIw",
     creator: "yoovlog",
@@ -470,7 +5053,6 @@ const RECENT_VIDEOS = [
     description: "대만🇹🇼 가족 먹여행~ 애 둘과 타이베이 지하철 여행🚃 맛집★ 시먼딩, 용캉제, 푸바왕족발, 호호미소보루, 진천미, 천진총좌빙, 누가크래커, 타이베이101",
     highlights: []
   },
-  // [신규 자동 수집] sookoh 수코 - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-g6ZtFS4aVkQ",
     creator: "sookoh 수코",
@@ -488,7 +5070,6 @@ const RECENT_VIDEOS = [
     description: "나혼자 대만🥢구글맵 후기 12000개..! 전설의 우육면 (대만또간거맞음) - 대만1",
     highlights: []
   },
-  // [신규 자동 수집] 보리코 Boriko - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-QVvCyUdMxac",
     creator: "보리코 Boriko",
@@ -506,7 +5087,6 @@ const RECENT_VIDEOS = [
     description: "나혼자 대만 여행🇹🇼타이베이 이대로 가면 대만족가능❤️‍🔥찐맛집모음.숙소추천.훠궈.망고빙수.꼬치.야시장먹거리.디저트.쇼핑.Taipei",
     highlights: []
   },
-  // [신규 자동 수집] 현주zip - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-DUv6OjHHd2Q",
     creator: "현주zip",
@@ -524,7 +5104,6 @@ const RECENT_VIDEOS = [
     description: "나 혼자 3박4일 대만 여행🇹🇼 • 타이베이 최고의 코스로 모십니다..(jmt를 곁들인) • 역대급 가성비 신상숙소 • 느좋카페 뿌수기☕️",
     highlights: []
   },
-  // [신규 자동 수집] 가오니의 메뉴판GAONI - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-hINdxe0vyHg",
     creator: "가오니의 메뉴판GAONI",
@@ -542,7 +5121,6 @@ const RECENT_VIDEOS = [
     description: "대만🇹🇼먹방브이로그) 2일 15끼 ㅋㅋ 대만은..먹으러 가는 여행이다!!!!!",
     highlights: []
   },
-  // [신규 자동 수집] 민와와 - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-_r7MIdAdbrc",
     creator: "민와와",
@@ -560,7 +5138,6 @@ const RECENT_VIDEOS = [
     description: "[SUB] 음식이 친절하고 대만이 맛있어요 (태풍🌪️: 나 지나갈게)",
     highlights: []
   },
-  // [신규 자동 수집] 시도 sido - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-W-6eU1ABQiQ",
     creator: "시도 sido",
@@ -578,7 +5155,6 @@ const RECENT_VIDEOS = [
     description: "\"다시 가고 싶은 나라 1위\" 돈을 막 써도 걱정 없는 대만 여행",
     highlights: []
   },
-  // [신규 자동 수집] 이자반 - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-Zp5LldONF8w",
     creator: "이자반",
@@ -596,7 +5172,6 @@ const RECENT_VIDEOS = [
     description: "일본인듯 일본아닌 일본같은 대만의 수도, 타이페이 탐방 브이로그 - 대만(1)",
     highlights: []
   },
-  // [신규 자동 수집] [하말넘많] heavytalker - 타이베이 주요 명소 (2026-11-22)
   {
     id: "auto-vCYcAk_WDSQ",
     creator: "[하말넘많] heavytalker",
@@ -614,7 +5189,6 @@ const RECENT_VIDEOS = [
     description: "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
     highlights: []
   },
-  // [신규 자동 수집] 윤필름 YUN FILM - 구마모토 주요 명소 (2026-11-22)
   {
     id: "auto-vZIXSQlzJKA",
     creator: "윤필름 YUN FILM",
@@ -632,7 +5206,6 @@ const RECENT_VIDEOS = [
     description: "짱구 엄마 고향 마을 여행 Vlog | 일본 소도시 | 구마모토 아소",
     highlights: []
   },
-  // [신규 자동 수집] 해시킴 - 다카마쓰 주요 명소 (2026-11-22)
   {
     id: "auto-EqIk24tIj7o",
     creator: "해시킴",
@@ -650,7 +5223,6 @@ const RECENT_VIDEOS = [
     description: "월 1회 일본여행가는 미친사람의 첫 소도시여행. 나혼자 다카마쓰🔥",
     highlights: []
   },
-  // [신규 자동 수집] 해이름 HAEROOM - 도쿄 주요 명소 (2026-11-22)
   {
     id: "auto-_L6BXSI-3fs",
     creator: "해이름 HAEROOM",
@@ -668,7 +5240,6 @@ const RECENT_VIDEOS = [
     description: "역대 최저엔저, 일본에서 가장 아름답다는 소도시에 다녀왔습니다 🇯🇵",
     highlights: []
   },
-  // [신규 자동 수집] 센님 Sennim - 마쓰야마 주요 명소 (2026-11-22)
   {
     id: "auto-R2D3Z9tYK30",
     creator: "센님 Sennim",
@@ -686,7 +5257,6 @@ const RECENT_VIDEOS = [
     description: "나홀로 마쓰야마 여행♨️찐 일본을 느끼고 싶으면 여기! 레전드 소도시 감성 낭낭하고 처음부터 끝까지 행복만 했던 2박3일 소도시 여행 브이로그🚞",
     highlights: []
   },
-  // [신규 자동 수집] 시오 sio - 마쓰야마 주요 명소 (2026-11-22)
   {
     id: "auto-9ossXJgBssA",
     creator: "시오 sio",
@@ -704,7 +5274,6 @@ const RECENT_VIDEOS = [
     description: "노잼이라던 일본 갬성 소도시 마쓰야마에서 혼자 새벽까지 먹고 마시고 바다 보고 힐링하는 vlog🎐 혼여행 초보, 극i도 무조건 좋아할 여행지🍊 마쓰야마 맛집, 혼술, 카페, 쇼핑",
     highlights: []
   },
-  // [신규 자동 수집] 살란다 - 도쿄 주요 명소 (2026-11-22)
   {
     id: "auto-TKDwnd4oXwc",
     creator: "살란다",
@@ -722,7 +5291,6 @@ const RECENT_VIDEOS = [
     description: "한국인 제발 와달라고, 공짜 혜택 퍼주는 일본 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 SICILIAN - 후쿠오카 주요 명소 (2026-11-22)
   {
     id: "auto-mVz78tyHNeA",
     creator: "시칠리안 SICILIAN",
@@ -740,7 +5308,6 @@ const RECENT_VIDEOS = [
     description: "낭만과 맛집이 넘쳐나는 최고의 일본 소도시, 바로 여기 입니다!",
     highlights: []
   },
-  // [신규 자동 수집] 윤필름 YUN FILM - 구마모토 주요 명소 (2026-11-22)
   {
     id: "auto-jirQOGV0L3c",
     creator: "윤필름 YUN FILM",
@@ -758,7 +5325,6 @@ const RECENT_VIDEOS = [
     description: "나만 알고 싶은 일본 바닷마을 여행 Vlog | 일본 소도시 | 구마모토 아마쿠사 | 당일치기",
     highlights: []
   },
-  // [신규 자동 수집] 릴서 Rilseo - 도쿄 주요 명소 (2026-11-22)
   {
     id: "auto-62m0-iRElFE",
     creator: "릴서 Rilseo",
@@ -776,7 +5342,6 @@ const RECENT_VIDEOS = [
     description: "일본 소도시 여행 브이로그",
     highlights: []
   },
-  // [신규 자동 수집] 토요일의 도쿄 - 도쿄 주요 명소 (2026-11-22)
   {
     id: "auto-v3chzxmto4M",
     creator: "토요일의 도쿄",
@@ -794,7 +5359,6 @@ const RECENT_VIDEOS = [
     description: "일식을 좋아하는 사람이라면 더더욱 | 일본 소도시 맛집 여행",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - preview (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-1",
     creator: "깅듀로그",
@@ -812,7 +5376,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 후쿠오카 만큼 가까운 일본소도시 사가현으로 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-2",
     creator: "깅듀로그",
@@ -831,7 +5394,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 첫 날 묵은 사쿠라 료칸 호텔 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-4",
     creator: "깅듀로그",
@@ -850,7 +5412,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 사시미랑 주류가 무제한인 뷔페식 가이세키 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-5",
     creator: "깅듀로그",
@@ -869,7 +5430,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 로컬맛 이자카야 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-6",
     creator: "깅듀로그",
@@ -888,7 +5448,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 둘째날 아침 료캉스 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-7",
     creator: "깅듀로그",
@@ -907,7 +5466,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 밀푀유돈까스라니 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-8",
     creator: "깅듀로그",
@@ -926,7 +5484,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 녹차의 고장 말차디저트 맛집 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-9",
     creator: "깅듀로그",
@@ -945,7 +5502,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 우레시노에서 다케오까지 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-10",
     creator: "깅듀로그",
@@ -964,7 +5520,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 다케오에서 당일온천 가능한 곳 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-11",
     creator: "깅듀로그",
@@ -983,7 +5538,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 아이스크림 먹으며 족욕할 수 있는 카페 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-12",
     creator: "깅듀로그",
@@ -1002,7 +5556,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 일명 토토로 나무를 볼 수 있는 신사 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-13",
     creator: "깅듀로그",
@@ -1021,7 +5574,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 별마당도서관의 시초 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-14",
     creator: "깅듀로그",
@@ -1040,7 +5592,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 다케오 센트럴 호텔 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-15",
     creator: "깅듀로그",
@@ -1059,7 +5610,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 야끼니꾸 인생맛집 찾음 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-16",
     creator: "깅듀로그",
@@ -1078,7 +5628,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 현지인들의 해장을 책임지는 짬뽕라멘집 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-17",
     creator: "깅듀로그",
@@ -1097,7 +5646,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 사가에도 있어요 이나리신사 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-18",
     creator: "깅듀로그",
@@ -1116,7 +5664,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 짱구라멘 맛집 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-19",
     creator: "깅듀로그",
@@ -1135,7 +5682,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 다케오에서 사가까지 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-20",
     creator: "깅듀로그",
@@ -1154,7 +5700,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 컴포트 호텔 사가 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-21",
     creator: "깅듀로그",
@@ -1173,7 +5718,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 사가 360 뷰맛집 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-22",
     creator: "깅듀로그",
@@ -1192,7 +5736,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 지금까지 먹은 가라아게 중 일등 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-23",
     creator: "깅듀로그",
@@ -1211,7 +5754,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 사가에서 마트 쇼핑은 여기서 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-24",
     creator: "깅듀로그",
@@ -1230,7 +5772,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 단 돈 5천원에 사시미를 먹을 수 있다?! (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-25",
     creator: "깅듀로그",
@@ -1249,7 +5790,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 사가에선 이치란라멘 대신 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-26",
     creator: "깅듀로그",
@@ -1268,7 +5808,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 사가 성터 한바퀴 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-27",
     creator: "깅듀로그",
@@ -1287,7 +5826,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 면발이 살아있는 우동 맛집 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-28",
     creator: "깅듀로그",
@@ -1306,7 +5844,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 깅듀로그 - 그 옆에 커피 맛집 (2026-11-22)
   {
     id: "auto-wqCfrKm0Wac-29",
     creator: "깅듀로그",
@@ -1325,7 +5862,6 @@ const RECENT_VIDEOS = [
     description: "사가 여행 vlog🇯🇵 | 가성비로 떠날 수 있는 일본 소도시 | 사가 3박4일 여행코스 | 자전거 타고 소도시 여행 | 우레시노 온천마을 | 다케오 | 사가 맛집모음",
     highlights: []
   },
-  // [신규 자동 수집] 이자반 - 도쿄 주요 명소 (2026-11-22)
   {
     id: "auto-O81am0-WwME",
     creator: "이자반",
@@ -1343,7 +5879,6 @@ const RECENT_VIDEOS = [
     description: "아무도 모르는 일본 소도시에서 우동만 온종일 처@먹는 브이로그 - 일본(1)",
     highlights: []
   },
-  // [신규 자동 수집] 여행가 제이 - 다낭 주요 명소 (2026-11-14)
   {
     id: "auto-tjVvVcqKUpI",
     creator: "여행가 제이",
@@ -1361,7 +5896,6 @@ const RECENT_VIDEOS = [
     description: "한국인 한명도 없는 베트남 찐로컬 맛집 탐방",
     highlights: []
   },
-  // [신규 자동 수집] 노마드션 - 이스탄불 주요 명소 (2026-11-16)
   {
     id: "auto-qMZYKWpmghQ",
     creator: "노마드션",
@@ -1379,7 +5913,6 @@ const RECENT_VIDEOS = [
     description: "장모님의 나라 캠핑카로 여행하면 생기는 일 - 튀르키예 (5)",
     highlights: []
   },
-  // [신규 자동 수집] 노마드션 - 이스탄불 주요 명소 (2026-11-14)
   {
     id: "auto-mdkJikeCQF0",
     creator: "노마드션",
@@ -1397,7 +5930,6 @@ const RECENT_VIDEOS = [
     description: "실패한 캠핑카 끌고 세계 일주하는 유튜버 - 튀르키예 (4)",
     highlights: []
   },
-  // [신규 자동 수집] 캡틴따거 - 상하이 주요 명소 (2026-11-11)
   {
     id: "auto-6qwiHo9CQio",
     creator: "캡틴따거",
@@ -1415,7 +5947,6 @@ const RECENT_VIDEOS = [
     description: "차이나타운 중국화교가 없는 이유 - [70]",
     highlights: []
   },
-  // [신규 자동 수집] 초마드 - 상하이 주요 명소 (2026-11-14)
   {
     id: "auto-nJnZe0fKIec",
     creator: "초마드",
@@ -1433,7 +5964,6 @@ const RECENT_VIDEOS = [
     description: "진짜 역대급🔥🇨🇳한국인 후기 1도없는 중국 항저우 초럭셔리 호텔 대공개✨(ft. 절대후회❌)",
     highlights: []
   },
-  // [신규 자동 수집] 초마드 - 런던 주요 명소 (2026-11-13)
   {
     id: "auto-YLsXVwNxuRQ",
     creator: "초마드",
@@ -1451,7 +5981,6 @@ const RECENT_VIDEOS = [
     description: "런던만 5번째🫅🏻🇬🇧 한국인은 잘 모르는 런던 가성비 호텔부터 숨겨진 카페&맛집 BEST5🥇(ft. 구독자이벤트)",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 바라나시 주요 명소 (2026-11-14)
   {
     id: "auto-LhMKFuZ1Ksk",
     creator: "뜨랑낄로",
@@ -1469,7 +5998,6 @@ const RECENT_VIDEOS = [
     description: "인도 돌아온 지 하루 만에 후회했습니다 - 인도 여행의 감정변화 ① 부정",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 다낭 주요 명소 (2026-11-13)
   {
     id: "auto-HZdvugVR0EU",
     creator: "Joe튜브",
@@ -1487,7 +6015,6 @@ const RECENT_VIDEOS = [
     description: "일본에서 일본 남자한테 번호 따이는 베트남 여동생ㅋㅋㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 다낭 주요 명소 (2026-11-11)
   {
     id: "auto-v9z5TvtDDtM",
     creator: "Joe튜브",
@@ -1505,7 +6032,6 @@ const RECENT_VIDEOS = [
     description: "일본 가는 척 베트남 데려갔던 여동생 또 일본 가는 척 베트남을...ㅋㅋㅋㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-11-13)
   {
     id: "auto-qB_dkgG2Ilg",
     creator: "은하캠핑",
@@ -1523,7 +6049,6 @@ const RECENT_VIDEOS = [
     description: "빼빼로보다 달콤한 은하의 연애 수다",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 런던 주요 명소 (2026-11-07)
   {
     id: "auto-HSSSd3kz8LE",
     creator: "곽튜브",
@@ -1541,7 +6066,6 @@ const RECENT_VIDEOS = [
     description: "세계에서 가장 유명한 시상식에 초대된 사연 - 영국(1)",
     highlights: []
   },
-  // [신규 자동 수집] 원지의 하루 - 부산 주요 명소 (2026-11-06)
   {
     id: "auto-Td7KfR0_2lI",
     creator: "원지의 하루",
@@ -1559,7 +6083,6 @@ const RECENT_VIDEOS = [
     description: "부산 최고의 맛도리를 찾아서",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 뉴욕 주요 명소 (2026-11-08)
   {
     id: "auto-X8gDOtYdzYI",
     creator: "시칠리안",
@@ -1577,7 +6100,6 @@ const RECENT_VIDEOS = [
     description: "인생 첫 퍼스트 클래스 타고 세계 1위 도시, 뉴욕 여행 시작합니다",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-11-03)
   {
     id: "auto-ONaLLrc0F6o",
     creator: "삐까뚱씨",
@@ -1595,7 +6117,6 @@ const RECENT_VIDEOS = [
     description: "엔저시대에 일본 코스트코 털러 가야하는 이유!!🛒 (와규 요리 파티!!🥩🎉🇯🇵)",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 발리 주요 명소 (2026-11-09)
   {
     id: "auto-9ockIQAGzYU",
     creator: "Joe튜브",
@@ -1613,7 +6134,6 @@ const RECENT_VIDEOS = [
     description: "발리 비치클럽 갔다가 인도인들 때문에 도망쳐 나온 태국 여사친ㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 발리 주요 명소 (2026-11-06)
   {
     id: "auto-1DqiqX7vNfU",
     creator: "Joe튜브",
@@ -1631,7 +6151,6 @@ const RECENT_VIDEOS = [
     description: "와이프 없이 유부남들끼리 발리에서 디지털노마드의 삶 살아보기",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-11-04)
   {
     id: "auto-2qR54ery2jQ",
     creator: "Joe튜브",
@@ -1649,7 +6168,6 @@ const RECENT_VIDEOS = [
     description: "와이프 없는 유부남들 여행에 태국 여사친 부르면 생기는 일ㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-11-09)
   {
     id: "auto-Qwj5x98gIs8",
     creator: "은하캠핑",
@@ -1667,7 +6185,6 @@ const RECENT_VIDEOS = [
     description: "살면서 가장 후회했던 순간들 베스트5",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 바라나시 주요 명소 (2026-10-30)
   {
     id: "auto-zURt9hkHck4",
     creator: "곽튜브",
@@ -1685,7 +6202,6 @@ const RECENT_VIDEOS = [
     description: "모르는 20대 청춘남녀와 무인도 표류기",
     highlights: []
   },
-  // [신규 자동 수집] 여행가 제이 - 다낭 주요 명소 (2026-11-02)
   {
     id: "auto-qvEOt1k4OMI",
     creator: "여행가 제이",
@@ -1703,7 +6219,6 @@ const RECENT_VIDEOS = [
     description: "\"여기 왜 안가요?\" 돈 걱정 없이 하루종일 먹자고 즐기는 베트남 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 캡틴따거 - 파리 주요 명소 (2026-10-31)
   {
     id: "auto-YZjuYUE_430",
     creator: "캡틴따거",
@@ -1721,7 +6236,6 @@ const RECENT_VIDEOS = [
     description: "프랑스 파리 시위 현장 속으로 - [68]",
     highlights: []
   },
-  // [신규 자동 수집] 또떠남 - 인터라켄 주요 명소 (2026-10-31)
   {
     id: "auto-6TVYYVVRnSU",
     creator: "또떠남",
@@ -1739,7 +6253,6 @@ const RECENT_VIDEOS = [
     description: "물가 1위 스위스, 항공·호텔 포함 200만원대로 일주일 다녀오기",
     highlights: []
   },
-  // [신규 자동 수집] 쏘이 The World - 후쿠오카 주요 명소 (2026-10-30)
   {
     id: "auto-VE8ABMFFH20",
     creator: "쏘이 The World",
@@ -1757,7 +6270,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 저 혼자 후쿠오카 왔어요.. 먹기 위해 급 떠난 2박3일 나홀로 후쿠오카 여행 시작",
     highlights: []
   },
-  // [신규 자동 수집] 초마드 - 인천 주요 명소 (2026-10-28)
   {
     id: "auto-k0OY8UHIL2w",
     creator: "초마드",
@@ -1775,7 +6287,6 @@ const RECENT_VIDEOS = [
     description: "역대급 입소문🔥🇬🇧버진애틀랜틱 어퍼클래스vs프리미엄석 비교🛫✨ (B787-9 인천-런던)",
     highlights: []
   },
-  // [신규 자동 수집] 잡식맨 JOBXICMAN - 나폴리 주요 명소 (2026-10-31)
   {
     id: "auto-S_fktC438eg",
     creator: "잡식맨 JOBXICMAN",
@@ -1793,7 +6304,6 @@ const RECENT_VIDEOS = [
     description: "일본 전국대회 우승한 나폴리탄 식당 방문기. 케첩 스파게티가 왜 이렇게 맛있나ㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 푸꾸옥 주요 명소 (2026-10-31)
   {
     id: "auto-7bkWwhkpalE",
     creator: "황세유기",
@@ -1811,7 +6321,6 @@ const RECENT_VIDEOS = [
     description: "베트남 12년차가 솔직하게 밝히는 푸꾸옥 여행의 진실 (추천 vs 비추천)",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 도쿄 주요 명소 (2026-11-01)
   {
     id: "auto-HY8aeqmajP4",
     creator: "시칠리안",
@@ -1829,7 +6338,6 @@ const RECENT_VIDEOS = [
     description: "지금 사오면 무조건 이득!! 비행기 값 뽑고도 남는 도쿄 쇼핑 리스트",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 서울 주요 명소 (2026-10-31)
   {
     id: "auto-t08QcI3y_mQ",
     creator: "모칠레로",
@@ -1847,7 +6355,6 @@ const RECENT_VIDEOS = [
     description: "서울보다도 작은 섬나라에서 대학교 다니는 한국인들 #109",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 카이로 주요 명소 (2026-10-28)
   {
     id: "auto-vav0w90rRx0",
     creator: "테디여행기",
@@ -1865,7 +6372,6 @@ const RECENT_VIDEOS = [
     description: "딸기 농부가 된 이집트 여행 동행… 그리고 그의 시원한 수익공개(논산 딸기)",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-10-29)
   {
     id: "auto-nkqiERBYaks",
     creator: "삐까뚱씨",
@@ -1883,7 +6389,6 @@ const RECENT_VIDEOS = [
     description: "도쿄 근교에 숨겨진 '모든 게 반값'인 곳을 털고 왔습니다",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 발리 주요 명소 (2026-11-02)
   {
     id: "auto-4_oBxltr9Yw",
     creator: "Joe튜브",
@@ -1901,7 +6406,6 @@ const RECENT_VIDEOS = [
     description: "와이프들 없이 유부남들끼리 발리에서 생긴 일...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 부산 주요 명소 (2026-10-28)
   {
     id: "auto-cWVDG59PyVo",
     creator: "Joe튜브",
@@ -1919,7 +6423,6 @@ const RECENT_VIDEOS = [
     description: "부산 쌍둥이 여동생의 너무 순수한 질문에 멘붕이 와버린 프랑스 친구ㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] 빠니보틀 - 뉴욕 주요 명소 (2026-10-21)
   {
     id: "auto-J543v1EnWGI",
     creator: "빠니보틀",
@@ -1937,7 +6440,6 @@ const RECENT_VIDEOS = [
     description: "한국인이 이해하기 어려운 초대형 미국 축제【네바다】",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 타이베이 주요 명소 (2026-10-21)
   {
     id: "auto-C5fSM-oBRLU",
     creator: "곽튜브",
@@ -1955,7 +6457,6 @@ const RECENT_VIDEOS = [
     description: "세계에서 가장 괴상한 먹방 여행기 - 대만(下)",
     highlights: []
   },
-  // [신규 자동 수집] 캡틴따거 - 파리 주요 명소 (2026-10-25)
   {
     id: "auto-FiWxkXXXsT0",
     creator: "캡틴따거",
@@ -1973,7 +6474,6 @@ const RECENT_VIDEOS = [
     description: "프랑스 파리 시위 3일 뒤의 모습 - [66]",
     highlights: []
   },
-  // [신규 자동 수집] 초마드 - 오사카 주요 명소 (2026-10-20)
   {
     id: "auto-8WKIgb3AiKM",
     creator: "초마드",
@@ -1991,7 +6491,6 @@ const RECENT_VIDEOS = [
     description: "오사카 여기어디야?🤩🍡한국인은 잘모르는 오사카 카페&맛집 BEST5🍧🇯🇵 (ft. 후회안함⚡️)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 포르투 주요 명소 (2026-10-23)
   {
     id: "auto-u_1meMigiik",
     creator: "육식맨 YOOXICMAN",
@@ -2009,7 +6508,6 @@ const RECENT_VIDEOS = [
     description: "포르투갈 고기빵 특집 : 유럽 음식은 건강할 거란 편견을 깨 드리겠습니다 (포르투 올로케)",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 파리 주요 명소 (2025-10-26)
   {
     id: "auto-SF2TN28NLWk",
     creator: "트립콤파니",
@@ -2027,7 +6525,6 @@ const RECENT_VIDEOS = [
     description: "🇨🇵 몽생미셸의 24시간",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 도쿄 주요 명소 (2026-10-25)
   {
     id: "auto-eYXehhzE4qo",
     creator: "시칠리안",
@@ -2045,7 +6542,6 @@ const RECENT_VIDEOS = [
     description: "도쿄에서 한 시간, 도쿄보다 더 좋았던 2박 3일 소도시 여행기",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 부산 주요 명소 (2026-10-26)
   {
     id: "auto-pmpdoxn_93A",
     creator: "Joe튜브",
@@ -2063,7 +6559,6 @@ const RECENT_VIDEOS = [
     description: "친구에게 부부관계 강의 해주는 부산 여동생",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-DuioLcHkGQQ",
     creator: "오사카에사는사람들TV",
@@ -2081,7 +6576,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 지금 같은 날씨에 가장 어울리는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-Z-G9WKDUGdg",
     creator: "오사카에사는사람들TV",
@@ -2099,7 +6593,6 @@ const RECENT_VIDEOS = [
     description: "사람 없는 골목, 우연히 들어간 이자카야",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 부산 주요 명소 (2025-10-22)
   {
     id: "auto-OQVXMW_5W8g",
     creator: "오사카에사는사람들TV",
@@ -2117,7 +6610,6 @@ const RECENT_VIDEOS = [
     description: "서면에서 한잔, 그리고 수다",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 삿포로 홋카이도 (2025-10-22)
   {
     id: "auto-tGZXihKw1EY",
     creator: "오사카에사는사람들TV",
@@ -2135,7 +6627,6 @@ const RECENT_VIDEOS = [
     description: "비오는날의 이자카야",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 유메시마역 – 이번 엑스포를 위해 새롭게 신설된 지하철역 (2025-10-22)
   {
     id: "auto-sV9Ipuqik10-1",
     creator: "오사카에사는사람들TV",
@@ -2153,7 +6644,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 2050년을 볼 수 있는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 그랜드 링 – (2025-10-22)
   {
     id: "auto-sV9Ipuqik10-2",
     creator: "오사카에사는사람들TV",
@@ -2171,7 +6661,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 2050년을 볼 수 있는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 미래 건강검진 체험 – (2025-10-22)
   {
     id: "auto-sV9Ipuqik10-3",
     creator: "오사카에사는사람들TV",
@@ -2189,7 +6678,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 2050년을 볼 수 있는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 한국관 프리뷰 – (2025-10-22)
   {
     id: "auto-sV9Ipuqik10-4",
     creator: "오사카에사는사람들TV",
@@ -2207,7 +6695,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 2050년을 볼 수 있는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 테레비오사카 스튜디오 – (2025-10-22)
   {
     id: "auto-sV9Ipuqik10-5",
     creator: "오사카에사는사람들TV",
@@ -2225,7 +6712,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 2050년을 볼 수 있는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 구글맵 위치: 유메시마역 (2025-10-22)
   {
     id: "auto-sV9Ipuqik10-6",
     creator: "오사카에사는사람들TV",
@@ -2243,7 +6729,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 2050년을 볼 수 있는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 구글맵 위치: Osaka World Expo 2025 (2025-10-22)
   {
     id: "auto-sV9Ipuqik10-7",
     creator: "오사카에사는사람들TV",
@@ -2261,7 +6746,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 2050년을 볼 수 있는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 요코야마 전망대 가는 법 (2025-10-22)
   {
     id: "auto-rVmhOW2YlXw-1",
     creator: "오사카에사는사람들TV",
@@ -2279,7 +6763,6 @@ const RECENT_VIDEOS = [
     description: "술을 바닷속에서 1년 동안 보관하면 무슨 맛이 날까?",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 天ぷら とばり 덴푸라 토바리 위치 (2025-10-22)
   {
     id: "auto-rVmhOW2YlXw-3",
     creator: "오사카에사는사람들TV",
@@ -2297,7 +6780,6 @@ const RECENT_VIDEOS = [
     description: "술을 바닷속에서 1년 동안 보관하면 무슨 맛이 날까?",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 이세시마 & 가시코지마 추천 여행 정보 (2025-10-22)
   {
     id: "auto-rVmhOW2YlXw-4",
     creator: "오사카에사는사람들TV",
@@ -2315,7 +6797,6 @@ const RECENT_VIDEOS = [
     description: "술을 바닷속에서 1년 동안 보관하면 무슨 맛이 날까?",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 여러분의 생각이 궁금합니다! (2025-10-22)
   {
     id: "auto-rVmhOW2YlXw-5",
     creator: "오사카에사는사람들TV",
@@ -2333,7 +6814,6 @@ const RECENT_VIDEOS = [
     description: "술을 바닷속에서 1년 동안 보관하면 무슨 맛이 날까?",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 미에현 가시코지마, 무엇이 특별할까? (2025-10-22)
   {
     id: "auto-cn4-ghXqv7k-2",
     creator: "오사카에사는사람들TV",
@@ -2351,7 +6831,6 @@ const RECENT_VIDEOS = [
     description: "숙박비 XXX만원? 그런데 예약이 미친 듯이 몰리는 이유!",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 구글맵 위치 (2025-10-22)
   {
     id: "auto-cn4-ghXqv7k-3",
     creator: "오사카에사는사람들TV",
@@ -2369,7 +6848,6 @@ const RECENT_VIDEOS = [
     description: "숙박비 XXX만원? 그런데 예약이 미친 듯이 몰리는 이유!",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 시마카제 운행 노선 및 소요 시간 (2025-10-22)
   {
     id: "auto-iChm_42n4u4-1",
     creator: "오사카에사는사람들TV",
@@ -2387,7 +6865,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 출발일 기준 1개월 전부터 예약 가능하지만, (2025-10-22)
   {
     id: "auto-iChm_42n4u4-2",
     creator: "오사카에사는사람들TV",
@@ -2396,7 +6873,7 @@ const RECENT_VIDEOS = [
     channel: "오사카에사는사람들TV",
     country: "일본",
     city: "오사카",
-    locationName: "출발일 기준 1개월 전부터 예약 가능하지만,",
+    locationName: "오사카 긴테쓰 시마카제 관광특급",
     lat: 34.6967,
     lng: 135.4993,
     tags: ["오사카", "일본", "로컬추천", "유튜브추천"],
@@ -2405,7 +6882,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 저희도 5명이 함께 예약하려 했지만... 실패했습니다 😭 (2025-10-22)
   {
     id: "auto-iChm_42n4u4-3",
     creator: "오사카에사는사람들TV",
@@ -2423,7 +6899,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 가시코지마에서 즐길 수 있는 특별한 경험 (2025-10-22)
   {
     id: "auto-iChm_42n4u4-4",
     creator: "오사카에사는사람들TV",
@@ -2441,7 +6916,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 가시코지마 에스파냐 크루즈 공식 홈페이지: (2025-10-22)
   {
     id: "auto-iChm_42n4u4-5",
     creator: "오사카에사는사람들TV",
@@ -2459,7 +6933,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 미에현   ➡ 시마시   ➡ 가시코지마 (2025-10-22)
   {
     id: "auto-iChm_42n4u4-6",
     creator: "오사카에사는사람들TV",
@@ -2477,7 +6950,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 일본 기차여행, 여러분의 경험은? 🚆 (2025-10-22)
   {
     id: "auto-iChm_42n4u4-7",
     creator: "오사카에사는사람들TV",
@@ -2495,7 +6967,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 구글맵 위치 (2025-10-22)
   {
     id: "auto-iChm_42n4u4-8",
     creator: "오사카에사는사람들TV",
@@ -2513,7 +6984,6 @@ const RECENT_VIDEOS = [
     description: "오픈 하고 1초만에 마감 되는 특별한 🚆기차여행?! 오사카에서 가시코지마까지 가는 긴테쓰 시마카제 열차!🚄",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카에서만 경험할 수 있는 감성 (2025-10-22)
   {
     id: "auto-boMjEaICtV8-1",
     creator: "오사카에사는사람들TV",
@@ -2531,7 +7001,6 @@ const RECENT_VIDEOS = [
     description: "현실판 심야식당 🍶 (오사카 다마쓰쿠리편)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 가게 정보 (2025-10-22)
   {
     id: "auto-boMjEaICtV8-2",
     creator: "오사카에사는사람들TV",
@@ -2549,7 +7018,6 @@ const RECENT_VIDEOS = [
     description: "현실판 심야식당 🍶 (오사카 다마쓰쿠리편)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 이름: 오우치료리 SHeRRY (2025-10-22)
   {
     id: "auto-boMjEaICtV8-3",
     creator: "오사카에사는사람들TV",
@@ -2567,7 +7035,6 @@ const RECENT_VIDEOS = [
     description: "현실판 심야식당 🍶 (오사카 다마쓰쿠리편)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 위치: 오사카 다마쓰쿠리역 바로 옆 , 골목제일끝 (2025-10-22)
   {
     id: "auto-boMjEaICtV8-4",
     creator: "오사카에사는사람들TV",
@@ -2585,7 +7052,6 @@ const RECENT_VIDEOS = [
     description: "현실판 심야식당 🍶 (오사카 다마쓰쿠리편)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 운영시간: 손님이 모두 가시면 일찍 닫고, 단골이 있으면 연장! (2025-10-22)
   {
     id: "auto-boMjEaICtV8-6",
     creator: "오사카에사는사람들TV",
@@ -2603,7 +7069,6 @@ const RECENT_VIDEOS = [
     description: "현실판 심야식당 🍶 (오사카 다마쓰쿠리편)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 이전 영상이 궁금하다면? (2025-10-22)
   {
     id: "auto-boMjEaICtV8-7",
     creator: "오사카에사는사람들TV",
@@ -2621,7 +7086,6 @@ const RECENT_VIDEOS = [
     description: "현실판 심야식당 🍶 (오사카 다마쓰쿠리편)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 이런 분위기의 이자카야, 가보고 싶지 않나요? (2025-10-22)
   {
     id: "auto-boMjEaICtV8-8",
     creator: "오사카에사는사람들TV",
@@ -2639,7 +7103,6 @@ const RECENT_VIDEOS = [
     description: "현실판 심야식당 🍶 (오사카 다마쓰쿠리편)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 마쓰야마에서 미식 여행을 떠나볼까요? (2025-10-22)
   {
     id: "auto-IbiU4P2mUAc-1",
     creator: "오사카에사는사람들TV",
@@ -2657,7 +7120,6 @@ const RECENT_VIDEOS = [
     description: "우마이..우마이...!. 우마이이이이!! 처음부터 끝까지 계속 맛있던 마쓰야마 이자카야",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 이자카야 아미모토  居魚屋 網元 別邸 (2025-10-22)
   {
     id: "auto-IbiU4P2mUAc-3",
     creator: "오사카에사는사람들TV",
@@ -2675,7 +7137,6 @@ const RECENT_VIDEOS = [
     description: "우마이..우마이...!. 우마이이이이!! 처음부터 끝까지 계속 맛있던 마쓰야마 이자카야",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 마쓰야마를 방문하신다면 위의 음식들을 꼭 맛보시길 추천합니다. (2025-10-22)
   {
     id: "auto-IbiU4P2mUAc-4",
     creator: "오사카에사는사람들TV",
@@ -2693,7 +7154,6 @@ const RECENT_VIDEOS = [
     description: "우마이..우마이...!. 우마이이이이!! 처음부터 끝까지 계속 맛있던 마쓰야마 이자카야",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 일본에서도 숨겨진 소도시의 매력을 찾고 계신다면, (2025-10-22)
   {
     id: "auto-a2OvvbKRnYg-1",
     creator: "오사카에사는사람들TV",
@@ -2711,7 +7171,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 한달 100,000건 이상 검색 되고 있는 일본 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 영상 속 주요 여행지 (2025-10-22)
   {
     id: "auto-a2OvvbKRnYg-2",
     creator: "오사카에사는사람들TV",
@@ -2729,7 +7188,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 한달 100,000건 이상 검색 되고 있는 일본 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 여행 정보 (2025-10-22)
   {
     id: "auto-a2OvvbKRnYg-3",
     creator: "오사카에사는사람들TV",
@@ -2747,7 +7205,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 한달 100,000건 이상 검색 되고 있는 일본 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 위치: 일본 에히메현 마쓰야마 (2025-10-22)
   {
     id: "auto-a2OvvbKRnYg-4",
     creator: "오사카에사는사람들TV",
@@ -2765,7 +7222,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 한달 100,000건 이상 검색 되고 있는 일본 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-IuNhtqxbG_8",
     creator: "오사카에사는사람들TV",
@@ -2783,7 +7239,6 @@ const RECENT_VIDEOS = [
     description: "니시나리에서 가장 유명?! 아직 간판 없는 호르몬 카레집",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-2VZSNbl2JXQ",
     creator: "오사카에사는사람들TV",
@@ -2801,7 +7256,6 @@ const RECENT_VIDEOS = [
     description: "예상 못한 상황에 멘붕..? 일본에서 아플때 대처법",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-JRrCXVWOznk",
     creator: "오사카에사는사람들TV",
@@ -2819,7 +7273,6 @@ const RECENT_VIDEOS = [
     description: "마츠다부장이 개인적으로 지인분들 오시면 무조건 가는 곳",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 도쿄 주요 명소 (2025-10-22)
   {
     id: "auto-oxh-XUZR_Fo",
     creator: "오사카에사는사람들TV",
@@ -2837,7 +7290,6 @@ const RECENT_VIDEOS = [
     description: "서양에서 인기폭발한 영화세트장 같은, 리얼 일본감성의 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 인천 주요 명소 (2025-10-22)
   {
     id: "auto-MxtQ-92iCPQ",
     creator: "오사카에사는사람들TV",
@@ -2855,7 +7307,6 @@ const RECENT_VIDEOS = [
     description: "춥고 쌀쌀할때 마시는 아츠캉의 매력 (요부코에서 올레길 걸으며)",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 인천 주요 명소 (2025-10-22)
   {
     id: "auto-1ZwSBwmY-nU",
     creator: "오사카에사는사람들TV",
@@ -2873,7 +7324,6 @@ const RECENT_VIDEOS = [
     description: "여기는 안 맛있는게 뭐야? (실제로한말) 극소수만 알고 있던 일본 소도시",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 도쿄 주요 명소 (2025-10-22)
   {
     id: "auto-Q2dQ8VzVyvU",
     creator: "오사카에사는사람들TV",
@@ -2891,7 +7341,6 @@ const RECENT_VIDEOS = [
     description: "노천탕안에 침대라니... 상상 조차 못한 경험!",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 도쿄 주요 명소 (2025-10-22)
   {
     id: "auto-OwWvpwaqUlY",
     creator: "오사카에사는사람들TV",
@@ -2909,7 +7358,6 @@ const RECENT_VIDEOS = [
     description: "현지인처럼 즐기는 구마모토 미식여행!! 일본소도시여행 구마모토어때? 1편",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-DfwGnXlise4",
     creator: "오사카에사는사람들TV",
@@ -2927,7 +7375,6 @@ const RECENT_VIDEOS = [
     description: "이상적인 이자카야",
     highlights: []
   },
-  // [신규 자동 수집] 오사카에사는사람들TV - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-_oyX9OGd1cs",
     creator: "오사카에사는사람들TV",
@@ -2945,7 +7392,6 @@ const RECENT_VIDEOS = [
     description: "오사카 키타하마에서 느끼는 도쿄의 맛!",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 발리 주요 명소 (2026-10-17)
   {
     id: "auto-yKL40uGhIBM",
     creator: "뜨랑낄로",
@@ -2963,7 +7409,6 @@ const RECENT_VIDEOS = [
     description: "월급은 20만원, 밥값은 천 원인 인도네시아 소도시에서 만 원으로 얼마나 먹을 수 있을까?",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 발리 주요 명소 (2026-10-09)
   {
     id: "auto-6PGeSKa9GZg",
     creator: "뜨랑낄로",
@@ -2981,7 +7426,6 @@ const RECENT_VIDEOS = [
     description: "4만원 내면 먹여주고 재워주는 인도네시아 2박3일 페리, 꼴등 침대칸 타봤습니다",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 발리 주요 명소 (2026-10-01)
   {
     id: "auto-khWmKJ1GiLc",
     creator: "뜨랑낄로",
@@ -2999,7 +7443,6 @@ const RECENT_VIDEOS = [
     description: "인도네시아 음식이 세계 1위라고? 직접 먹어봤습니다",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 발리 주요 명소 (2026-10-01)
   {
     id: "auto-7s2_fg5HGok",
     creator: "뜨랑낄로",
@@ -3017,7 +7460,6 @@ const RECENT_VIDEOS = [
     description: "수도 옮긴다더니... 40조 쏟아붓고 '유령도시' 되어버린 인도네시아 신수도 근황",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 발리 주요 명소 (2026-09-22)
   {
     id: "auto--wEsW2x9NU4",
     creator: "뜨랑낄로",
@@ -3035,7 +7477,6 @@ const RECENT_VIDEOS = [
     description: "곧 지도에서 사라진다는 4,000만 대도시, 바닷물이 역류하는 인도네시아 수도 자카르타 근황 🇮🇩",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 보홀 주요 명소 (2026-09-22)
   {
     id: "auto-GE_-2sWkkZU",
     creator: "뜨랑낄로",
@@ -3053,7 +7494,6 @@ const RECENT_VIDEOS = [
     description: "800원으로 배 터지게 먹는 인도네시아 자카르타 길거리 먹방 🇮🇩",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 상하이 주요 명소 (2026-08-23)
   {
     id: "auto-KEn4U1DhT_E",
     creator: "뜨랑낄로",
@@ -3071,7 +7511,6 @@ const RECENT_VIDEOS = [
     description: "평생을 배낭여행자로 살았던 내가 중국은 패키지로 여행한 이유",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 멕시코시티 주요 명소 (2026-08-23)
   {
     id: "auto-fOshzLfAtKk",
     creator: "뜨랑낄로",
@@ -3089,7 +7528,6 @@ const RECENT_VIDEOS = [
     description: "4만원짜리 최저가 멕시코 버스 탔다가 식은땀 흘린 이유 (vs13만원 최고급 버스 비교) - 당신이 멕시코를 여행해야 하는 이유",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 멕시코시티 주요 명소 (2026-07-24)
   {
     id: "auto-hUj7j_xEkiQ",
     creator: "뜨랑낄로",
@@ -3107,7 +7545,6 @@ const RECENT_VIDEOS = [
     description: "멕시코 카르텔들이 목숨 걸고 믿는다는 시장 구석의 괴기한 상점, 마법의 물약의 정체",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 다낭 주요 명소 (2026-07-24)
   {
     id: "auto-WyH6wC3v6I8",
     creator: "뜨랑낄로",
@@ -3125,7 +7562,6 @@ const RECENT_VIDEOS = [
     description: "뜨랑낄로 결혼생활 업데이트 - 육아하는 부모들이 결국 베트남으로 모이는 이유",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 멕시코시티 주요 명소 (2026-07-24)
   {
     id: "auto-IQR8Ryzxx5Y",
     creator: "뜨랑낄로",
@@ -3143,7 +7579,6 @@ const RECENT_VIDEOS = [
     description: "멕시코 월드컵 길거리 특: 한국인 발견하면 일단 맥주 먹이고 공중에 던지고 봄",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 멕시코시티 주요 명소 (2026-06-24)
   {
     id: "auto-xURp-dQ94FY",
     creator: "뜨랑낄로",
@@ -3161,7 +7596,6 @@ const RECENT_VIDEOS = [
     description: "환율 50% 폭등한 멕시코 빈민가, 이제 만 원으로 길거리음식은 '이것'밖에 못 먹습니다... l 월드컵 특집",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 멕시코시티 주요 명소 (2026-06-24)
   {
     id: "auto-tsidw1rfkE0",
     creator: "뜨랑낄로",
@@ -3179,7 +7613,6 @@ const RECENT_VIDEOS = [
     description: "월드컵 특집｜멕시코 800원 길거리 타코 vs 9만원 와규 타코... 돈 버렸습니다",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 니스 주요 명소 (2026-06-24)
   {
     id: "auto--96x4YF8f7w",
     creator: "뜨랑낄로",
@@ -3197,7 +7630,6 @@ const RECENT_VIDEOS = [
     description: "걸리면 바로 추방... 아프가니스탄 난민 시장에서 '만원'으로 아프간 길거리 음식 어디까지 먹을 수 있을까? 🇦🇫",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 부에노스아이레스 주요 명소 (2026-04-25)
   {
     id: "auto-gXG9g1HMnmA",
     creator: "뜨랑낄로",
@@ -3215,7 +7647,6 @@ const RECENT_VIDEOS = [
     description: "아르헨티나 8천원 vs 14만원 스테이크 비교하기 - 아르헨티나 아사도 스테이크 특집 🇦🇷",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 부에노스아이레스 주요 명소 (2026-03-26)
   {
     id: "auto-kBFoP27q5RE",
     creator: "뜨랑낄로",
@@ -3233,7 +7664,6 @@ const RECENT_VIDEOS = [
     description: "빅맥 13,900원, 살인적인 물가의 아르헨티나 빈민가에서 최저임금으로 얼마나 먹을 수 있을까? 🇦🇷",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 산티아고 주요 명소 (2026-03-26)
   {
     id: "auto-7-jaqp5viFc",
     creator: "뜨랑낄로",
@@ -3251,7 +7681,6 @@ const RECENT_VIDEOS = [
     description: "핸드폰 340만원, 미친 물가의 아르헨티나 사람들이 국경을 건너 칠레로 쇼핑을 가는 이유 🇦🇷",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 부에노스아이레스 주요 명소 (2026-03-26)
   {
     id: "auto-v9CcnRb0_AE",
     creator: "뜨랑낄로",
@@ -3269,7 +7698,6 @@ const RECENT_VIDEOS = [
     description: "살인적인 인플레이션의 아르헨티나 부에노스아이레스, 3년 동안 물가는 얼마나 올랐을까? - 아르헨티나 만원살기 복습편 🇦🇷",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 부에노스아이레스 주요 명소 (2026-02-24)
   {
     id: "auto-pZhqIkE8Cp4",
     creator: "뜨랑낄로",
@@ -3287,7 +7715,6 @@ const RECENT_VIDEOS = [
     description: "국가도 포기한 시장, 기형적인 아르헨티나 거대 암시장 La Salada 탐험기 🇦🇷",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 바라나시 주요 명소 (2026-01-25)
   {
     id: "auto-FOpnqTT5vLo",
     creator: "뜨랑낄로",
@@ -3305,7 +7732,6 @@ const RECENT_VIDEOS = [
     description: "인도 설명회 - 인도 사람들이 항상 새치기를 하는 이유 🇮🇳",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 바라나시 주요 명소 (2025-12-26)
   {
     id: "auto-cwP-RsdQ5TI",
     creator: "뜨랑낄로",
@@ -3323,7 +7749,6 @@ const RECENT_VIDEOS = [
     description: "인도에서 이 터번을 쓰고 다니는 사람들은 누굴까? - 암리차르 시크교 황금사원 탐방기 🇮🇳",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 바라나시 주요 명소 (2025-12-26)
   {
     id: "auto-GsVUrvCrq7U",
     creator: "뜨랑낄로",
@@ -3341,7 +7766,6 @@ const RECENT_VIDEOS = [
     description: "48시간동안 인도에서 카레만 먹으면 손가락에서 무슨 냄새가 날까? 🇮🇳",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 바라나시 주요 명소 (2025-12-26)
   {
     id: "auto-FlbG3DDDk3E",
     creator: "뜨랑낄로",
@@ -3359,7 +7783,6 @@ const RECENT_VIDEOS = [
     description: "티벳이 인도에 망명정부를 세울 수 밖에 없는 이유 🇷🇪",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 바라나시 주요 명소 (2025-12-26)
   {
     id: "auto-nmJ3ph4e9lg",
     creator: "뜨랑낄로",
@@ -3377,7 +7800,6 @@ const RECENT_VIDEOS = [
     description: "땅덩어리가 무지막지하게 넓은 인도의 기차와 버스 중 뭐가 더 빡쎌까? 🇮🇳",
     highlights: []
   },
-  // [신규 자동 수집] 뜨랑낄로 - 바라나시 주요 명소 (2025-11-26)
   {
     id: "auto-Te9K9jWPKTg",
     creator: "뜨랑낄로",
@@ -3395,7 +7817,6 @@ const RECENT_VIDEOS = [
     description: "아무도 가지 않는 인도 시골에서 벌어지는 일 🇮🇳",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 바라나시 주요 명소 (2026-10-17)
   {
     id: "auto-xXi4zpPC8wg",
     creator: "모칠레로",
@@ -3413,7 +7834,6 @@ const RECENT_VIDEOS = [
     description: "무인도에서 700시간 동안 나 혼자 살아남기 #107",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-10-10)
   {
     id: "auto-b7WpcamAE2s",
     creator: "모칠레로",
@@ -3431,7 +7851,6 @@ const RECENT_VIDEOS = [
     description: "700일째 바다 위에서 혼자 살아가는 30대 남자 #106",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-10-08)
   {
     id: "auto-FPvR0xWhqoY",
     creator: "모칠레로",
@@ -3449,7 +7868,6 @@ const RECENT_VIDEOS = [
     description: "동양인 한명도 없는 미지의 섬나라 세인트빈센트 그레나딘 #105",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-10-01)
   {
     id: "auto-RFyo9rP5Sic",
     creator: "모칠레로",
@@ -3467,7 +7885,6 @@ const RECENT_VIDEOS = [
     description: "결국 사고를 해결하지 못하고 거친 항해를 결정했습니다 #104",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-09-22)
   {
     id: "auto-zhWaOjSbPCs",
     creator: "모칠레로",
@@ -3485,7 +7902,6 @@ const RECENT_VIDEOS = [
     description: "카리브해 섬에서 만난 현지인 구독자가 한국어 능력자 #103",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-09-22)
   {
     id: "auto-mGBZKMUhSRY",
     creator: "모칠레로",
@@ -3503,7 +7919,6 @@ const RECENT_VIDEOS = [
     description: "대서양 횡단 후 도착한 나라 바베이도스에서 결국 사고가 났습니다 #102",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-09-22)
   {
     id: "auto-Os1KNH3zwjo",
     creator: "모칠레로",
@@ -3521,7 +7936,6 @@ const RECENT_VIDEOS = [
     description: "16일 간의 대서양 단독 항해가 위험한 이유, 배 고장 심각한 우울감 #101",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-09-22)
   {
     id: "auto-4QdG_wTYN64",
     creator: "모칠레로",
@@ -3539,7 +7953,6 @@ const RECENT_VIDEOS = [
     description: "나혼자 요트로 400시간 대서양 횡단 도전하기 #100",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 프라이아 주요 명소 (2026-09-22)
   {
     id: "auto-qsdfiQK7GT0",
     creator: "모칠레로",
@@ -3557,7 +7970,6 @@ const RECENT_VIDEOS = [
     description: "한국인은 절대 모르는 나라 카보베르데 놀라운 물가.. #99",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 파리 주요 명소 (2026-08-23)
   {
     id: "auto-J9s_YxXjSA4",
     creator: "모칠레로",
@@ -3575,7 +7987,6 @@ const RECENT_VIDEOS = [
     description: "한국인 요트에 프랑스 선원 4명이 탑승했습니다 #98",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 파리 주요 명소 (2026-08-23)
   {
     id: "auto-eQxXydCl52g",
     creator: "모칠레로",
@@ -3593,7 +8004,6 @@ const RECENT_VIDEOS = [
     description: "200시간 프랑스 요리를 먹는 항해 중 야간에 사고로 돛이 찢어져 버리고.. #97",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-08-23)
   {
     id: "auto-rVR7RgSJYLo",
     creator: "모칠레로",
@@ -3611,7 +8021,6 @@ const RECENT_VIDEOS = [
     description: "한국인 요트에 4명의 프랑스 동거인이 생겼습니다 #96",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-08-23)
   {
     id: "auto-N8AUdWXMPvg",
     creator: "모칠레로",
@@ -3629,7 +8038,6 @@ const RECENT_VIDEOS = [
     description: "요트 사고, 최악의 상황과 비용에 세계 일주 중단.. #95",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-07-24)
   {
     id: "auto-i3JHwiyay-o",
     creator: "모칠레로",
@@ -3647,7 +8055,6 @@ const RECENT_VIDEOS = [
     description: "개인 요트로 죽을 고비 넘기고 도착한 아프리카 섬나라에서 만난 한국인들 #94",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-07-24)
   {
     id: "auto-iVM1CBgKUlY",
     creator: "모칠레로",
@@ -3665,7 +8072,6 @@ const RECENT_VIDEOS = [
     description: "14m 돛단배로 아프리카 항해 중 돌풍 사고로 피항합니다 #93",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-07-24)
   {
     id: "auto-SN0IpWLj6Cs",
     creator: "모칠레로",
@@ -3683,7 +8089,6 @@ const RECENT_VIDEOS = [
     description: "연봉 8억 받는 변호사도 검소하게 사는 물가 최악의 도시..",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-07-24)
   {
     id: "auto-QyIeAcayOFY",
     creator: "모칠레로",
@@ -3701,7 +8106,6 @@ const RECENT_VIDEOS = [
     description: "세계에서 집값이 가장 비싼 도시에서 한국 이민자들의 현실",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 멕시코시티 주요 명소 (2026-06-24)
   {
     id: "auto-CzpjMh6SRzI",
     creator: "모칠레로",
@@ -3719,7 +8123,6 @@ const RECENT_VIDEOS = [
     description: "현지 유명 한국인에게 듣는 멕시코가 한국에 미치는 이유",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-06-24)
   {
     id: "auto-V1A6OHGIZuA",
     creator: "모칠레로",
@@ -3737,7 +8140,6 @@ const RECENT_VIDEOS = [
     description: "세계에서 한국인을 가장 좋아하는 나라 1위가 이 나라로 바뀌었습니다",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-06-24)
   {
     id: "auto-1zRTIQn4oxM",
     creator: "모칠레로",
@@ -3755,7 +8157,6 @@ const RECENT_VIDEOS = [
     description: "월드컵 직관 한국에 미쳐버린 현지 상황",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-06-24)
   {
     id: "auto-KuDQbCE9IxA",
     creator: "모칠레로",
@@ -3773,7 +8174,6 @@ const RECENT_VIDEOS = [
     description: "첫 만남에 3평짜리 집으로 초대받았습니다 #92",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 마라케시 주요 명소 (2026-06-24)
   {
     id: "auto-Pxsa5VT6Zew",
     creator: "모칠레로",
@@ -3791,7 +8191,6 @@ const RECENT_VIDEOS = [
     description: "한국인을 처음 만난 19살 모로코 소녀의 반응 #91",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-06-24)
   {
     id: "auto-64SxEaE9dTY",
     creator: "모칠레로",
@@ -3809,7 +8208,6 @@ const RECENT_VIDEOS = [
     description: "1년 동안의 지중해 항해를 마칩니다 #90",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 바르셀로나 주요 명소 (2026-06-24)
   {
     id: "auto-UvZ2AvZznF0",
     creator: "모칠레로",
@@ -3827,7 +8225,6 @@ const RECENT_VIDEOS = [
     description: "스페인 소도시에 한국인이 요트 타고 여행 간다면.. #89",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 바르셀로나 주요 명소 (2026-06-24)
   {
     id: "auto-mdPZjTQY8eg",
     creator: "모칠레로",
@@ -3845,7 +8242,6 @@ const RECENT_VIDEOS = [
     description: "태풍으로 피항한 스페인 어촌마을, 유일한 한국인 #88",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-05-25)
   {
     id: "auto-fPa69ILcGUs",
     creator: "모칠레로",
@@ -3863,7 +8259,6 @@ const RECENT_VIDEOS = [
     description: "작은 돛단배에서 혼자 살아가는 한국 남자 #87",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-05-25)
   {
     id: "auto-1Ge6reLlNws",
     creator: "모칠레로",
@@ -3881,7 +8276,6 @@ const RECENT_VIDEOS = [
     description: "겨울 바다가 위험한 이유 #86",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 산티아고 주요 명소 (2026-05-25)
   {
     id: "auto-u3LcsJN4SoE",
     creator: "모칠레로",
@@ -3899,7 +8293,6 @@ const RECENT_VIDEOS = [
     description: "한국인 선원은 결국 귀국했습니다 #85",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 울란바토르 주요 명소 (2026-05-25)
   {
     id: "auto-3Yqs2mR0lWU",
     creator: "모칠레로",
@@ -3917,7 +8310,6 @@ const RECENT_VIDEOS = [
     description: "유럽까지 찾아온 그녀와 요트 타고 도착한 신혼여행지 #84",
     highlights: []
   },
-  // [신규 자동 수집] 모칠레로 - 울란바토르 주요 명소 (2026-04-25)
   {
     id: "auto-_GzBOAaEQzQ",
     creator: "모칠레로",
@@ -3935,7 +8327,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 다시 찾아온 산부인과 의사 #83",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 이스탄불 터키 (2026-10-01)
   {
     id: "auto-eo_fZZeXSIY",
     creator: "테디여행기",
@@ -3953,7 +8344,6 @@ const RECENT_VIDEOS = [
     description: "외국인이 한국 시골에 가면 생기는 일, 백제의 도시 부여(터키여자 제렌)",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 인천 주요 명소 (2026-08-23)
   {
     id: "auto-a0LCmo6ucrs",
     creator: "테디여행기",
@@ -3971,7 +8361,6 @@ const RECENT_VIDEOS = [
     description: "북한에서 고작 19km인 서해 최전방의 섬에 다녀왔습니다",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 부다페스트 주요 명소 (2026-07-24)
   {
     id: "auto-o7T1XQmxpNY",
     creator: "테디여행기",
@@ -3989,7 +8378,6 @@ const RECENT_VIDEOS = [
     description: "예전의 부다페스트가 아니네요.. 지금 여행할 때 꼭 알아야 할 것들",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 부다페스트 주요 명소 (2026-06-24)
   {
     id: "auto-ISmwqO2mizo",
     creator: "테디여행기",
@@ -4007,7 +8395,6 @@ const RECENT_VIDEOS = [
     description: "유럽 한복판에 나타난 한국식 실내포차, 현지인들 진짜 반응, 헝가리 부다페스트",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 방콕 주요 명소 (2026-06-24)
   {
     id: "auto-Fkw89HUT_ow",
     creator: "테디여행기",
@@ -4025,7 +8412,6 @@ const RECENT_VIDEOS = [
     description: "태국은 왜!!? 그럴까, 태국의 문화와 그 외 모든것!(여행자 초대석)",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 제주 주요 명소 (2026-03-26)
   {
     id: "auto-XfZq7Jdj4VU",
     creator: "테디여행기",
@@ -4043,7 +8429,6 @@ const RECENT_VIDEOS = [
     description: "제주 혼술바..정말 핫했습니다 (+겨울 한라산 등반)",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 다카 주요 명소 (2025-10-22)
   {
     id: "auto-c033IgFlowE",
     creator: "테디여행기",
@@ -4061,7 +8446,6 @@ const RECENT_VIDEOS = [
     description: "흔한 한국 아재의 연예인 체험, 일본 소도시 다카마쓰 여행, 우동의 도시",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 오사카 주요 명소 (2025-10-22)
   {
     id: "auto-FXJ54s_xn2k",
     creator: "테디여행기",
@@ -4079,7 +8463,6 @@ const RECENT_VIDEOS = [
     description: "오사카에서 스시도 먹고 라멘도 먹고, 그리고 로맨스 스캠 실화",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 부다페스트 주요 명소 (2025-10-22)
   {
     id: "auto-9YGjSg_vj6E",
     creator: "테디여행기",
@@ -4097,7 +8480,6 @@ const RECENT_VIDEOS = [
     description: "헝가리 엘리트 대학생들이 한국어에 빠진 진짜 이유, 한국학과 학생들과 특별한 하루",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 런던 주요 명소 (2025-10-22)
   {
     id: "auto-BYAY3mmFku8",
     creator: "테디여행기",
@@ -4115,7 +8497,6 @@ const RECENT_VIDEOS = [
     description: "런던 물가가 미쳤다고 해서 직접 확인해 봤습니다 (17억 집의 정체)",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 런던 주요 명소 (2025-10-22)
   {
     id: "auto-3HxmGdzawXM",
     creator: "테디여행기",
@@ -4133,7 +8514,6 @@ const RECENT_VIDEOS = [
     description: "한국인이 된 우크라이나 여자의 사연, 런던에 사는 아나스타샤가 한국인인 이유",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 런던 주요 명소 (2025-10-22)
   {
     id: "auto-KWpgMfUFEM8",
     creator: "테디여행기",
@@ -4151,7 +8531,6 @@ const RECENT_VIDEOS = [
     description: "런던에서 번호 따인 썰 푼다, 하정우의 광팬인 그녀가 스코틀랜드에 나를 보러 온 이유",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 더블린 주요 명소 (2025-10-22)
   {
     id: "auto-G-3fHCnBBZA",
     creator: "테디여행기",
@@ -4169,7 +8548,6 @@ const RECENT_VIDEOS = [
     description: "월세 300만 원 내며 아일랜드에 사는 한국인 부부 이야기",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 런던 주요 명소 (2025-10-22)
   {
     id: "auto-AL3U-rhAsQA",
     creator: "테디여행기",
@@ -4187,7 +8565,6 @@ const RECENT_VIDEOS = [
     description: "예전의 런던이 아니네요.. 상상 초월 런던 물가와 한인타운 근황",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 더블린 주요 명소 (2025-10-22)
   {
     id: "auto-8PyoMZgHuwM",
     creator: "테디여행기",
@@ -4205,7 +8582,6 @@ const RECENT_VIDEOS = [
     description: "4만원의 행복, 아일랜드 더블린 여행기: 기네스 맥주와 펍에서 만난 광인",
     highlights: []
   },
-  // [신규 자동 수집] 테디여행기 - 보고타 주요 명소 (2025-10-22)
   {
     id: "auto--iUAHmHM5Qs",
     creator: "테디여행기",
@@ -4223,7 +8599,6 @@ const RECENT_VIDEOS = [
     description: "콜롬비아 한류 열풍의 실체, 그리고 KPOP 스토어 하루 매출은 얼마일까?",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-10-20)
   {
     id: "auto-x66Ldk-Gtd8",
     creator: "삐까뚱씨",
@@ -4241,7 +8616,6 @@ const RECENT_VIDEOS = [
     description: "도쿄에 생긴 세계 최초 '무한리필 스시 버스' 직접 타봤어요🍣",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 부산 주요 명소 (2026-10-14)
   {
     id: "auto-76yEVZTQ7ds",
     creator: "삐까뚱씨",
@@ -4259,7 +8633,6 @@ const RECENT_VIDEOS = [
     description: "부산 온 외국 관광객들이 당황하는 이유가 있습니다",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-10-09)
   {
     id: "auto-uiqlCh4fhoo",
     creator: "삐까뚱씨",
@@ -4277,7 +8650,6 @@ const RECENT_VIDEOS = [
     description: "관광객일 땐 몰랐던 방콕의 진짜 물가",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 부산 주요 명소 (2026-10-08)
   {
     id: "auto-4M_Xd2e1v6I",
     creator: "삐까뚱씨",
@@ -4295,7 +8667,6 @@ const RECENT_VIDEOS = [
     description: "EP.74✨ 갑자기 부산에 가게 된 이유",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-10-08)
   {
     id: "auto-vwVQA6kV4DM",
     creator: "삐까뚱씨",
@@ -4313,7 +8684,6 @@ const RECENT_VIDEOS = [
     description: "방콕사는 20년차 디자이너의 인생템 | What's in My bag",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-10-01)
   {
     id: "auto-0e3ECIACC8o",
     creator: "삐까뚱씨",
@@ -4331,7 +8701,6 @@ const RECENT_VIDEOS = [
     description: "EP.73✨ 태국 홍수 속, 저희의 현재 상황 전달드립니다!",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-09-24)
   {
     id: "auto-uSVS5HyZtE4",
     creator: "삐까뚱씨",
@@ -4349,7 +8718,6 @@ const RECENT_VIDEOS = [
     description: "태국 이민 1년, 한국인이 가장 후회하는 것..!",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-09-22)
   {
     id: "auto-Q8nXSzKK04A",
     creator: "삐까뚱씨",
@@ -4367,7 +8735,6 @@ const RECENT_VIDEOS = [
     description: "친구와 태국이민 온 두 남자의 현실 룸투어🏠",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-09-22)
   {
     id: "auto-YQbds0lL4Gg",
     creator: "삐까뚱씨",
@@ -4385,7 +8752,6 @@ const RECENT_VIDEOS = [
     description: "30대 태국이민으로 달라진 우리 현실",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-09-22)
   {
     id: "auto-kaGhU1lYf_Q",
     creator: "삐까뚱씨",
@@ -4403,7 +8769,6 @@ const RECENT_VIDEOS = [
     description: "태국 이민 첫 이사!🏠 월세 90만원 VS 120만원, 우리의 선택은🤔?",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 헬싱키 주요 명소 (2026-09-22)
   {
     id: "auto-pIDdPtn9DQ8",
     creator: "삐까뚱씨",
@@ -4421,7 +8786,6 @@ const RECENT_VIDEOS = [
     description: "영하 20도, 한겨울 핀란드에서 살아보기🇫🇮🥶",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-08-23)
   {
     id: "auto-5JnGTeGJOak",
     creator: "삐까뚱씨",
@@ -4439,7 +8803,6 @@ const RECENT_VIDEOS = [
     description: "한국 요식업 사장님이 숨겨논 찐맛집들 공개! 🥘🍲🍱",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-08-23)
   {
     id: "auto-XceFbj4glqc",
     creator: "삐까뚱씨",
@@ -4457,7 +8820,6 @@ const RECENT_VIDEOS = [
     description: "180cm 상남자들의 일본 갸루 첫경험💖 (이게 맞아..?)",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 방콕 주요 명소 (2026-08-23)
   {
     id: "auto-bqrJoT2NAi0",
     creator: "삐까뚱씨",
@@ -4475,7 +8837,6 @@ const RECENT_VIDEOS = [
     description: "EP.66✨ 방콕 새집, 얼마나 좋은지 감도 안옴..😆",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-08-23)
   {
     id: "auto-GBqEto47n7M",
     creator: "삐까뚱씨",
@@ -4493,7 +8854,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 안 사면 손해보는 일본 주방/세탁/생활 자취템 몽땅 쓸어가기!!",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-08-23)
   {
     id: "auto-b-mbRY6XPQ0",
     creator: "삐까뚱씨",
@@ -4511,7 +8871,6 @@ const RECENT_VIDEOS = [
     description: "태국 이민 전, 한국 폭풍쇼핑!🛍️ 쿠팡/다이소/올리브영 다 털기!",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 도쿄 주요 명소 (2026-07-24)
   {
     id: "auto-8KnomLH_QCU",
     creator: "삐까뚱씨",
@@ -4529,7 +8888,6 @@ const RECENT_VIDEOS = [
     description: "한국인만 공짜로 여행할 수 있는 숨은 일본 소도시 2박 3일",
     highlights: []
   },
-  // [신규 자동 수집] 삐까뚱씨 - 제주 주요 명소 (2026-07-24)
   {
     id: "auto-k9Op4Jze4HU",
     creator: "삐까뚱씨",
@@ -4547,7 +8905,6 @@ const RECENT_VIDEOS = [
     description: "프리랜서 친구 다섯과 제주에서 일하며 살아보기",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 발리 주요 명소 (2026-10-20)
   {
     id: "auto-VYN_A3xkejk",
     creator: "신아로미",
@@ -4565,7 +8922,6 @@ const RECENT_VIDEOS = [
     description: "좋은 사람인 줄 알았는데, 결국 본색이 드러났다 [발리 요가여행 마지막 편]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 발리 주요 명소 (2026-09-22)
   {
     id: "auto-LgYg6ku7Eak",
     creator: "신아로미",
@@ -4583,7 +8939,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇩 발리 여행은 안하고 🧘‍♀️요가하고 🏠집 구하러 다니기만 하는 요친놈로그",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 발리 주요 명소 (2026-09-22)
   {
     id: "auto-TuNMDF3JQgY",
     creator: "신아로미",
@@ -4601,7 +8956,6 @@ const RECENT_VIDEOS = [
     description: "노력해도 안 된다는 걸 받아들이기까지 [발리 프리다이빙 여행]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 니스 주요 명소 (2026-08-23)
   {
     id: "auto-3CIhEntlsII",
     creator: "신아로미",
@@ -4619,7 +8973,6 @@ const RECENT_VIDEOS = [
     description: "직감을 따라온 인도, 마지막 날 벌어진 거짓말 같은 일 [인도 최종화]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 니스 주요 명소 (2026-08-23)
   {
     id: "auto--HBqQhfkVhQ",
     creator: "신아로미",
@@ -4637,7 +8990,6 @@ const RECENT_VIDEOS = [
     description: "직감만 믿고 살면 벌어지는 일 [인도 오로빌 영성마을 ep02]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - Location (2026-07-24)
   {
     id: "auto-d1_1NzDbLrg-1",
     creator: "신아로미",
@@ -4655,7 +9007,6 @@ const RECENT_VIDEOS = [
     description: "전 세계인이 유토피아를 찾아 모이는 도시, 오로빌에 가봤습니다",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - Business : aromiseen@gmail.com (2026-07-24)
   {
     id: "auto-d1_1NzDbLrg-2",
     creator: "신아로미",
@@ -4673,7 +9024,6 @@ const RECENT_VIDEOS = [
     description: "전 세계인이 유토피아를 찾아 모이는 도시, 오로빌에 가봤습니다",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 두바이 주요 명소 (2026-05-25)
   {
     id: "auto-bfHC1_z2O_E",
     creator: "신아로미",
@@ -4691,7 +9041,6 @@ const RECENT_VIDEOS = [
     description: "미국 억만장자들이 조용히 하는 것 | 위빠사나 명상 11박 12일 체험기",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2026-05-25)
   {
     id: "auto-VdHb6a9cp3E",
     creator: "신아로미",
@@ -4709,7 +9058,6 @@ const RECENT_VIDEOS = [
     description: "요친놈이 말아주는 인도 요가 TTC / 아무도 안 알려주는 현실 Q&A",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-04-25)
   {
     id: "auto-gfSSB3I3If4",
     creator: "신아로미",
@@ -4727,7 +9075,6 @@ const RECENT_VIDEOS = [
     description: "슬프네요🌸 한국 남성들이 믿고 거르는 한국 여성들의 솔직헌 토크 🥹 [국내 최초 100개국 여성 여행 유튜버]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-04-25)
   {
     id: "auto-_f3ZjPpzGAQ",
     creator: "신아로미",
@@ -4745,7 +9092,6 @@ const RECENT_VIDEOS = [
     description: "인도에서 요가 강사가 되었습니다 [EP24 인도TTC 최종회]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-04-25)
   {
     id: "auto-jtpeyIs7zbE",
     creator: "신아로미",
@@ -4763,7 +9109,6 @@ const RECENT_VIDEOS = [
     description: "🚨실제상황🚨 후굴하다가 갑자기 눈물이 터지는 이유 (심장 차크라) [EP23 인도 요가]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 캘리포니아 주요 명소 (2026-04-25)
   {
     id: "auto-tvGDrydkO2s",
     creator: "신아로미",
@@ -4781,7 +9126,6 @@ const RECENT_VIDEOS = [
     description: "혼자 살아도 대충 살지 않기로 했다. 평온함을 지키는 매일의 의식들 [🇲🇽멕시코 한 달 살기]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-04-25)
   {
     id: "auto-s0wFrZeypQ4",
     creator: "신아로미",
@@ -4799,7 +9143,6 @@ const RECENT_VIDEOS = [
     description: "남들 결혼할 때 머리 밀고 떠난 인도. 30대 노처녀가 요가 강사? 풉.. 🇮🇳 [EP22]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-03-26)
   {
     id: "auto-9NVQruJyOIs",
     creator: "신아로미",
@@ -4817,7 +9160,6 @@ const RECENT_VIDEOS = [
     description: "요가에 진심인 사람이 인도에 가면 생기는 일 (수련, 눈물의 시험공부, 쇼핑 지옥) [EP21]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-03-26)
   {
     id: "auto-mTHd84uz_WU",
     creator: "신아로미",
@@ -4835,7 +9177,6 @@ const RECENT_VIDEOS = [
     description: "인도 요가학교, 저 진짜 이상한 데 온 것 같아요 [EP20]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-03-26)
   {
     id: "auto-F-yFvVgJtZc",
     creator: "신아로미",
@@ -4853,7 +9194,6 @@ const RECENT_VIDEOS = [
     description: "인도에서 요가 강사되는 멀고 험난한 과정 [EP19]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2026-02-24)
   {
     id: "auto-ksOdRTcUKFU",
     creator: "신아로미",
@@ -4871,7 +9211,6 @@ const RECENT_VIDEOS = [
     description: "항상 괜찮은 척했는데, 결국 터져버렸습니다 [인도 요가학교 EP18]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2026-02-24)
   {
     id: "auto-a18ALyBjVYg",
     creator: "신아로미",
@@ -4889,7 +9228,6 @@ const RECENT_VIDEOS = [
     description: "너무 힘들어서 친구 도망갔고, 저도 포기할까 봐요 [인도 요가학교 EP17]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2026-01-25)
   {
     id: "auto-jOFyZ8FByw0",
     creator: "신아로미",
@@ -4907,7 +9245,6 @@ const RECENT_VIDEOS = [
     description: "레이키, 차크라, 아유르베다 다 해봤다가 진짜 큰일 날 뻔했습니다 [인도요가 EP16]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2026-01-25)
   {
     id: "auto-GdvGjdPoRxE",
     creator: "신아로미",
@@ -4925,7 +9262,6 @@ const RECENT_VIDEOS = [
     description: "빠른 AI 시대에, 나는 느린 선택을 하기로 했다 [인도요가학교 EP15]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2026-01-25)
   {
     id: "auto-mqwSqVWxtk0",
     creator: "신아로미",
@@ -4943,7 +9279,6 @@ const RECENT_VIDEOS = [
     description: "차크라를 믿지 않던 내가 요가를 하며 겪은 변화들 [인도학교ep14]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2026-01-25)
   {
     id: "auto-E8SlD4EqShk",
     creator: "신아로미",
@@ -4961,7 +9296,6 @@ const RECENT_VIDEOS = [
     description: "왜 열심히 할수록 더 안될까 [인도 요가학교 EP13]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2025-12-26)
   {
     id: "auto-TryLGwJ70gY",
     creator: "신아로미",
@@ -4979,7 +9313,6 @@ const RECENT_VIDEOS = [
     description: "전 그냥 도망치고 싶네요 [인도 요가학교 ep12]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 바라나시 주요 명소 (2025-12-26)
   {
     id: "auto-MceJKKaCT9E",
     creator: "신아로미",
@@ -4997,7 +9330,6 @@ const RECENT_VIDEOS = [
     description: "우리는 왜 힘든 순간들을 겪어야만 하는걸까 [인도 요가학교 ep11]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2025-12-26)
   {
     id: "auto-uATEHnKy8fM",
     creator: "신아로미",
@@ -5015,7 +9347,6 @@ const RECENT_VIDEOS = [
     description: "인도 요가 유학 첫 시험… 완전 망했어요 저 그냥 포기할까요?🥹 [EP10]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2025-12-26)
   {
     id: "auto-n6qTfSL_ufo",
     creator: "신아로미",
@@ -5033,7 +9364,6 @@ const RECENT_VIDEOS = [
     description: "저처럼 머리 나쁜 사람은 해외 유학 가지마세요… [EP09]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2025-12-26)
   {
     id: "auto-lN-XHbRGS30",
     creator: "신아로미",
@@ -5051,7 +9381,6 @@ const RECENT_VIDEOS = [
     description: "생리 중 요가, 저는 이렇게 했어요. 인도 요가학교 브이로그 [EP08]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2025-11-26)
   {
     id: "auto-eVKM7Qauuw8",
     creator: "신아로미",
@@ -5069,7 +9398,6 @@ const RECENT_VIDEOS = [
     description: "머리까지 밀고 인도에 왔지만, 마음은 쉽게 무너졌다 [EP07]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2025-11-26)
   {
     id: "auto-Zd0ejYkbRRI",
     creator: "신아로미",
@@ -5087,7 +9415,6 @@ const RECENT_VIDEOS = [
     description: "첫날부터 망함💦 인도 전통 요가학교 적응 실패 브이로그 [EP06]",
     highlights: []
   },
-  // [신규 자동 수집] 신아로미 - 마이소르 주요 명소 (2025-10-22)
   {
     id: "auto-AMKbgdzGXW4",
     creator: "신아로미",
@@ -5105,7 +9432,6 @@ const RECENT_VIDEOS = [
     description: "내가 머리 밀고 인도 전통 요가 학교 입학한 이유 [EP05]",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-10-21)
   {
     id: "auto-TS5JB6KrtjE",
     creator: "Joe튜브",
@@ -5123,7 +9449,6 @@ const RECENT_VIDEOS = [
     description: "한국 마지막날 비행기를 놓쳐버린 태국 여사친ㅋㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-10-19)
   {
     id: "auto-G44biRYSJJQ",
     creator: "Joe튜브",
@@ -5141,7 +9466,6 @@ const RECENT_VIDEOS = [
     description: "한국에서의 마지막날인 태국 시골에서 온 여사친 가족들",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-10-16)
   {
     id: "auto-pw-Zq5zIUFI",
     creator: "Joe튜브",
@@ -5159,7 +9483,6 @@ const RECENT_VIDEOS = [
     description: "평생 태국 시골에 살았던 태국 여사친 부모님 이제 한국식 아니면 맛이 없다네요..",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-10-14)
   {
     id: "auto-VfiErT5DSJs",
     creator: "Joe튜브",
@@ -5177,7 +9500,6 @@ const RECENT_VIDEOS = [
     description: "평생 태국 시골에서 살던 가족을 한국 식당에 데려가면 생기는 일",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-10-12)
   {
     id: "auto-iezLtQSYBWI",
     creator: "Joe튜브",
@@ -5195,7 +9517,6 @@ const RECENT_VIDEOS = [
     description: "대체 한국은 왜 이렇게 부자냐는 태국 여사친 아버지ㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-10-09)
   {
     id: "auto-OioNonjaAZE",
     creator: "Joe튜브",
@@ -5213,7 +9534,6 @@ const RECENT_VIDEOS = [
     description: "태국 여사친 가족들 데리고 전 남친이랑 데이트 간 곳 데려가면 생기는 일",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-10-08)
   {
     id: "auto-wY5N9kUCoKs",
     creator: "Joe튜브",
@@ -5231,7 +9551,6 @@ const RECENT_VIDEOS = [
     description: "태국 여사친 시골 가족 한국으로 전부 초대하면 생기는 일",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 다낭 주요 명소 (2026-10-08)
   {
     id: "auto-OaPNprwJjAc",
     creator: "Joe튜브",
@@ -5249,7 +9568,6 @@ const RECENT_VIDEOS = [
     description: "아내들 없이 유부남들끼리 베트남 황제 이발소를 \"또\" 가면 생기는 일",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 다낭 주요 명소 (2026-10-08)
   {
     id: "auto-2PiOhNkJ_vo",
     creator: "Joe튜브",
@@ -5267,7 +9585,6 @@ const RECENT_VIDEOS = [
     description: "평생 베트남에 살았던 여동생 첫 해외여행 데려가는 척 또 베트남 데려가기",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 바라나시 주요 명소 (2026-10-01)
   {
     id: "auto-dT7obsaLGfg",
     creator: "Joe튜브",
@@ -5285,7 +9602,6 @@ const RECENT_VIDEOS = [
     description: "추석특집 아내들 없이 유부남끼리 가상세계 같았던 인도 여행 모아보기",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 시드니 주요 명소 (2026-09-24)
   {
     id: "auto-XR4fLBW2XyU",
     creator: "Joe튜브",
@@ -5303,7 +9619,6 @@ const RECENT_VIDEOS = [
     description: "호주 노예였던 내가 신안 염전에 가면 생기는 일...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-09-22)
   {
     id: "auto-1eJD3iLElis",
     creator: "Joe튜브",
@@ -5321,7 +9636,6 @@ const RECENT_VIDEOS = [
     description: "아내들 없이 유부남끼리 동남아 태국 오면 생기는 일...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 방콕 주요 명소 (2026-09-22)
   {
     id: "auto-gSYZo9aTPu8",
     creator: "Joe튜브",
@@ -5339,7 +9653,6 @@ const RECENT_VIDEOS = [
     description: "아내들없이 유부남끼리 태국 왔는데 이게 말이 되나요?...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 바라나시 주요 명소 (2026-09-22)
   {
     id: "auto-3u1Nme3YAYg",
     creator: "Joe튜브",
@@ -5357,7 +9670,6 @@ const RECENT_VIDEOS = [
     description: "정말 힘들었던 인도 마지막 날 빨래터 가서 몸과 마음을 정화 했습니다...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 바라나시 주요 명소 (2026-09-22)
   {
     id: "auto-1qRybqQC47A",
     creator: "Joe튜브",
@@ -5375,7 +9687,6 @@ const RECENT_VIDEOS = [
     description: "인도가 아니라 가상세계에 온 것 같다는 유부남들...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 바라나시 주요 명소 (2026-09-22)
   {
     id: "auto-ZnwgvcdgG1M",
     creator: "Joe튜브",
@@ -5393,7 +9704,6 @@ const RECENT_VIDEOS = [
     description: "아내들 없이 유부남끼리 인도 꼴등칸 기차 타면 생기는 일...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 바라나시 주요 명소 (2026-09-22)
   {
     id: "auto-UClIVT2VO2k",
     creator: "Joe튜브",
@@ -5411,7 +9721,6 @@ const RECENT_VIDEOS = [
     description: "진짜 인도를 마주하고 말도 안되게 충격받은 유부남들ㅋㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 바라나시 주요 명소 (2026-09-22)
   {
     id: "auto-LMZRjy9OAdw",
     creator: "Joe튜브",
@@ -5429,7 +9738,6 @@ const RECENT_VIDEOS = [
     description: "아내들 데려오기 위험해서 유부남끼리 인도오면 생기는 일...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 제주 주요 명소 (2026-09-22)
   {
     id: "auto-QH0fQX_Y-0Y",
     creator: "Joe튜브",
@@ -5447,7 +9755,6 @@ const RECENT_VIDEOS = [
     description: "인생 처음 제주도 오고 기분이 너무 좋아서 술을 계속 마시는 일본인 딸내미...",
     highlights: []
   },
-  // [신규 자동 수집] Joe튜브 - 부산 주요 명소 (2026-09-22)
   {
     id: "auto-CT7Rd8blapc",
     creator: "Joe튜브",
@@ -5465,7 +9772,6 @@ const RECENT_VIDEOS = [
     description: "일본인 딸내미 실제로 보고 너무 예뻐서 촬영을 거부한 부산 럴커즈 동생들ㅋㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 하동 주요 명소 (2026-10-12)
   {
     id: "auto-17I1gZwoU5w",
     creator: "유이뿅",
@@ -5483,7 +9789,6 @@ const RECENT_VIDEOS = [
     description: "와.. 한국에는 100원으로 버스 탈 수 있다고??",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 도쿄 주요 명소 (2026-10-01)
   {
     id: "auto-bGl_zkXvhGA",
     creator: "유이뿅",
@@ -5501,7 +9806,6 @@ const RECENT_VIDEOS = [
     description: "카메라 눈나.. 우리 후지산을 너무 만만하게 봤어",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 카사블랑카 주요 명소 (2026-09-22)
   {
     id: "auto-TCrRpIjkncs",
     creator: "유이뿅",
@@ -5519,7 +9823,6 @@ const RECENT_VIDEOS = [
     description: "혹시 한국인이세요?",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 마라케시 주요 명소 (2026-09-22)
   {
     id: "auto-IrcsasHDD2M",
     creator: "유이뿅",
@@ -5537,7 +9840,6 @@ const RECENT_VIDEOS = [
     description: "모로코에서 생존하는 한국인 찾기ㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 도쿄 주요 명소 (2026-08-23)
   {
     id: "auto-3lfgFRFNidA",
     creator: "유이뿅",
@@ -5555,7 +9857,6 @@ const RECENT_VIDEOS = [
     description: "한국친구 데리고 100km 떨어져 있는 일본온천까지 걸어보기ㅋㅋㅋ",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 울란바토르 주요 명소 (2026-07-24)
   {
     id: "auto-x7YrQ0h0ze4",
     creator: "유이뿅",
@@ -5573,7 +9874,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 30년전 잘해주셨던 은인을 찾습니다",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 울란바토르 주요 명소 (2026-06-24)
   {
     id: "auto-7teZNHEoxjo",
     creator: "유이뿅",
@@ -5591,7 +9891,6 @@ const RECENT_VIDEOS = [
     description: "몽골 방카르 도둑 맞았대ㅠㅠ 내 새끼 찾으러 간다",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 홍콩 주요 명소 (2026-05-25)
   {
     id: "auto-iJcSfv3c3L8",
     creator: "유이뿅",
@@ -5609,7 +9908,6 @@ const RECENT_VIDEOS = [
     description: "실종된 친구 찾으러 홍콩까지 왔는데 시작부터 망함..",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 도쿄 주요 명소 (2026-04-25)
   {
     id: "auto-XSLknJYembM",
     creator: "유이뿅",
@@ -5627,7 +9925,6 @@ const RECENT_VIDEOS = [
     description: "일본 폭설로 눈이 내 키만큼 쌓인 곳에 캠핑카 끌고 왔다",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 울란바토르 주요 명소 (2026-03-26)
   {
     id: "auto-Fl1wiIMX50c",
     creator: "유이뿅",
@@ -5645,7 +9942,6 @@ const RECENT_VIDEOS = [
     description: "-30도에 태어난 몽골 토종 강아지 육아 넘 빡세다..",
     highlights: []
   },
-  // [신규 자동 수집] 유이뿅 - 도쿄 주요 명소 (2026-03-26)
   {
     id: "auto-xCz0ijpVyuw",
     creator: "유이뿅",
@@ -5663,7 +9959,6 @@ const RECENT_VIDEOS = [
     description: "몽골까지 가서 개밥 주는 일본 이모",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-10-22)
   {
     id: "auto-irIt1lZsqqA",
     creator: "은하캠핑",
@@ -5681,7 +9976,6 @@ const RECENT_VIDEOS = [
     description: "인생 살면서 경험한 무례한 사람 베스트10",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-10-20)
   {
     id: "auto-RAmwGjU4n-E",
     creator: "은하캠핑",
@@ -5699,7 +9993,6 @@ const RECENT_VIDEOS = [
     description: "특전사, 707 여군들의 말할 수 없었던 비밀들?!",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-10-17)
   {
     id: "auto-rPwfHGPUhs0",
     creator: "은하캠핑",
@@ -5717,7 +10010,6 @@ const RECENT_VIDEOS = [
     description: "특수부대 후배 트레이너도 놀란 전직 707 출신 여군 은하캠핑의 체력 수준은? 누나 아직 안 죽었다!!",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-10-11)
   {
     id: "auto-VUvufzDM6rc",
     creator: "은하캠핑",
@@ -5735,7 +10027,6 @@ const RECENT_VIDEOS = [
     description: "여러분 드릴말씀 있어요... 제가 사실은요....",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-10-11)
   {
     id: "auto-rS92aI73Gu4",
     creator: "은하캠핑",
@@ -5753,7 +10044,6 @@ const RECENT_VIDEOS = [
     description: "이제는 말할 수 있을것 같습니다.. 우울증..3년간 은하캠핑 유튜브를 쉬었던 이유 와 충격적인 에피소드까지 (Feat. 52만 유튜버 은하캠핑의 과거)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-10-08)
   {
     id: "auto-BtgCkCmxhbw",
     creator: "은하캠핑",
@@ -5771,7 +10061,6 @@ const RECENT_VIDEOS = [
     description: "(최초공개) 4년동안 면회조차 통제된 부대 HID 그 짐승들이 성욕을 해소하는 특별한 방법?! (feat.정보사 HID, UDU)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-09-24)
   {
     id: "auto--dGiclpDflI",
     creator: "은하캠핑",
@@ -5789,7 +10078,6 @@ const RECENT_VIDEOS = [
     description: "이제는 말할 수 있다! 강철부대W 출연 비하인드, 707여군생활과 체력 수준은? (구독자 Q&A 매운맛) (Feat.1부, 특수부대, 운동, 여군 편)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-09-22)
   {
     id: "auto-nsrPc9_o-NA",
     creator: "은하캠핑",
@@ -5807,7 +10095,6 @@ const RECENT_VIDEOS = [
     description: "3년만에 돌아온 헬멧 동생과 단 둘이 첫 여행! (feat. 은하 이런 모습 처음이야!!)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-09-22)
   {
     id: "auto-IaGleMzInjk",
     creator: "은하캠핑",
@@ -5825,7 +10112,6 @@ const RECENT_VIDEOS = [
     description: "(여성최초 k17사격) 45년 동안 쓰던 K1A 드디어 교체! 전직 707 여군이 직접 쏴봤습니다 (새로운 특수작전 총기)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 제주 주요 명소 (2026-09-22)
   {
     id: "auto-LSSPBjdRiuE",
     creator: "은하캠핑",
@@ -5843,7 +10129,6 @@ const RECENT_VIDEOS = [
     description: "전직 707 여군 박은하, 여성 최초 해양 경찰 특수구조대원이 되다 (feat. 제주경찰, 제주해양 특수구조대)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-08-23)
   {
     id: "auto-CXUXf6nQ9zE",
     creator: "은하캠핑",
@@ -5861,7 +10146,6 @@ const RECENT_VIDEOS = [
     description: "현실판 김부장 등장… HID 요원 vs 707 여군 살상기술로 붙으면 누가 이길까?",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 속초 주요 명소 (2026-08-23)
   {
     id: "auto-ekaF9v_JtBQ",
     creator: "은하캠핑",
@@ -5879,7 +10163,6 @@ const RECENT_VIDEOS = [
     description: "4년만에 비키니 꺼내입은 은하. 부자들만의 전유물 초호화 요트에서 벌어진일?! (feat. 속초 여행)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-08-23)
   {
     id: "auto-tp4-2VA3Um0",
     creator: "은하캠핑",
@@ -5897,7 +10180,6 @@ const RECENT_VIDEOS = [
     description: "대한민국에 이런 바다가 있었다고? (현지인만 아는 숨은 명소) 99%가 모르는 여름 물놀이 명소 올여름 무조건 여기 갑니다. 미쳤습니다.",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 영주 주요 명소 (2026-08-23)
   {
     id: "auto-btcnW1AVLeU",
     creator: "은하캠핑",
@@ -5915,7 +10197,6 @@ const RECENT_VIDEOS = [
     description: "UDT 재입대 준비하는 전직 707 여군. UDT전설의 교관 등판!.(feat, 이상사, 전영주)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 서울 주요 명소 (2026-08-23)
   {
     id: "auto-kTIoBIgmhZs",
     creator: "은하캠핑",
@@ -5933,7 +10214,6 @@ const RECENT_VIDEOS = [
     description: "서울 강남 한복판 마지막 판자촌 , 곧 사라질 구룡마을을 가봤습니다.",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-07-24)
   {
     id: "auto-33amJxjN-EU",
     creator: "은하캠핑",
@@ -5951,7 +10231,6 @@ const RECENT_VIDEOS = [
     description: "무인도에서 살아남기.전직 707 여군도 놀란 무인도의 정체. \"이게 왜 여기에 있는 거지?\"",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-07-24)
   {
     id: "auto-HY4Q1TRlVQk",
     creator: "은하캠핑",
@@ -5969,7 +10248,6 @@ const RECENT_VIDEOS = [
     description: "(최초공개) 707 여군들이 처음 부대에 가면 선배한테 배우는 특별교육 과 707 여군 비밀임무",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-07-24)
   {
     id: "auto-4-HR1gbuMMA",
     creator: "은하캠핑",
@@ -5987,7 +10265,6 @@ const RECENT_VIDEOS = [
     description: "(최초고백) 특전사/707 남군들이 여군들한테 작업거는 방식?! 특전사, 707 여군들이 일반인 남성과 연애를 못하는 이유?! (feat. 은하캠핑, 이상사클라스)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-06-24)
   {
     id: "auto-H_gw5ozFhdg",
     creator: "은하캠핑",
@@ -6005,7 +10282,6 @@ const RECENT_VIDEOS = [
     description: "납치 당했을때 탈출 하는법?! (실종, 납치, 범죄,전직 707여군)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-06-24)
   {
     id: "auto-5nV09TEHteM",
     creator: "은하캠핑",
@@ -6023,7 +10299,6 @@ const RECENT_VIDEOS = [
     description: "살목지 보다 사고 8배 많은 가평 에서 가장 위험한 계곡에 직접 들어가봤습니다. (feat.이은해 가평 용소 계곡 살인사건)",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2026-06-24)
   {
     id: "auto-fw0TAUX6cWA",
     creator: "은하캠핑",
@@ -6041,7 +10316,6 @@ const RECENT_VIDEOS = [
     description: "(소름주의) 살목지에 맨몸으로 들어간 특전사, 707 출신 여군ㅣ귀신의 흔적?ㅣ 물속에서 발견한 소름 돋는 물건의 정체?",
     highlights: []
   },
-  // [신규 자동 수집] 은하캠핑 - 니스 주요 명소 (2025-12-26)
   {
     id: "auto-5uIVvASougM",
     creator: "은하캠핑",
@@ -6059,7 +10333,6 @@ const RECENT_VIDEOS = [
     description: "(긴급공지) 은하캠핑이 멈췄던 이유… 오늘에서야 말합니다.",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 삿포로 주요 명소 (2026-10-07)
   {
     id: "auto-e0Yn5BsOAnU",
     creator: "시칠리안",
@@ -6077,7 +10350,6 @@ const RECENT_VIDEOS = [
     description: "가을 삿포로가 비수기라구요..? 지금 당장 삿포로를 가야하는 이유",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 도쿄 주요 명소 (2026-09-30)
   {
     id: "auto-AJjbxeEMrJg",
     creator: "시칠리안",
@@ -6095,7 +10367,6 @@ const RECENT_VIDEOS = [
     description: "일본 패키지 여행을 처음 가봤는데요, 이럴줄은 정말 몰랐습니다..",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 도쿄 주요 명소 (2026-09-21)
   {
     id: "auto-3cpKU6uARqk",
     creator: "시칠리안",
@@ -6113,7 +10384,6 @@ const RECENT_VIDEOS = [
     description: "일본인은 안간다는 일본섬에 대책없이 몸만 가면 생기는 일",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 치앙마이 주요 명소 (2026-09-21)
   {
     id: "auto-1xmq4Lm3K7g",
     creator: "시칠리안",
@@ -6131,7 +10401,6 @@ const RECENT_VIDEOS = [
     description: "다시 뜨는 태국 여행, 이제 이렇게 가셔야 합니다!! [방콕, 치앙마이 한달살기 몰아보기]",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 하노이 주요 명소 (2026-08-22)
   {
     id: "auto-REvB_KJ47wI",
     creator: "시칠리안",
@@ -6149,7 +10418,6 @@ const RECENT_VIDEOS = [
     description: "여기가 진짜 베트남이다.. 정신 똑바로 차려야 살아남는 하노이 탐방기",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 발리 주요 명소 (2026-08-22)
   {
     id: "auto-8q0ZZ-9arwQ",
     creator: "시칠리안",
@@ -6167,7 +10435,6 @@ const RECENT_VIDEOS = [
     description: "여기 길리 맞아..? 놀랍도록 변해버린 발리 옆 길리섬 최신 근황",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 바르셀로나 주요 명소 (2026-07-23)
   {
     id: "auto-fLFtw2LLcqI",
     creator: "시칠리안",
@@ -6185,7 +10452,6 @@ const RECENT_VIDEOS = [
     description: "불안한 치안, 소매치기로 악명 높다는 바르셀로나 최신 근황",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 로마 주요 명소 (2026-06-23)
   {
     id: "auto-skuN5U-8NBo",
     creator: "시칠리안",
@@ -6203,7 +10469,6 @@ const RECENT_VIDEOS = [
     description: "오버투어리즘, 소매치기, 높은 물가로 혼란스럽다는 로마 최신 근황",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 시드니 주요 명소 (2026-06-23)
   {
     id: "auto-kyGDuaJadVY",
     creator: "시칠리안",
@@ -6221,7 +10486,6 @@ const RECENT_VIDEOS = [
     description: "한국인들이 일하러 왔다가 눌러 앉는다는 이 곳, 이민을 간다면 바로 여기다! [호주 몰아보기]",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 제주 주요 명소 (2026-06-23)
   {
     id: "auto-jEYFeQAUWVU",
     creator: "시칠리안",
@@ -6239,7 +10503,6 @@ const RECENT_VIDEOS = [
     description: "제주도보다 더 좋다는, 신비의 섬 비양도에서 캠핑 하면 생기는 일",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 나트랑 주요 명소 (2026-05-24)
   {
     id: "auto-vBwgdJ0r7Uk",
     creator: "시칠리안",
@@ -6257,7 +10520,6 @@ const RECENT_VIDEOS = [
     description: "비행기 값 빼고 모든게 가성비 넘치는 대만족 나트랑 여행",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 나트랑 주요 명소 (2026-05-24)
   {
     id: "auto-ZMr8EpWmBHc",
     creator: "시칠리안",
@@ -6275,7 +10537,6 @@ const RECENT_VIDEOS = [
     description: "치솟는 유류세, 여행 취소 위기에도 한국인이 넘쳐난다는 나트랑 최신근황",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 파리 주요 명소 (2026-05-24)
   {
     id: "auto-s-43srqMUdE",
     creator: "시칠리안",
@@ -6293,7 +10554,6 @@ const RECENT_VIDEOS = [
     description: "이 돈 주고 간다 vs 안간다?? 충격적인 7박8일 파리 여행 경비 공개",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 파리 주요 명소 (2026-04-24)
   {
     id: "auto--R47Y9a2w2k",
     creator: "시칠리안",
@@ -6311,7 +10571,6 @@ const RECENT_VIDEOS = [
     description: "미친 환율에도 사오면 이득인 대만족 파리 쇼핑 리스트",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 파리 주요 명소 (2026-04-24)
   {
     id: "auto-fC5K9_OWh2g",
     creator: "시칠리안",
@@ -6329,7 +10588,6 @@ const RECENT_VIDEOS = [
     description: "미친 물가, 최악의 환율, 치안까지 엉망이라는 파리의 놀라운 최신 근황",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 발리 주요 명소 (2026-04-24)
   {
     id: "auto-bAynPhN7KwE",
     creator: "시칠리안",
@@ -6347,7 +10605,6 @@ const RECENT_VIDEOS = [
     description: "더 이상 예전 같지 않은 발리, 이제 이렇게 가셔야 합니다! [몰아보기]",
     highlights: []
   },
-  // [신규 자동 수집] 시칠리안 - 오키나와 주요 명소 (2026-04-24)
   {
     id: "auto-2vA7L_c8AY8",
     creator: "시칠리안",
@@ -6365,7 +10622,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 딱 두 시간인데 바다, 쇼핑, 맛집이 넘쳐나는 오키나와 여행",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 타이베이 주요 명소 (2026-10-14)
   {
     id: "auto-_5xLbEGlk34",
     creator: "곽튜브",
@@ -6383,7 +10639,6 @@ const RECENT_VIDEOS = [
     description: "동네친구 네명이서 렌트카 로드트립 한바퀴 - 대만(1)",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 뉴욕 주요 명소 (2026-07-21)
   {
     id: "auto-HdgVr1uWSr0",
     creator: "곽튜브",
@@ -6401,7 +10656,6 @@ const RECENT_VIDEOS = [
     description: "심각한 물가에 충격받은 라스베가스 여행기 - 미국(上)",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 멕시코시티 주요 명소 (2026-07-21)
   {
     id: "auto-_kg3CzJEVus",
     creator: "곽튜브",
@@ -6419,7 +10673,6 @@ const RECENT_VIDEOS = [
     description: "월드컵으로 난리난 멕시코에서 살아남기 - 멕시코(2)",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 도쿄 주요 명소 (2026-06-21)
   {
     id: "auto-gHywti2XwQY",
     creator: "곽튜브",
@@ -6437,7 +10690,6 @@ const RECENT_VIDEOS = [
     description: "사랑찾아 일본까지 가서 소개팅한 사연 - 첫사랑 대모험(2)",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 서울 주요 명소 (2026-06-21)
   {
     id: "auto-a3BXldls6I0",
     creator: "곽튜브",
@@ -6455,7 +10707,6 @@ const RECENT_VIDEOS = [
     description: "서울에서 땅끝까지 전국 먹방라이딩 - 자전거(下)",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 후쿠오카 주요 명소 (2026-04-22)
   {
     id: "auto-rIT42al2QiY",
     creator: "곽튜브",
@@ -6473,7 +10724,6 @@ const RECENT_VIDEOS = [
     description: "14시간 일본 최장거리 야간버스 탑승기 - 후쿠오카(下)",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 후쿠오카 주요 명소 (2026-04-22)
   {
     id: "auto-1VLVU37_U6Y",
     creator: "곽튜브",
@@ -6491,7 +10741,6 @@ const RECENT_VIDEOS = [
     description: "15년전 물가 수준의 충격적인 초가성비 여행지 - 후쿠오카(上)",
     highlights: []
   },
-  // [신규 자동 수집] 곽튜브 - 뉴욕 주요 명소 (2026-03-23)
   {
     id: "auto-mpR_HcJ3Szc",
     creator: "곽튜브",
@@ -6509,7 +10758,6 @@ const RECENT_VIDEOS = [
     description: "미쳐버린 달러 속 미국여행기",
     highlights: []
   },
-  // [신규 자동 수집] 원지의 하루 - 두바이 버즈 알아랍 (2026-06-21)
   {
     id: "auto-KDTJHA4jJ-I",
     creator: "원지의 하루",
@@ -6527,7 +10775,6 @@ const RECENT_VIDEOS = [
     description: "도대체가 누울 틈을 주지않는 7성급 호텔",
     highlights: []
   },
-  // [신규 자동 수집] 원지의 하루 - 로스앤젤레스 LA (2026-04-22)
   {
     id: "auto-I4yVCcU4xPY",
     creator: "원지의 하루",
@@ -6545,7 +10792,6 @@ const RECENT_VIDEOS = [
     description: "LA하숙집 동기, 억대연봉남 근황",
     highlights: []
   },
-  // [신규 자동 수집] 원지의 하루 - 로스앤젤레스 LA (2026-03-23)
   {
     id: "auto-CQ819dGJvnA",
     creator: "원지의 하루",
@@ -6563,7 +10809,6 @@ const RECENT_VIDEOS = [
     description: "전 LA주민의 참새 방아간 대오픈 ",
     highlights: []
   },
-  // [신규 자동 수집] 채코제 - 마나도 주요 명소 (2026-05-22)
   {
     id: "auto-r3EneXYE10Q",
     creator: "채코제",
@@ -6581,7 +10826,6 @@ const RECENT_VIDEOS = [
     description: "세계여행 8년 차, **도파민 최대치 찍은 날 - 마나도(下)",
     highlights: []
   },
-  // [신규 자동 수집] 채코제 - 마나도 주요 명소 (2026-04-22)
   {
     id: "auto-ydcg92XF9Kc",
     creator: "채코제",
@@ -6599,7 +10843,6 @@ const RECENT_VIDEOS = [
     description: "신규 취항한 **올해 가장 핫할 동남아 휴양지 - 마나도(上)",
     highlights: []
   },
-  // [신규 자동 수집] 채코제 - 서울 주요 명소 (2026-04-22)
   {
     id: "auto-bM3o72_cSWI",
     creator: "채코제",
@@ -6617,7 +10860,6 @@ const RECENT_VIDEOS = [
     description: "생일날 처음 손주를 본 엄마와 서울 여행",
     highlights: []
   },
-  // [신규 자동 수집] 채코제 - 서울 주요 명소 (2025-12-23)
   {
     id: "auto-EURRLlAVUJU",
     creator: "채코제",
@@ -6635,7 +10877,6 @@ const RECENT_VIDEOS = [
     description: "1년만에 끝나버린 서울 생활",
     highlights: []
   },
-  // [신규 자동 수집] 여행가 제이 - 태안 (2026-03-23)
   {
     id: "auto-GG6B_LCps_4",
     creator: "여행가 제이",
@@ -6653,7 +10894,6 @@ const RECENT_VIDEOS = [
     description: "먹어본 적 없는 태안에만 있는 희귀한 한국음식들",
     highlights: []
   },
-  // [신규 자동 수집] 노마드션 - 이스탄불 주요 명소 (2026-10-16)
   {
     id: "auto-G9q2t8GMgMU",
     creator: "노마드션",
@@ -6671,7 +10911,6 @@ const RECENT_VIDEOS = [
     description: "1년에 물가가 30% 오르는 나라, 서민들은 어떻게 살아갈까? - 튀르키예 (2)",
     highlights: []
   },
-  // [신규 자동 수집] 노마드션 - 상하이 주요 명소 (2026-03-23)
   {
     id: "auto-NUrkL_89TJ0",
     creator: "노마드션",
@@ -6689,7 +10928,6 @@ const RECENT_VIDEOS = [
     description: "최고의 가성비 여행, 중국 1등 여행지는? - 중국여행",
     highlights: []
   },
-  // [신규 자동 수집] 캡틴따거 - 상하이 주요 명소 (2026-06-21)
   {
     id: "auto-1JiBAHdFBIs",
     creator: "캡틴따거",
@@ -6707,7 +10945,6 @@ const RECENT_VIDEOS = [
     description: "2년 전에 만났던 중국 시골 소녀 근황 - [특별편]",
     highlights: []
   },
-  // [신규 자동 수집] 캡틴따거 - 상하이 주요 명소 (2026-06-21)
   {
     id: "auto-rNsoHRFAf1g",
     creator: "캡틴따거",
@@ -6725,7 +10962,6 @@ const RECENT_VIDEOS = [
     description: "중국 시골 펜션에서 보내는 여유로운 하루 - [49] (Feat.육식맨)",
     highlights: []
   },
-  // [신규 자동 수집] 캡틴따거 - 뉴욕 주요 명소 (2026-03-23)
   {
     id: "auto--Sm2CX-rNH0",
     creator: "캡틴따거",
@@ -6743,7 +10979,6 @@ const RECENT_VIDEOS = [
     description: "근무했던 미국 공군기지 근처 가보기 - [41] (Feat.배우 남태우)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 산티아고 주요 명소 (2026-07-21)
   {
     id: "auto-DWa7Pv_k25Q",
     creator: "캐럿맨 여행기",
@@ -6761,7 +10996,6 @@ const RECENT_VIDEOS = [
     description: "소매치기가 판치는 칠레 산티아고 여행 현실 후기 - 칠레 🇨🇱 (3)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 산티아고 주요 명소 (2026-06-21)
   {
     id: "auto-MRDSwae5qv0",
     creator: "캐럿맨 여행기",
@@ -6779,7 +11013,6 @@ const RECENT_VIDEOS = [
     description: "칠레 육로 국경에서 진짜 죽을뻔 했던 사연 - 칠레 🇨🇱 (1)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 우유니 주요 명소 (2026-05-22)
   {
     id: "auto-V4PT3mR0P7I",
     creator: "캐럿맨 여행기",
@@ -6797,7 +11030,6 @@ const RECENT_VIDEOS = [
     description: "꿈의 여행지 '우유니 소금사막' 절망편. 최악 이였던 이유 - 볼리비아 🇧🇴 (1)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-05-22)
   {
     id: "auto-0ofMLzInKpc",
     creator: "캐럿맨 여행기",
@@ -6815,7 +11047,6 @@ const RECENT_VIDEOS = [
     description: "북유럽 친구들과 함께한 콜롬비아 시골마을 호스텔 배낭여행 일상 - 🇨🇴 콜롬비아 (8)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-03-23)
   {
     id: "auto-CQOyHJ5npGE",
     creator: "캐럿맨 여행기",
@@ -6833,7 +11064,6 @@ const RECENT_VIDEOS = [
     description: "세계 최고 마약왕이 만든 콜롬비아 최대 슬럼가 대반전 후기 - 🇨🇴 콜롬비아 (7)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-03-23)
   {
     id: "auto-xqHeyJFY8qY",
     creator: "캐럿맨 여행기",
@@ -6851,7 +11081,6 @@ const RECENT_VIDEOS = [
     description: "우연히 만난 모르는 친구들과 7억년 전 소금 성당 쇼트트립 - 🇨🇴 콜롬비아 (6)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-03-23)
   {
     id: "auto-ohNM_gjUstQ",
     creator: "캐럿맨 여행기",
@@ -6869,7 +11098,6 @@ const RECENT_VIDEOS = [
     description: "중남미 1위 최대규모 클럽에서 일어난 충격적인 일들 - 🇨🇴 콜롬비아 (5)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-03-23)
   {
     id: "auto-baCrHVNVUnQ",
     creator: "캐럿맨 여행기",
@@ -6887,7 +11115,6 @@ const RECENT_VIDEOS = [
     description: "끊임없이 플러팅 하는 콜롬비아 한국어 능력자 여동생과 함께한 7박8일 휴식기 - 🇨🇴 콜롬비아 (4)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-02-21)
   {
     id: "auto-pfnQNiRkWIw",
     creator: "캐럿맨 여행기",
@@ -6905,7 +11132,6 @@ const RECENT_VIDEOS = [
     description: "노빠꾸 호스텔 여직원과 함께한 콜롬비아 1등 맛집들 탐방 (ft.소 불알 국밥) - 🇨🇴 콜롬비아 (3)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-02-21)
   {
     id: "auto-fQE3fsGsVPI",
     creator: "캐럿맨 여행기",
@@ -6923,7 +11149,6 @@ const RECENT_VIDEOS = [
     description: "자기만 따라 나오라는 호스텔 여직원.. 콜롬비아 전통 음식과 진짜 커피의 맛 탐방 - 🇨🇴 콜롬비아 (2)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 보고타 주요 명소 (2026-02-21)
   {
     id: "auto-r0OkYAKAI3Y",
     creator: "캐럿맨 여행기",
@@ -6941,7 +11166,6 @@ const RECENT_VIDEOS = [
     description: "모두가 나를 좋아해주는 '대반전 국가' 20시간 입국기 - 🇨🇴 콜롬비아 (1)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 몬테레이 주요 명소 (2026-02-21)
   {
     id: "auto-A44aQ3083Ic",
     creator: "캐럿맨 여행기",
@@ -6959,7 +11183,6 @@ const RECENT_VIDEOS = [
     description: "내 방에 노숙자가 들어왔다. 전재산 도난 당하고 여행 중단 (범인을 찾아서) - 🇲🇽 마지막화",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 멕시코시티 주요 명소 (2026-02-21)
   {
     id: "auto-VOsEtt2luLw",
     creator: "캐럿맨 여행기",
@@ -6977,7 +11200,6 @@ const RECENT_VIDEOS = [
     description: "그녀의 초호화 대저택에 초대받다, 그리고 부모님과의 만남 - 🇲🇽 멕시코 (17)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 멕시코시티 주요 명소 (2026-01-22)
   {
     id: "auto-huNqmvaUIsw",
     creator: "캐럿맨 여행기",
@@ -6995,7 +11217,6 @@ const RECENT_VIDEOS = [
     description: "산책하다 마주친 이상형, 첫 만남에 그녀의 대학교로 초대받은 사연 - 🇲🇽 멕시코 (16)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 멕시코시티 주요 명소 (2026-01-22)
   {
     id: "auto-T8YxezBWWRE",
     creator: "캐럿맨 여행기",
@@ -7013,7 +11234,6 @@ const RECENT_VIDEOS = [
     description: "멕시코 여행중 가장 열받았던 날, 그리고 지나가던 취객의 반전 - 🇲🇽 멕시코 (15)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 멕시코시티 주요 명소 (2026-01-22)
   {
     id: "auto-sOEsUUks7Sc",
     creator: "캐럿맨 여행기",
@@ -7031,7 +11251,6 @@ const RECENT_VIDEOS = [
     description: "한국인 혼자 멕시코 클럽에 가면 생기는 재밌는 일 들, 그리고 이들에게 실망한 이유 - 🇲🇽 멕시코 (14)",
     highlights: []
   },
-  // [신규 자동 수집] 캐럿맨 여행기 - 멕시코시티 주요 명소 (2026-01-22)
   {
     id: "auto-VBOGOwRIgzs",
     creator: "캐럿맨 여행기",
@@ -7049,7 +11268,6 @@ const RECENT_VIDEOS = [
     description: "새벽 2시 쫒겨남, 멕시코 ㅁ약 사범과 우연히 같은 방에서 하룻 밤을 보내게 된 사연 - 🇲🇽 멕시코 (13)",
     highlights: []
   },
-  // [신규 자동 수집] 희철리즘 - 아디스아바바 주요 명소 (2026-04-22)
   {
     id: "auto-3XkOxnBpmMM",
     creator: "희철리즘",
@@ -7067,7 +11285,6 @@ const RECENT_VIDEOS = [
     description: "한국인은 이해가 어려운 에티오피아에서의 기괴한 하루[5]🇪🇹",
     highlights: []
   },
-  // [신규 자동 수집] 희철리즘 - 아디스아바바 주요 명소 (2026-04-22)
   {
     id: "auto-Auf4BsHpZHU",
     creator: "희철리즘",
@@ -7085,7 +11302,6 @@ const RECENT_VIDEOS = [
     description: "\"강남이랑 가격이 같아요\" 월급 9만원 에티오피아 부촌의 믿기지 않는 럭셔리 일상[4]🇪🇹",
     highlights: []
   },
-  // [신규 자동 수집] 희철리즘 - 아디스아바바 주요 명소 (2026-04-22)
   {
     id: "auto-aMeBi6ghVNg",
     creator: "희철리즘",
@@ -7103,7 +11319,6 @@ const RECENT_VIDEOS = [
     description: "한국전쟁 참전 이후.. 한국을 도왔다는 이유로 무너진 ‘에티오피아 한국마을’ 일상[3]🇪🇹",
     highlights: []
   },
-  // [신규 자동 수집] 희철리즘 - 아디스아바바 주요 명소 (2026-04-22)
   {
     id: "auto-kEz1dyOLyrs",
     creator: "희철리즘",
@@ -7121,7 +11336,6 @@ const RECENT_VIDEOS = [
     description: "\"우린 자존심이 세요\" 다른 국가들과는 너무 다른 그들만의 세상, '에티오피아' 입국[1]🇪🇹",
     highlights: []
   },
-  // [신규 자동 수집] 또떠남 - 타이베이 주요 명소 (2026-06-21)
   {
     id: "auto-psBkF8cdOhk",
     creator: "또떠남",
@@ -7139,7 +11353,6 @@ const RECENT_VIDEOS = [
     description: "사장이 직접 비행기 모는(?) 5성급 항공사 수준 | 스타럭스 항공 부산 김해-대만 타이베이 비즈니스&이코노미 후기",
     highlights: []
   },
-  // [신규 자동 수집] 초마드 - 방콕 주요 명소 (2026-10-15)
   {
     id: "auto-NVunNe8QA08",
     creator: "초마드",
@@ -7157,7 +11370,6 @@ const RECENT_VIDEOS = [
     description: "역대급 객실뷰🏙️🇹🇭올해 생긴 방콕 초신상 럭셔리 호텔 VLOG🌷 (ft. 안다즈방콕)",
     highlights: []
   },
-  // [신규 자동 수집] 초마드 - 파리 주요 명소 (2026-10-12)
   {
     id: "auto-fUPt8tV0K8k",
     creator: "초마드",
@@ -7175,7 +11387,6 @@ const RECENT_VIDEOS = [
     description: "미슐랭 기내식🍽️🇫🇷에어프랑스 비즈니스 스위트 13시간 VLOG✈️(ft. 일등석인줄😳)",
     highlights: []
   },
-  // [신규 자동 수집] 초마드 - 멜버른 주요 명소 (2026-03-23)
   {
     id: "auto-LR0gKwo-WY4",
     creator: "초마드",
@@ -7193,7 +11404,6 @@ const RECENT_VIDEOS = [
     description: "2주 뒤 출국✈️호주 멜버른 어학연수 다녀올게요!🇦🇺같이 준비해요‼️(ft. 벼락치기 영어공부🫧)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 광주 주요 명소 (2026-10-08)
   {
     id: "auto-4caxYuytOXw",
     creator: "육식맨 YOOXICMAN",
@@ -7211,7 +11421,6 @@ const RECENT_VIDEOS = [
     description: "광주 5구 육식 올스타전 : 전국구 초네임드 식당들 누려봤습니다 (생고기, 오리탕, 애호박찌개, 송정떡갈비)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 나폴리 주요 명소 (2026-08-20)
   {
     id: "auto-A8JCiuX02dA",
     creator: "육식맨 YOOXICMAN",
@@ -7229,7 +11438,6 @@ const RECENT_VIDEOS = [
     description: "나폴리 맛피아 권성준 셰프의 새로운 레스토랑 \"베수비오\" 탐방기 (11코스 인당 22만원)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 멕시코시티 주요 명소 (2026-08-20)
   {
     id: "auto-oT45KKFCfUc",
     creator: "육식맨 YOOXICMAN",
@@ -7247,7 +11455,6 @@ const RECENT_VIDEOS = [
     description: "텍스멕스의 모든 것 : 여러분이 아는 멕시코 음식은 99% 미국산입니다 (Tex-Mex Tour in Texas)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 청두 사천 (2026-07-21)
   {
     id: "auto-JwVgn_7xgEc",
     creator: "육식맨 YOOXICMAN",
@@ -7265,7 +11472,6 @@ const RECENT_VIDEOS = [
     description: "사천 현지에 실존하는 '사천 짜파게티' 얼마나 매울까? (feat. 캡틴따거)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 청두 사천 (2026-07-21)
   {
     id: "auto-DJwyKpI3BUs",
     creator: "육식맨 YOOXICMAN",
@@ -7283,7 +11489,6 @@ const RECENT_VIDEOS = [
     description: "수주육편 : 사실 ‘마라 제육'은 100년 전부터 존재했습니다 (水煮肉片 사천 정통 레시피)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 청두 사천 (2026-06-21)
   {
     id: "auto-MpvXALv8HkQ",
     creator: "육식맨 YOOXICMAN",
@@ -7301,7 +11506,6 @@ const RECENT_VIDEOS = [
     description: "동파족발 : 동파육의 상위호환? 동파육은 완전히 멘탈이 나가버렸습니다 (东坡肘子 사천 정통 레시피)",
     highlights: []
   },
-  // [신규 자동 수집] 육식맨 YOOXICMAN - 청두 사천 (2026-06-21)
   {
     id: "auto-Su5hBlpR7ek",
     creator: "육식맨 YOOXICMAN",
@@ -7319,7 +11523,6 @@ const RECENT_VIDEOS = [
     description: "사천 육식 올스타전 : 단돈 10만원으로 미슐랭 1스타에서 메뉴 8개 박살냈습니다 (with 캡틴따거)",
     highlights: []
   },
-  // [신규 자동 수집] 잡식맨 JOBXICMAN - 센다이 주요 명소 (2026-09-19)
   {
     id: "auto-tS6pLcGOL0Q",
     creator: "잡식맨 JOBXICMAN",
@@ -7337,7 +11540,6 @@ const RECENT_VIDEOS = [
     description: "겁나 무섭다는 관음상 구경한 뒤 먹는 센다이 최고의 라멘 (타베로그 평점 1위)",
     highlights: []
   },
-  // [신규 자동 수집] 잡식맨 JOBXICMAN - 나폴리 주요 명소 (2026-09-19)
   {
     id: "auto-L0J5uS2ELus",
     creator: "잡식맨 JOBXICMAN",
@@ -7355,7 +11557,6 @@ const RECENT_VIDEOS = [
     description: "양이 너무 많아서 무한으로 즐기는 '돼지 파스타' 나폴리탄 스파게티",
     highlights: []
   },
-  // [신규 자동 수집] 잡식맨 JOBXICMAN - 상하이 주요 명소 (2026-06-21)
   {
     id: "auto-DT2aTFNuYG8",
     creator: "잡식맨 JOBXICMAN",
@@ -7373,7 +11574,6 @@ const RECENT_VIDEOS = [
     description: "캡틴따거에게 학벌의 의미를 묻다 (중국 칭화대 앞 훠궈집 올로케)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-10-17)
   {
     id: "auto-DQlnF0Z-RyM",
     creator: "황세유기",
@@ -7391,7 +11591,6 @@ const RECENT_VIDEOS = [
     description: "\"베트남 여행 생각보다 비싸던데요?\" 준비하다 이런 생각 드셨다면 필수 시청",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-09-19)
   {
     id: "auto-P1LPmrvGUtY",
     creator: "황세유기",
@@ -7409,7 +11608,6 @@ const RECENT_VIDEOS = [
     description: "베트남여행 가족과 간다면 제발 이건 피하세요｜12년차가 말리는 4가지",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-09-19)
   {
     id: "auto-tCPlS7KzErs",
     creator: "황세유기",
@@ -7427,7 +11625,6 @@ const RECENT_VIDEOS = [
     description: "베트남 12년 살고도 여행 말리는 사람 5가지 유형",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-08-20)
   {
     id: "auto-kbm2E5FMMgk",
     creator: "황세유기",
@@ -7445,7 +11642,6 @@ const RECENT_VIDEOS = [
     description: "베트남 입국 서류 또 바뀝니다.. 환전, 유심, 공항 차량까지 이 영상 하나로 끝",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-06-21)
   {
     id: "auto-k8lNLKCXd5g",
     creator: "황세유기",
@@ -7463,7 +11659,6 @@ const RECENT_VIDEOS = [
     description: "한국 월급 그대로 벌며 베트남 사는 사람들 (베트남 12년차의 솔직 리포트)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 나트랑 주요 명소 (2026-06-21)
   {
     id: "auto-8OmoE9EA2lw",
     creator: "황세유기",
@@ -7481,7 +11676,6 @@ const RECENT_VIDEOS = [
     description: "한국인 싹 사라진 베트남 나트랑, 12년차가 직접 가보고 놀란 이유",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 하노이 주요 명소 (2026-05-22)
   {
     id: "auto-K5EgoEjJezw",
     creator: "황세유기",
@@ -7499,7 +11693,6 @@ const RECENT_VIDEOS = [
     description: "베트남 여행, 지금 '여기'는 제발 피하세요 (다낭 나트랑 푸꾸옥 하노이 호치민 우기 태풍 대비법)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-05-22)
   {
     id: "auto-Tll5QQEEOeM",
     creator: "황세유기",
@@ -7517,7 +11710,6 @@ const RECENT_VIDEOS = [
     description: "한국 복귀? 이미 늦었습니다... 베트남 12년차의 충격 고백",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-04-22)
   {
     id: "auto-XvCNrvAUEaU",
     creator: "황세유기",
@@ -7535,7 +11727,6 @@ const RECENT_VIDEOS = [
     description: "[긴급] 2026 베트남 물가 충격... 안 보면 무조건 손해입니다 (돈 아끼는 4대 필살기)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2026-02-21)
   {
     id: "auto-TzfvWcqc6wY",
     creator: "황세유기",
@@ -7553,7 +11744,6 @@ const RECENT_VIDEOS = [
     description: "2026 베트남 여행, 체류 시 다 털리고 싶지 않으면 꼭 보세요 (환전, 사기, 개인정보)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 하노이 주요 명소 (2026-01-22)
   {
     id: "auto-Wsnmg8Iua34",
     creator: "황세유기",
@@ -7571,7 +11761,6 @@ const RECENT_VIDEOS = [
     description: "호치민 vs 하노이, 11년차가 정해주는 당신에게 맞는 도시",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-12-23)
   {
     id: "auto-RVZvDaFqMLg",
     creator: "황세유기",
@@ -7589,7 +11778,6 @@ const RECENT_VIDEOS = [
     description: "사람들이 잘 모르는 베트남 11년 차의 실체.. 이래서 못 떠납니다",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 호치민 주요 명소 (2025-12-23)
   {
     id: "auto-aZRIoEPoV7w",
     creator: "황세유기",
@@ -7607,7 +11795,6 @@ const RECENT_VIDEOS = [
     description: "월 130만 원으로 베트남 살기 2탄 - 호치민편 (다낭보다 낫다?)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-11-23)
   {
     id: "auto-mUG7T9qBmdo",
     creator: "황세유기",
@@ -7625,7 +11812,6 @@ const RECENT_VIDEOS = [
     description: "베트남 상황 긴급 점검 - 모르면 돈 날리는 환전, 카드 사용법",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-11-23)
   {
     id: "auto-IqiehoIrdoY",
     creator: "황세유기",
@@ -7643,7 +11829,6 @@ const RECENT_VIDEOS = [
     description: "베트남에 온 한국인이 99% 망할 수 있는 이유 3가지",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-11-23)
   {
     id: "auto-sJiF66JGXHQ",
     creator: "황세유기",
@@ -7661,7 +11846,6 @@ const RECENT_VIDEOS = [
     description: "12년차가 겪은 베트남 치안의 진실",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-11-23)
   {
     id: "auto-ioUHiZL8Eac",
     creator: "황세유기",
@@ -7679,7 +11863,6 @@ const RECENT_VIDEOS = [
     description: "베트남 10년 살며 망해온 경험으로 알게된, '실패 없는 겨울 베트남 여행지' 4곳",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-cizc7lVIBcY",
     creator: "황세유기",
@@ -7697,7 +11880,6 @@ const RECENT_VIDEOS = [
     description: "베트남에서 피땀흘려 번 1200만 원, 그 마지막 이야기",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-nB3Voni1pxc",
     creator: "황세유기",
@@ -7715,7 +11897,6 @@ const RECENT_VIDEOS = [
     description: "헬조선? 베트남 살아보니... 사실 천국이었습니다",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-bEtBrC0d6Ug",
     creator: "황세유기",
@@ -7733,7 +11914,6 @@ const RECENT_VIDEOS = [
     description: "99%는 착각하는 베트남 워라밸의 현실",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-ybTWnQAmHT4",
     creator: "황세유기",
@@ -7751,7 +11931,6 @@ const RECENT_VIDEOS = [
     description: "베트남에서 불법도 합법이 되는(?) 암묵적 룰 TOP 4",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 푸꾸옥 주요 명소 (2025-10-19)
   {
     id: "auto-ccft5ZpIAbo",
     creator: "황세유기",
@@ -7769,7 +11948,6 @@ const RECENT_VIDEOS = [
     description: "베트남 11년차도 속수무책으로 당해버린 푸꾸옥… 가기 전 꼭 알고 가세요",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-Bcs4UyTznjA",
     creator: "황세유기",
@@ -7787,7 +11965,6 @@ const RECENT_VIDEOS = [
     description: "이거 안 챙기면 집에 가야 합니다.. 베트남 여행 필수품 2년만의 업데이트",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-c712D7W7wgU",
     creator: "황세유기",
@@ -7805,7 +11982,6 @@ const RECENT_VIDEOS = [
     description: "베트남 여행 비용 현실… 무조건 싸지 않습니다, 이제 이 정도는 들고 오세요.",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-fn1ckIKUjrI",
     creator: "황세유기",
@@ -7823,7 +11999,6 @@ const RECENT_VIDEOS = [
     description: "베트남에서 이런 행동? 무시당하고 뒷말 돌아요 (한국인만 모름)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-xtUnntpmj3o",
     creator: "황세유기",
@@ -7841,7 +12016,6 @@ const RECENT_VIDEOS = [
     description: "여행사가 절대 알려주지 않는 베트남 기념품의 진실 (11년차 현지인 양심 폭로)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-0xwpCPbFivo",
     creator: "황세유기",
@@ -7859,7 +12033,6 @@ const RECENT_VIDEOS = [
     description: "월 130만 원으로 베트남 살이 가능? 불가능? - 1탄 다낭편 (11년차의 현실 분석)",
     highlights: []
   },
-  // [신규 자동 수집] 황세유기 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-xUXLkgJCaCo",
     creator: "황세유기",
@@ -7877,7 +12050,6 @@ const RECENT_VIDEOS = [
     description: "베트남 아무때나 오면 망합니다.. 제발 이건 알고 오세요! [베트남 도시별 여행 최적기/비추시기/연휴정보]",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 뉴욕 주요 명소 (2026-09-28)
   {
     id: "auto-aoulvT4e2HY",
     creator: "트립콤파니",
@@ -7895,7 +12067,6 @@ const RECENT_VIDEOS = [
     description: "🇺🇸 미국 그랜드 캐니언 여행을 0부터 제대로 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 다카 주요 명소 (2026-09-19)
   {
     id: "auto-64_lBt1-qjI",
     creator: "트립콤파니",
@@ -7913,7 +12084,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵  일본 다카마츠 여행을 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 로스앤젤레스 주요 명소 (2026-09-19)
   {
     id: "auto-RI1pDi-RSTs",
     creator: "트립콤파니",
@@ -7931,7 +12101,6 @@ const RECENT_VIDEOS = [
     description: "🇺🇸 로스앤젤레스를 0부터 제대로 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 뉴욕 주요 명소 (2026-07-21)
   {
     id: "auto-kQvzvbDlM3Y",
     creator: "트립콤파니",
@@ -7949,7 +12118,6 @@ const RECENT_VIDEOS = [
     description: "🇺🇸 뉴욕 여행은 진짜 끝내주지만 또 은근 아쉬운 18가지 이유",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 도쿄 주요 명소 (2026-07-21)
   {
     id: "auto-K5QuD9tuN-M",
     creator: "트립콤파니",
@@ -7967,7 +12135,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 일본 미야코지마 여행을 0부터 제대로 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 베네치아 주요 명소 (2026-05-22)
   {
     id: "auto-wM2WtUXC4AY",
     creator: "트립콤파니",
@@ -7985,7 +12152,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇹 베네치아 여행을 0부터 전부 다 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 도쿄 주요 명소 (2026-05-22)
   {
     id: "auto-_BP2eBe2WLM",
     creator: "트립콤파니",
@@ -8003,7 +12169,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 구마모토 여행을 0부터 제대로 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 도쿄 주요 명소 (2026-01-22)
   {
     id: "auto-vpxdbVF_bi8",
     creator: "트립콤파니",
@@ -8021,7 +12186,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 나가사키를 0부터 제대로 이해하는 법",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 런던 주요 명소 (2025-12-23)
   {
     id: "auto-fOgyDKv1JGA",
     creator: "트립콤파니",
@@ -8039,7 +12203,6 @@ const RECENT_VIDEOS = [
     description: "🇬🇧 영국 런던 여행에서 할 수 있는 31가지 핵심 컨텐츠",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 런던 주요 명소 (2025-12-23)
   {
     id: "auto-C1-1mAKEeGk",
     creator: "트립콤파니",
@@ -8057,7 +12220,6 @@ const RECENT_VIDEOS = [
     description: "🇬🇧 런던 여행이 대만족스럽거나 애매한 17가지 이유",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 파리 주요 명소 (2025-11-23)
   {
     id: "auto-9FkSOZ1tsyE",
     creator: "트립콤파니",
@@ -8075,7 +12237,6 @@ const RECENT_VIDEOS = [
     description: "🇨🇵 파리 여행에서 할 수 있는 30가지 핵심 컨텐츠",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 파리 주요 명소 (2025-11-23)
   {
     id: "auto-BkVY_xkmHG0",
     creator: "트립콤파니",
@@ -8093,7 +12254,6 @@ const RECENT_VIDEOS = [
     description: "🇫🇷 프랑스 파리를 0부터 제대로 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 오키나와 주요 명소 (2025-10-19)
   {
     id: "auto-4Nf9LK8xfXg",
     creator: "트립콤파니",
@@ -8111,7 +12271,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 여러분이 오키나와에서 해야하는 26가지 컨텐츠",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 멜버른 주요 명소 (2025-10-19)
   {
     id: "auto-YZMYI2QXz2o",
     creator: "트립콤파니",
@@ -8129,7 +12288,6 @@ const RECENT_VIDEOS = [
     description: "🇦🇺호주 멜버른 여행, 재밌거나 굳이 안가도 되는 16가지 이유",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 런던 주요 명소 (2025-10-19)
   {
     id: "auto-ihR9AzAtDEI",
     creator: "트립콤파니",
@@ -8147,7 +12305,6 @@ const RECENT_VIDEOS = [
     description: "🇬🇧 영국 런던을 0부터 제대로 이해하는 법",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 오키나와 주요 명소 (2025-10-19)
   {
     id: "auto-tUGaSeqvyyE",
     creator: "트립콤파니",
@@ -8165,7 +12322,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 오키나와를 18분만에 완벽하게 이해하는 법",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 오키나와 주요 명소 (2025-10-19)
   {
     id: "auto-niqEIdmsBvg",
     creator: "트립콤파니",
@@ -8183,7 +12339,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 최고의 36시간 오키나와 여행코스를 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 발리 주요 명소 (2025-10-19)
   {
     id: "auto-PSQ5x-1YInU",
     creator: "트립콤파니",
@@ -8201,7 +12356,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇩 최고의 36시간 발리 여행코스를 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 타이베이 주요 명소 (2025-10-19)
   {
     id: "auto-OFEh6fBf-H8",
     creator: "트립콤파니",
@@ -8219,7 +12373,6 @@ const RECENT_VIDEOS = [
     description: "🇹🇼 최고의 36시간 타이베이 여행코스를 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 치앙마이 주요 명소 (2025-10-19)
   {
     id: "auto-8N0KfIdqup4",
     creator: "트립콤파니",
@@ -8237,7 +12390,6 @@ const RECENT_VIDEOS = [
     description: "🇹🇭 최고의 36시간 치앙마이 여행코스를 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 푸켓 주요 명소 (2025-10-19)
   {
     id: "auto-DAohbYv3sw4",
     creator: "트립콤파니",
@@ -8255,7 +12407,6 @@ const RECENT_VIDEOS = [
     description: "🇹🇭 최고의 36시간 푸켓 여행코스를 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 오키나와 주요 명소 (2025-10-19)
   {
     id: "auto-MWbfp551t1s",
     creator: "트립콤파니",
@@ -8273,7 +12424,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 오키나와 여행이 환상적이거나 까다로운 16가지 이유",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 나트랑 주요 명소 (2025-10-19)
   {
     id: "auto-k7GyR_G81II",
     creator: "트립콤파니",
@@ -8291,7 +12441,6 @@ const RECENT_VIDEOS = [
     description: "🇻🇳 최고의 36시간 나트랑 여행코스를 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 오키나와 주요 명소 (2025-10-19)
   {
     id: "auto-HVdEBcJW1Pc",
     creator: "트립콤파니",
@@ -8309,7 +12458,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 오키나와 케라마군도의 스노클링과 바다거북 구경",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 하노이 주요 명소 (2025-10-19)
   {
     id: "auto-UQ6NdEtzwpo",
     creator: "트립콤파니",
@@ -8327,7 +12475,6 @@ const RECENT_VIDEOS = [
     description: "🇻🇳 최고의 36시간 하노이 여행코스를 알려드림",
     highlights: []
   },
-  // [신규 자동 수집] 트립콤파니 - 다낭 주요 명소 (2025-10-19)
   {
     id: "auto-BRsamVNhwbY",
     creator: "트립콤파니",
@@ -8345,7 +12492,6 @@ const RECENT_VIDEOS = [
     description: "🇻🇳 최고의 36시간 다낭 여행코스를 알려드림",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 포르투갈 리스본 - 리스본 주요 명소 (2026-10-15)
   {
     id: "auto-j8Rz4ZJ3Ww0",
     creator: "잡식맨 JOBXICMAN",
@@ -8363,7 +12509,6 @@ const RECENT_VIDEOS = [
     description: "호날두의 발자취를 찾아서... 포르투갈 리스본 호동생 로드 (호날두 호텔, 호날두 맛집, 호날두 굿즈 등) Siuuuuuuuuuuuuuuuuu",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 포르투갈 리스본 - 리스본 주요 명소 (2026-10-13)
   {
     id: "auto-mij_EuMSwxM",
     creator: "육식맨 YOOXICMAN",
@@ -8381,7 +12526,6 @@ const RECENT_VIDEOS = [
     description: "포르투갈 육식 탐방기 : 호날두에 가려진 의외의 육식 강국 (리스본 올로케)",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 광주광역시 - 광주광역시 창억떡 본점 (2026-10-12)
   {
     id: "auto-bjKM4Ug9xqQ",
     creator: "잡식맨 JOBXICMAN",
@@ -8399,7 +12543,6 @@ const RECENT_VIDEOS = [
     description: "이 두가지 음식 때문이라면 당장 내일도 광주에 갈 수 있습니다 (창억떡, 뽀뽀통닭)",
     highlights: []
   },
-  // [잰잰바리] 일본 나고야 - 나고야 주요 명소 (2026-10-12)
   {
     id: "auto-v6Uhb2o-9b8",
     creator: "잰잰바리",
@@ -8417,7 +12560,6 @@ const RECENT_VIDEOS = [
     description: "일본의 노잼도시 나고야 방문기",
     highlights: []
   },
-  // [채코제] 리히텐슈타인 파두츠 - 리히텐슈타인 수도 파두츠 & 파두츠 성 (Vaduz) (2026-10-09)
   {
     id: "auto-pRii5kyUL2w",
     creator: "채코제",
@@ -8435,7 +12577,6 @@ const RECENT_VIDEOS = [
     description: "스위스 옆에 숨겨진 평균 연봉 3억 미니 국가 【리히텐슈타인】",
     highlights: []
   },
-  // [원지의 하루] 핀란드 헬싱키 - 헬싱키 주요 명소 (2026-10-08)
   {
     id: "auto-h1vwQ93WwjE",
     creator: "원지의 하루",
@@ -8453,7 +12594,6 @@ const RECENT_VIDEOS = [
     description: "하나같이 골때리는 핀란드 사우나들",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 일본 센다이 - 센다이 로바타야키 원조집 (향토주정 로바타) (2026-10-06)
   {
     id: "auto-MRdrACNp5qs",
     creator: "잡식맨 JOBXICMAN",
@@ -8471,7 +12611,6 @@ const RECENT_VIDEOS = [
     description: "일본 여행 가면 꼭 가야 할 '로바타야키', 원조집으로 가봤습니다",
     highlights: []
   },
-  // [캡틴따거] 네덜란드 암스테르담 - 암스테르담 주요 명소 (2026-10-06)
   {
     id: "auto-JwywcO79x-M",
     creator: "캡틴따거",
@@ -8489,7 +12628,6 @@ const RECENT_VIDEOS = [
     description: "혼돈과 충격의 암스테르담 탐방 - [64]",
     highlights: []
   },
-  // [또떠남] 일본 오사카 - 오사카 주요 명소 (2026-10-05)
   {
     id: "auto-Xvn5qWtFS9U",
     creator: "또떠남",
@@ -8507,7 +12645,6 @@ const RECENT_VIDEOS = [
     description: "오사카 호텔 예약은 이 영상 하나만 보면 됩니다.",
     highlights: []
   },
-  // [노마드션] 튀르키예 이스탄불 - 이스탄불 주요 명소 (2026-10-04)
   {
     id: "auto-zy2RbwKiimM",
     creator: "노마드션",
@@ -8525,7 +12662,6 @@ const RECENT_VIDEOS = [
     description: "캠핑카 세계여행 5개월만에 첫 1평 집들이  - 튀르키예 (1)",
     highlights: []
   },
-  // [초마드] 일본 오사카 - 오사카성 공원 앞 파티나 오사카 (Patina Osaka) (2026-10-04)
   {
     id: "auto-lORCoG0HJEc",
     creator: "초마드",
@@ -8543,7 +12679,6 @@ const RECENT_VIDEOS = [
     description: "세계1위 호텔 등극🥇 오사카성이 눈앞에 보이는 오사카 파티나 호텔 브이로그🇯🇵(ft. 초럭셔리 호텔 탄생🥂)",
     highlights: []
   },
-  // [황세유기] 베트남 호치민 - 호치민 주요 명소 (2026-10-02)
   {
     id: "auto-jsyMbyaA1DA",
     creator: "황세유기",
@@ -8561,7 +12696,6 @@ const RECENT_VIDEOS = [
     description: "호치민 여행, 알고 오면 완전히 달라지는 4가지 (12년차의 하루)",
     highlights: []
   },
-  // [원지의 하루] 핀란드 헬싱키 - 헬싱키 주요 명소 (2026-10-01)
   {
     id: "auto-fZ5s-bsbzxo",
     creator: "원지의 하루",
@@ -8579,7 +12713,6 @@ const RECENT_VIDEOS = [
     description: "직접 와보니,, 소문보다 더한 핀란드인들",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 대한민국 담양·나주 - 담양 신식당 한우떡갈비 & 나주곰탕 하얀집 (2026-09-30)
   {
     id: "auto-c-OD3N4BMg0",
     creator: "육식맨 YOOXICMAN",
@@ -8597,7 +12730,6 @@ const RECENT_VIDEOS = [
     description: "전남광주 육식 탐방기 : 오픈런은 기본, 재료 마감이 일상인 초근본 식당들 (담양 한우 떡갈비, 나주곰탕, 광양 토종닭구이, 화순 흑염소)",
     highlights: []
   },
-  // [곽튜브] 튀르키예 알라니아 - 튀르키예 지중해 휴양도시 알라니아 (Alanya) (2026-09-30)
   {
     id: "auto-mPfWTTs4O6s",
     creator: "곽튜브",
@@ -8615,7 +12747,6 @@ const RECENT_VIDEOS = [
     description: "쉽지않은 국가대표 선수의 튀르키예 리그 도전기 - 튀르키예(下)",
     highlights: []
   },
-  // [캡틴따거] 네덜란드 헤이그 - 네덜란드 헤이그 이준 열사 기념관 & 호르큼 하멜 기념관 (2026-09-30)
   {
     id: "auto-J5ZTx_5DEos",
     creator: "캡틴따거",
@@ -8633,7 +12764,6 @@ const RECENT_VIDEOS = [
     description: "네덜란드에 숨겨진 한국의 흔적들을 찾아서 - [63]",
     highlights: []
   },
-  // [희철리즘] 일본 나고야 - 나고야 주요 명소 (2026-09-30)
   {
     id: "auto-E84SvIAwWHY",
     creator: "희철리즘",
@@ -8651,7 +12781,6 @@ const RECENT_VIDEOS = [
     description: "\"이제야 사람 몰린다\" 일본 20번 넘게 가본 사람의 첫 나고야 여행 🇯🇵",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 서울 - 서울 서대문구 홍은동 피자 아일랜드 (2026-09-29)
   {
     id: "auto-itjNt4as89A",
     creator: "잡식맨 JOBXICMAN",
@@ -8669,7 +12798,6 @@ const RECENT_VIDEOS = [
     description: "전국에서 치즈가 가장 많은 피자. 피자 덕후들의 성지 \"피자 아일랜드\" (서울 서대문구)",
     highlights: []
   },
-  // [채코제] 스위스 인터라켄 - 인터라켄 주요 명소 (2026-09-26)
   {
     id: "auto-jGUIFJok3wQ",
     creator: "채코제",
@@ -8687,7 +12815,6 @@ const RECENT_VIDEOS = [
     description: "물가지옥 스위스 **나홀로 여행하는 법",
     highlights: []
   },
-  // [또떠남] 일본 오사카 - 오사카 주요 명소 (2026-09-26)
   {
     id: "auto-DK0XrbsnXUo",
     creator: "또떠남",
@@ -8705,7 +12832,6 @@ const RECENT_VIDEOS = [
     description: "2026 최신 오사카 맛집·카페·3박4일 코스까지❗️ 영상 하나로 오사카 여행 총정리하기",
     highlights: []
   },
-  // [곽튜브] 튀르키예 알라니아 - 튀르키예 알라니아 해변 & 성채 전망대 (2026-09-24)
   {
     id: "auto-JM0J3cv9-d8",
     creator: "곽튜브",
@@ -8723,7 +12849,6 @@ const RECENT_VIDEOS = [
     description: "터키에서 뛰는 대한민국 국가대표와 동거생활 - 튀르키예(上)",
     highlights: []
   },
-  // [캐럿맨 여행기] 아르헨티나 부에노스아이레스 - 부에노스아이레스 주요 명소 (2026-09-24)
   {
     id: "auto-3XVFLnKkELk",
     creator: "캐럿맨 여행기",
@@ -8741,7 +12866,6 @@ const RECENT_VIDEOS = [
     description: "아르헨티나 에서 납치를 당했습니다. 그날의 끔찍한 기억",
     highlights: []
   },
-  // [희철리즘] 아일랜드 더블린 - 더블린 주요 명소 (2026-09-24)
   {
     id: "auto-KNNif6Pv6QI",
     creator: "희철리즘",
@@ -8759,7 +12883,6 @@ const RECENT_VIDEOS = [
     description: "서유럽의 수치였던 아일랜드, 세계 최고 부국이 된 놀라운 일상🇮🇪",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 튀르키예 이스탄불 - 이스탄불 & 뮌헨 미식 투어 (2026-09-23)
   {
     id: "auto-B6iZTLWsE3I",
     creator: "육식맨 YOOXICMAN",
@@ -8777,7 +12900,6 @@ const RECENT_VIDEOS = [
     description: "독일&터키 육식기행 1시간 몰아보기 (소시지, 슈바인학센, 케밥, 카이막, 솔트배, 옥토버페스트)",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 용인 - 용인 고기리막국수 (2026-09-22)
   {
     id: "auto-y7_AEgz50lE",
     creator: "잡식맨 JOBXICMAN",
@@ -8795,7 +12917,6 @@ const RECENT_VIDEOS = [
     description: "들기름 막국수의 원조, 전국에서 가장 유명한 막국수 식당에 다녀왔습니다",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 대한민국 무안·광양 - 무안 몽탄 두암식당 짚불삼겹살 & 삼대광양불고기 (2026-09-21)
   {
     id: "auto-0kP3r2A5uvs",
     creator: "육식맨 YOOXICMAN",
@@ -8813,7 +12934,6 @@ const RECENT_VIDEOS = [
     description: "전남광주 육식 올스타전 : 남도의 끝에서 고기를 외치다 (몽탄 짚불삼겹살, 광양불고기, 해남 닭코스, 창평국밥)",
     highlights: []
   },
-  // [초마드] 중국 싼야(하이난) - 하이난 싼야 로즈우드 리조트 인피니티풀 (Rosewood Sanya) (2026-09-20)
   {
     id: "auto-GVwj1uNNNm8",
     creator: "초마드",
@@ -8831,7 +12951,6 @@ const RECENT_VIDEOS = [
     description: "역대급 인피니티풀🌊🏖️ 중국 하이난 초럭셔리 호텔 로즈우드 싼야 브이로그✨(ft. 대륙의 하와이☀️)",
     highlights: []
   },
-  // [희철리즘] 방글라데시 다카 - 다카 주요 명소 (2026-09-17)
   {
     id: "auto-c9Pb1QJj23Q",
     creator: "희철리즘",
@@ -8849,7 +12968,6 @@ const RECENT_VIDEOS = [
     description: "예상과는 전혀 다른, 방글라데시의 극과 극 충격 일상[모아보기]🇧🇩",
     highlights: []
   },
-  // [곽튜브] 미국 마이애미 - 마이애미 주요 명소 (2026-09-16)
   {
     id: "auto-tDsuC5lROsw",
     creator: "곽튜브",
@@ -8867,7 +12985,6 @@ const RECENT_VIDEOS = [
     description: "환락과 도파민의 도시 마이애미 나홀로 생존기",
     highlights: []
   },
-  // [초마드] 중국 하이난 - 하이난 주요 명소 (2026-09-16)
   {
     id: "auto-NXtG2oFWEF4",
     creator: "초마드",
@@ -8885,7 +13002,6 @@ const RECENT_VIDEOS = [
     description: "대륙의 섬🏝️🇨🇳중국 하이난 싼야 여행 드라이브코스 BEST5🚗🩵(ft. 여긴 꼭가봐😉)",
     highlights: []
   },
-  // [또떠남] 대한민국 제주 - 제주시 탑동 해안 신상 5성급 호텔 (2026-09-13)
   {
     id: "auto-Tu7AX-952x0",
     creator: "또떠남",
@@ -8903,7 +13019,6 @@ const RECENT_VIDEOS = [
     description: "1,300억 신상 제주 호텔, 솔직히 이 돈 내고 갈 만할까요?",
     highlights: []
   },
-  // [원지의 하루] 대한민국 인천 - 인천국제공항 제1·2여객터미널 캡슐호텔 & 라운지 (2026-09-10)
   {
     id: "auto-Vh233uzzZAg",
     creator: "원지의 하루",
@@ -8921,7 +13036,6 @@ const RECENT_VIDEOS = [
     description: "안가면 손해인 인천공항 숨은 공간들",
     highlights: []
   },
-  // [여행가 제이] 일본 미야자키 - 미야자키 니시타치바나초 이자카야 거리 (2026-09-10)
   {
     id: "auto-xEHCKH4Tmtw",
     creator: "여행가 제이",
@@ -8939,7 +13053,6 @@ const RECENT_VIDEOS = [
     description: "미친 맛집들만 모여있는 일본 소도시",
     highlights: []
   },
-  // [희철리즘] 튀르키예 이스탄불 - 이스탄불 주요 명소 (2026-09-10)
   {
     id: "auto-ItJjLjrGKjk",
     creator: "희철리즘",
@@ -8957,7 +13070,6 @@ const RECENT_VIDEOS = [
     description: "\"그냥 죽으라는 거죠\" 8년만에 서민들의 지옥이 된 튀르키예의 몰락🇹🇷",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 인도네시아 마나도 - 북술라웨시 마나도 & 토모혼 전통시장 (2026-09-08)
   {
     id: "auto-lw7v7pDCFcI",
     creator: "육식맨 YOOXICMAN",
@@ -8975,7 +13087,6 @@ const RECENT_VIDEOS = [
     description: "인도네시아 육식 올스타전 : 1만원으로 삼시세끼 가능한 가성비 육식 성지",
     highlights: []
   },
-  // [캡틴따거] 룩셈부르크 룩셈부르크 - 룩셈부르크 주요 명소 (2026-09-05)
   {
     id: "auto-xKHpqK7_19g",
     creator: "캡틴따거",
@@ -8993,7 +13104,6 @@ const RECENT_VIDEOS = [
     description: "룩셈부르크가 세계에서 가장 잘 사는 이유 - [61]",
     highlights: []
   },
-  // [채코제] 대한민국 경산 - 경북 경산시 영남대학교 캠퍼스 & 대학가 맛집 (2026-09-04)
   {
     id: "auto-yWBEGlu9Ijg",
     creator: "채코제",
@@ -9011,7 +13121,6 @@ const RECENT_VIDEOS = [
     description: "**20년지기 (구)매니저 개미와 대학교 추억 여행",
     highlights: []
   },
-  // [희철리즘] 폴란드 크라쿠프 - 폴란드 고도 크라쿠프 중앙 시장광장 (Rynek Główny) (2026-09-04)
   {
     id: "auto-SvYfEpUGSIU",
     creator: "희철리즘",
@@ -9029,7 +13138,6 @@ const RECENT_VIDEOS = [
     description: "유럽이 가는 길을 거부한, 폴란드에서 마주한 반전 일상🇵🇱",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 일본 도쿄 - 도쿄 주요 명소 (2026-09-03)
   {
     id: "auto-JW1zyPhG59U",
     creator: "잡식맨 JOBXICMAN",
@@ -9047,7 +13155,6 @@ const RECENT_VIDEOS = [
     description: "일본 롯데리아에서 만난 궁극의 롯스러움 \"장어덮밥 버거\"",
     highlights: []
   },
-  // [원지의 하루] 일본 도쿄 - 도쿄 주요 명소 (2026-09-03)
   {
     id: "auto-HKKN7RLwV-k",
     creator: "원지의 하루",
@@ -9065,7 +13172,6 @@ const RECENT_VIDEOS = [
     description: "신기한 규칙이 넘치는 일본 미니멀 호텔",
     highlights: []
   },
-  // [쏘이 The World] 이탈리아 소렌토·아말피 - 이탈리아 남부 소렌토 & 아말피 해안 마을 (2026-08-31)
   {
     id: "auto-DlF6IRdax6c",
     creator: "쏘이 The World",
@@ -9083,7 +13189,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇹 그동안 소식이 뜸했던 이유.. 임산부의 겁없는 이탈리아 남부 태교여행",
     highlights: []
   },
-  // [캡틴따거] 대만 진먼(금문도) - 대만 진먼섬(금문도) 자이산 갱도 & 금문고량주 양조장 (2026-08-30)
   {
     id: "auto-5BsqHllFL8Y",
     creator: "캡틴따거",
@@ -9101,7 +13206,6 @@ const RECENT_VIDEOS = [
     description: "구독자 10명과 함께한 대만 안보여행 - 특별편",
     highlights: []
   },
-  // [초마드] 중국 싼야(하이난) - 하이난 더 에디션 싼야 리조트 (The Sanya EDITION) (2026-08-30)
   {
     id: "auto-o12_oS6U3cg",
     creator: "초마드",
@@ -9119,7 +13223,6 @@ const RECENT_VIDEOS = [
     description: "중국판 하와이🇨🇳🏝️하이난 대륙의 호캉스 경험해보기✨(ft. 세계최대 에디션호텔😵)",
     highlights: []
   },
-  // [여행가 제이] 일본 미야자키 - 미야자키 아오시마 해변 & 야키토리 골목 (2026-08-29)
   {
     id: "auto-24ioggLLHKM",
     creator: "여행가 제이",
@@ -9137,7 +13240,6 @@ const RECENT_VIDEOS = [
     description: "노총각 세남자들의 고독한 일본 소도시 여행",
     highlights: []
   },
-  // [채코제] 태국 푸켓 - 푸켓 주요 명소 (2026-08-28)
   {
     id: "auto--nDWArooOPY",
     creator: "채코제",
@@ -9155,7 +13257,6 @@ const RECENT_VIDEOS = [
     description: "한때 **한국인 신혼여행지 1위 태국 푸켓의 현재",
     highlights: []
   },
-  // [초마드] 중국 싼야(하이난) - 하이난 아틀란티스 싼야 수중 호텔 & 워터파크 (Atlantis Sanya) (2026-08-28)
   {
     id: "auto-1QYUNnb7hiE",
     creator: "초마드",
@@ -9173,7 +13274,6 @@ const RECENT_VIDEOS = [
     description: "1박2000만원💸 중국 7성급 수중 호텔 브이로그🪼🐠 (ft. 아틀란티스 싼야🇨🇳)",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 일본 센다이 - 센다이 우설(규탄) 거리 & 아지타스케 (2026-08-25)
   {
     id: "auto-al5OP1ur6RQ",
     creator: "육식맨 YOOXICMAN",
@@ -9191,7 +13291,6 @@ const RECENT_VIDEOS = [
     description: "우설 원조도시 탐방기 : 엔저 환율에 딱 좋은 고급 특수부위 \"소 혀 요리의 모든 것\" (일본 센다이 올로케)",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 일본 센다이 - 센다이 윙 멘즈 헤드스파 (WING SENDAI) (2026-08-24)
   {
     id: "auto-ZSooQ_QpcDs",
     creator: "잡식맨 JOBXICMAN",
@@ -9209,7 +13308,6 @@ const RECENT_VIDEOS = [
     description: "국내 도입이 시급한 일본 문화 \"남성 헤드 마사지\" (탈모 아님)",
     highlights: []
   },
-  // [노마드션] 모로코 마라케시 - 마라케시 주요 명소 (2026-08-20)
   {
     id: "auto-zFbfv5eggp4",
     creator: "노마드션",
@@ -9227,7 +13325,6 @@ const RECENT_VIDEOS = [
     description: "한국인에게 역대급 친절한 모로코 시골, 정착할까요? - 캠핑카 세계여행 (16)",
     highlights: []
   },
-  // [채코제] 몽골 울란바토르 - 울란바토르 주요 명소 (2026-08-15)
   {
     id: "auto-bfoI1x03hN8",
     creator: "채코제",
@@ -9245,7 +13342,6 @@ const RECENT_VIDEOS = [
     description: "몽골인, 한국인 서로 구별 못하는 대한몽골국 상황",
     highlights: []
   },
-  // [여행가 제이] 필리핀 시아르가오 - 시아르가오 제너럴 루나 & 클라우드 나인 서핑 해변 (Siargao) (2026-08-13)
   {
     id: "auto-U8_SIPcDC3g",
     creator: "여행가 제이",
@@ -9263,7 +13359,6 @@ const RECENT_VIDEOS = [
     description: "필리핀 외딴 섬, 만원짜리 혼성도미토리 생활",
     highlights: []
   },
-  // [희철리즘] 키르기스스탄 비슈케크 - 비슈케크 주요 명소 (2026-08-13)
   {
     id: "auto-ALQ0zmLr33Y",
     creator: "희철리즘",
@@ -9281,7 +13376,6 @@ const RECENT_VIDEOS = [
     description: "GDP 160위, 아시아 최빈국 '도시빈민'의 거짓말 같은 일상[2]🇰🇬",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 오스트리아 비엔나 - 비엔나 주요 명소 (2026-08-12)
   {
     id: "auto--dVQOErwnh0",
     creator: "육식맨 YOOXICMAN",
@@ -9299,7 +13393,6 @@ const RECENT_VIDEOS = [
     description: "비엔나 소시지 탐방기 : 한국인은 잘 모르는 치즈 줄줄 “진짜” 비엔나 소시지",
     highlights: []
   },
-  // [캐럿맨 여행기] 아르헨티나 엘찰텐 - 파타고니아 엘찰텐 피츠로이 일출 뷰포인트 (Monte Fitz Roy) (2026-08-11)
   {
     id: "auto-itdJAoEySNo",
     creator: "캐럿맨 여행기",
@@ -9317,7 +13410,6 @@ const RECENT_VIDEOS = [
     description: "남미 시골마을 히치하이킹 로드드립, 위험할까? (ft.역대급 황금 일출) - 파타고니아 (3) 🏔️",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 제주 - 제주 주요 명소 (2026-08-10)
   {
     id: "auto-KmHuyW0lMy8",
     creator: "잡식맨 JOBXICMAN",
@@ -9335,7 +13427,6 @@ const RECENT_VIDEOS = [
     description: "전국 최고의 탄수화물 요리. 혈당 스파이크 로켓 발사대. 제주 명물 \"모닥치기\"",
     highlights: []
   },
-  // [또떠남] 일본 비에이·삿포로 - 홋카이도 비에이·후라노 & 토마무 리조트 3박 4일 코스 (2026-08-07)
   {
     id: "auto-UGEzue4aSyI",
     creator: "또떠남",
@@ -9353,7 +13444,6 @@ const RECENT_VIDEOS = [
     description: "이보다 더 완벽할 수 없는, 홋카이도 3박 4일",
     highlights: []
   },
-  // [걷다가] 대만 타이난 - 타이난 야시장 & 구시가지 (2026-08-04)
   {
     id: "auto-FNInPOQ5WKg",
     creator: "걷다가",
@@ -9371,7 +13461,6 @@ const RECENT_VIDEOS = [
     description: "대만에서 여행물가 제일 저렴한 도시 1위",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 오스트리아 비엔나 - 비엔나 주요 명소 (2026-08-03)
   {
     id: "auto-wbdwFlJthfQ",
     creator: "잡식맨 JOBXICMAN",
@@ -9389,7 +13478,6 @@ const RECENT_VIDEOS = [
     description: "비엔나가 알고 보니 등갈비의 도시였습니다",
     highlights: []
   },
-  // [캐럿맨 여행기] 아르헨티나 파타고니아 - 파타고니아 주요 명소 (2026-08-02)
   {
     id: "auto-vNCH3oHFRu4",
     creator: "캐럿맨 여행기",
@@ -9399,15 +13487,14 @@ const RECENT_VIDEOS = [
     country: "아르헨티나",
     city: "파타고니아",
     locationName: "파타고니아 주요 명소",
-    lat: -50.0,
-    lng: -70.0,
+    lat: -50,
+    lng: -70,
     tags: ["파타고니아", "아르헨티나", "유튜브추천", "여행"],
     tip: "캐럿맨의 생생한 모험이 담긴 파타고니아 추천 스팟입니다.",
     publishedAt: "2026-08-02",
     description: "나를 너무 좋아하는 아르헨티나 시골 사람들 + 역대급 자연 로드트립 - 파타고니아 (2) 🏔️",
     highlights: []
   },
-  // [원지의 하루] 일본 교토 - 교토 주요 명소 (2026-07-30)
   {
     id: "auto-gjjBn_DCFxc",
     creator: "원지의 하루",
@@ -9425,7 +13512,6 @@ const RECENT_VIDEOS = [
     description: "교토 최고의 맛도리를 찾아서",
     highlights: []
   },
-  // [희철리즘] 키르기스스탄 비슈케크 - 비슈케크 주요 명소 (2026-07-30)
   {
     id: "auto-Xc7lflv1WtE",
     creator: "희철리즘",
@@ -9443,7 +13529,6 @@ const RECENT_VIDEOS = [
     description: "\"이 정도는 경악스러운데요\" 구 소련, 키르기스스탄의 믿기 힘든 일상과 현실[1]🇰🇬",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 서귀포시 - 서귀포시 연돈 (2026-07-27)
   {
     id: "auto-sguEF8zBHak",
     creator: "잡식맨 JOBXICMAN",
@@ -9461,7 +13546,6 @@ const RECENT_VIDEOS = [
     description: "더본코리아 논란 이후 '연돈' 주말 점심 웨이팅 상태",
     highlights: []
   },
-  // [잰잰바리] 카자흐스탄 알마티 - 알마티 주요 명소 (2026-07-27)
   {
     id: "auto-qDe5Oi0sTTI",
     creator: "잰잰바리",
@@ -9479,7 +13563,6 @@ const RECENT_VIDEOS = [
     description: "여행자들이 카자흐스탄 알마티를 사랑하는 이유",
     highlights: []
   },
-  // [빠니보틀] 방글라데시 다카 - 다카 주요 명소 (2026-07-26)
   {
     id: "auto-qfa68Qxfekc",
     creator: "빠니보틀",
@@ -9497,7 +13580,6 @@ const RECENT_VIDEOS = [
     description: "인구밀도 최고 나라에서의 뱃길 여행기【방글라데시2】",
     highlights: []
   },
-  // [곽튜브] 미국 로스앤젤레스 - 로스앤젤레스 주요 명소 (2026-07-21)
   {
     id: "auto-uqdNETiO9n4",
     creator: "곽튜브",
@@ -9515,7 +13597,6 @@ const RECENT_VIDEOS = [
     description: "로스앤젤레스 햄버거 로드 48시간 - 미국(下)",
     highlights: []
   },
-  // [초마드] 태국 방콕 - 방콕 킹파워 마하나콘 더 스탠다드 방콕 (The Standard Bangkok) (2026-07-21)
   {
     id: "auto-LoHESYLGS7k",
     creator: "초마드",
@@ -9533,7 +13614,6 @@ const RECENT_VIDEOS = [
     description: "태국 초고층 호텔🍸✨방콕 여름 호캉스 브이로그🏖️버버리 수영장/마하나콘 전망대/애프터눈티💛(ft. 스탠다드호텔)",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 영주 - 경북 영주 중앙시장 랜떡 & 부석사 (2026-07-20)
   {
     id: "auto-pFX_BTJpTZs",
     creator: "잡식맨 JOBXICMAN",
@@ -9551,7 +13631,6 @@ const RECENT_VIDEOS = [
     description: "쯔양님의 '인생 맛집' 떡볶이를 먹어봤습니다. (경상북도 영주시)",
     highlights: []
   },
-  // [걷다가] 대만 지룽 - 지룽 먀오커우 야시장 & 정빈어항 (2026-07-16)
   {
     id: "auto-qAgu8S1yeS4",
     creator: "걷다가",
@@ -9569,7 +13648,6 @@ const RECENT_VIDEOS = [
     description: "한국인 99%는 모르는 대만 미식 여행지",
     highlights: []
   },
-  // [또떠남] 대한민국 거제 - 경남 거제도 바람의 언덕 & 해안 드라이브 코스 (2026-07-16)
   {
     id: "auto-8zsUDdB69-w",
     creator: "또떠남",
@@ -9587,7 +13665,6 @@ const RECENT_VIDEOS = [
     description: "[다큐]억대 연봉을 포기한 뒤, 그가 선택한 삶 | 유튜브에 인생을 건 남자 | 거제도 출장 | 2026.07.16 방송",
     highlights: []
   },
-  // [희철리즘] 이집트 카이로 - 카이로 주요 명소 (2026-07-16)
   {
     id: "auto-ggjcFyih5SI",
     creator: "희철리즘",
@@ -9605,7 +13682,6 @@ const RECENT_VIDEOS = [
     description: "거리에 나오는 순간 피로도가 급격히 올라간다! 보고도 믿을 수 없는 국가, 이집트 여행 끝판왕🇪🇬 [모아보기]",
     highlights: []
   },
-  // [캐럿맨 여행기] 아르헨티나 파타고니아 - 파타고니아 주요 명소 (2026-07-15)
   {
     id: "auto-9swuJkwDk84",
     creator: "캐럿맨 여행기",
@@ -9615,15 +13691,14 @@ const RECENT_VIDEOS = [
     country: "아르헨티나",
     city: "파타고니아",
     locationName: "파타고니아 주요 명소",
-    lat: -50.0,
-    lng: -70.0,
+    lat: -50,
+    lng: -70,
     tags: ["파타고니아", "아르헨티나", "유튜브추천", "여행"],
     tip: "캐럿맨의 생생한 모험이 담긴 파타고니아 추천 스팟입니다.",
     publishedAt: "2026-07-15",
     description: "버스에서 우연히 만난 독일 여행자와 함께한 천국 같은 파타고니아 여행 - 파타고니아 (1) 🏔️",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 대한민국 제주 - 제주 주요 명소 (2026-07-13)
   {
     id: "auto-5kBntOa0GUE",
     creator: "육식맨 YOOXICMAN",
@@ -9641,7 +13716,6 @@ const RECENT_VIDEOS = [
     description: "제주 전통 육식 올스타전 : 원조와 근본 고기 식당으로만 가득 채운 2박 3일 (흑돼지, 돔베고기, 고기국수, 접짝뼈국, 고사리육개장, 몸국 등)",
     highlights: []
   },
-  // [잰잰바리] 몽골 홉스골 - 몽골 최북단 홉스골 호수 & 러시아 국경마을 항흐 (Hankh) (2026-07-13)
   {
     id: "auto-0O9eIgAUgQw",
     creator: "잰잰바리",
@@ -9659,7 +13733,6 @@ const RECENT_VIDEOS = [
     description: "몽골 러시아 최북단 국경마을",
     highlights: []
   },
-  // [채코제] 영국 런던 - 런던 주요 명소 (2026-07-12)
   {
     id: "auto-QYpbSBH3KXI",
     creator: "채코제",
@@ -9677,7 +13750,6 @@ const RECENT_VIDEOS = [
     description: "2,000원 넘는 파운드로 영국에서 기념품을 샀더니",
     highlights: []
   },
-  // [여행가 제이] 대한민국 서울 - 서울 주요 명소 (2026-07-12)
   {
     id: "auto-DIHS5uxKqWk",
     creator: "여행가 제이",
@@ -9695,7 +13767,6 @@ const RECENT_VIDEOS = [
     description: "(내비x 지도x) 서울에서 국도만 타고 남쪽으로 달리면 어디가 나올까?",
     highlights: []
   },
-  // [걷다가] 인도네시아 라부안바조 - 라부안바조 & 코모도 국립공원 (2026-07-11)
   {
     id: "auto-6hf5FECj1D4",
     creator: "걷다가",
@@ -9713,7 +13784,6 @@ const RECENT_VIDEOS = [
     description: "발리 다음으로 가장 뜨고 있는 휴양지",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 인도네시아 발리 - 발리 주요 명소 (2026-07-10)
   {
     id: "auto-HD9Uo7CFlfE",
     creator: "잡식맨 JOBXICMAN",
@@ -9731,7 +13801,6 @@ const RECENT_VIDEOS = [
     description: "이렇게까지 치즈를 먹길 바란 건 아니었어 (인도네시아 도미노피자)",
     highlights: []
   },
-  // [빠니보틀] 방글라데시 다카 - 다카 주요 명소 (2026-07-09)
   {
     id: "auto-Axghk4p6Qq8",
     creator: "빠니보틀",
@@ -9749,7 +13818,6 @@ const RECENT_VIDEOS = [
     description: "여행 난이도 최상급 나라【방글라데시1】",
     highlights: []
   },
-  // [채코제] 영국 런던 - 런던 첼시 레스토랑 고든 램지 본점 (Restaurant Gordon Ramsay) (2026-07-07)
   {
     id: "auto-I6os82F5ox4",
     creator: "채코제",
@@ -9767,7 +13835,6 @@ const RECENT_VIDEOS = [
     description: "“25년 연속 미슐랭 3스타” 고든램지 영국 본점 가봤더니",
     highlights: []
   },
-  // [캡틴따거] 영국 런던 - 런던 주요 명소 (2026-07-06)
   {
     id: "auto-E9_bosFOL5Y",
     creator: "캡틴따거",
@@ -9785,7 +13852,6 @@ const RECENT_VIDEOS = [
     description: "영국에 있는 친구 몰래 부모님 모셔가기 - [53]",
     highlights: []
   },
-  // [걷다가] 인도네시아 발리 - 발리 주요 명소 (2026-07-03)
   {
     id: "auto-eqhoqBOCWGw",
     creator: "걷다가",
@@ -9803,7 +13869,6 @@ const RECENT_VIDEOS = [
     description: "세계 1위 여행지 발리가 망가지는 과정",
     highlights: []
   },
-  // [또떠남] 영국 런던 - 런던 주요 명소 (2026-07-03)
   {
     id: "auto-crfqB_r7Ki4",
     creator: "또떠남",
@@ -9821,7 +13886,6 @@ const RECENT_VIDEOS = [
     description: "첫 출근은 여권 챙겨서 공항으로 오세요 | 신입 인턴 영국 런던 출장기🇬🇧",
     highlights: []
   },
-  // [초마드] 일본 후쿠오카 - 후쿠오카 주요 명소 (2026-07-03)
   {
     id: "auto-GhGheoKgXuY",
     creator: "초마드",
@@ -9839,7 +13903,6 @@ const RECENT_VIDEOS = [
     description: "후쿠오카 당일치기 여행🇯🇵🍜이치란라멘 본점/빈티지카메라/일본 명품 전당포/푸글렌 카페〰️🫪(ft. 8년지기 편집자❤️)",
     highlights: []
   },
-  // [곽튜브] 일본 스즈카 - 미에현 스즈카 (Suzuka) 소도시 로컬 탐방 (2026-07-01)
   {
     id: "auto-8JEcyfdBbSo",
     creator: "곽튜브",
@@ -9857,7 +13920,6 @@ const RECENT_VIDEOS = [
     description: "일본 시골마을 5부리그의 놀라운 근황",
     highlights: []
   },
-  // [쏘이 The World] 베트남 다낭 - 다낭 주요 명소 (2026-06-29)
   {
     id: "auto-T3a-n3VRQ6U",
     creator: "쏘이 The World",
@@ -9875,7 +13937,6 @@ const RECENT_VIDEOS = [
     description: "🇻🇳 한순간에 인생이 바뀐 임산부의 나홀로 2박4일 다낭 여행..",
     highlights: []
   },
-  // [걷다가] 대한민국 부산 - 부산 주요 명소 (2026-06-26)
   {
     id: "auto-dGqthCYY7wQ",
     creator: "걷다가",
@@ -9893,7 +13954,6 @@ const RECENT_VIDEOS = [
     description: "부산 현지인과 풀코스 여행2",
     highlights: []
   },
-  // [채코제] 체코 프라하 - 프라하 구시가지 로컬 호스파(맥주 펍) 투어 (2026-06-26)
   {
     id: "auto-J7pbrRCPFdw",
     creator: "채코제",
@@ -9911,7 +13971,6 @@ const RECENT_VIDEOS = [
     description: "세계에서 맥주를 가장 많이 마시는 나라(독일 아님)",
     highlights: []
   },
-  // [곽튜브] 멕시코 몬테레이 - 멕시코 몬테레이 BBVA 스타디움 (Estadio BBVA) (2026-06-25)
   {
     id: "auto-SNADGqnk0YM",
     creator: "곽튜브",
@@ -9929,7 +13988,6 @@ const RECENT_VIDEOS = [
     description: "끔찍했던 남아공전의 생생한 현장후기 - 멕시코(끝)",
     highlights: []
   },
-  // [원지의 하루] 호주 시드니 - 시드니 주요 명소 (2026-06-25)
   {
     id: "auto-r0fNPbsaUqk",
     creator: "원지의 하루",
@@ -9947,7 +14005,6 @@ const RECENT_VIDEOS = [
     description: "18년 만에 찾은 시드니에서..",
     highlights: []
   },
-  // [원지의 하루] 호주 시드니 - 시드니 주요 명소 (2026-06-22)
   {
     id: "auto-DW8Bo76pZWM",
     creator: "원지의 하루",
@@ -9965,7 +14022,6 @@ const RECENT_VIDEOS = [
     description: "분노주의 극대노 사건.. 망한 호주여행  (채코제, 캡틴따거)",
     highlights: []
   },
-  // [채코제] 호주 시드니 - 시드니 주요 명소 (2026-06-22)
   {
     id: "auto-rwC8ksqPJbY",
     creator: "채코제",
@@ -9983,7 +14039,6 @@ const RECENT_VIDEOS = [
     description: "무계획. 무생각. 무침회. 원지&캡틴따거와 3無 호주여행",
     highlights: []
   },
-  // [여행가 제이] 대한민국 제주 - 제주 주요 명소 (2026-06-22)
   {
     id: "auto-etCQiDsSaIo",
     creator: "여행가 제이",
@@ -10001,7 +14056,6 @@ const RECENT_VIDEOS = [
     description: "제주에서 만난 네 남녀의 낭만 가득 즉흥여행",
     highlights: []
   },
-  // [또떠남] 대한민국 서울 - 광진구 워커힐 호텔앤리조트 (그랜드 워커힐 서울) (2026-06-21)
   {
     id: "auto-EcMjQKi64Lg",
     creator: "또떠남",
@@ -10019,7 +14073,6 @@ const RECENT_VIDEOS = [
     description: "한강뷰 끝판왕 + 요즘 서울에서 가장 핫한 뷔페까지 | 워커힐 서울",
     highlights: []
   },
-  // [걷다가] 대한민국 부산 - 부산 주요 명소 (2026-06-19)
   {
     id: "auto-2UH_uKYN7Iw",
     creator: "걷다가",
@@ -10037,7 +14090,6 @@ const RECENT_VIDEOS = [
     description: "현지 가이드와 부산 풀코스 여행",
     highlights: []
   },
-  // [희철리즘] 베트남 하노이 - 하노이 주요 명소 (2026-06-18)
   {
     id: "auto-1rfI_MTjSw8",
     creator: "희철리즘",
@@ -10055,7 +14107,6 @@ const RECENT_VIDEOS = [
     description: "베트남 하노이에서 하루 100만원 쓰는 럭셔리 여행[2]🇻🇳",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 중국 베이징 - 베이징 주요 명소 (2026-06-17)
   {
     id: "auto-2Iz1blLKqXY",
     creator: "육식맨 YOOXICMAN",
@@ -10073,7 +14124,6 @@ const RECENT_VIDEOS = [
     description: "8천원 베이징덕 vs 14만원 베이징덕, 맛도 17배 차이일까?",
     highlights: []
   },
-  // [캡틴따거] 중국 베이징 - 베이징 사허따지 (沙河大集) 초대형 재래시장 (2026-06-17)
   {
     id: "auto-ps-U2qCJjHc",
     creator: "캡틴따거",
@@ -10091,7 +14141,6 @@ const RECENT_VIDEOS = [
     description: "충격적인 가격 순도100% 중국 베이징 재래시장 먹방투어 - [51] (Feat.육식맨)",
     highlights: []
   },
-  // [캐럿맨 여행기] 칠레 카레테라 아우스트랄 - 칠레 파타고니아 남부 종단도로 카레테라 아우스트랄 (Carretera Austral) (2026-06-15)
   {
     id: "auto-ua011SaQeqI",
     creator: "캐럿맨 여행기",
@@ -10109,7 +14158,6 @@ const RECENT_VIDEOS = [
     description: "처음 만난 브라질 여자와 함께한 트럭 짐칸 히치하이킹 여행 - 칠레 🇨🇱 (2)",
     highlights: []
   },
-  // [곽튜브] 멕시코 과달라하라 - 멕시코 과달라하라 아크론 스타디움 (Estadio Akron) (2026-06-12)
   {
     id: "auto-Q-kUbtSdkgY",
     creator: "곽튜브",
@@ -10127,7 +14175,6 @@ const RECENT_VIDEOS = [
     description: "기적의 월드컵 체코전 현장 하이라이트  - 멕시코(1)",
     highlights: []
   },
-  // [희철리즘] 베트남 호치민 - 호치민 빈홈 센트럴파크 & 랜드마크 81 부촌 지구 (2026-06-11)
   {
     id: "auto-H9glZ3po0qA",
     creator: "희철리즘",
@@ -10145,7 +14192,6 @@ const RECENT_VIDEOS = [
     description: "\"32평에 40억원\" 강남보다 비싸진 베트남 부촌.. 보고도 믿기 어려운 베트남의 변화된 일상[1]🇻🇳",
     highlights: []
   },
-  // [곽튜브] 라오스 방비엥 - 방비엥 주요 명소 (2026-06-10)
   {
     id: "auto-UZuQH_bZgk4",
     creator: "곽튜브",
@@ -10163,7 +14209,6 @@ const RECENT_VIDEOS = [
     description: "첫사랑과 재회한 모태솔로의 결말 - 라오스 下",
     highlights: []
   },
-  // [노마드션] 이탈리아 나폴리·아말피 - 이탈리아 남부 캄파니아 해안 캠핑카 로드트립 (2026-06-09)
   {
     id: "auto-b_TKOQzBNIE",
     creator: "노마드션",
@@ -10181,7 +14226,6 @@ const RECENT_VIDEOS = [
     description: "악명높은 이탈리아 남부 타스만 캠핑카 로드트립 - 캠핑카 세계여행 (8)",
     highlights: []
   },
-  // [초마드] 호주 멜버른 - 멜버른 주요 명소 (2026-06-08)
   {
     id: "auto-onKLIANiu0k",
     creator: "초마드",
@@ -10199,7 +14243,6 @@ const RECENT_VIDEOS = [
     description: "학교 안가는날🥳🇦🇺호주 주말 일상 제대로 즐기는 법.zip🔥(멜버른 맛집/카페/핫플/페스티벌✨)",
     highlights: []
   },
-  // [곽튜브] 라오스 방비엥 - 방비엥 주요 명소 (2026-06-07)
   {
     id: "auto-qu4vmjQFb7w",
     creator: "곽튜브",
@@ -10217,7 +14260,6 @@ const RECENT_VIDEOS = [
     description: "30년 모태솔로 그녀의 라오스에서 사랑찾기 - 라오스 上",
     highlights: []
   },
-  // [걷다가] 대한민국 강릉 - 강릉 주요 명소 (2026-06-05)
   {
     id: "auto-vXUhgGouMqo",
     creator: "걷다가",
@@ -10235,7 +14277,6 @@ const RECENT_VIDEOS = [
     description: "요즘 핫하다는 강릉 풀코스 여행",
     highlights: []
   },
-  // [또떠남] 태국 방콕 - 방콕 수라웡 신상 호텔 (voco Bangkok Surawong) (2026-06-05)
   {
     id: "auto-gtEMRLWnbSU",
     creator: "또떠남",
@@ -10253,7 +14294,6 @@ const RECENT_VIDEOS = [
     description: "40~50대 되기 전에 꼭 해야 되는 5가지 | 방콕 신상 호텔 추천",
     highlights: []
   },
-  // [희철리즘] 인도네시아 발리 - 발리 주요 명소 (2026-06-04)
   {
     id: "auto-2Dy8gupIlaA",
     creator: "희철리즘",
@@ -10271,7 +14311,6 @@ const RECENT_VIDEOS = [
     description: "사고,이혼 그리고 갈취..녹록치 않은 '지상천국' 발리에서 한국인의 삶🇮🇩",
     highlights: []
   },
-  // [초마드] 호주 멜버른 - 멜버른 주요 명소 (2026-06-03)
   {
     id: "auto-tLubG-l4VQ4",
     creator: "초마드",
@@ -10289,7 +14328,6 @@ const RECENT_VIDEOS = [
     description: "인싸력폭발🫪🔥멜버른 어학연수 수업일상 모음.zip🔖🇦🇺(ft. 외국인 친구 사귀기🧩)",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 서울 - 서울 종로5가 동대문 닭한마리 골목 (2026-06-02)
   {
     id: "auto-ldgumbIJeew",
     creator: "잡식맨 JOBXICMAN",
@@ -10307,7 +14345,6 @@ const RECENT_VIDEOS = [
     description: "일본인 관광객은 이걸 왜 먹을까? \"동대문 닭한마리\"",
     highlights: []
   },
-  // [곽튜브] 일본 오사카 - 오사카 도톤보리 & 우메다 데이트 코스 (2026-06-02)
   {
     id: "auto-1TdLBmJ8Rno",
     creator: "곽튜브",
@@ -10325,7 +14362,6 @@ const RECENT_VIDEOS = [
     description: "사랑이 이뤄진 낭만의 일본여행 끝 - 첫사랑 대모험(4)",
     highlights: []
   },
-  // [초마드] 인도네시아 발리 - 발리 누사두아 더 리츠칼튼 발리 (The Ritz-Carlton Bali) (2026-06-02)
   {
     id: "auto-VqPwbFhHTQ4",
     creator: "초마드",
@@ -10343,7 +14379,6 @@ const RECENT_VIDEOS = [
     description: "ENFP 3명모임ㅋ🫨🌈중국 왕홍친구랑 대환장 발리 풀빌라 브이로그🇮🇩(ft. 리츠칼튼 발리)",
     highlights: []
   },
-  // [여행가 제이] 대만 이란·자오시 - 타이베이 & 이란현 자오시 온천마을 (Jiaoxi) (2026-05-31)
   {
     id: "auto-8Pz2f9U4riE",
     creator: "여행가 제이",
@@ -10361,7 +14396,6 @@ const RECENT_VIDEOS = [
     description: "한국인 입맛 저격한 대만 1등 맛집 찾기",
     highlights: []
   },
-  // [또떠남] 스위스 인터라켄 - 인터라켄 주요 명소 (2026-05-31)
   {
     id: "auto-92RrVBYo_TE",
     creator: "또떠남",
@@ -10379,7 +14413,6 @@ const RECENT_VIDEOS = [
     description: "죽기 전에 꼭 가봐야 할 스위스 인생 호텔 모음🇨🇭",
     highlights: []
   },
-  // [캐럿맨 여행기] 볼리비아 우유니 - 볼리비아 우유니 소금사막 (Salar de Uyuni) (2026-05-29)
   {
     id: "auto-0Sn43o8bUzY",
     creator: "캐럿맨 여행기",
@@ -10397,7 +14430,6 @@ const RECENT_VIDEOS = [
     description: "일본 여사친들과 함께한 꿈의 여행지 '우유니 소금사막' 희망편. 천국에서의 48시간 - 볼리비아 🇧🇴 (2)",
     highlights: []
   },
-  // [초마드] 호주 시드니 - 시드니 주요 명소 (2026-05-29)
   {
     id: "auto-NXMFRENcWno",
     creator: "초마드",
@@ -10415,7 +14447,6 @@ const RECENT_VIDEOS = [
     description: "호주 어학연수 Q&A🇦🇺‼️멜버른에서 시드니 당일치기 여행중 무물 끯여옴!🥳🙌🏻",
     highlights: []
   },
-  // [희철리즘] 영국 런던 - 런던 주요 명소 (2026-05-28)
   {
     id: "auto-LzZuQEYobYQ",
     creator: "희철리즘",
@@ -10433,7 +14464,6 @@ const RECENT_VIDEOS = [
     description: "\"식사 무료 배급제 시행\" 홈리스가 엄청 많아진 영국 런던의 반전 일상🇬🇧",
     highlights: []
   },
-  // [쏘이 The World] 키르기스스탄 이식쿨·카라콜 - 키르기스스탄 알틴아라산 & 이식쿨 호수 대자연 (2026-05-28)
   {
     id: "auto-f_K3RZIf_Yo",
     creator: "쏘이 The World",
@@ -10451,7 +14481,6 @@ const RECENT_VIDEOS = [
     description: "🇰🇬 #2 \"여기는 저만 알고싶은 곳이네요..\" 사람들이 잘 모르는 역대급 여행지 여긴 대박입니다",
     highlights: []
   },
-  // [초마드] 호주 멜버른 - 멜버른 주요 명소 (2026-05-24)
   {
     id: "auto-Gw6Xb5YIltA",
     creator: "초마드",
@@ -10469,7 +14498,6 @@ const RECENT_VIDEOS = [
     description: "멜버른 카페알바🇦🇺☕️호주 어학연수 중에 취업(?) 해버린.ssul🔥(ft. 바리스타 체험😎)",
     highlights: []
   },
-  // [쏘이 The World] 키르기스스탄 비슈케크 - 비슈케크 주요 명소 (2026-05-21)
   {
     id: "auto-KAyUzGr61oo",
     creator: "쏘이 The World",
@@ -10487,7 +14515,6 @@ const RECENT_VIDEOS = [
     description: "🇰🇬 #1 예상을 완전히 뒤엎은 나라, 나홀로 키르기스스탄 첫 입국기",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 튀르키예 이스탄불 - 이스탄불 주요 명소 (2026-05-20)
   {
     id: "auto-kpUQGqP3fy4",
     creator: "잡식맨 JOBXICMAN",
@@ -10505,7 +14532,6 @@ const RECENT_VIDEOS = [
     description: "튀르키예 가면 반드시 먹어야 하는데 육식맨에는 못 올렸던 음식들 (이스탄불 평점 1위)",
     highlights: []
   },
-  // [채코제] 대한민국 제주 - 제주 주요 명소 (2026-05-19)
   {
     id: "auto-btV6Bg9gRJw",
     creator: "채코제",
@@ -10523,7 +14549,6 @@ const RECENT_VIDEOS = [
     description: "제주도에서 **자율주행 렌트카를 빌리면 생기는 일",
     highlights: []
   },
-  // [노마드션] 이탈리아 로마 - 로마 주요 명소 (2026-05-17)
   {
     id: "auto-OoPz_zcDRfI",
     creator: "노마드션",
@@ -10541,7 +14566,6 @@ const RECENT_VIDEOS = [
     description: "이탈리아 기아 직원들도 처음 보는 기아 차 - 캠핑카 세계여행 (5)",
     highlights: []
   },
-  // [쏘이 The World] 미국 로스앤젤레스 - LA 할리우드 & 코리아타운 종합 코스 (2026-05-14)
   {
     id: "auto-1Yyl7Oxzvog",
     creator: "쏘이 The World",
@@ -10559,7 +14583,6 @@ const RECENT_VIDEOS = [
     description: "“이래서 젊을 때 미국 가라는구나…” 🇺🇸 스케일 미쳐버린 나홀로 LA 여행 100분 몰아보기🔥",
     highlights: []
   },
-  // [캐럿맨 여행기] 페루 쿠스코 - 페루 안데스 고산도시 쿠스코 아르마스 광장 (Cusco) (2026-05-13)
   {
     id: "auto-TquUOVcbk3w",
     creator: "캐럿맨 여행기",
@@ -10577,7 +14600,6 @@ const RECENT_VIDEOS = [
     description: "지옥같았던 페루에서 여행을 중단한 이유 - 페루 🇵🇪 (4)",
     highlights: []
   },
-  // [잡식맨 JOBXICMAN] 대한민국 부산 - 부산 주요 명소 (2026-05-12)
   {
     id: "auto-z8XA3AF2_6M",
     creator: "잡식맨 JOBXICMAN",
@@ -10595,7 +14617,6 @@ const RECENT_VIDEOS = [
     description: "이걸 부산 사람들만 먹고 있었다니",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 중국 청두 - 청두 주요 명소 (2026-05-11)
   {
     id: "auto-9rKQx6eXix4",
     creator: "육식맨 YOOXICMAN",
@@ -10613,7 +14634,6 @@ const RECENT_VIDEOS = [
     description: "마라의 고향을 찾아서 : 이 국물은 관우장비도 못 먹습니다. 삼국지 촉나라 수도의 \"진짜 마라\" (with 캡틴따거)",
     highlights: []
   },
-  // [걷다가] 미얀마 양곤 - 양곤 흘레단 대학가 (2026-05-08)
   {
     id: "auto-X0c78JFNGEc",
     creator: "걷다가",
@@ -10631,7 +14651,6 @@ const RECENT_VIDEOS = [
     description: "미얀마 대학가의 수많은 길거리음식과 한국어학원들",
     highlights: []
   },
-  // [캐럿맨 여행기] 페루 이카·와카치나 - 페루 이카 사막 오아시스 마을 와카치나 (Huacachina) (2026-05-08)
   {
     id: "auto-N7fA0KvDy6s",
     creator: "캐럿맨 여행기",
@@ -10649,7 +14668,6 @@ const RECENT_VIDEOS = [
     description: "서양인 100명 앞에서 한국인 혼자 미쳐버리면 생기는 일 - 페루 🇵🇪 (3)",
     highlights: []
   },
-  // [초마드] 호주 멜버른 - 멜버른 시티 ILSC 어학원 & 서던크로스역 일대 (2026-05-08)
   {
     id: "auto-sI7L9DB3ckc",
     creator: "초마드",
@@ -10667,7 +14685,6 @@ const RECENT_VIDEOS = [
     description: "호주 어학연수 첫수업날🤓🇦🇺오티 첫날 외국인 친구 만드는 방법🙌🏻",
     highlights: []
   },
-  // [초마드] 호주 멜버른 - 멜버른 주요 명소 (2026-05-08)
   {
     id: "auto-Pn-Xxq_R09A",
     creator: "초마드",
@@ -10685,7 +14702,6 @@ const RECENT_VIDEOS = [
     description: "멜버른 도착✨🇦🇺호주 어학연수 기숙사 룸투어 브이로그🏡 (ft. 두근두근💕)",
     highlights: []
   },
-  // [쏘이 The World] 일본 도쿄 - 도쿄 주요 명소 (2026-05-07)
   {
     id: "auto-k4Zz2GWIre4",
     creator: "쏘이 The World",
@@ -10703,7 +14719,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 #2 식욕과 물욕에 미쳐버린 여자의 나홀로 도쿄 여행기",
     highlights: []
   },
-  // [원지의 하루] 태국 치앙마이 - 치앙마이 님만해민 & 고급 풀빌라 타운하우스 (2026-05-06)
   {
     id: "auto-Tnq9QEybxkQ",
     creator: "원지의 하루",
@@ -10721,7 +14736,6 @@ const RECENT_VIDEOS = [
     description: "태국에서 돈 많으면 이렇게 산답니다",
     highlights: []
   },
-  // [초마드] 일본 도쿄 - 도쿄 다카나와 게이트웨이 JW 메리어트 호텔 도쿄 (2026-05-06)
   {
     id: "auto-IynIO6WLWCA",
     creator: "초마드",
@@ -10739,7 +14753,6 @@ const RECENT_VIDEOS = [
     description: "역대급 도쿄호텔🇯🇵부모님 모시고 도쿄 스위트룸 호캉스vlog🪄 애프터눈티, 도쿄타워뷰 수영장, 조식✨(ft. JW메리어트 도쿄)",
     highlights: []
   },
-  // [캐럿맨 여행기] 페루 이카·와카치나 - 와카치나 사막 버기카 & 샌드보딩 일몰 언덕 (2026-05-01)
   {
     id: "auto-owCTihR2ri8",
     creator: "캐럿맨 여행기",
@@ -10757,7 +14770,6 @@ const RECENT_VIDEOS = [
     description: "낭만의 페루 사막 오아시스 마을 에서 만난 사람들 (역대급 인생 일몰) - 페루 🇵🇪 (2)",
     highlights: []
   },
-  // [노마드션] 이탈리아 로마 - 로마 주요 명소 (2026-04-30)
   {
     id: "auto-q_u3uvmNCKA",
     creator: "노마드션",
@@ -10775,7 +14787,6 @@ const RECENT_VIDEOS = [
     description: "이탈리아 한 가운데서 멈춰버린 캠핑카, 하... - 캠핑카 세계여행 (3)",
     highlights: []
   },
-  // [쏘이 The World] 일본 도쿄 - 도쿄 주요 명소 (2026-04-30)
   {
     id: "auto-VlKkl7nerIQ",
     creator: "쏘이 The World",
@@ -10793,7 +14804,6 @@ const RECENT_VIDEOS = [
     description: "🇯🇵 #1 저 혼자 도쿄왔어요.. 먹기위해 급 떠난 나홀로 도쿄 맛기행 시작",
     highlights: []
   },
-  // [빠니보틀] 대한민국 하동 - 하동 주요 명소 (2026-04-29)
   {
     id: "auto-lQq5EwP_Lyg",
     creator: "빠니보틀",
@@ -10811,7 +14821,6 @@ const RECENT_VIDEOS = [
     description: "자유인이 되어 바쁜 친구에게 벚꽃 나들이 힐링 여행 선물하기【하동】",
     highlights: []
   },
-  // [빠니보틀] 이집트 카이로 - 카이로 주요 명소 (2026-04-27)
   {
     id: "auto-T7rR6NAjBRY",
     creator: "빠니보틀",
@@ -10829,7 +14838,6 @@ const RECENT_VIDEOS = [
     description: "이집트 전문가 애굽민수의 이집트 대박물관 설명회【아프리카8】",
     highlights: []
   },
-  // [캐럿맨 여행기] 페루 리마 - 리마 주요 명소 (2026-04-27)
   {
     id: "auto-mGTCfZM5mi8",
     creator: "캐럿맨 여행기",
@@ -10847,7 +14855,6 @@ const RECENT_VIDEOS = [
     description: "미식의 나라 페루, 이기적인 기사식당 충격 후기 - 페루 🇵🇪 (1)",
     highlights: []
   },
-  // [여행가 제이] 태국 차암·후아힌 - 태국 왕실 휴양지 차암 해변 (Cha-Am Beach) (2026-04-24)
   {
     id: "auto-NEkOT2x65Vw",
     creator: "여행가 제이",
@@ -10865,7 +14872,6 @@ const RECENT_VIDEOS = [
     description: "태국에서 가장 저렴하고 극친절한 1위 휴양지 - 태국2",
     highlights: []
   },
-  // [빠니보틀] 에티오피아 티그라이 - 에티오피아 아부나 예마타 구흐 절벽 교회 (Abuna Yemata Guh) (2026-04-23)
   {
     id: "auto-Di-MguFUUu8",
     creator: "빠니보틀",
@@ -10883,7 +14889,6 @@ const RECENT_VIDEOS = [
     description: "절벽 끝에 만든 세계에서 가장 위험한 교회 가보기【아프리카7】",
     highlights: []
   },
-  // [원지의 하루] 일본 후쿠오카 - 후쿠오카 주요 명소 (2026-04-23)
   {
     id: "auto-HUe2M7vJjIE",
     creator: "원지의 하루",
@@ -10901,7 +14906,6 @@ const RECENT_VIDEOS = [
     description: "레알 맨몸으로 떠난 후쿠오카 24시",
     highlights: []
   },
-  // [캐럿맨 여행기] 콜롬비아 카르타헤나 - 콜롬비아 카리브해 해안도시 카르타헤나 (Cartagena) (2026-04-23)
   {
     id: "auto-EOoMHKr5FdA",
     creator: "캐럿맨 여행기",
@@ -10919,7 +14923,6 @@ const RECENT_VIDEOS = [
     description: "한국을 지나치게 좋아하는 콜롬비아의 부산 해변도시의 사람들 - 🇨🇴 콜롬비아 끝",
     highlights: []
   },
-  // [희철리즘] 남아프리카공화국 케이프타운 - 케이프타운 시내 & 워터프론트 (2026-04-23)
   {
     id: "auto-zl8atdSvWCo",
     creator: "희철리즘",
@@ -10937,7 +14940,6 @@ const RECENT_VIDEOS = [
     description: "상상을 초월하는 남아공 범죄도시, 케이프타운 도착[1]🇿🇦",
     highlights: []
   },
-  // [쏘이 The World] 미국 로스앤젤레스 - 캘리포니아 LA 근교 가든 웨딩홀 & 비치 (2026-04-23)
   {
     id: "auto-6wAPLhMIRcM",
     creator: "쏘이 The World",
@@ -10955,7 +14957,6 @@ const RECENT_VIDEOS = [
     description: "🇺🇸 #4 \"결혼식을 하루종일 해..?\" 한국인은 상상도 못 할 억소리나는 미국 결혼식 체험기",
     highlights: []
   },
-  // [여행가 제이] 태국 방콕 - 방콕 주요 명소 (2026-04-18)
   {
     id: "auto-V9dHrpq04X8",
     creator: "여행가 제이",
@@ -10973,7 +14974,6 @@ const RECENT_VIDEOS = [
     description: "한국인 싹 사라진 방콕 근황 - 태국1",
     highlights: []
   },
-  // [초마드] 일본 도쿄 - 도쿄 시오도메 콘래드 도쿄 (Conrad Tokyo) (2026-04-18)
   {
     id: "auto-ZWuJFn9QSAk",
     creator: "초마드",
@@ -10991,7 +14991,6 @@ const RECENT_VIDEOS = [
     description: "1박 250만원💸🤩엄마 아빠랑 도쿄 5성급 호캉스 풀코스 즐기고옴🗼(ft. 콘래드 도쿄 애프터눈티/스파✨)",
     highlights: []
   },
-  // [쏘이 The World] 미국 로스앤젤레스 - 유니버설 스튜디오 할리우드 (Universal Studios Hollywood) (2026-04-16)
   {
     id: "auto-D-i-wUo2q_Q",
     creator: "쏘이 The World",
@@ -11009,7 +15008,6 @@ const RECENT_VIDEOS = [
     description: "🇺🇸 #3 LA 유니버셜에서 하루 50만원 증발 실화?ㅋㅋ 나홀로 미국 자본주의 끝판왕 체험기",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 스페인 산세바스티안 - 산세바스티안 카사 훌리안 & 레온 엘 카프리초 (2026-04-15)
   {
     id: "auto-APhivFYCopo",
     creator: "육식맨 YOOXICMAN",
@@ -11027,7 +15025,6 @@ const RECENT_VIDEOS = [
     description: "스페인 스테이크 탐방기 : ‘늙은 소’ 하나만을 위해 전세계 미식가들이 모이는 시골 깡촌 (feat. 비밀이야)",
     highlights: []
   },
-  // [빠니보틀] 르완다 키갈리 - 르완다 키갈리 근교 새마을운동 시범마을 (2026-04-14)
   {
     id: "auto-OkGSeDPzXyQ",
     creator: "빠니보틀",
@@ -11045,7 +15042,6 @@ const RECENT_VIDEOS = [
     description: "한국의 새마을 운동을 도입해 대박난 르완다 마을 방문기【아프리카6】",
     highlights: []
   },
-  // [걷다가] 베트남 푸꾸이섬 - 빈투언성 푸꾸이섬 (Phú Quý) (2026-04-13)
   {
     id: "auto-E7iPmhCbxtk",
     creator: "걷다가",
@@ -11063,7 +15059,6 @@ const RECENT_VIDEOS = [
     description: "한국인 99%는 모르는 베트남 찐가성비 로컬 섬 휴양지 여행기",
     highlights: []
   },
-  // [여행가 제이] 대한민국 제주 - 제주 주요 명소 (2026-04-10)
   {
     id: "auto-5YtpH0MYbXE",
     creator: "여행가 제이",
@@ -11081,7 +15076,6 @@ const RECENT_VIDEOS = [
     description: "결국 한국에 지낼 집 구한 일본 여사친의 사연 - 제주2",
     highlights: []
   },
-  // [쏘이 The World] 미국 로스앤젤레스 - LA 코리아타운 (Koreatown Los Angeles) (2026-04-09)
   {
     id: "auto-OEhNmn5grZ4",
     creator: "쏘이 The World",
@@ -11099,7 +15093,6 @@ const RECENT_VIDEOS = [
     description: "🇺🇸 #2 나홀로 LA 세계 최대 한인타운… 요즘 외국인들이 몰리는 이유",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 스페인 아라세나 - 안달루시아 아라세나(하고 데 자부고) 싱코 호타스 하몽 농장 (2026-04-06)
   {
     id: "auto-_GxfT8hyaDM",
     creator: "육식맨 YOOXICMAN",
@@ -11117,7 +15110,6 @@ const RECENT_VIDEOS = [
     description: "스페인 하몽 탐방기 : 돼지 뒷다리가 250만원이 되는 방법 (feat. 비밀이야)",
     highlights: []
   },
-  // [여행가 제이] 대한민국 제주 - 제주 주요 명소 (2026-04-03)
   {
     id: "auto-Gmd35-toldA",
     creator: "여행가 제이",
@@ -11135,7 +15127,6 @@ const RECENT_VIDEOS = [
     description: "1년만에 재회한 일본 여사친과 낭만의 제주 여행 - 제주1",
     highlights: []
   },
-  // [노마드션] 일본 후쿠오카 - 후쿠오카 주요 명소 (2026-04-03)
   {
     id: "auto-5K9cqzoWOYM",
     creator: "노마드션",
@@ -11153,7 +15144,6 @@ const RECENT_VIDEOS = [
     description: "연차없는 직장인 데리고 일본 당일치기 여행 - 일본 후쿠오카",
     highlights: []
   },
-  // [쏘이 The World] 미국 로스앤젤레스 - LA 다운타운 & 산타모니카 해변 (2026-04-02)
   {
     id: "auto-TQZnpqSwC8I",
     creator: "쏘이 The World",
@@ -11171,7 +15161,6 @@ const RECENT_VIDEOS = [
     description: "🇺🇸 #1 단돈 70만원대로 LA 입국… 근데 환율이 미쳤네요 (완전히 달라진 LA 근황)",
     highlights: []
   },
-  // [빠니보틀] 우간다 캄팔라 - 우간다 수도 캄팔라 & 빅토리아 호수 (2026-03-31)
   {
     id: "auto-A-V0QrrH1Zg",
     creator: "빠니보틀",
@@ -11189,7 +15178,6 @@ const RECENT_VIDEOS = [
     description: "찐 현지인이 가이드 해주는 아프리카 풀코스 여행【아프리카5】",
     highlights: []
   },
-  // [걷다가] 베트남 판랑탑짬 - 판랑탑짬 해변 & 킹타이거 새우 거리 (2026-03-29)
   {
     id: "auto-efLLNYHwA7k",
     creator: "걷다가",
@@ -11207,7 +15195,6 @@ const RECENT_VIDEOS = [
     description: "베트남 소도시 여행을 해야하는 이유",
     highlights: []
   },
-  // [여행가 제이] 대한민국 부산 - 부산 주요 명소 (2026-03-29)
   {
     id: "auto-JpLH4akaTWY",
     creator: "여행가 제이",
@@ -11225,7 +15212,6 @@ const RECENT_VIDEOS = [
     description: "'서울에서 부산까지' 시내버스로만 가보기 (총 지출은 얼마?)",
     highlights: []
   },
-  // [쏘이 The World] 인도 첸나이·마두라이 - 남인도 타밀나두 & 뭄바이 종단 코스 (2026-03-26)
   {
     id: "auto-D7SnXxJ4agQ",
     creator: "쏘이 The World",
@@ -11243,7 +15229,6 @@ const RECENT_VIDEOS = [
     description: "🔥개웃김 주의🔥여자 혼자 인도여행 간 여행유튜버의 최후ㅋㅋㅋ 나홀로 인도여행 2시간 몰아보기",
     highlights: []
   },
-  // [초마드] 마카오 마카오 - 마카오 코타이 스트립 런더너 & 세인트 레지스 마카오 (2026-03-26)
   {
     id: "auto-voil4zymN6s",
     creator: "초마드",
@@ -11261,7 +15246,6 @@ const RECENT_VIDEOS = [
     description: "여기 런던 아님🙅🏻🇬🇧 마카오 2박3일 영국감성 호캉스 브이로그🍸✨ (ft. 세인트레지스 호텔🇲🇴)",
     highlights: []
   },
-  // [빠니보틀] 남아프리카공화국 요하네스버그 - 요하네스버그 폰테 시티 타워 & 힐브로우 (2026-03-25)
   {
     id: "auto-vcZEsuX42qg",
     creator: "빠니보틀",
@@ -11279,7 +15263,6 @@ const RECENT_VIDEOS = [
     description: "치안 막장 도시에서 사설 경호 업체 고용해 여행하기【아프리카4】",
     highlights: []
   },
-  // [빠니보틀] 남아프리카공화국 케이프타운 - 케이프타운 시내 & 워터프론트 (2026-03-19)
   {
     id: "auto-8TLJLe0eH00",
     creator: "빠니보틀",
@@ -11297,7 +15280,6 @@ const RECENT_VIDEOS = [
     description: "남아공을 3박 4일 달리는 초호화 레트로 기차 여행【아프리카3】",
     highlights: []
   },
-  // [쏘이 The World] 호주 시드니 - 시드니 주요 명소 (2026-03-18)
   {
     id: "auto-S0QOBO9r-xk",
     creator: "쏘이 The World",
@@ -11315,7 +15297,6 @@ const RECENT_VIDEOS = [
     description: "🇦🇺 #2 드디어 인생여행지 찾았다… 여자 혼자 여행 끝판왕 시드니 한달살기 각이네요",
     highlights: []
   },
-  // [캡틴따거] 이집트 카이로 - 카이로 주요 명소 (2026-03-17)
   {
     id: "auto-YiZQLo5rjUw",
     creator: "캡틴따거",
@@ -11333,7 +15314,6 @@ const RECENT_VIDEOS = [
     description: "이집트 카이로 찍먹 경유 여행 - [44]",
     highlights: []
   },
-  // [여행가 제이] 대한민국 서울 - 서울 주요 명소 (2026-03-15)
   {
     id: "auto-Gm-hCLRdScU",
     creator: "여행가 제이",
@@ -11351,7 +15331,6 @@ const RECENT_VIDEOS = [
     description: "서울에서 북한 앞까지 걸어가면 생기는 일 (절망편)",
     highlights: []
   },
-  // [걷다가] 필리핀 보홀 - 보홀 알로나 비치 (Alona Beach) (2026-03-12)
   {
     id: "auto-mCohTR_L8ak",
     creator: "걷다가",
@@ -11369,7 +15348,6 @@ const RECENT_VIDEOS = [
     description: "필리핀에서 가장 핫한 여행지 1위",
     highlights: []
   },
-  // [원지의 하루] 네팔 카트만두 - 카트만두 주요 명소 (2026-03-12)
   {
     id: "auto-zg6VwSphFAg",
     creator: "원지의 하루",
@@ -11387,7 +15365,6 @@ const RECENT_VIDEOS = [
     description: "네팔에 혼자 떨어진 6시간",
     highlights: []
   },
-  // [희철리즘] 이탈리아 로마 - 로마 주요 명소 (2026-03-12)
   {
     id: "auto-QkAj-BvD64c",
     creator: "희철리즘",
@@ -11405,7 +15382,6 @@ const RECENT_VIDEOS = [
     description: "세계 최강국이던 이탈리아, 국민들이 떠나고 있는 이탈리아 로마의 현실[1]🇮🇹",
     highlights: []
   },
-  // [쏘이 The World] 호주 시드니 - 시드니 주요 명소 (2026-03-12)
   {
     id: "auto-6R0NR4DUQPQ",
     creator: "쏘이 The World",
@@ -11423,7 +15399,6 @@ const RECENT_VIDEOS = [
     description: "🇦🇺 #1 여자 혼자 시드니 여행 시작.. 왕복 70만원대 나홀로 호주 입국하기",
     highlights: []
   },
-  // [빠니보틀] 남아프리카공화국 케이프타운 - 케이프타운 시내 & 워터프론트 (2026-03-11)
   {
     id: "auto-uOHkIqZFOlY",
     creator: "빠니보틀",
@@ -11441,7 +15416,6 @@ const RECENT_VIDEOS = [
     description: "남아공의 기괴한 빈부격차 직접 느껴보기【아프리카2】",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 일본 삿포로 - 삿포로 주요 명소 (2026-03-09)
   {
     id: "auto-hU4NU6oVuiw",
     creator: "육식맨 YOOXICMAN",
@@ -11459,7 +15433,6 @@ const RECENT_VIDEOS = [
     description: "삿포로 미소라멘 탐방기 : 미소라멘의 탄생부터 정점까지, 5곳이면 충분합니다 (with 라멘괴인 웅성)",
     highlights: []
   },
-  // [채코제] 홍콩 홍콩 - 홍콩 주요 명소 (2026-03-06)
   {
     id: "auto-HoCU8XTyOZk",
     creator: "채코제",
@@ -11477,7 +15450,6 @@ const RECENT_VIDEOS = [
     description: "´집값 비싸기로 소문난´ 홍콩의 부자 동네와 로컬 동네 가보기",
     highlights: []
   },
-  // [곽튜브] 일본 스즈카 - 미에현 스즈카시 로컬 동네 & 식당가 (2026-03-05)
   {
     id: "auto-M7JegeMyHes",
     creator: "곽튜브",
@@ -11495,7 +15467,6 @@ const RECENT_VIDEOS = [
     description: "일본 시골마을에 눌러앉게 된 사연 - 나고야(下)",
     highlights: []
   },
-  // [쏘이 The World] 인도 뭄바이 - 뭄바이 주요 명소 (2026-03-05)
   {
     id: "auto-cxEKRq2Qtmk",
     creator: "쏘이 The World",
@@ -11513,7 +15484,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇳 #4 \"물가 비싸서 인도 혼성 도미토리 가요…\" 여자 혼자 인도 뭄바이 빈부격차 현실 체험기",
     highlights: []
   },
-  // [빠니보틀] 카보베르데 프라이아 - 카보베르데 산티아고섬 프라이아 (Praia) (2026-03-04)
   {
     id: "auto-akzIwdFT1p4",
     creator: "빠니보틀",
@@ -11531,7 +15501,6 @@ const RECENT_VIDEOS = [
     description: "월드컵 첫 진출했지만 생전 처음 들어본 나라 가보기【아프리카1】",
     highlights: []
   },
-  // [여행가 제이] 대한민국 부산 - 부산 주요 명소 (2026-03-03)
   {
     id: "auto-4QLi49qLJ2A",
     creator: "여행가 제이",
@@ -11549,7 +15518,6 @@ const RECENT_VIDEOS = [
     description: "무제한 먹고 즐기는 부산 숙식 풀코스",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 일본 오비히로 - 홋카이도 오비히로 원조 부타동 판쵸 (ぱんちょう) (2026-02-26)
   {
     id: "auto-RIV62klRQFo",
     creator: "육식맨 YOOXICMAN",
@@ -11567,7 +15535,6 @@ const RECENT_VIDEOS = [
     description: "홋카이도 부타동 탐방기 : 편의점보다 부타동 가게가 많다는 고기 덮밥의 성지 '오비히로'",
     highlights: []
   },
-  // [곽튜브] 일본 스즈카 - 나고야~미에현 스즈카 이동 코스 (2026-02-26)
   {
     id: "auto-Np-NAT0T5NI",
     creator: "곽튜브",
@@ -11585,7 +15552,6 @@ const RECENT_VIDEOS = [
     description: "일본 오지마을까지 간 K리그 방출 선수와 동행 - 나고야(上)",
     highlights: []
   },
-  // [원지의 하루] 네팔 카트만두 - 카트만두 주요 명소 (2026-02-26)
   {
     id: "auto-sQzdt__nt6Q",
     creator: "원지의 하루",
@@ -11603,7 +15569,6 @@ const RECENT_VIDEOS = [
     description: "결국 네팔까지 오게 된 이유",
     highlights: []
   },
-  // [쏘이 The World] 인도 마이소르 - 남인도 마이소르 궁전 & 데바라자 마켓 (Mysore Palace) (2026-02-26)
   {
     id: "auto-sT2A_Y6VR8o",
     creator: "쏘이 The World",
@@ -11621,7 +15586,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇳 #3 여자 혼자 인도 여행중 겪은 가장 기묘한 순간 (문화 충격 주의ㅋㅋㅋ)",
     highlights: []
   },
-  // [걷다가] 아랍에미리트 두바이 - 두바이 주요 명소 (2026-02-24)
   {
     id: "auto-l4j-oYtWV8A",
     creator: "걷다가",
@@ -11639,7 +15603,6 @@ const RECENT_VIDEOS = [
     description: "하루에 1억 5천만원 호텔과 월세 10만원이 공존하는 두바이의 빈부격차 체험",
     highlights: []
   },
-  // [걷다가] 아랍에미리트 두바이 - 두바이 주요 명소 (2026-02-20)
   {
     id: "auto-rrApB2rPaU4",
     creator: "걷다가",
@@ -11657,7 +15620,6 @@ const RECENT_VIDEOS = [
     description: "한국인이 열광하는 두바이의 현지 디저트 근황",
     highlights: []
   },
-  // [노마드션] 베트남 다낭 - 다낭 주요 명소 (2026-02-19)
   {
     id: "auto-wT9s8b5fyNA",
     creator: "노마드션",
@@ -11675,7 +15637,6 @@ const RECENT_VIDEOS = [
     description: "망하는 태국, 흥하는 베트남 24시간씩 살아보기 - 동남아 여행",
     highlights: []
   },
-  // [희철리즘] 방글라데시 다카 - 다카 주요 명소 (2026-02-19)
   {
     id: "auto-kIXVfLD_H7U",
     creator: "희철리즘",
@@ -11693,7 +15654,6 @@ const RECENT_VIDEOS = [
     description: "평균 월급 20만원 방글라데시에서 한국인 재벌이 나오는 이유[4]🇧🇩",
     highlights: []
   },
-  // [쏘이 The World] 인도 마두라이 - 남인도 마두라이 미낙시 암만 사원 & 로컬 마을 (Madurai) (2026-02-19)
   {
     id: "auto-dd49QfY6AHI",
     creator: "쏘이 The World",
@@ -11711,7 +15671,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇳 #2 관광객 0명… 여자 혼자 인도 찐로컬마을에 들어가봤습니다",
     highlights: []
   },
-  // [걷다가] 대한민국 제주 - 제주 주요 명소 (2026-02-17)
   {
     id: "auto-tZMq8CMG57I",
     creator: "걷다가",
@@ -11729,7 +15688,6 @@ const RECENT_VIDEOS = [
     description: "3박 4일 동안 제주도 최저가 5성급 호텔 투어 (feat. 또 떠나는 남자)",
     highlights: []
   },
-  // [초마드] 인도네시아 발리 - 발리 짐바란 아야나 리조트 & 락바 (AYANA Resort Bali) (2026-02-17)
   {
     id: "auto-osy81N6PHkE",
     creator: "초마드",
@@ -11747,7 +15705,6 @@ const RECENT_VIDEOS = [
     description: "아이들 미연pick🩵엄마랑 발리에서 제일 큰 풀빌라에서 호캉스vlog🏝️🫧 (ft. 아야나 리조트 팁💫)",
     highlights: []
   },
-  // [초마드] 인도네시아 발리 - 발리 스미냑 해변 W 발리 리조트 (W Bali - Seminyak) (2026-02-16)
   {
     id: "auto-4to3vFhmrCQ",
     creator: "초마드",
@@ -11765,7 +15722,6 @@ const RECENT_VIDEOS = [
     description: "엄마랑 발리여행👩🏻‍❤️‍👨🏻발리 스미냑 시내 풀빌라 호캉스 다녀왔쓴-!🏝️💗(ft. w호텔 발리)",
     highlights: []
   },
-  // [희철리즘] 우즈베키스탄 타슈켄트 - 타슈켄트 주요 명소 (2026-02-15)
   {
     id: "auto-2MrLsb9Oouw",
     creator: "희철리즘",
@@ -11783,7 +15739,6 @@ const RECENT_VIDEOS = [
     description: "세상에서 한국인이 가장 대접받는 신기한 국가! 우즈베키스탄 여행🇺🇿[모아보기]",
     highlights: []
   },
-  // [육식맨 YOOXICMAN] 아르헨티나 부에노스아이레스 - 부에노스아이레스 주요 명소 (2026-02-14)
   {
     id: "auto-6lXTKe1XMFY",
     creator: "육식맨 YOOXICMAN",
@@ -11801,7 +15756,6 @@ const RECENT_VIDEOS = [
     description: "아르헨티나 육식기행 1시간 몰아보기 (아사도, 푸가제타 피자, 초리판, 밀라네사, 엠파나다)",
     highlights: []
   },
-  // [걷다가] 대한민국 제주 - 제주 주요 명소 (2026-02-13)
   {
     id: "auto-37q05JE-09Y",
     creator: "걷다가",
@@ -11819,7 +15773,6 @@ const RECENT_VIDEOS = [
     description: "72시간 동안 제주도에서 최저가로 살아남기",
     highlights: []
   },
-  // [잰잰바리] 베트남 하롱베이 - 하롱베이 기암괴석 럭셔리 데이 크루즈 (Ha Long Bay) (2026-02-13)
   {
     id: "auto-OR6kAR72Vss",
     creator: "잰잰바리",
@@ -11837,7 +15790,6 @@ const RECENT_VIDEOS = [
     description: "베트남 7만원 짜리 최고급 크루즈 여행기",
     highlights: []
   },
-  // [희철리즘] 방글라데시 다카 - 다카 최고 부촌 굴샨 (Gulshan) 지구 (2026-02-12)
   {
     id: "auto-UnO4ZYxXY8Y",
     creator: "희철리즘",
@@ -11855,7 +15807,6 @@ const RECENT_VIDEOS = [
     description: "강남보다 비싼 방글라데시 부촌 \"굴샨\", 최고 부자동네의 일상[3]🇧🇩",
     highlights: []
   },
-  // [쏘이 The World] 인도 첸나이 - 남인도 관문 도시 첸나이 마리나 비치 (Chennai) (2026-02-12)
   {
     id: "auto-qG5EbHVCxaE",
     creator: "쏘이 The World",
@@ -11873,7 +15824,6 @@ const RECENT_VIDEOS = [
     description: "🇮🇳 #1 모두가 걱정했던 인도… 한밤중 나홀로 인도 입국하기",
     highlights: []
   },
-  // [걷다가] 일본 왓카나이 - 일본 최북단 왓카나이역~최남단 마쿠라자키역 종단 (2026-02-05)
   {
     id: "auto-6mgjr7nM2Lg",
     creator: "걷다가",
@@ -11891,7 +15841,6 @@ const RECENT_VIDEOS = [
     description: "총 거리 3,100km 일본 본토를 기차만 타고 종단하기",
     highlights: []
   },
-  // [쏘이 The World] 이집트 카이로 - 카이로 주요 명소 (2026-02-05)
   {
     id: "auto-0CXnqlzzuf0",
     creator: "쏘이 The World",
@@ -11909,7 +15858,6 @@ const RECENT_VIDEOS = [
     description: "🔥핵꿀잼 보장🔥 재밌다고 난리난 나홀로 아프리카 \"이집트 여행\" 2시간 몰아보기ㅋㅋ",
     highlights: []
   },
-  // [초마드] 홍콩 홍콩 - 홍콩 침사추이 리젠트 홍콩 & 빅토리아 하버 뷰 (2026-02-04)
   {
     id: "auto-3-druBh6Fow",
     creator: "초마드",
@@ -11927,7 +15875,6 @@ const RECENT_VIDEOS = [
     description: "뒷북주의🌈찐친들과 함께한 홍콩여행 겸 MAMA 첫 직관 브이로그🇭🇰(with.김똘똘/김미정/늘이농/시니/보라/경식필름)",
     highlights: []
   },
-  // [빠니보틀] 브루나이 반다르스리브가완 - 반다르스리브가완 오마르 알리 사이푸딘 모스크 & 캄퐁 아예르 (2026-01-30)
   {
     id: "auto-1HdKynj8kng",
     creator: "빠니보틀",
@@ -11945,7 +15892,6 @@ const RECENT_VIDEOS = [
     description: "국왕이 전부 다 먹여 살리는 동남아의 기름 부자 나라【브루나이】",
     highlights: []
   },
-  // [곽튜브] 튀르키예 이스탄불 - 이스탄불 주요 명소 (2026-01-30)
   {
     id: "auto-cEqWLBMhy0A",
     creator: "곽튜브",
@@ -11963,7 +15909,6 @@ const RECENT_VIDEOS = [
     description: "맛의 도시 이스탄불 미식 여행 - 튀르키예(下)",
     highlights: []
   },
-  // [희철리즘] 방글라데시 다카 - 다카 주요 명소 (2026-01-30)
   {
     id: "auto-MZKl_bS-KDk",
     creator: "희철리즘",
@@ -11981,7 +15926,6 @@ const RECENT_VIDEOS = [
     description: "\"재워준다는데 일해야죠\" 전 세계에서 가장 힘들지만, 가장 적게 버는 방글라데시 노동의 현장[2]🇧🇩",
     highlights: []
   },
-  // [여행가 제이] 스리랑카 콜롬보 - 콜롬보 주요 명소 (2026-01-29)
   {
     id: "auto-nFRRaNVu2Co",
     creator: "여행가 제이",
@@ -11999,7 +15943,6 @@ const RECENT_VIDEOS = [
     description: "한국을 떠나는 스리랑카 노동자",
     highlights: []
   },
-  // [쏘이 The World] 이집트 카이로 - 카이로 주요 명소 (2026-01-29)
   {
     id: "auto-SoF7qk6bIIY",
     creator: "쏘이 The World",
@@ -12017,7 +15960,6 @@ const RECENT_VIDEOS = [
     description: "🇪🇬 #4 여자 혼자 이집트 여행하며 알게 된 진짜 현실 (기상천외한 하루네요..)",
     highlights: []
   },
-  // [잰잰바리] 베트남 하장·까오방 - 베트남 북부 중국 국경 고산 마을 (2026-01-27)
   {
     id: "auto-1bjmkJQkVfk",
     creator: "잰잰바리",
@@ -12035,7 +15977,6 @@ const RECENT_VIDEOS = [
     description: "중국 국경까지 1시간, 베트남 숨겨진 보물 마을",
     highlights: []
   },
-  // [걷다가] 일본 오이타 - 고베~오이타 세토내해 페리 크루즈 (2026-01-24)
   {
     id: "auto-LOrqyZXyD70",
     creator: "걷다가",
@@ -12053,7 +15994,6 @@ const RECENT_VIDEOS = [
     description: "1박에 5만원대 일본 크루즈 여행기",
     highlights: []
   },
-  // [곽튜브] 튀르키예 카파도키아 - 카파도키아 괴레메 기암괴석 계곡 & 열기구 투어 (2026-01-23)
   {
     id: "auto-705Bg87WPo4",
     creator: "곽튜브",
@@ -12071,7 +16011,6 @@ const RECENT_VIDEOS = [
     description: "죽기전에 가봐야될 여행지 1위 (with 안보현) - 튀르키예(上)",
     highlights: []
   },
-  // [여행가 제이] 필리핀 세부 - 세부 주요 명소 (2026-01-23)
   {
     id: "auto-Bbt3p9ZH_s4",
     creator: "여행가 제이",
@@ -12089,7 +16028,6 @@ const RECENT_VIDEOS = [
     description: "도움 받았던 외국인에게 은혜 갚기 프로젝트 - 필리핀下",
     highlights: []
   },
-  // [초마드] 일본 고토열도 - 나가사키현 고토열도 후쿠에섬 카라리토 호텔 (Colorit Goto Islands) (2026-01-23)
   {
     id: "auto-WwJtkP5YtV8",
     creator: "초마드",
@@ -12107,7 +16045,6 @@ const RECENT_VIDEOS = [
     description: "교토 아님❌ 일본 숨겨진 섬마을 고토열도 3박4일 여행코스 추천.zip🏝️🇯🇵(ft. 액티비티 추천)",
     highlights: []
   },
-  // [노마드션] 몽골 울란바토르 - 울란바토르 주요 명소 (2026-01-22)
   {
     id: "auto-FR3mI6AMeP0",
     creator: "노마드션",
@@ -12125,7 +16062,6 @@ const RECENT_VIDEOS = [
     description: "한국인 99프로는 모르는 고립된 소수민족의 숨겨진 삶 - 몽골 마지막",
     highlights: []
   },
-  // [희철리즘] 방글라데시 다카 - 다카 주요 명소 (2026-01-22)
   {
     id: "auto-Ef64O0XuJR8",
     creator: "희철리즘",
@@ -12143,7 +16079,6 @@ const RECENT_VIDEOS = [
     description: "사람들이 살아가기에 가장 힘들고 애절한 국가 \"방글라데시\" 일상[1]🇧🇩",
     highlights: []
   },
-  // [쏘이 The World] 이집트 룩소르 - 이집트 룩소르 신전 & 왕가의 계곡 (Luxor) (2026-01-22)
   {
     id: "auto-Mcm5DgnNNsY",
     creator: "쏘이 The World",
@@ -12161,7 +16096,6 @@ const RECENT_VIDEOS = [
     description: "🇪🇬 #3 이집트 와서 처음으로 사기 당했습니다..  방심하면 큰일 나는 나홀로 이집트 여행",
     highlights: []
   },
-  // [여행가 제이] 필리핀 세부 - 세부 주요 명소 (2026-01-15)
   {
     id: "auto-YVesAcAnzWs",
     creator: "여행가 제이",
@@ -12179,7 +16113,6 @@ const RECENT_VIDEOS = [
     description: "한국에서 10년째 살고 있는 필리핀 청년 고향집 찾아가기 - 필리핀上",
     highlights: []
   },
-  // [쏘이 The World] 이집트 기자(카이로) - 기자 피라미드 지구 & 스핑크스 (Giza Pyramids) (2026-01-15)
   {
     id: "auto-QxEMKFKVZT0",
     creator: "쏘이 The World",
@@ -12197,7 +16130,6 @@ const RECENT_VIDEOS = [
     description: "🇪🇬 #2 모든 것들이 달라진 충격의 이집트 피라미드 근황",
     highlights: []
   },
-  // [잰잰바리] 베트남 하장 - 베트남 최북부 하장성 고산 소수민족 마을 (2026-01-13)
   {
     id: "auto-tiyICRpnda4",
     creator: "잰잰바리",
@@ -12215,7 +16147,6 @@ const RECENT_VIDEOS = [
     description: "멈추지 않는 잔치, 베트남 최북부 결혼식",
     highlights: []
   },
-  // [걷다가] 일본 기타큐슈 - 기타큐슈 고쿠라 탄가시장 일대 (2026-01-10)
   {
     id: "auto-Iak3XhzO6e0",
     creator: "걷다가",
@@ -12233,7 +16164,6 @@ const RECENT_VIDEOS = [
     description: "일본에서 집세가 제일 저렴한 도시 1위",
     highlights: []
   },
-  // [쏘이 The World] 이집트 카이로 - 카이로 주요 명소 (2026-01-10)
   {
     id: "auto-1SSUDgjklFU",
     creator: "쏘이 The World",
@@ -12251,7 +16181,6 @@ const RECENT_VIDEOS = [
     description: "🇪🇬 #1 모두가 조심하라했던 나홀로 이집트 입국하기 (혼돈의 카이로 여행 시작)",
     highlights: []
   },
-  // [빠니보틀] 몰디브 말레 - 몰디브 말레 & 수상빌라 리조트 섬 (2026-01-07)
   {
     id: "auto-X4JVeFd19fU",
     creator: "빠니보틀",
@@ -12269,7 +16198,6 @@ const RECENT_VIDEOS = [
     description: "유명 신혼 여행지에 혼자 당당히 여행가는 사람【몰디브】",
     highlights: []
   },
-  // [노마드션] 몽골 울란바토르 - 울란바토르 주요 명소 (2026-01-07)
   {
     id: "auto-ZvOpNekFvec",
     creator: "노마드션",
@@ -12287,7 +16215,6 @@ const RECENT_VIDEOS = [
     description: "겨울 몽골에서 로드트립 위험한 이유 - 몽골여행",
     highlights: []
   },
-  // [잰잰바리] 베트남 하노이 근교 - 베트남 북부 홍강 삼각주 로컬 시골마을 (2026-01-06)
   {
     id: "auto-RAsG6yRrAdw",
     creator: "잰잰바리",
@@ -12305,7 +16232,6 @@ const RECENT_VIDEOS = [
     description: "종강하자마자 떠난 대환장 베트남 시골마을",
     highlights: []
   },
-  // [채코제] 일본 아사히카와 - 홋카이도 소도시 직항 노선 탐방 (2026-01-03)
   {
     id: "auto-SYtQxaDSHN0",
     creator: "채코제",
@@ -12323,7 +16249,6 @@ const RECENT_VIDEOS = [
     description: "인천공항 출발 ´1년간 탑승객이 가장 적은 도시´",
     highlights: []
   },
-  // [걷다가] 일본 가고시마 - 가고시마 이리키 온천 치도리소 (ちどり荘) (2026-01-02)
   {
     id: "auto-Ys8VMEXz550",
     creator: "걷다가",
@@ -12341,7 +16266,6 @@ const RECENT_VIDEOS = [
     description: "일본 찐시골 초저가 온천마을 숙소 방문기",
     highlights: []
   },
-  // [노마드션] 몽골 울란바토르 - 울란바토르 주요 명소 (2026-01-01)
   {
     id: "auto-eMp-s_dx8Hk",
     creator: "노마드션",
