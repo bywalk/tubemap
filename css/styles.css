@@ -1686,7 +1686,10 @@ body.modal-open {
   .sidebar-mobile-title {
     font-size: 0.92rem;
     font-weight: 800;
-    color: #0f172a;
+    color: var(--text-main);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
   }
 
   .sidebar-search-box {
@@ -2193,6 +2196,10 @@ body.modal-open {
 
 [data-theme="dark"] .video-list::-webkit-scrollbar-thumb:hover {
   background: #3b4d6b;
+}
+
+[data-theme="dark"] .sidebar-mobile-title {
+  color: #f8fafc;
 }
 
 /* Dark Mode Modals */
