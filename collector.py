@@ -31,6 +31,7 @@ from datetime import datetime, timedelta
 MAX_VIDEO_AGE_DAYS = 365  # 여행 정보 최신성 유지를 위해 1년(365일) 이내 영상만 수집
 MIN_SUBSCRIBER_COUNT = 1000  # 최소 구독자 수 필터 (1천 명 이상 채널만 수집)
 DISCOVER_MIN_SUBSCRIBER_COUNT = 1000  # 브이로그 자동 발굴 시 기준 (1천 명 이상)
+MIN_ANNUAL_VIDEO_COUNT = 6  # 1년 내 업로드 5회 이하는 비활성 채널로 제외 (최소 6회 이상 활동 필수)
 
 CHANNELS_JSON_PATH = os.path.join(os.path.dirname(__file__), "channels.json")
 
@@ -382,6 +383,12 @@ def fetch_channel_videos(channel_info):
                         })
         except Exception:
             pass
+
+    # 최근 1년(365일) 내 업로드 영상 수 검증 (연 5회 이하는 비활성/휴면 채널로 제외)
+    annual_videos = [v for v in videos if v.get("days_ago", 0) <= MAX_VIDEO_AGE_DAYS]
+    if len(annual_videos) < MIN_ANNUAL_VIDEO_COUNT:
+        print(f"      [!] ❌ 최근 1년 업로드 수 미달 ({len(annual_videos)}편 <= 5회 기준) -> 비활성 채널 제외")
+        return []
 
     return videos
 
