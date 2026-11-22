@@ -31,7 +31,8 @@ from datetime import datetime, timedelta
 MAX_VIDEO_AGE_DAYS = 365  # 여행 정보 최신성 유지를 위해 1년(365일) 이내 영상만 수집
 MIN_SUBSCRIBER_COUNT = 1000  # 최소 구독자 수 필터 (1천 명 이상 채널만 수집)
 DISCOVER_MIN_SUBSCRIBER_COUNT = 1000  # 브이로그 자동 발굴 시 기준 (1천 명 이상)
-MIN_ANNUAL_VIDEO_COUNT = 6  # 1년 내 업로드 5회 이하는 비활성 채널로 제외 (최소 6회 이상 활동 필수)
+MIN_ANNUAL_TRAVEL_VIDEOS = 6  # 1년 내 '여행 + 맛집 투어' 영상 5편 이하는 제외 (최소 6편 이상 전문 여행/맛집 활동 필수)
+MIN_ANNUAL_VIDEO_COUNT = 6  # 호환용 별칭
 
 CHANNELS_JSON_PATH = os.path.join(os.path.dirname(__file__), "channels.json")
 
@@ -612,13 +613,18 @@ def analyze_video_location(title, description, creator_name):
         location_name = f"{city} {kw}" if kw != city and kw != country else f"{city} 주요 명소"
         tip_fn = tip_templates.get(creator_name)
         tip = tip_fn(city) if tip_fn else f"{creator_name}의 {city} 여행 영상 추천 스팟입니다."
+        tags = [city, country, "유튜브추천", "여행"]
+        food_keywords = ["맛집", "먹방", "길거리음식", "야시장", "식당", "푸드", "미식", "라멘", "스시", "시장", "카페", "디저트", "노포", "카이센동"]
+        if any(fk in title for fk in food_keywords) or any(fk in kw for fk in food_keywords):
+            tags.append("맛집")
+            tags.append("푸드투어")
         return {
             "country": country,
             "city": city,
             "locationName": location_name,
             "lat": spot_data["lat"],
             "lng": spot_data["lng"],
-            "tags": [city, country, "유튜브추천", "여행"],
+            "tags": tags,
             "tip": tip
         }
 
@@ -698,6 +704,24 @@ def analyze_video_location(title, description, creator_name):
         return gemini_result
 
     return None
+
+def is_travel_or_food_tour_video(title, description="", creator_name=""):
+    """
+    영상 제목/설명이 여행/관광지/맛집/푸드투어/항공탑승 콘텐츠인지 분석
+    """
+    spot = analyze_video_location(title, description, creator_name)
+    return spot is not None
+
+def filter_annual_travel_videos(videos, creator_name=""):
+    """
+    영상 목록 중 최근 1년(365일) 이내이면서 '여행 + 맛집 투어'에 해당하는 영상만 필터링
+    """
+    travel_vids = []
+    for v in videos:
+        if v.get("days_ago", 0) <= MAX_VIDEO_AGE_DAYS:
+            if is_travel_or_food_tour_video(v.get("title", ""), v.get("description", ""), creator_name):
+                travel_vids.append(v)
+    return travel_vids
 
 _VIDEO_DESC_CACHE = {}
 
@@ -1052,6 +1076,15 @@ def add_channel_workflow(query, is_auto=False):
         print(f"❌ 영상을 가져오지 못했거나 구독자 수 기준(1만+) 미달로 수집이 중단되었습니다.")
         return False
 
+    # 1년 내 '여행 + 맛집 투어' 영상 편수 검증 (최소 6편 이상 필수)
+    annual_travel_vids = filter_annual_travel_videos(videos, target_channel["name"])
+    if len(annual_travel_vids) < MIN_ANNUAL_TRAVEL_VIDEOS:
+        print(f"❌ 최근 1년간 '여행 + 맛집 투어' 영상 수 미달 ({len(annual_travel_vids)}편 < {MIN_ANNUAL_TRAVEL_VIDEOS}편 기준)")
+        print(f"   💡 TubeMap Travel은 '여행 + 맛집 투어'를 주로 하는 전문 유튜버만 등록합니다.")
+        return False
+
+    print(f"   [i] 🎬 최근 1년 여행/맛집 영상: {len(annual_travel_vids)}편 (✅ 기준 통과!)")
+
     # 신규 채널인 경우 channels.json에 영구 등록
     if not existing_match:
         channels.append({"name": target_channel["name"], "handle": target_channel["handle"]})
@@ -1252,13 +1285,24 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
                     print(f"     [+] 📍 여행지 식별 성공: {s['country']} {s['city']} ({s['locationName']}){start_label}")
 
             if added_for_vid > 0:
-                existing_ids.add(vid)
-                # 신규 유튜버라면 channels.json에도 등록
+                # 신규 유튜버라면 최근 1년 '여행 + 맛집 투어' 영상이 6편 이상인지 정밀 검증
                 if handle.lower() not in known_handles:
-                    channels.append({"name": cname, "handle": handle})
-                    known_handles[handle.lower()] = True
-                    new_channels_added += 1
-                    print(f"     🎉 '{cname}' 채널이 channels.json에 신규 유튜버로 등록되었습니다!")
+                    ch_obj = {"name": cname, "handle": handle}
+                    ch_videos = fetch_channel_videos(ch_obj)
+                    annual_travel_vids = filter_annual_travel_videos(ch_videos, cname)
+                    if len(annual_travel_vids) >= MIN_ANNUAL_TRAVEL_VIDEOS:
+                        channels.append(ch_obj)
+                        known_handles[handle.lower()] = True
+                        new_channels_added += 1
+                        existing_ids.add(vid)
+                        print(f"     🎉 '{cname}' 채널 검증 완료! (1년 내 여행/맛집 영상 {len(annual_travel_vids)}편 >= {MIN_ANNUAL_TRAVEL_VIDEOS}편) -> 신규 유튜버 등록")
+                    else:
+                        known_handles[handle.lower()] = False
+                        # 6편 미만인 일반/일상 유튜버의 단발성 여행 영상은 지도에 등록하지 않음
+                        new_spots = [s for s in new_spots if s.get("youtubeId") != vid]
+                        print(f"     [-] ❌ '여행 + 맛집 투어' 전문 유튜버 기준 미달 (1년 내 여행/맛집 영상 {len(annual_travel_vids)}편 < {MIN_ANNUAL_TRAVEL_VIDEOS}편) -> 채널 및 영상 제외")
+                elif known_handles.get(handle.lower()) is True:
+                    existing_ids.add(vid)
         else:
             print(f"     [-] 명확한 여행지 정보 미감지 (일상/토크 등)")
 
