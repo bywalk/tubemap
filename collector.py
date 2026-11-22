@@ -593,6 +593,13 @@ DESTINATION_DICTIONARY = {
     "보스턴": {"country": "미국", "city": "보스턴", "lat": 42.3601, "lng": -71.0589},
     "올랜도": {"country": "미국", "city": "올랜도", "lat": 28.5383, "lng": -81.3792},
     "그랜드캐니언": {"country": "미국", "city": "그랜드캐니언", "lat": 36.1069, "lng": -112.1129},
+    "그랜드 캐니언": {"country": "미국", "city": "그랜드캐니언", "lat": 36.1069, "lng": -112.1129},
+    "네바다": {"country": "미국", "city": "네바다", "lat": 40.7864, "lng": -119.2065},
+    "버닝맨": {"country": "미국", "city": "네바다", "lat": 40.7864, "lng": -119.2065},
+    "블랙록": {"country": "미국", "city": "네바다", "lat": 40.7864, "lng": -119.2065},
+    "텍사스": {"country": "미국", "city": "텍사스", "lat": 31.9686, "lng": -99.9018},
+    "애리조나": {"country": "미국", "city": "애리조나", "lat": 34.0489, "lng": -111.0937},
+    "유타": {"country": "미국", "city": "유타", "lat": 39.3210, "lng": -111.0937},
     "괌": {"country": "미국", "city": "괌", "lat": 13.4443, "lng": 144.7937},
     "사이판": {"country": "미국", "city": "사이판", "lat": 15.1834, "lng": 145.7010},
     "캘리포니아": {"country": "미국", "city": "캘리포니아", "lat": 36.7783, "lng": -119.4179},
@@ -1088,7 +1095,6 @@ def analyze_video_location(title, description, creator_name):
         cleaned = re.sub(r'고대\s*로마|로마\s*(?:신화|제국|교황)', ' ', cleaned)
         cleaned = re.sub(r'비즈니스(?:석|클래스)?', ' ', cleaned)
         cleaned = re.sub(r'[가-힣A-Za-z]+\s*(?:아님|아닌|말고|다음으로|못지않은)', ' ', cleaned)
-        cleaned = re.sub(r'[가-힣A-Za-z]+의\s*[가-힣A-Za-z]+', lambda m: m.group(0).split('의')[0], cleaned)
         cleaned = re.sub(r'(?:남아공|체코|일본|중국|브라질|멕시코)전', ' ', cleaned)
         cleaned = re.sub(r'(?:일본|브라질|러시아|미국|한국|대만)\s*(?:여사친|남사친|여자|남자|친구|관광객)', ' ', cleaned)
         cleaned = re.sub(r'(?:일본|한국|대만|미국|유럽)\s*(?:인듯|같은|느낌|풍)', ' ', cleaned)
