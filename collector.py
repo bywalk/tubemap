@@ -96,7 +96,7 @@ DESTINATION_DICTIONARY = {
     "용인": {"country": "대한민국", "city": "용인", "lat": 37.2411, "lng": 127.1776},
     "광주": {"country": "대한민국", "city": "광주", "lat": 35.1595, "lng": 126.8526},
 
-    # --- 일본 ---
+    # --- 일본 (대도시 및 주요 소도시) ---
     "도쿄": {"country": "일본", "city": "도쿄", "lat": 35.6762, "lng": 139.6503},
     "오사카": {"country": "일본", "city": "오사카", "lat": 34.6937, "lng": 135.5023},
     "후쿠오카": {"country": "일본", "city": "후쿠오카", "lat": 33.5904, "lng": 130.4017},
@@ -104,40 +104,105 @@ DESTINATION_DICTIONARY = {
     "교토": {"country": "일본", "city": "교토", "lat": 35.0116, "lng": 135.7681},
     "나고야": {"country": "일본", "city": "나고야", "lat": 35.1815, "lng": 136.9066},
     "오키나와": {"country": "일본", "city": "오키나와", "lat": 26.2124, "lng": 127.6809},
+    "마쓰야마": {"country": "일본", "city": "마쓰야마", "lat": 33.8392, "lng": 132.7656},
+    "다카마쓰": {"country": "일본", "city": "다카마쓰", "lat": 34.3428, "lng": 134.0466},
+    "구마모토": {"country": "일본", "city": "구마모토", "lat": 32.8032, "lng": 130.7079},
+    "아소": {"country": "일본", "city": "아소", "lat": 32.8842, "lng": 131.0827},
+    "사가": {"country": "일본", "city": "사가", "lat": 33.2635, "lng": 130.3009},
+    "오이타": {"country": "일본", "city": "오이타", "lat": 33.2382, "lng": 131.6126},
+    "벳푸": {"country": "일본", "city": "벳푸", "lat": 33.2846, "lng": 131.4912},
     "유후인": {"country": "일본", "city": "유후인", "lat": 33.2647, "lng": 131.3558},
-    "센다이": {"country": "일본", "city": "센다이", "lat": 38.2682, "lng": 140.8694},
-    "미야자키": {"country": "일본", "city": "미야자키", "lat": 31.9077, "lng": 131.4202},
     "가고시마": {"country": "일본", "city": "가고시마", "lat": 31.5966, "lng": 130.5571},
+    "나가사키": {"country": "일본", "city": "나가사키", "lat": 32.7503, "lng": 129.8777},
+    "미야자키": {"country": "일본", "city": "미야자키", "lat": 31.9077, "lng": 131.4202},
+    "기타큐슈": {"country": "일본", "city": "기타큐슈", "lat": 33.8835, "lng": 130.8752},
+    "히로시마": {"country": "일본", "city": "히로시마", "lat": 34.3853, "lng": 132.4553},
+    "오카야마": {"country": "일본", "city": "오카야마", "lat": 34.6551, "lng": 133.9195},
+    "구라시키": {"country": "일본", "city": "구라시키", "lat": 34.5851, "lng": 133.7722},
+    "돗토리": {"country": "일본", "city": "돗토리", "lat": 35.5011, "lng": 134.2351},
+    "시마네": {"country": "일본", "city": "시마네", "lat": 35.4723, "lng": 133.0505},
+    "마쓰에": {"country": "일본", "city": "마쓰에", "lat": 35.4723, "lng": 133.0505},
+    "가나자와": {"country": "일본", "city": "가나자와", "lat": 36.5613, "lng": 136.6562},
+    "도야마": {"country": "일본", "city": "도야마", "lat": 36.6959, "lng": 137.2137},
+    "시즈오카": {"country": "일본", "city": "시즈오카", "lat": 34.9756, "lng": 138.3828},
+    "고베": {"country": "일본", "city": "고베", "lat": 34.6901, "lng": 135.1955},
+    "나라": {"country": "일본", "city": "나라", "lat": 34.6851, "lng": 135.8048},
+    "와카야마": {"country": "일본", "city": "와카야마", "lat": 34.2305, "lng": 135.1708},
+    "도쿠시마": {"country": "일본", "city": "도쿠시마", "lat": 34.0703, "lng": 134.5548},
+    "고치": {"country": "일본", "city": "고치", "lat": 33.5588, "lng": 133.5312},
+    "센다이": {"country": "일본", "city": "센다이", "lat": 38.2682, "lng": 140.8694},
+    "아오모리": {"country": "일본", "city": "아오모리", "lat": 40.8244, "lng": 140.7400},
+    "하코다테": {"country": "일본", "city": "하코다테", "lat": 41.7687, "lng": 140.7288},
+    "오타루": {"country": "일본", "city": "오타루", "lat": 43.1907, "lng": 140.9947},
+    "아사히카와": {"country": "일본", "city": "아사히카와", "lat": 43.7706, "lng": 142.3650},
+    "후라노": {"country": "일본", "city": "후라노", "lat": 43.3421, "lng": 142.3832},
+    "비에이": {"country": "일본", "city": "비에이", "lat": 43.5908, "lng": 142.4647},
     "오비히로": {"country": "일본", "city": "오비히로", "lat": 42.9239, "lng": 143.1966},
+    "왓카나이": {"country": "일본", "city": "왓카나이", "lat": 45.4156, "lng": 141.6731},
+    "다케오": {"country": "일본", "city": "다케오", "lat": 33.1916, "lng": 130.0219},
+    "우레시노": {"country": "일본", "city": "우레시노", "lat": 33.0975, "lng": 130.0636},
+    "가루이자와": {"country": "일본", "city": "가루이자와", "lat": 36.3488, "lng": 138.6358},
+    "하코네": {"country": "일본", "city": "하코네", "lat": 35.2324, "lng": 139.1069},
+    "닛코": {"country": "일본", "city": "닛코", "lat": 36.7581, "lng": 139.5988},
+    "가와구치코": {"country": "일본", "city": "가와구치코", "lat": 35.5171, "lng": 138.7518},
+    "후지산": {"country": "일본", "city": "후지산", "lat": 35.3606, "lng": 138.7274},
+    "다카야마": {"country": "일본", "city": "다카야마", "lat": 36.1461, "lng": 137.2522},
+    "시라카와고": {"country": "일본", "city": "시라카와고", "lat": 36.2562, "lng": 136.9064},
+    "시모노세키": {"country": "일본", "city": "시모노세키", "lat": 33.9578, "lng": 130.9415},
     "고토열도": {"country": "일본", "city": "나가사키 고토열도", "lat": 32.6953, "lng": 128.8419},
     "스즈카": {"country": "일본", "city": "미에현 스즈카", "lat": 34.8431, "lng": 136.5407},
-    "기타큐슈": {"country": "일본", "city": "기타큐슈", "lat": 33.8835, "lng": 130.8752},
-    "오이타": {"country": "일본", "city": "오이타", "lat": 33.2382, "lng": 131.6126},
-    "왓카나이": {"country": "일본", "city": "왓카나이", "lat": 45.4156, "lng": 141.6731},
     "홋카이도": {"country": "일본", "city": "삿포로", "lat": 43.0618, "lng": 141.3545},
     "일본": {"country": "일본", "city": "도쿄", "lat": 35.6762, "lng": 139.6503},
 
-    # --- 대만 / 홍콩 / 마카오 / 중국 ---
+    # --- 대만 / 홍콩 / 마카오 ---
     "타이베이": {"country": "대만", "city": "타이베이", "lat": 25.0330, "lng": 121.5654},
+    "타이페이": {"country": "대만", "city": "타이베이", "lat": 25.0330, "lng": 121.5654},
     "가오슝": {"country": "대만", "city": "가오슝", "lat": 22.6273, "lng": 120.3014},
     "타이난": {"country": "대만", "city": "타이난", "lat": 22.9997, "lng": 120.2270},
+    "타이중": {"country": "대만", "city": "타이중", "lat": 24.1477, "lng": 120.6736},
     "지룽": {"country": "대만", "city": "지룽", "lat": 25.1276, "lng": 121.7392},
+    "화롄": {"country": "대만", "city": "화롄", "lat": 23.9872, "lng": 121.6016},
+    "지우펀": {"country": "대만", "city": "지우펀", "lat": 25.1099, "lng": 121.8452},
+    "예류": {"country": "대만", "city": "예류", "lat": 25.2064, "lng": 121.6907},
+    "스펀": {"country": "대만", "city": "스펀", "lat": 25.0427, "lng": 121.7766},
+    "단수이": {"country": "대만", "city": "단수이", "lat": 25.1756, "lng": 121.4428},
+    "이란": {"country": "대만", "city": "이란", "lat": 24.7570, "lng": 121.7530},
+    "컨딩": {"country": "대만", "city": "컨딩", "lat": 21.9465, "lng": 120.7977},
     "금문도": {"country": "대만", "city": "진먼(금문도)", "lat": 24.4493, "lng": 118.3767},
     "진먼": {"country": "대만", "city": "진먼(금문도)", "lat": 24.4493, "lng": 118.3767},
     "대만": {"country": "대만", "city": "타이베이", "lat": 25.0330, "lng": 121.5654},
     "홍콩": {"country": "홍콩", "city": "홍콩", "lat": 22.3193, "lng": 114.1694},
+    "침사추이": {"country": "홍콩", "city": "침사추이", "lat": 22.2988, "lng": 114.1722},
     "마카오": {"country": "마카오", "city": "마카오", "lat": 22.1987, "lng": 113.5439},
-    "하이난": {"country": "중국", "city": "하이난", "lat": 18.2528, "lng": 109.5119},
-    "싼야": {"country": "중국", "city": "싼야", "lat": 18.2528, "lng": 109.5119},
+
+    # --- 몽골 ---
+    "울란바토르": {"country": "몽골", "city": "울란바토르", "lat": 47.9184, "lng": 106.9177},
+    "테를지": {"country": "몽골", "city": "테를지", "lat": 47.9943, "lng": 107.4589},
+    "고비사막": {"country": "몽골", "city": "고비사막", "lat": 44.0000, "lng": 105.0000},
+    "홉스골": {"country": "몽골", "city": "홉스골", "lat": 51.1000, "lng": 100.5000},
+    "몽골": {"country": "몽골", "city": "울란바토르", "lat": 47.9184, "lng": 106.9177},
+
+    # --- 중국 ---
     "상하이": {"country": "중국", "city": "상하이", "lat": 31.2304, "lng": 121.4737},
     "베이징": {"country": "중국", "city": "베이징", "lat": 39.9042, "lng": 116.4074},
     "칭다오": {"country": "중국", "city": "칭다오", "lat": 36.0671, "lng": 120.3826},
     "웨이하이": {"country": "중국", "city": "웨이하이", "lat": 37.5131, "lng": 122.1204},
     "청두": {"country": "중국", "city": "청두", "lat": 30.5728, "lng": 104.0668},
     "사천": {"country": "중국", "city": "청두", "lat": 30.5728, "lng": 104.0668},
+    "장가계": {"country": "중국", "city": "장가계", "lat": 29.1170, "lng": 110.4790},
+    "광저우": {"country": "중국", "city": "광저우", "lat": 23.1291, "lng": 113.2644},
+    "선전": {"country": "중국", "city": "선전", "lat": 22.5431, "lng": 114.0579},
+    "시안": {"country": "중국", "city": "시안", "lat": 34.3416, "lng": 108.9398},
+    "충칭": {"country": "중국", "city": "충칭", "lat": 29.4316, "lng": 106.9123},
+    "하얼빈": {"country": "중국", "city": "하얼빈", "lat": 45.8038, "lng": 126.5350},
+    "샤먼": {"country": "중국", "city": "샤먼", "lat": 24.4798, "lng": 118.0894},
+    "리장": {"country": "중국", "city": "리장", "lat": 26.8721, "lng": 100.2297},
+    "항저우": {"country": "중국", "city": "항저우", "lat": 30.2741, "lng": 120.1551},
     "쑤저우": {"country": "중국", "city": "쑤저우", "lat": 31.2989, "lng": 120.5853},
     "소주": {"country": "중국", "city": "쑤저우", "lat": 31.2989, "lng": 120.5853},
     "이우": {"country": "중국", "city": "이우", "lat": 29.3069, "lng": 120.0750},
+    "하이난": {"country": "중국", "city": "하이난", "lat": 18.2528, "lng": 109.5119},
+    "싼야": {"country": "중국", "city": "싼야", "lat": 18.2528, "lng": 109.5119},
     "중국": {"country": "중국", "city": "상하이", "lat": 31.2304, "lng": 121.4737},
 
     # --- 동남아시아 ---
@@ -780,12 +845,17 @@ def analyze_video_location(title, description, creator_name):
 
     def sanitize_location_text(text):
         cleaned = text or ""
+        # 마카오 호텔명(파리지앵, 런더너 등) 오매칭 방지
+        cleaned = re.sub(r'파리지앵|런더너(?:호텔)?', '호텔', cleaned)
+        # 공항 키워드가 특정 도시로 오매칭되는 것 방지
+        cleaned = re.sub(r'(?:인천|김포|김해|제주|대구|청주)\s*공항', '공항', cleaned)
         # 오매칭 유발 부분 문자열 및 비유/부정 표현 제거
         cleaned = re.sub(r'비즈니스(?:석|클래스)?', ' ', cleaned)
         cleaned = re.sub(r'[가-힣A-Za-z]+\s*(?:아님|아닌|말고|다음으로|못지않은)', ' ', cleaned)
         cleaned = re.sub(r'[가-힣A-Za-z]+의\s*[가-힣A-Za-z]+', lambda m: m.group(0).split('의')[0], cleaned)
         cleaned = re.sub(r'(?:남아공|체코|일본|중국|브라질|멕시코)전', ' ', cleaned)
         cleaned = re.sub(r'(?:일본|브라질|러시아|미국|한국|대만)\s*(?:여사친|남사친|여자|남자|친구|관광객)', ' ', cleaned)
+        cleaned = re.sub(r'(?:일본|한국|대만|미국|유럽)\s*(?:인듯|같은|느낌|풍)', ' ', cleaned)
         cleaned = re.sub(r'(?:일본인|한국인|중국인|미국인|외국인)', ' ', cleaned)
         return cleaned
 
@@ -814,6 +884,14 @@ def analyze_video_location(title, description, creator_name):
         # 영문 약어(예: LA)는 단어 경계 확인
         if re.match(r'^[A-Za-z]+$', kw):
             return bool(re.search(rf'(?<![A-Za-z]){re.escape(kw)}(?![A-Za-z])', target_text))
+        # '다카'가 '다카마쓰'에 잘못 매칭되는 것 방지
+        if kw == "다카":
+            if "다카마쓰" in target_text:
+                return False
+            return bool(re.search(r'(?<![가-힣])다카(?![가-힣])|방글라데시', target_text))
+        # 일본 '나라'가 일반 명사 '나라'에 잘못 매칭되는 것 방지
+        if kw == "나라":
+            return bool(re.search(r'일본\s*나라|나라\s*사슴|나라현|나라\s*공원', target_text))
         return kw in target_text
 
     def build_result(kw, spot_data):
@@ -844,24 +922,32 @@ def analyze_video_location(title, description, creator_name):
         reverse=True
     )
 
-    # 1-A. 제목에서 구체 도시 우선 탐색 -> 본문 전체에서 구체 도시 탐색
-    for target in (clean_title, clean_full):
-        for kw in city_keywords:
-            if match_keyword(kw, target):
-                return build_result(kw, DESTINATION_DICTIONARY[kw])
+    # 1. 제목(clean_title)에서 구체 도시 우선 탐색
+    for kw in city_keywords:
+        if match_keyword(kw, clean_title):
+            return build_result(kw, DESTINATION_DICTIONARY[kw])
 
-    # 1-B. 제목/본문에서 국가명 키워드 탐색
-    for target in (clean_title, clean_full):
-        for kw in country_keywords:
-            if match_keyword(kw, target):
-                return build_result(kw, DESTINATION_DICTIONARY[kw])
+    # 2. 제목(clean_title)에서 국가명 키워드 탐색
+    for kw in country_keywords:
+        if match_keyword(kw, clean_title):
+            return build_result(kw, DESTINATION_DICTIONARY[kw])
 
-    # 2. 제목 내 국가 국기 이모지 파싱
+    # 3. 제목 내 국가 국기 이모지 파싱
     for flag, country in COUNTRY_FLAGS.items():
         if flag in title:
             for kw, spot_data in DESTINATION_DICTIONARY.items():
                 if spot_data["country"] == country:
                     return build_result(kw, spot_data)
+
+    # 4. 제목에 지명이 없을 경우, 본문 전체(clean_full)에서 구체 도시 탐색
+    for kw in city_keywords:
+        if match_keyword(kw, clean_full):
+            return build_result(kw, DESTINATION_DICTIONARY[kw])
+
+    # 5. 본문 전체(clean_full)에서 국가명 키워드 탐색
+    for kw in country_keywords:
+        if match_keyword(kw, clean_full):
+            return build_result(kw, DESTINATION_DICTIONARY[kw])
 
     # 3. 대괄호/말머리 패턴 ([...], 【...】)에서 사전 등록 지명 매칭
     bracket_match = re.search(r'\[(.*?)\]|【(.*?)】', title)
@@ -1337,6 +1423,14 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
 
         print(f"[{idx:2d}/{len(videos)}] {cname} (@{handle})")
         print(f"     영상: {title[:45]}...")
+
+        # 방송사 / 기업 / 상업적 공식 채널 제외
+        EXCLUDED_CHANNELS = ["ebs", "kbs", "mbc", "sbs", "jtbc", "ytn", "연합뉴스", "tvn", "mbn", "채널a", "documentary", "다큐", "뉴스", "news", "하나투어", "모두투어", "노랑풍선", "대한항공", "아시아나", "트립닷컴", "마이리얼트립", "쇼핑", "홈쇼핑"]
+        lower_handle = handle.lower()
+        lower_cname = cname.lower()
+        if any(exc in lower_handle or exc in lower_cname for exc in EXCLUDED_CHANNELS):
+            print(f"     [-] ❌ 방송사/기업/공식 채널 제외 ({cname})")
+            continue
 
         # 채널 구독자 수 확인 (1만 이상인지)
         if handle in channel_subs_cache:
