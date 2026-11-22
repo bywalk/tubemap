@@ -72,6 +72,27 @@ def save_channels(channels):
     except Exception as e:
         print(f"❌ channels.json 저장 실패: {e}")
 
+CANONICAL_CREATOR_MAP = {
+    "원지의하루": "원지의 하루",
+    "im1g": "원지의 하루",
+    "조튜브": "Joe튜브",
+    "캐럿맨": "캐럿맨 여행기",
+    "캐럿맨여행기": "캐럿맨 여행기",
+    "여행가제이": "여행가 제이",
+    "오사카에사는사람들": "오사카에사는사람들TV",
+    "쏘이": "쏘이 The World",
+}
+
+def normalize_creator_name(name, handle=""):
+    """크리에이터 이름의 띄어쓰기/별칭 불일치를 공식 명칭으로 단일화"""
+    cleaned = (name or "").strip()
+    norm = cleaned.replace(" ", "").lower()
+    if norm in CANONICAL_CREATOR_MAP:
+        return CANONICAL_CREATOR_MAP[norm]
+    if handle and handle.lower() in CANONICAL_CREATOR_MAP:
+        return CANONICAL_CREATOR_MAP[handle.lower()]
+    return cleaned
+
 # =============================================================================
 # 2. 대표 여행지 키워드 사전 (120+ 주요 여행지 고정밀 좌표 매핑)
 # =============================================================================
@@ -770,6 +791,7 @@ def extract_granular_locations(youtube_id, title, description, creator_name):
     한 영상 내에 존재하는 여러 세부 스팟 목록(List[dict])을 자동 추출.
     세부 스팟이 없으면 1개 대표 스팟 반환.
     """
+    creator_name = normalize_creator_name(creator_name)
     full_desc = description
     if not full_desc or len(full_desc.strip()) <= len(title.strip()):
         fetched = fetch_video_description(youtube_id)
@@ -1229,7 +1251,7 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
         vid = v["youtube_id"]
         title = v["title"]
         handle = v["handle"]
-        cname = v["channel_name"]
+        cname = normalize_creator_name(v["channel_name"], handle)
 
         # 이미 등록된 영상인지 체크
         if vid in existing_ids:
