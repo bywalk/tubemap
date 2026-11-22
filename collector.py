@@ -5,7 +5,7 @@
 TubeMap Travel - 한국 대표 여행 유튜버 신규 영상 자동 수집기 (Collector)
 =============================================================================
 기능:
-1. 구독자 5만~100만+ 한국 대표 여행 유튜버 13팀의 최신 영상 자동 수집 (무료/API 키 불필요)
+1. 구독자 1만~100만+ 한국 대표 여행 유튜버들의 최신 영상 자동 수집 (무료/API 키 불필요)
 2. 최근 1년(365일) 이내 업로드된 최신 영상만 선별 (오래된 과거 영상 자동 필터링)
 3. 기존 js/data.js에 이미 등록된 영상은 자동으로 건너뜀 (중복 방지)
 4. 제목/태그 기반 고정밀 위치 키워드 사전 및 정규식 분석으로 국가, 도시, 좌표, 꿀팁 추출
@@ -26,11 +26,11 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 
 # =============================================================================
-# 1. 수집 설정 및 모니터링 대상 한국 대표 여행 유튜버 (구독자 5만~100만+)
+# 1. 수집 설정 및 모니터링 대상 한국 대표 여행 유튜버 (구독자 1만~100만+)
 # =============================================================================
 MAX_VIDEO_AGE_DAYS = 365  # 여행 정보 최신성 유지를 위해 1년(365일) 이내 영상만 수집
-MIN_SUBSCRIBER_COUNT = 50000  # 최소 구독자 수 필터 (5만 명 이상 채널만 수집)
-DISCOVER_MIN_SUBSCRIBER_COUNT = 100000  # 브이로그 자동 발굴 시 엄격한 기준 (10만 명 이상)
+MIN_SUBSCRIBER_COUNT = 10000  # 최소 구독자 수 필터 (1만 명 이상 채널만 수집)
+DISCOVER_MIN_SUBSCRIBER_COUNT = 10000  # 브이로그 자동 발굴 시 기준 (1만 명 이상)
 
 CHANNELS_JSON_PATH = os.path.join(os.path.dirname(__file__), "channels.json")
 
@@ -501,7 +501,7 @@ def fetch_channel_videos(channel_info):
             with urllib.request.urlopen(req, timeout=12, context=SAFE_SSL_CONTEXT) as resp:
                 html = resp.read().decode("utf-8", errors="ignore")
                 
-                # 구독자 수 실시간 검증 (5만 명 이상 기준)
+                # 구독자 수 실시간 검증 (1만 명 이상 기준)
                 subs = parse_subscriber_count(html)
                 if subs is not None:
                     channel_info["subscribers"] = subs
@@ -509,7 +509,7 @@ def fetch_channel_videos(channel_info):
                         print(f"      [!] ❌ 구독자 수 미달 ({subs:,}명 < {MIN_SUBSCRIBER_COUNT:,}명 기준) -> 채널 자동 제외")
                         return []
                     else:
-                        print(f"      [i] 👥 구독자 수: {subs:,}명 (기준 5만+ 통과)")
+                        print(f"      [i] 👥 구독자 수: {subs:,}명 (기준 1만+ 통과)")
 
                 # ytInitialData 추출
                 idx = html.find("var ytInitialData = ")
@@ -1157,7 +1157,7 @@ def add_channel_workflow(query, is_auto=False):
     """
     유튜버 이름을 입력받아:
     1. 채널 자동 검색
-    2. 구독자 5만+ 실시간 검증
+    2. 구독자 1만+ 실시간 검증
     3. channels.json에 신규 등록
     4. 최근 1년 여행 영상 즉시 수집 & 위치 추출 후 데이터 파일에 추가
     """
@@ -1189,7 +1189,7 @@ def add_channel_workflow(query, is_auto=False):
     videos = fetch_channel_videos(target_channel)
 
     if not videos:
-        print(f"❌ 영상을 가져오지 못했거나 구독자 수 기준(5만+) 미달로 수집이 중단되었습니다.")
+        print(f"❌ 영상을 가져오지 못했거나 구독자 수 기준(1만+) 미달로 수집이 중단되었습니다.")
         return False
 
     # 신규 채널인 경우 channels.json에 영구 등록
@@ -1299,14 +1299,14 @@ def search_youtube_videos(query, max_results=20):
 def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_videos=20):
     """
     키워드로 여행 브이로그를 검색하고:
-    1. 유튜버의 구독자가 10만 이상인지 실시간 검증
-    2. 10만 이상이면 여행지 위치/좌표 추출
+    1. 유튜버의 구독자가 1만 이상인지 실시간 검증
+    2. 1만 이상이면 여행지 위치/좌표 추출
     3. channels.json에 신규 유튜버 자동 등록 및 지도 데이터(videos_recent.js)에 핀 추가
     """
     print("=" * 70)
-    print(f"🌍 10만+ 유튜버 여행 브이로그 자동 발굴 모드")
+    print(f"🌍 1만+ 유튜버 여행 브이로그 자동 발굴 모드")
     print(f"🔍 검색 키워드: '{query}'")
-    print(f"🎯 자격 조건: 채널 구독자 {DISCOVER_MIN_SUBSCRIBER_COUNT:,}명(10만+) 이상")
+    print(f"🎯 자격 조건: 채널 구독자 {DISCOVER_MIN_SUBSCRIBER_COUNT:,}명(1만+) 이상")
     print("=" * 70)
 
     videos = search_youtube_videos(query, max_results=max_videos)
@@ -1338,7 +1338,7 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
         print(f"[{idx:2d}/{len(videos)}] {cname} (@{handle})")
         print(f"     영상: {title[:45]}...")
 
-        # 채널 구독자 수 확인 (10만 이상인지)
+        # 채널 구독자 수 확인 (1만 이상인지)
         if handle in channel_subs_cache:
             subs = channel_subs_cache[handle]
         else:
@@ -1357,10 +1357,10 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
 
         if subs is None or subs < DISCOVER_MIN_SUBSCRIBER_COUNT:
             subs_str = f"{subs:,}명" if subs else "미확인"
-            print(f"     [-] ❌ 구독자 10만 미달 ({subs_str} < {DISCOVER_MIN_SUBSCRIBER_COUNT:,}명) -> 제외")
+            print(f"     [-] ❌ 구독자 1만 미달 ({subs_str} < {DISCOVER_MIN_SUBSCRIBER_COUNT:,}명) -> 제외")
             continue
 
-        print(f"     [i] 👥 구독자 수: {subs:,}명 (✅ 10만+ 기준 통과!)")
+        print(f"     [i] 👥 구독자 수: {subs:,}명 (✅ 1만+ 기준 통과!)")
 
         # 여행지 위치 및 좌표 분석 (다중 세부 스팟/타임스탬프 추출 -> Gemini AI 폴백)
         extracted = extract_granular_locations(vid, title, v.get("description", ""), cname)
@@ -1388,13 +1388,13 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
             print(f"     [-] 명확한 여행지 정보 미감지 (일상/토크 등)")
 
     print("\n" + "=" * 70)
-    print(f"📊 탐색 결과: 총 {len(new_spots)}개의 새로운 10만+ 유튜버 여행 핀 추출 완료")
+    print(f"📊 탐색 결과: 총 {len(new_spots)}개의 새로운 1만+ 유튜버 여행 핀 추출 완료")
     if new_channels_added > 0:
-        print(f"👥 신규 발굴된 10만+ 유튜버: {new_channels_added}팀")
+        print(f"👥 신규 발굴된 1만+ 유튜버: {new_channels_added}팀")
     print("=" * 70)
 
     if not new_spots:
-        print("💡 조건(10만+ 구독자 & 명확한 여행지)에 부합하는 새로운 영상이 없습니다.")
+        print("💡 조건(1만+ 구독자 & 명확한 여행지)에 부합하는 새로운 영상이 없습니다.")
         return True
 
     if not is_auto:
@@ -1417,7 +1417,7 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description="TubeMap Travel - 한국 대표 여행 유튜버 영상 자동 수집기")
     parser.add_argument("--add", type=str, help="유튜버 이름 또는 @핸들을 입력하여 채널 등록 및 영상 수집")
-    parser.add_argument("--discover", type=str, nargs="?", const="해외여행 브이로그", help="10만 이상 유튜버의 여행 브이로그 영상 자동 발굴 (기본값: '해외여행 브이로그')")
+    parser.add_argument("--discover", type=str, nargs="?", const="해외여행 브이로그", help="1만 이상 유튜버의 여행 브이로그 영상 자동 발굴 (기본값: '해외여행 브이로그')")
     parser.add_argument("--list", action="store_true", help="현재 등록된 모니터링 채널 목록 조회")
     parser.add_argument("--auto", action="store_true", help="프롬프트 없이 자동으로 데이터 파일에 반영")
     args = parser.parse_args()
