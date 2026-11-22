@@ -3,6 +3,24 @@
  */
 const RECENT_VIDEOS = [
   {
+    id: "auto-4E8giWr4y-8",
+    creator: "할명수",
+    youtubeId: "4E8giWr4y-8",
+    title: "(ENG) 제가 이민 오고 싶은 나라 소개해드립니다 | 🇺🇸미국 LA 반 바퀴 (w. 광희) | 할명수 ep.305",
+    channel: "할명수",
+    country: "미국",
+    city: "로스앤젤레스",
+    locationName: "로스앤젤레스 LA",
+    lat: 34.0522,
+    lng: -118.2437,
+    tags: ["로스앤젤레스", "미국", "유튜브추천", "여행", "맛집", "푸드투어"],
+    tip: "할명수의 로스앤젤레스 맛집 및 명소 투어 추천 스팟입니다.",
+    publishedAt: "2026-11-22",
+    description: "(ENG) 제가 이민 오고 싶은 나라 소개해드립니다 | 🇺🇸미국 LA 반 바퀴 (w. 광희) | 할명수 ep.305",
+    highlights: []
+  },
+
+  {
     id: "auto-uItbeAQkipc",
     creator: "심심풀이땅콩",
     youtubeId: "uItbeAQkipc",
