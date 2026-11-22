@@ -29,6 +29,7 @@ function initEventListeners() {
 
   function handleSearch(val) {
     currentSearchQuery = val;
+    currentPage = 1;
     if (searchInput && searchInput.value !== val) searchInput.value = val;
     if (sidebarSearchInput && sidebarSearchInput.value !== val) sidebarSearchInput.value = val;
     renderFilteredList();
@@ -59,6 +60,7 @@ function initEventListeners() {
 
   function activateTab(tabName) {
     currentTab = tabName;
+    currentPage = 1;
     tabCreatorBtn.classList.toggle('active', tabName === 'creator');
     tabRegionBtn.classList.toggle('active', tabName === 'region');
     if (tabMyMapBtn) tabMyMapBtn.classList.toggle('active', tabName === 'mymap');
@@ -95,6 +97,7 @@ function initEventListeners() {
       regionChips.forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
       currentRegionFilter = chip.getAttribute('data-region');
+      currentPage = 1;
       renderFilteredList();
       renderMapMarkers();
 
@@ -118,6 +121,7 @@ function initEventListeners() {
       myMapChips.forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
       currentMyMapFilter = chip.getAttribute('data-mymap');
+      currentPage = 1;
       renderFilteredList();
       renderMapMarkers();
 
@@ -157,6 +161,7 @@ function initEventListeners() {
       if (sortLabel) {
         sortLabel.textContent = newOrder === 'desc' ? '최신순' : '오래된순';
       }
+      currentPage = 1;
       renderFilteredList();
       renderMapMarkers();
     });

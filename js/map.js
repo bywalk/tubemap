@@ -165,6 +165,21 @@ function highlightActiveVideo(videoId, panMap = true) {
   const video = travelVideos.find(v => v.id === videoId);
   if (!video) return;
 
+  // Auto-switch to the page containing this video card
+  if (typeof getFilteredVideos === 'function' && typeof ITEMS_PER_PAGE !== 'undefined') {
+    const filtered = getFilteredVideos();
+    const videoIndex = filtered.findIndex(v => v.id === videoId);
+    if (videoIndex !== -1) {
+      const targetPage = Math.floor(videoIndex / ITEMS_PER_PAGE) + 1;
+      if (targetPage !== currentPage) {
+        currentPage = targetPage;
+        if (typeof renderFilteredList === 'function') {
+          renderFilteredList();
+        }
+      }
+    }
+  }
+
   // Highlight card
   document.querySelectorAll('.video-card').forEach(card => card.classList.remove('active'));
   const targetCard = document.getElementById(`card-${videoId}`);

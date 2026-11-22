@@ -2,19 +2,33 @@
  * TubeMap Travel - Sidebar List, Modals, and UI Components
  */
 
-// Render Video List in Sidebar
+// Render Video List in Sidebar (with Pagination)
 function renderFilteredList() {
   const container = document.getElementById('videoListContainer');
   const countBadge = document.getElementById('videoCountBadge');
   const floatingCount = document.getElementById('floatingCountBadge');
+  const paginationBar = document.getElementById('paginationBar');
   const filtered = getFilteredVideos();
 
-  countBadge.textContent = `${filtered.length}곳`;
+  const totalItems = filtered.length;
+  const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE) || 1;
+  if (currentPage > totalPages) currentPage = 1;
+  if (currentPage < 1) currentPage = 1;
+
+  if (countBadge) {
+    countBadge.textContent = totalPages > 1 
+      ? `${totalItems}곳 (${currentPage}/${totalPages}p)` 
+      : `${totalItems}곳`;
+  }
   if (floatingCount) {
-    floatingCount.textContent = filtered.length;
+    floatingCount.textContent = totalItems;
   }
 
-  if (filtered.length === 0) {
+  if (totalItems === 0) {
+    if (paginationBar) {
+      paginationBar.innerHTML = '';
+      paginationBar.style.display = 'none';
+    }
     const emptyMsg = currentTab === 'mymap'
       ? '아직 나만의 맵에 저장된 여행지가 없습니다.<br>마음에 드는 여행지의 <b>[찜]</b>을 누르거나 <b>[+ 등록]</b>해보세요!'
       : '검색어를 바꾸거나 새 영상을 등록해보세요!';
@@ -28,7 +42,11 @@ function renderFilteredList() {
     return;
   }
 
-  container.innerHTML = filtered.map(video => `
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
+  const pageVideos = filtered.slice(startIndex, endIndex);
+
+  container.innerHTML = pageVideos.map(video => `
     <div class="video-card ${video.id === activeMarkerId ? 'active' : ''}" 
          id="card-${video.id}" 
          onclick="handleCardClick('${video.id}')">
@@ -62,6 +80,80 @@ function renderFilteredList() {
       </div>
     </div>
   `).join('');
+
+  renderPaginationBar(totalPages);
+}
+
+// Render Pagination Bar Navigation
+function renderPaginationBar(totalPages) {
+  const paginationBar = document.getElementById('paginationBar');
+  if (!paginationBar) return;
+
+  if (totalPages <= 1) {
+    paginationBar.innerHTML = '';
+    paginationBar.style.display = 'none';
+    return;
+  }
+
+  paginationBar.style.display = 'flex';
+
+  const pages = [];
+  if (totalPages <= 7) {
+    for (let i = 1; i <= totalPages; i++) pages.push(i);
+  } else {
+    pages.push(1);
+    if (currentPage > 3) {
+      pages.push('...');
+    }
+    const start = Math.max(2, currentPage - 1);
+    const end = Math.min(totalPages - 1, currentPage + 1);
+    for (let i = start; i <= end; i++) {
+      pages.push(i);
+    }
+    if (currentPage < totalPages - 2) {
+      pages.push('...');
+    }
+    pages.push(totalPages);
+  }
+
+  const prevDisabled = currentPage === 1 ? 'disabled' : '';
+  const nextDisabled = currentPage === totalPages ? 'disabled' : '';
+
+  let html = `
+    <button type="button" class="page-btn page-btn-nav" ${prevDisabled} onclick="goToPage(${currentPage - 1})" title="이전 페이지">
+      <span class="material-symbols-rounded icon-xs" style="font-size: 18px;">chevron_left</span>
+    </button>
+  `;
+
+  pages.forEach(p => {
+    if (p === '...') {
+      html += `<span class="page-ellipsis">…</span>`;
+    } else {
+      const activeClass = p === currentPage ? 'active' : '';
+      html += `<button type="button" class="page-btn ${activeClass}" onclick="goToPage(${p})">${p}</button>`;
+    }
+  });
+
+  html += `
+    <button type="button" class="page-btn page-btn-nav" ${nextDisabled} onclick="goToPage(${currentPage + 1})" title="다음 페이지">
+      <span class="material-symbols-rounded icon-xs" style="font-size: 18px;">chevron_right</span>
+    </button>
+  `;
+
+  paginationBar.innerHTML = html;
+}
+
+// Navigate to specific page
+function goToPage(page) {
+  const filtered = getFilteredVideos();
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE) || 1;
+  if (page < 1 || page > totalPages) return;
+  currentPage = page;
+  renderFilteredList();
+  const container = document.getElementById('videoListContainer');
+  if (container) {
+    container.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 // Sidebar Drawer Controls
@@ -296,6 +388,7 @@ function renderCreatorChips() {
       container.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
       currentCreatorFilter = chip.getAttribute('data-creator');
+      currentPage = 1;
       renderFilteredList();
       renderMapMarkers();
 

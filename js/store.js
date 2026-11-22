@@ -15,6 +15,8 @@ let editingVideoId = null;
 let currentModalVideoId = null;
 let markersMap = new Map(); // id -> L.marker
 let activeMarkerId = null;
+let currentPage = 1;
+const ITEMS_PER_PAGE = 20; // 사이드바 페이지당 비디오 카드 수
 
 // Utility: Format seconds to MM:SS
 function formatTime(seconds) {
