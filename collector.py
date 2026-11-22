@@ -1489,6 +1489,11 @@ def search_youtube_videos(query, max_results=20):
                     raw_handle = nav.replace("/@", "").replace("/", "")
                     handle = urllib.parse.unquote(raw_handle)
                     
+                    pub_text = vr.get("publishedTimeText", {}).get("simpleText", "")
+                    days_ago, pub_date = parse_relative_time(pub_text)
+                    if days_ago > MAX_VIDEO_AGE_DAYS:
+                        continue
+
                     snippet = ""
                     for run in vr.get("detailedMetadataSnippets", [{}])[0].get("snippetText", {}).get("runs", []):
                         snippet += run.get("text", "")
@@ -1499,6 +1504,8 @@ def search_youtube_videos(query, max_results=20):
                             "title": title,
                             "channel_name": owner_name or handle,
                             "handle": handle,
+                            "published_date": pub_date,
+                            "days_ago": days_ago,
                             "description": snippet or title
                         })
                     if len(videos) >= max_results:
@@ -1591,7 +1598,7 @@ def discover_travel_vlogs(query="해외여행 브이로그", is_auto=False, max_
             for s in extracted:
                 key = (vid, s["locationName"].strip().lower())
                 if key not in existing_spots:
-                    s["publishedAt"] = datetime.now().strftime("%Y-%m-%d")
+                    s["publishedAt"] = v.get("published_date") or datetime.now().strftime("%Y-%m-%d")
                     new_spots.append(s)
                     existing_spots.add(key)
                     added_for_vid += 1
