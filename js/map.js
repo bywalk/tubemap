@@ -69,18 +69,38 @@ function initMap() {
     spiderfyDistanceMultiplier: 1.6
   });
 
-  // 숫자(클러스터) 클릭 시 과도하게 확대되어 핀들이 한 건물에 뭉쳐보이는 현상 방지
-  // 도시/지역 광역 뷰(최대 zoom 11)까지만 부드럽게 확대하고, 
-  // 그 이상에서는 한 점에 뭉친 핀들을 스파이더파이(원형 펼침)로 깔끔하게 분산
+  // 숫자(클러스터) 클릭 시: 현재 보고 있는 지도의 크기(viewport)와 클러스터의 실제 범위를 계산하여 동작
+  // 1) 같은 도시/지역에 모여 있는 마커들은 여러 번 클릭할 필요 없이 '단 1번의 클릭'으로 즉시 원형 펼침(spiderfy)되어 영상 선택 가능
+  // 2) 건물 옥상 수준으로 과도하게 줌인되는 현상 방지 (최대 줌 11로 도시 전체 조망 유지)
+  // 3) 대륙/전 세계 단위의 광역 뷰에서는 +2씩 찔끔찔끔 확대하지 않고 한 번에 해당 지역 뷰로 이동
   markerClusterGroup.on('clusterclick', function (a) {
+    const mapBounds = map.getBounds();
+    const mapDiagonalKm = mapBounds.getNorthEast().distanceTo(mapBounds.getSouthWest()) / 1000;
+
+    const clusterBounds = a.layer.getBounds();
+    const clusterSpreadKm = clusterBounds.getNorthEast().distanceTo(clusterBounds.getSouthWest()) / 1000;
     const currentZoom = map.getZoom();
     const MAX_CLUSTER_ZOOM = 11;
 
-    if (currentZoom >= MAX_CLUSTER_ZOOM) {
+    // 영상들이 동일 위치이거나 같은 도시/생활권 범위(< 100km)에 있거나,
+    // 이미 지도가 특정 국가/지역 규모(< 800km 또는 zoom >= 8)를 보고 있는 경우:
+    // -> 1번의 클릭으로 즉시 핀들을 원형으로 펼쳐(spiderfy) 영상을 바로 선택할 수 있게 함
+    if (clusterSpreadKm < 100 || mapDiagonalKm < 800 || currentZoom >= 8) {
       a.layer.spiderfy();
+      return;
+    }
+
+    // 전 세계/대륙 레벨에서 수백 km 이상 떨어진 여러 지역이 묶여 있는 경우:
+    // -> 여러 번 누를 필요 없이 클러스터의 실제 크기에 맞춰 최대 zoom 11 한도로 '한 번에' 쾌적하게 이동
+    const targetZoom = Math.min(map.getBoundsZoom(clusterBounds), MAX_CLUSTER_ZOOM);
+    if (targetZoom > currentZoom + 1) {
+      map.flyToBounds(clusterBounds, {
+        maxZoom: MAX_CLUSTER_ZOOM,
+        padding: [50, 50],
+        duration: 0.5
+      });
     } else {
-      const nextZoom = Math.min(currentZoom + 2, MAX_CLUSTER_ZOOM);
-      map.flyTo(a.latlng, nextZoom, { duration: 0.6 });
+      a.layer.spiderfy();
     }
   });
 
