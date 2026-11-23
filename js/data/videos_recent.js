@@ -8,7 +8,7 @@ const RECENT_VIDEOS = [
     id: "auto-VUwlMqGNvTw",
     creator: "여행가 제이",
     youtubeId: "VUwlMqGNvTw",
-    title: "\\",
+    title: "\\\\",
     channel: "여행가 제이",
     country: "일본",
     city: "도쿄",
@@ -18,7 +18,7 @@ const RECENT_VIDEOS = [
     tags: ["도쿄", "일본", "유튜브추천", "여행"],
     tip: "여행가 제이의 실전 노하우가 담긴 도쿄 여행지입니다.",
     publishedAt: "2026-11-23",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [또떠남] 중국 상하이 - 상하이 주요 명소 (2026-11-23)
@@ -1843,13 +1843,13 @@ const RECENT_VIDEOS = [
     description: "저 파리랑 안 맞는 것 같아요..",
     highlights: []
   },
-  // [올리베즈 ] 프랑스 파리 - 파리 주요 명소 (2026-11-22)
+  // [올리베즈] 프랑스 파리 - 파리 주요 명소 (2026-11-22)
   {
     id: "auto-rfM5OhvO-vo",
-    creator: "올리베즈 ",
+    creator: "올리베즈",
     youtubeId: "rfM5OhvO-vo",
     title: "Olivet Vlog (파리 & 런던 여행 브이로그) | 왕복 56만원으로 파리 다녀온 썰, 파리 카페, 맛집 + 런던 당일 치기",
-    channel: "올리베즈 ",
+    channel: "올리베즈",
     country: "프랑스",
     city: "파리",
     locationName: "파리 주요 명소",
@@ -2329,13 +2329,13 @@ const RECENT_VIDEOS = [
     description: "(SUB) 행복은 개멀리 있다. 뮌헨에.",
     highlights: []
   },
-  // [황여사 TV  -  Frau Hwang TV ] 독일 뮌헨 - 뮌헨 주요 명소 (2026-11-22)
+  // [황여사 TV  -  Frau Hwang TV] 독일 뮌헨 - 뮌헨 주요 명소 (2026-11-22)
   {
     id: "auto-Fls9H1vgtZw",
-    creator: "황여사 TV  -  Frau Hwang TV ",
+    creator: "황여사 TV  -  Frau Hwang TV",
     youtubeId: "Fls9H1vgtZw",
     title: "🇩🇪독일 뮌헨 vlog | 뮌헨 사는 가족의 찐 코스 | 일요일 1유로 박물관, 학센 맛집, 님펜부르크 노을",
-    channel: "황여사 TV  -  Frau Hwang TV ",
+    channel: "황여사 TV  -  Frau Hwang TV",
     country: "독일",
     city: "뮌헨",
     locationName: "뮌헨 주요 명소",
@@ -2895,7 +2895,7 @@ const RECENT_VIDEOS = [
     id: "auto-zKVtwaUP0uY",
     creator: "LeoJ Makeup",
     youtubeId: "zKVtwaUP0uY",
-    title: "나라에서 집도 준다구요…??❗️유튜브 최초❗️ \\",
+    title: "나라에서 집도 준다구요…??❗️유튜브 최초❗️ \\\\",
     channel: "LeoJ Makeup",
     country: "아랍에미리트",
     city: "두바이",
@@ -2905,7 +2905,7 @@ const RECENT_VIDEOS = [
     tags: ["두바이", "아랍에미리트", "유튜브추천", "여행"],
     tip: "LeoJ Makeup의 두바이 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-11-22",
-    description: "나라에서 집도 준다구요…??❗️유튜브 최초❗️ \\",
+    description: "나라에서 집도 준다구요…??❗️유튜브 최초❗️ \\\\",
     highlights: []
   },
   // [Heejoo 희주] 아랍에미리트 두바이 - 두바이 주요 명소 (2026-11-22)
@@ -3377,13 +3377,13 @@ const RECENT_VIDEOS = [
     description: "쉽지 않다 ..... 이.집.트........🐫🏜️ㅣEgypt VLOG",
     highlights: []
   },
-  // [빠니보틀 Pani Bottle] 이집트 카이로 - 카이로 주요 명소 (2026-11-22)
+  // [빠니보틀] 이집트 카이로 - 카이로 주요 명소 (2026-11-22)
   {
     id: "auto-4x_5DY7boSI",
-    creator: "빠니보틀 Pani Bottle",
+    creator: "빠니보틀",
     youtubeId: "4x_5DY7boSI",
     title: "이집트 고대 유적 가보기 【유라시아96】",
-    channel: "빠니보틀 Pani Bottle",
+    channel: "빠니보틀",
     country: "이집트",
     city: "카이로",
     locationName: "카이로 주요 명소",
@@ -8310,7 +8310,7 @@ const RECENT_VIDEOS = [
     id: "auto-W-6eU1ABQiQ",
     creator: "시도 sido",
     youtubeId: "W-6eU1ABQiQ",
-    title: "\\",
+    title: "\\\\",
     channel: "시도 sido",
     country: "대만",
     city: "타이베이",
@@ -8320,7 +8320,7 @@ const RECENT_VIDEOS = [
     tags: ["타이베이", "대만", "유튜브추천", "여행"],
     tip: "시도 sido의 대만 타이베이 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-11-22",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [이자반] 대만 타이베이 - 타이베이 주요 명소 (2026-11-22)
@@ -8467,13 +8467,13 @@ const RECENT_VIDEOS = [
     description: "한국인 제발 와달라고, 공짜 혜택 퍼주는 일본 소도시",
     highlights: []
   },
-  // [시칠리안 SICILIAN] 일본 후쿠오카 - 후쿠오카 주요 명소 (2026-11-22)
+  // [시칠리안] 일본 후쿠오카 - 후쿠오카 주요 명소 (2026-11-22)
   {
     id: "auto-mVz78tyHNeA",
-    creator: "시칠리안 SICILIAN",
+    creator: "시칠리안",
     youtubeId: "mVz78tyHNeA",
     title: "낭만과 맛집이 넘쳐나는 최고의 일본 소도시, 바로 여기 입니다!",
-    channel: "시칠리안 SICILIAN",
+    channel: "시칠리안",
     country: "일본",
     city: "후쿠오카",
     locationName: "후쿠오카 주요 명소",
@@ -14080,7 +14080,7 @@ const RECENT_VIDEOS = [
     id: "auto-XqAcal37RmY",
     creator: "우리스라",
     youtubeId: "XqAcal37RmY",
-    title: "🇯🇵나 홀로 후쿠오카 여행 \\",
+    title: "🇯🇵나 홀로 후쿠오카 여행 \\\\",
     channel: "우리스라",
     country: "일본",
     city: "후쿠오카",
@@ -14090,7 +14090,7 @@ const RECENT_VIDEOS = [
     tags: ["후쿠오카", "일본", "유튜브추천", "여행"],
     tip: "우리스라의 후쿠오카 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-11-09",
-    description: "🇯🇵나 홀로 후쿠오카 여행 \\",
+    description: "🇯🇵나 홀로 후쿠오카 여행 \\\\",
     highlights: []
   },
   // [haleyard] 일본 도쿄 - 도쿄 주요 명소 (2026-11-09)
@@ -15682,7 +15682,7 @@ const RECENT_VIDEOS = [
     id: "auto-BGGdc5uo7Hg",
     creator: "현빤세여 Hppan",
     youtubeId: "BGGdc5uo7Hg",
-    title: "\\",
+    title: "\\\\",
     channel: "현빤세여 Hppan",
     country: "튀르키예",
     city: "이스탄불",
@@ -15692,7 +15692,7 @@ const RECENT_VIDEOS = [
     tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
     tip: "현빤세여 Hppan의 이스탄불 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-11-02",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [현빤세여 Hppan] 튀르키예 이스탄불 - 이스탄불 주요 명소 (2026-11-02)
@@ -16078,7 +16078,7 @@ const RECENT_VIDEOS = [
     id: "auto-qvEOt1k4OMI",
     creator: "여행가 제이",
     youtubeId: "qvEOt1k4OMI",
-    title: "\\",
+    title: "\\\\",
     channel: "여행가 제이",
     country: "베트남",
     city: "다낭",
@@ -16088,7 +16088,7 @@ const RECENT_VIDEOS = [
     tags: ["다낭", "베트남", "유튜브추천", "여행"],
     tip: "여행가 제이의 실전 노하우가 담긴 다낭 여행지입니다.",
     publishedAt: "2026-11-02",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [Joe튜브] 인도네시아 발리 - 발리 주요 명소 (2026-11-02)
@@ -18472,7 +18472,7 @@ const RECENT_VIDEOS = [
     id: "auto-vCIoW9k6b-I",
     creator: "소풍족",
     youtubeId: "vCIoW9k6b-I",
-    title: "중국인들 사이에서 안세영 선수 응원하기^0^// \\",
+    title: "중국인들 사이에서 안세영 선수 응원하기^0^// \\\\",
     channel: "소풍족",
     country: "중국",
     city: "선전",
@@ -18482,7 +18482,7 @@ const RECENT_VIDEOS = [
     tags: ["선전", "중국", "유튜브추천", "여행"],
     tip: "소풍족의 선전 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-10-24",
-    description: "중국인들 사이에서 안세영 선수 응원하기^0^// \\",
+    description: "중국인들 사이에서 안세영 선수 응원하기^0^// \\\\",
     highlights: []
   },
   // [이지호이죠_JiHo] 몽골 울란바토르 - 울란바토르 주요 명소 (2026-10-24)
@@ -19894,7 +19894,7 @@ const RECENT_VIDEOS = [
     id: "auto-vmugOkwmGf8",
     creator: "트래블 메이커 Travel Maker",
     youtubeId: "vmugOkwmGf8",
-    title: "🇻🇳 \\",
+    title: "🇻🇳 \\\\",
     channel: "트래블 메이커 Travel Maker",
     country: "베트남",
     city: "다낭",
@@ -19904,7 +19904,7 @@ const RECENT_VIDEOS = [
     tags: ["다낭", "베트남", "유튜브추천", "여행"],
     tip: "트래블 메이커 Travel Maker의 다낭 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-10-24",
-    description: "🇻🇳 \\",
+    description: "🇻🇳 \\\\",
     highlights: []
   },
   // [트래블 메이커 Travel Maker] 베트남 다낭 - 다낭 주요 명소 (2026-10-24)
@@ -23008,7 +23008,7 @@ const RECENT_VIDEOS = [
     id: "auto--3rIyQHUKV8",
     creator: "인싸돌 [ Wandering Soo ]",
     youtubeId: "-3rIyQHUKV8",
-    title: "\\",
+    title: "\\\\",
     channel: "인싸돌 [ Wandering Soo ]",
     country: "우즈베키스탄",
     city: "타슈켄트",
@@ -23018,7 +23018,7 @@ const RECENT_VIDEOS = [
     tags: ["타슈켄트", "우즈베키스탄", "유튜브추천", "여행", "맛집", "푸드투어"],
     tip: "인싸돌 [ Wandering Soo ]의 타슈켄트 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-10-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [인싸돌 [ Wandering Soo ]] 우즈베키스탄 타슈켄트 - 타슈켄트 주요 명소 (2026-10-24)
@@ -23980,7 +23980,7 @@ const RECENT_VIDEOS = [
     id: "auto-D6Z8UwOF50I",
     creator: "웅진 고웨이 GO WAY",
     youtubeId: "D6Z8UwOF50I",
-    title: "\\",
+    title: "\\\\",
     channel: "웅진 고웨이 GO WAY",
     country: "중국",
     city: "쑤저우",
@@ -23990,7 +23990,7 @@ const RECENT_VIDEOS = [
     tags: ["쑤저우", "중국", "유튜브추천", "여행"],
     tip: "웅진 고웨이 GO WAY의 쑤저우 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-10-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [웅진 고웨이 GO WAY] 인도 바라나시 - 바라나시 주요 명소 (2026-10-24)
@@ -23998,7 +23998,7 @@ const RECENT_VIDEOS = [
     id: "auto-__8yfhroVLc",
     creator: "웅진 고웨이 GO WAY",
     youtubeId: "__8yfhroVLc",
-    title: "\\",
+    title: "\\\\",
     channel: "웅진 고웨이 GO WAY",
     country: "인도",
     city: "바라나시",
@@ -24008,7 +24008,7 @@ const RECENT_VIDEOS = [
     tags: ["바라나시", "인도", "유튜브추천", "여행"],
     tip: "웅진 고웨이 GO WAY의 바라나시 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-10-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [할명수] 일본 도쿄 - 도쿄 주요 명소 (2026-10-24)
@@ -25765,7 +25765,7 @@ const RECENT_VIDEOS = [
     id: "auto-DQlnF0Z-RyM",
     creator: "황세유기",
     youtubeId: "DQlnF0Z-RyM",
-    title: "\\",
+    title: "\\\\",
     channel: "황세유기",
     country: "베트남",
     city: "다낭",
@@ -25775,7 +25775,7 @@ const RECENT_VIDEOS = [
     tags: ["다낭", "베트남", "유튜브추천", "여행"],
     tip: "황세유기의 다낭 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-10-17",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [Joe튜브] 태국 방콕 - 방콕 주요 명소 (2026-10-16)
@@ -26161,7 +26161,7 @@ const RECENT_VIDEOS = [
     id: "auto-OaPNprwJjAc",
     creator: "Joe튜브",
     youtubeId: "OaPNprwJjAc",
-    title: "아내들 없이 유부남들끼리 베트남 황제 이발소를 \\",
+    title: "아내들 없이 유부남들끼리 베트남 황제 이발소를 \\\\",
     channel: "Joe튜브",
     country: "베트남",
     city: "다낭",
@@ -26171,7 +26171,7 @@ const RECENT_VIDEOS = [
     tags: ["다낭", "베트남", "유튜브추천", "여행"],
     tip: "Joe튜브의 다낭 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-10-08",
-    description: "아내들 없이 유부남들끼리 베트남 황제 이발소를 \\",
+    description: "아내들 없이 유부남들끼리 베트남 황제 이발소를 \\\\",
     highlights: []
   },
   // [Joe튜브] 베트남 다낭 - 다낭 주요 명소 (2026-10-08)
@@ -26557,7 +26557,7 @@ const RECENT_VIDEOS = [
     id: "auto-E84SvIAwWHY",
     creator: "희철리즘",
     youtubeId: "E84SvIAwWHY",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "일본",
     city: "나고야",
@@ -26567,7 +26567,7 @@ const RECENT_VIDEOS = [
     tags: ["나고야", "일본", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 나고야 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-09-30",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [잡식맨 JOBXICMAN] 대한민국 서울 - 서울 서대문구 홍은동 피자 아일랜드 (2026-09-29)
@@ -26575,7 +26575,7 @@ const RECENT_VIDEOS = [
     id: "auto-itjNt4as89A",
     creator: "잡식맨 JOBXICMAN",
     youtubeId: "itjNt4as89A",
-    title: "전국에서 치즈가 가장 많은 피자. 피자 덕후들의 성지 \\",
+    title: "전국에서 치즈가 가장 많은 피자. 피자 덕후들의 성지 \\\\",
     channel: "잡식맨 JOBXICMAN",
     country: "대한민국",
     city: "서울",
@@ -26585,7 +26585,7 @@ const RECENT_VIDEOS = [
     tags: ["서울", "홍은동", "피자아일랜드", "노포맛집"],
     tip: "폭포수 같은 치즈 양으로 유명한 서울 서대문구 홍은동의 전설적인 노포 피자 맛집입니다.",
     publishedAt: "2026-09-29",
-    description: "전국에서 치즈가 가장 많은 피자. 피자 덕후들의 성지 \\",
+    description: "전국에서 치즈가 가장 많은 피자. 피자 덕후들의 성지 \\\\",
     highlights: []
   },
   // [트립콤파니] 미국 그랜드캐니언 - 그랜드캐니언 국립공원 (2026-09-28)
@@ -27314,7 +27314,7 @@ const RECENT_VIDEOS = [
     id: "auto-0dTkftJEtVc",
     creator: "시도 sido",
     youtubeId: "0dTkftJEtVc",
-    title: "\\",
+    title: "\\\\",
     channel: "시도 sido",
     country: "말레이시아",
     city: "쿠알라룸푸르",
@@ -27324,7 +27324,7 @@ const RECENT_VIDEOS = [
     tags: ["쿠알라룸푸르", "말레이시아", "유튜브추천", "여행"],
     tip: "시도 sido의 쿠알라룸푸르 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [시도 sido] 중국 상하이 - 상하이 주요 명소 (2026-09-24)
@@ -28484,7 +28484,7 @@ const RECENT_VIDEOS = [
     id: "auto-XosvgmdMiQw",
     creator: "꾸준 kkujun",
     youtubeId: "XosvgmdMiQw",
-    title: "\\",
+    title: "\\\\",
     channel: "꾸준 kkujun",
     country: "몽골",
     city: "울란바토르",
@@ -28494,7 +28494,7 @@ const RECENT_VIDEOS = [
     tags: ["울란바토르", "몽골", "유튜브추천", "여행"],
     tip: "꾸준 kkujun의 울란바토르 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [꼬마월드] 라오스 방비엥 - 방비엥 주요 명소 (2026-09-24)
@@ -29420,7 +29420,7 @@ const RECENT_VIDEOS = [
     id: "auto-sNDCwzl8_OY",
     creator: "LeoJ Makeup",
     youtubeId: "sNDCwzl8_OY",
-    title: "9월 올영세일! 요즘 난리난 \\",
+    title: "9월 올영세일! 요즘 난리난 \\\\",
     channel: "LeoJ Makeup",
     country: "중국",
     city: "상하이",
@@ -29430,7 +29430,7 @@ const RECENT_VIDEOS = [
     tags: ["상하이", "중국", "유튜브추천", "여행"],
     tip: "LeoJ Makeup의 상하이 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-24",
-    description: "9월 올영세일! 요즘 난리난 \\",
+    description: "9월 올영세일! 요즘 난리난 \\\\",
     highlights: []
   },
   // [LeoJ Makeup] 영국 런던 - 런던 주요 명소 (2026-09-24)
@@ -32660,7 +32660,7 @@ const RECENT_VIDEOS = [
     id: "auto-uXGjAam6leg",
     creator: "현빤세여 Hppan",
     youtubeId: "uXGjAam6leg",
-    title: "\\",
+    title: "\\\\",
     channel: "현빤세여 Hppan",
     country: "아제르바이잔",
     city: "바쿠",
@@ -32670,7 +32670,7 @@ const RECENT_VIDEOS = [
     tags: ["바쿠", "아제르바이잔", "유튜브추천", "여행"],
     tip: "현빤세여 Hppan의 바쿠 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [현빤세여 Hppan] 아제르바이잔 바쿠 - 바쿠 주요 명소 (2026-09-24)
@@ -32696,7 +32696,7 @@ const RECENT_VIDEOS = [
     id: "auto-14cY-fNtFFc",
     creator: "현빤세여 Hppan",
     youtubeId: "14cY-fNtFFc",
-    title: "\\",
+    title: "\\\\",
     channel: "현빤세여 Hppan",
     country: "아제르바이잔",
     city: "바쿠",
@@ -32706,7 +32706,7 @@ const RECENT_VIDEOS = [
     tags: ["바쿠", "아제르바이잔", "유튜브추천", "여행"],
     tip: "현빤세여 Hppan의 바쿠 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [현빤세여 Hppan] 아제르바이잔 바쿠 - 바쿠 주요 명소 (2026-09-24)
@@ -32714,7 +32714,7 @@ const RECENT_VIDEOS = [
     id: "auto-Ay18rIkpZbE",
     creator: "현빤세여 Hppan",
     youtubeId: "Ay18rIkpZbE",
-    title: "\\",
+    title: "\\\\",
     channel: "현빤세여 Hppan",
     country: "아제르바이잔",
     city: "바쿠",
@@ -32724,7 +32724,7 @@ const RECENT_VIDEOS = [
     tags: ["바쿠", "아제르바이잔", "유튜브추천", "여행"],
     tip: "현빤세여 Hppan의 바쿠 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [행복한 월요일] 미국 뉴욕 - 뉴욕 주요 명소 (2026-09-24)
@@ -33434,7 +33434,7 @@ const RECENT_VIDEOS = [
     id: "auto-s5solskzhxc",
     creator: "예스타, 연차여행",
     youtubeId: "s5solskzhxc",
-    title: "\\",
+    title: "\\\\",
     channel: "예스타, 연차여행",
     country: "일본",
     city: "오키나와",
@@ -33444,7 +33444,7 @@ const RECENT_VIDEOS = [
     tags: ["오키나와", "일본", "유튜브추천", "여행", "맛집", "푸드투어"],
     tip: "예스타, 연차여행의 오키나와 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-24",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [취미부자] 중국 상하이 - 상하이 주요 명소 (2026-09-24)
@@ -35683,7 +35683,7 @@ const RECENT_VIDEOS = [
     id: "auto-ItJjLjrGKjk",
     creator: "희철리즘",
     youtubeId: "ItJjLjrGKjk",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "튀르키예",
     city: "이스탄불",
@@ -35693,7 +35693,7 @@ const RECENT_VIDEOS = [
     tags: ["이스탄불", "튀르키예", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 이스탄불 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-09-10",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [육식맨 YOOXICMAN] 인도네시아 마나도 - 북술라웨시 마나도 & 토모혼 전통시장 (2026-09-08)
@@ -35773,7 +35773,7 @@ const RECENT_VIDEOS = [
     id: "auto-JW1zyPhG59U",
     creator: "잡식맨 JOBXICMAN",
     youtubeId: "JW1zyPhG59U",
-    title: "일본 롯데리아에서 만난 궁극의 롯스러움 \\",
+    title: "일본 롯데리아에서 만난 궁극의 롯스러움 \\\\",
     channel: "잡식맨 JOBXICMAN",
     country: "일본",
     city: "도쿄",
@@ -35783,7 +35783,7 @@ const RECENT_VIDEOS = [
     tags: ["도쿄", "일본", "유튜브추천", "여행"],
     tip: "잡식맨 JOBXICMAN의 도쿄 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-09-03",
-    description: "일본 롯데리아에서 만난 궁극의 롯스러움 \\",
+    description: "일본 롯데리아에서 만난 궁극의 롯스러움 \\\\",
     highlights: []
   },
   // [원지의 하루] 일본 도쿄 - 도쿄 주요 명소 (2026-09-03)
@@ -36493,7 +36493,7 @@ const RECENT_VIDEOS = [
     id: "auto-SeLOndN5EFM",
     creator: "시도 sido",
     youtubeId: "SeLOndN5EFM",
-    title: "더 이상 \\",
+    title: "더 이상 \\\\",
     channel: "시도 sido",
     country: "일본",
     city: "오사카",
@@ -36503,7 +36503,7 @@ const RECENT_VIDEOS = [
     tags: ["오사카", "일본", "유튜브추천", "여행"],
     tip: "시도 sido의 오사카 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-08-25",
-    description: "더 이상 \\",
+    description: "더 이상 \\\\",
     highlights: []
   },
   // [시도 sido] 일본 교토 - 교토 주요 명소 (2026-08-25)
@@ -37159,7 +37159,7 @@ const RECENT_VIDEOS = [
     id: "auto-GYNP5832ovY",
     creator: "박엥겍 ParkEngKeck",
     youtubeId: "GYNP5832ovY",
-    title: "\\",
+    title: "\\\\",
     channel: "박엥겍 ParkEngKeck",
     country: "일본",
     city: "도쿄",
@@ -37169,7 +37169,7 @@ const RECENT_VIDEOS = [
     tags: ["도쿄", "일본", "유튜브추천", "여행"],
     tip: "박엥겍 ParkEngKeck의 도쿄 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-08-25",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [헤르미 hermiona] 일본 오키나와 - 오키나와 주요 명소 (2026-08-25)
@@ -41119,7 +41119,7 @@ const RECENT_VIDEOS = [
     id: "auto-DxxGMXG8vbQ",
     creator: "인싸돌 [ Wandering Soo ]",
     youtubeId: "DxxGMXG8vbQ",
-    title: "\\",
+    title: "\\\\",
     channel: "인싸돌 [ Wandering Soo ]",
     country: "카자흐스탄",
     city: "알마티",
@@ -41129,7 +41129,7 @@ const RECENT_VIDEOS = [
     tags: ["알마티", "카자흐스탄", "유튜브추천", "여행"],
     tip: "인싸돌 [ Wandering Soo ]의 알마티 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-08-25",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [인싸돌 [ Wandering Soo ]] 카자흐스탄 알마티 - 알마티 주요 명소 (2026-08-25)
@@ -42469,7 +42469,7 @@ const RECENT_VIDEOS = [
     id: "auto-al5OP1ur6RQ",
     creator: "육식맨 YOOXICMAN",
     youtubeId: "al5OP1ur6RQ",
-    title: "우설 원조도시 탐방기 : 엔저 환율에 딱 좋은 고급 특수부위 \\",
+    title: "우설 원조도시 탐방기 : 엔저 환율에 딱 좋은 고급 특수부위 \\\\",
     channel: "육식맨 YOOXICMAN",
     country: "일본",
     city: "센다이",
@@ -42479,7 +42479,7 @@ const RECENT_VIDEOS = [
     tags: ["센다이", "우설", "규탄", "일본미식여행"],
     tip: "두툼한 소 혀 구이(규탄)의 발상지인 일본 센다이의 원조 우설 전문점 투어입니다.",
     publishedAt: "2026-08-25",
-    description: "우설 원조도시 탐방기 : 엔저 환율에 딱 좋은 고급 특수부위 \\",
+    description: "우설 원조도시 탐방기 : 엔저 환율에 딱 좋은 고급 특수부위 \\\\",
     highlights: []
   },
   // [일하다 말고 세계일주 Pero Bueno] 튀르키예 이스탄불 - 이스탄불에서의 첫끼 (2026-08-24)
@@ -43355,7 +43355,7 @@ const RECENT_VIDEOS = [
     id: "auto-ZSooQ_QpcDs",
     creator: "잡식맨 JOBXICMAN",
     youtubeId: "ZSooQ_QpcDs",
-    title: "국내 도입이 시급한 일본 문화 \\",
+    title: "국내 도입이 시급한 일본 문화 \\\\",
     channel: "잡식맨 JOBXICMAN",
     country: "일본",
     city: "센다이",
@@ -43365,7 +43365,7 @@ const RECENT_VIDEOS = [
     tags: ["센다이", "헤드마사지", "일본여행", "힐링"],
     tip: "센다이 시내에 위치한 남성 전용 두피·헤드 마사지 전문 바버샵입니다.",
     publishedAt: "2026-08-24",
-    description: "국내 도입이 시급한 일본 문화 \\",
+    description: "국내 도입이 시급한 일본 문화 \\\\",
     highlights: []
   },
   // [뜨랑낄로] 중국 상하이 - 상하이 주요 명소 (2026-08-23)
@@ -43625,7 +43625,7 @@ const RECENT_VIDEOS = [
     id: "auto-A8JCiuX02dA",
     creator: "육식맨 YOOXICMAN",
     youtubeId: "A8JCiuX02dA",
-    title: "나폴리 맛피아 권성준 셰프의 새로운 레스토랑 \\",
+    title: "나폴리 맛피아 권성준 셰프의 새로운 레스토랑 \\\\",
     channel: "육식맨 YOOXICMAN",
     country: "이탈리아",
     city: "나폴리",
@@ -43635,7 +43635,7 @@ const RECENT_VIDEOS = [
     tags: ["나폴리", "이탈리아", "유튜브추천", "여행"],
     tip: "육식맨 YOOXICMAN의 나폴리 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-08-20",
-    description: "나폴리 맛피아 권성준 셰프의 새로운 레스토랑 \\",
+    description: "나폴리 맛피아 권성준 셰프의 새로운 레스토랑 \\\\",
     highlights: []
   },
   // [육식맨 YOOXICMAN] 멕시코 멕시코시티 - 멕시코시티 주요 명소 (2026-08-20)
@@ -43787,7 +43787,7 @@ const RECENT_VIDEOS = [
     id: "auto-KmHuyW0lMy8",
     creator: "잡식맨 JOBXICMAN",
     youtubeId: "KmHuyW0lMy8",
-    title: "전국 최고의 탄수화물 요리. 혈당 스파이크 로켓 발사대. 제주 명물 \\",
+    title: "전국 최고의 탄수화물 요리. 혈당 스파이크 로켓 발사대. 제주 명물 \\\\",
     channel: "잡식맨 JOBXICMAN",
     country: "대한민국",
     city: "제주",
@@ -43797,7 +43797,7 @@ const RECENT_VIDEOS = [
     tags: ["제주", "대한민국", "유튜브추천", "여행"],
     tip: "잡식맨 JOBXICMAN의 제주 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-08-10",
-    description: "전국 최고의 탄수화물 요리. 혈당 스파이크 로켓 발사대. 제주 명물 \\",
+    description: "전국 최고의 탄수화물 요리. 혈당 스파이크 로켓 발사대. 제주 명물 \\\\",
     highlights: []
   },
   // [또떠남] 일본 비에이·삿포로 - 홋카이도 비에이·후라노 & 토마무 리조트 3박 4일 코스 (2026-08-07)
@@ -43895,7 +43895,7 @@ const RECENT_VIDEOS = [
     id: "auto-Xc7lflv1WtE",
     creator: "희철리즘",
     youtubeId: "Xc7lflv1WtE",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "키르기스스탄",
     city: "비슈케크",
@@ -43905,7 +43905,7 @@ const RECENT_VIDEOS = [
     tags: ["비슈케크", "키르기스스탄", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 비슈케크 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-07-30",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [잡식맨 JOBXICMAN] 대한민국 서귀포시 - 서귀포시 연돈 (2026-07-27)
@@ -43949,7 +43949,7 @@ const RECENT_VIDEOS = [
     id: "auto-OC948Uq6A90",
     creator: "희철리즘",
     youtubeId: "OC948Uq6A90",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "캄보디아",
     city: "시엠립",
@@ -43959,7 +43959,7 @@ const RECENT_VIDEOS = [
     tags: ["시엠립", "캄보디아", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 시엠립 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-07-26",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [희철리즘] 캄보디아 시엠립 - 시엠립 주요 명소 (2026-07-26)
@@ -44741,7 +44741,7 @@ const RECENT_VIDEOS = [
     id: "auto-keIB7fUxiSc",
     creator: "소풍족",
     youtubeId: "keIB7fUxiSc",
-    title: "또 시작된 \\",
+    title: "또 시작된 \\\\",
     channel: "소풍족",
     country: "인도",
     city: "뭄바이",
@@ -44751,7 +44751,7 @@ const RECENT_VIDEOS = [
     tags: ["뭄바이", "인도", "유튜브추천", "여행"],
     tip: "소풍족의 뭄바이 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-07-26",
-    description: "또 시작된 \\",
+    description: "또 시작된 \\\\",
     highlights: []
   },
   // [이지호이죠_JiHo] 일본 도쿄 - 도쿄 주요 명소 (2026-07-26)
@@ -49439,7 +49439,7 @@ const RECENT_VIDEOS = [
     id: "auto-2n6D7MbpP6Y",
     creator: "웅진 고웨이 GO WAY",
     youtubeId: "2n6D7MbpP6Y",
-    title: "\\",
+    title: "\\\\",
     channel: "웅진 고웨이 GO WAY",
     country: "이탈리아",
     city: "로마",
@@ -49449,7 +49449,7 @@ const RECENT_VIDEOS = [
     tags: ["로마", "이탈리아", "유튜브추천", "여행"],
     tip: "웅진 고웨이 GO WAY의 로마 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-07-26",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [웅진 고웨이 GO WAY] 이탈리아 아말피 - 아말피 주요 명소 (2026-07-26)
@@ -51597,7 +51597,7 @@ const RECENT_VIDEOS = [
     id: "auto-QChKixvjH68",
     creator: "살란다",
     youtubeId: "QChKixvjH68",
-    title: "유럽 여행 만족도 1위! 다들 \\",
+    title: "유럽 여행 만족도 1위! 다들 \\\\",
     channel: "살란다",
     country: "스페인",
     city: "바르셀로나",
@@ -51607,7 +51607,7 @@ const RECENT_VIDEOS = [
     tags: ["바르셀로나", "스페인", "유튜브추천", "여행"],
     tip: "살란다의 바르셀로나 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-06-26",
-    description: "유럽 여행 만족도 1위! 다들 \\",
+    description: "유럽 여행 만족도 1위! 다들 \\\\",
     highlights: []
   },
   // [깅듀로그] 중국 상하이 - 상하이 주요 명소 (2026-06-26)
@@ -53361,7 +53361,7 @@ const RECENT_VIDEOS = [
     id: "auto-ot7nFFiQaCw",
     creator: "트래블 메이커 Travel Maker",
     youtubeId: "ot7nFFiQaCw",
-    title: "\\",
+    title: "\\\\",
     channel: "트래블 메이커 Travel Maker",
     country: "중국",
     city: "장가계",
@@ -53371,7 +53371,7 @@ const RECENT_VIDEOS = [
     tags: ["장가계", "중국", "유튜브추천", "여행"],
     tip: "트래블 메이커 Travel Maker의 장가계 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-06-26",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [트래블 메이커 Travel Maker] 베트남 다낭 - 다낭 주요 명소 (2026-06-26)
@@ -53379,7 +53379,7 @@ const RECENT_VIDEOS = [
     id: "auto-TgvSnASeHhc",
     creator: "트래블 메이커 Travel Maker",
     youtubeId: "TgvSnASeHhc",
-    title: "\\",
+    title: "\\\\",
     channel: "트래블 메이커 Travel Maker",
     country: "베트남",
     city: "다낭",
@@ -53389,7 +53389,7 @@ const RECENT_VIDEOS = [
     tags: ["다낭", "베트남", "유튜브추천", "여행"],
     tip: "트래블 메이커 Travel Maker의 다낭 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-06-26",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [트래블 메이커 Travel Maker] 필리핀 세부 - 세부 주요 명소 (2026-06-26)
@@ -57069,7 +57069,7 @@ const RECENT_VIDEOS = [
     id: "auto-9eLCv1ePoDI",
     creator: "내이름은유재석 mynameyjs",
     youtubeId: "9eLCv1ePoDI",
-    title: "\\",
+    title: "\\\\",
     channel: "내이름은유재석 mynameyjs",
     country: "멕시코",
     city: "멕시코시티",
@@ -57079,7 +57079,7 @@ const RECENT_VIDEOS = [
     tags: ["멕시코시티", "멕시코", "유튜브추천", "여행"],
     tip: "내이름은유재석 mynameyjs의 멕시코시티 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-06-26",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [내이름은유재석 mynameyjs] 멕시코 멕시코시티 - 멕시코시티 주요 명소 (2026-06-26)
@@ -57622,13 +57622,13 @@ const RECENT_VIDEOS = [
     description: "후쿠오카만 10번째❤️‍🔥찐맛집만 가는 2박3일 코스🍱(100% 현지인 맛집.나카스 포차거리.빵스톡 명란바게트.돈키호테 추천템.휴먼메이드.몽벨.유니클로 쇼핑.텐진 숙소🏯)",
     highlights: []
   },
-  // [도라 dorawhatday ] 대만 타이베이 - 타이베이 주요 명소 (2026-06-25)
+  // [도라 dorawhatday] 대만 타이베이 - 타이베이 주요 명소 (2026-06-25)
   {
     id: "auto-9dvIRWWm5eQ",
-    creator: "도라 dorawhatday ",
+    creator: "도라 dorawhatday",
     youtubeId: "9dvIRWWm5eQ",
     title: "왕복15만원 못참지. 또 다녀온 후쿠오카 여행 브이로그 (1) 위치 청결 대만족 호텔 👍🏻 핫한 맛집 • 디저트 추천 🍩",
-    channel: "도라 dorawhatday ",
+    channel: "도라 dorawhatday",
     country: "대만",
     city: "타이베이",
     locationName: "타이베이 주요 명소",
@@ -58383,7 +58383,7 @@ const RECENT_VIDEOS = [
     id: "auto-H9glZ3po0qA",
     creator: "희철리즘",
     youtubeId: "H9glZ3po0qA",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "베트남",
     city: "호치민",
@@ -58393,7 +58393,7 @@ const RECENT_VIDEOS = [
     tags: ["호치민", "베트남", "랜드마크81", "빈홈센트럴파크"],
     tip: "초고층 빌딩과 고급 아파트 단지가 밀집해 급변하는 현대 베트남의 발전상을 보여주는 호치민 신도시입니다.",
     publishedAt: "2026-06-11",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [곽튜브] 라오스 방비엥 - 방비엥 주요 명소 (2026-06-10)
@@ -58527,7 +58527,7 @@ const RECENT_VIDEOS = [
     id: "auto-ldgumbIJeew",
     creator: "잡식맨 JOBXICMAN",
     youtubeId: "ldgumbIJeew",
-    title: "일본인 관광객은 이걸 왜 먹을까? \\",
+    title: "일본인 관광객은 이걸 왜 먹을까? \\\\",
     channel: "잡식맨 JOBXICMAN",
     country: "대한민국",
     city: "서울",
@@ -58537,7 +58537,7 @@ const RECENT_VIDEOS = [
     tags: ["서울", "동대문", "닭한마리", "종로맛집"],
     tip: "한국인뿐 아니라 일본인 관광객들에게도 성지로 꼽히는 동대문 닭한마리 골목입니다.",
     publishedAt: "2026-06-02",
-    description: "일본인 관광객은 이걸 왜 먹을까? \\",
+    description: "일본인 관광객은 이걸 왜 먹을까? \\\\",
     highlights: []
   },
   // [곽튜브] 일본 오사카 - 오사카 도톤보리 & 우메다 데이트 코스 (2026-06-02)
@@ -58635,7 +58635,7 @@ const RECENT_VIDEOS = [
     id: "auto-LzZuQEYobYQ",
     creator: "희철리즘",
     youtubeId: "LzZuQEYobYQ",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "영국",
     city: "런던",
@@ -58645,7 +58645,7 @@ const RECENT_VIDEOS = [
     tags: ["런던", "영국", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 런던 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-05-28",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [쏘이 The World] 키르기스스탄 이식쿨·카라콜 - 키르기스스탄 알틴아라산 & 이식쿨 호수 대자연 (2026-05-28)
@@ -58653,7 +58653,7 @@ const RECENT_VIDEOS = [
     id: "auto-f_K3RZIf_Yo",
     creator: "쏘이 The World",
     youtubeId: "f_K3RZIf_Yo",
-    title: "🇰🇬 #2 \\",
+    title: "🇰🇬 #2 \\\\",
     channel: "쏘이 The World",
     country: "키르기스스탄",
     city: "이식쿨·카라콜",
@@ -58663,7 +58663,7 @@ const RECENT_VIDEOS = [
     tags: ["이식쿨", "알틴아라산", "키르기스스탄", "중앙아시아"],
     tip: "중앙아시아의 알프스라 불리는 키르기스스탄 만년설 계곡과 초원 승마·유르트 캠핑 스팟입니다.",
     publishedAt: "2026-05-28",
-    description: "🇰🇬 #2 \\",
+    description: "🇰🇬 #2 \\\\",
     highlights: []
   },
   // [테디여행기] 대만 이란 - 이란 주요 명소 (2026-05-27)
@@ -59445,7 +59445,7 @@ const RECENT_VIDEOS = [
     id: "auto-H3kCeVTGTTQ",
     creator: "박엥겍 ParkEngKeck",
     youtubeId: "H3kCeVTGTTQ",
-    title: "\\",
+    title: "\\\\",
     channel: "박엥겍 ParkEngKeck",
     country: "일본",
     city: "도쿄",
@@ -59455,7 +59455,7 @@ const RECENT_VIDEOS = [
     tags: ["도쿄", "일본", "유튜브추천", "여행"],
     tip: "박엥겍 ParkEngKeck의 도쿄 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-05-27",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [헤르미 hermiona] 일본 오사카 - 오사카 우메다 (2026-05-27)
@@ -60003,7 +60003,7 @@ const RECENT_VIDEOS = [
     id: "auto-oGGZffUtqo0",
     creator: "아재여행 Ajae Travel",
     youtubeId: "oGGZffUtqo0",
-    title: "\\",
+    title: "\\\\",
     channel: "아재여행 Ajae Travel",
     country: "대만",
     city: "타이베이",
@@ -60013,7 +60013,7 @@ const RECENT_VIDEOS = [
     tags: ["타이베이", "대만", "유튜브추천", "여행"],
     tip: "아재여행 Ajae Travel의 타이베이 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-05-27",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [Mojave 모하비] 미국 뉴욕 - 뉴욕 주요 명소 (2026-05-27)
@@ -62433,7 +62433,7 @@ const RECENT_VIDEOS = [
     id: "auto-PWaBdwiRyfs",
     creator: "한란 HANRAN",
     youtubeId: "PWaBdwiRyfs",
-    title: "\\",
+    title: "\\\\",
     channel: "한란 HANRAN",
     country: "콜롬비아",
     city: "보고타",
@@ -62443,7 +62443,7 @@ const RECENT_VIDEOS = [
     tags: ["보고타", "콜롬비아", "유튜브추천", "여행"],
     tip: "한란 HANRAN의 보고타 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-05-27",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [한란 HANRAN] 브라질 리우데자네이루 - 리우데자네이루 주요 명소 (2026-05-27)
@@ -63513,7 +63513,7 @@ const RECENT_VIDEOS = [
     id: "auto--IamRuqs5sc",
     creator: "웅진 고웨이 GO WAY",
     youtubeId: "-IamRuqs5sc",
-    title: "\\",
+    title: "\\\\",
     channel: "웅진 고웨이 GO WAY",
     country: "영국",
     city: "런던",
@@ -63523,7 +63523,7 @@ const RECENT_VIDEOS = [
     tags: ["런던", "영국", "유튜브추천", "여행"],
     tip: "웅진 고웨이 GO WAY의 런던 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-05-27",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [여행가보고서] 스페인 바르셀로나 - 바르셀로나 주요 명소 (2026-05-27)
@@ -63796,13 +63796,13 @@ const RECENT_VIDEOS = [
     description: "미국 샌프란시스코 실제 여행영어! 반복해서 들으면 입에서 영어가 술술 나와요!",
     highlights: []
   },
-  // [명예영국인 world ] 영국 런던 - 런던 주요 명소 (2026-05-26)
+  // [명예영국인 world] 영국 런던 - 런던 주요 명소 (2026-05-26)
   {
     id: "auto-VIjUeZzGm_o",
-    creator: "명예영국인 world ",
+    creator: "명예영국인 world",
     youtubeId: "VIjUeZzGm_o",
     title: "[VLOG] 고집센 런던 여행가이드 특",
-    channel: "명예영국인 world ",
+    channel: "명예영국인 world",
     country: "영국",
     city: "런던",
     locationName: "런던 주요 명소",
@@ -64539,7 +64539,7 @@ const RECENT_VIDEOS = [
     id: "auto-9rKQx6eXix4",
     creator: "육식맨 YOOXICMAN",
     youtubeId: "9rKQx6eXix4",
-    title: "마라의 고향을 찾아서 : 이 국물은 관우장비도 못 먹습니다. 삼국지 촉나라 수도의 \\",
+    title: "마라의 고향을 찾아서 : 이 국물은 관우장비도 못 먹습니다. 삼국지 촉나라 수도의 \\\\",
     channel: "육식맨 YOOXICMAN",
     country: "중국",
     city: "청두",
@@ -64549,7 +64549,7 @@ const RECENT_VIDEOS = [
     tags: ["청두", "중국", "유튜브추천", "Gemini추출"],
     tip: "삼국지 촉나라의 수도이자 마라 요리의 본고장인 청두에서 즐기는 정통 쓰촨식 마라 요리 탐방",
     publishedAt: "2026-05-11",
-    description: "마라의 고향을 찾아서 : 이 국물은 관우장비도 못 먹습니다. 삼국지 촉나라 수도의 \\",
+    description: "마라의 고향을 찾아서 : 이 국물은 관우장비도 못 먹습니다. 삼국지 촉나라 수도의 \\\\",
     highlights: []
   },
   // [걷다가] 미얀마 양곤 - 양곤 흘레단 대학가 (2026-05-08)
@@ -65709,7 +65709,7 @@ const RECENT_VIDEOS = [
     id: "auto-NKIBOkxW6VQ",
     creator: "또떠나용 ddonayoung",
     youtubeId: "NKIBOkxW6VQ",
-    title: "\\",
+    title: "\\\\",
     channel: "또떠나용 ddonayoung",
     country: "중국",
     city: "상하이",
@@ -65719,7 +65719,7 @@ const RECENT_VIDEOS = [
     tags: ["상하이", "중국", "유튜브추천", "여행"],
     tip: "또떠나용 ddonayoung의 상하이 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-04-27",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [또떠나용 ddonayoung] 미국 뉴욕 - 뉴욕 주요 명소 (2026-04-27)
@@ -69561,7 +69561,7 @@ const RECENT_VIDEOS = [
     id: "auto-6wAPLhMIRcM",
     creator: "쏘이 The World",
     youtubeId: "6wAPLhMIRcM",
-    title: "🇺🇸 #4 \\",
+    title: "🇺🇸 #4 \\\\",
     channel: "쏘이 The World",
     country: "미국",
     city: "로스앤젤레스",
@@ -69571,7 +69571,7 @@ const RECENT_VIDEOS = [
     tags: ["로스앤젤레스", "LA", "캘리포니아", "미국여행"],
     tip: "자유롭고 활기찬 캘리포니아 현지 파티 문화를 생생하게 볼 수 있는 LA 여행기입니다.",
     publishedAt: "2026-04-23",
-    description: "🇺🇸 #4 \\",
+    description: "🇺🇸 #4 \\\\",
     highlights: []
   },
   // [곽튜브] 일본 후쿠오카 - 후쿠오카 주요 명소 (2026-04-22)
@@ -69687,7 +69687,7 @@ const RECENT_VIDEOS = [
     id: "auto-Auf4BsHpZHU",
     creator: "희철리즘",
     youtubeId: "Auf4BsHpZHU",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "에티오피아",
     city: "아디스아바바",
@@ -69697,7 +69697,7 @@ const RECENT_VIDEOS = [
     tags: ["아디스아바바", "에티오피아", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 아디스아바바 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-04-22",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [희철리즘] 에티오피아 아디스아바바 - 아디스아바바 주요 명소 (2026-04-22)
@@ -69723,7 +69723,7 @@ const RECENT_VIDEOS = [
     id: "auto-kEz1dyOLyrs",
     creator: "희철리즘",
     youtubeId: "kEz1dyOLyrs",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "에티오피아",
     city: "아디스아바바",
@@ -69733,7 +69733,7 @@ const RECENT_VIDEOS = [
     tags: ["아디스아바바", "에티오피아", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 아디스아바바 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-04-22",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [황세유기] 베트남 다낭 - 다낭 주요 명소 (2026-04-22)
@@ -70965,7 +70965,7 @@ const RECENT_VIDEOS = [
     id: "auto-QY7ddBWbplQ",
     creator: "여행프로 만프로",
     youtubeId: "QY7ddBWbplQ",
-    title: "\\",
+    title: "\\\\",
     channel: "여행프로 만프로",
     country: "대한민국",
     city: "부산",
@@ -70975,7 +70975,7 @@ const RECENT_VIDEOS = [
     tags: ["부산", "대한민국", "유튜브추천", "여행"],
     tip: "여행프로 만프로의 부산 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-03-28",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [여행프로 만프로] 대한민국 부산 - 부산 주요 명소 (2026-03-28)
@@ -74261,7 +74261,7 @@ const RECENT_VIDEOS = [
     id: "auto-cxEKRq2Qtmk",
     creator: "쏘이 The World",
     youtubeId: "cxEKRq2Qtmk",
-    title: "🇮🇳 #4 \\",
+    title: "🇮🇳 #4 \\\\",
     channel: "쏘이 The World",
     country: "인도",
     city: "뭄바이",
@@ -74271,7 +74271,7 @@ const RECENT_VIDEOS = [
     tags: ["뭄바이", "인도", "유튜브추천", "여행"],
     tip: "쏘이가 경험한 뭄바이 안전하고 매력적인 추천 여행지입니다.",
     publishedAt: "2026-03-05",
-    description: "🇮🇳 #4 \\",
+    description: "🇮🇳 #4 \\\\",
     highlights: []
   },
   // [빠니보틀] 카보베르데 프라이아 - 카보베르데 산티아고섬 프라이아 (Praia) (2026-03-04)
@@ -75395,7 +75395,7 @@ const RECENT_VIDEOS = [
     id: "auto-3QqzNGDF_rM",
     creator: "여행프로 만프로",
     youtubeId: "3QqzNGDF_rM",
-    title: "\\",
+    title: "\\\\",
     channel: "여행프로 만프로",
     country: "일본",
     city: "도쿄",
@@ -75405,7 +75405,7 @@ const RECENT_VIDEOS = [
     tags: ["도쿄", "일본", "유튜브추천", "여행"],
     tip: "여행프로 만프로의 도쿄 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-02-26",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [얼룩alook] 일본 도쿄 - 도쿄 주요 명소 (2026-02-26)
@@ -76313,7 +76313,7 @@ const RECENT_VIDEOS = [
     id: "auto-iql_bmSwewQ",
     creator: "서귀포댁 제이",
     youtubeId: "iql_bmSwewQ",
-    title: "🍒\\",
+    title: "🍒\\\\",
     channel: "서귀포댁 제이",
     country: "베트남",
     city: "하노이",
@@ -76323,7 +76323,7 @@ const RECENT_VIDEOS = [
     tags: ["하노이", "베트남", "유튜브추천", "여행"],
     tip: "서귀포댁 제이의 하노이 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-02-26",
-    description: "🍒\\",
+    description: "🍒\\\\",
     highlights: []
   },
   // [아린쭈] 중국 쑤저우 - 쑤저우 소주 (2026-02-26)
@@ -77910,13 +77910,13 @@ const RECENT_VIDEOS = [
     description: "고래상어 보러 혼자 필리핀 갔는데 집에 갔대요..? 🐋💦 퍼스널컬러가 혼여행인 여자의 나 홀로 4박5일 세부 여행 ep.1🇵🇭 모알보알 스노쿨링, 오슬롭, 투말록 폭포🌺🪽",
     highlights: []
   },
-  // [쩡율찐 JYJ Sisters ] 태국 방콕 - 방콕 주요 명소 (2026-02-25)
+  // [쩡율찐 JYJ Sisters] 태국 방콕 - 방콕 주요 명소 (2026-02-25)
   {
     id: "auto-kE94W02r-zA",
-    creator: "쩡율찐 JYJ Sisters ",
+    creator: "쩡율찐 JYJ Sisters",
     youtubeId: "kE94W02r-zA",
     title: "[vlog] 방콕 여행 몰아보기 🌴🌺🍋 숨은 맛집과 카페, 디저트까지!",
-    channel: "쩡율찐 JYJ Sisters ",
+    channel: "쩡율찐 JYJ Sisters",
     country: "태국",
     city: "방콕",
     locationName: "방콕 주요 명소",
@@ -79089,7 +79089,7 @@ const RECENT_VIDEOS = [
     id: "auto-UnO4ZYxXY8Y",
     creator: "희철리즘",
     youtubeId: "UnO4ZYxXY8Y",
-    title: "강남보다 비싼 방글라데시 부촌 \\",
+    title: "강남보다 비싼 방글라데시 부촌 \\\\",
     channel: "희철리즘",
     country: "방글라데시",
     city: "다카",
@@ -79099,7 +79099,7 @@ const RECENT_VIDEOS = [
     tags: ["다카", "방글라데시", "굴샨", "서남아시아"],
     tip: "대사관과 고급 레스토랑이 밀집한 방글라데시 수도 다카의 부촌 굴샨(Gulshan) 지역입니다.",
     publishedAt: "2026-02-12",
-    description: "강남보다 비싼 방글라데시 부촌 \\",
+    description: "강남보다 비싼 방글라데시 부촌 \\\\",
     highlights: []
   },
   // [쏘이 The World] 인도 첸나이 - 남인도 관문 도시 첸나이 마리나 비치 (Chennai) (2026-02-12)
@@ -79143,7 +79143,7 @@ const RECENT_VIDEOS = [
     id: "auto-0CXnqlzzuf0",
     creator: "쏘이 The World",
     youtubeId: "0CXnqlzzuf0",
-    title: "🔥핵꿀잼 보장🔥 재밌다고 난리난 나홀로 아프리카 \\",
+    title: "🔥핵꿀잼 보장🔥 재밌다고 난리난 나홀로 아프리카 \\\\",
     channel: "쏘이 The World",
     country: "이집트",
     city: "카이로",
@@ -79153,7 +79153,7 @@ const RECENT_VIDEOS = [
     tags: ["카이로", "이집트", "유튜브추천", "여행"],
     tip: "쏘이가 경험한 카이로 안전하고 매력적인 추천 여행지입니다.",
     publishedAt: "2026-02-05",
-    description: "🔥핵꿀잼 보장🔥 재밌다고 난리난 나홀로 아프리카 \\",
+    description: "🔥핵꿀잼 보장🔥 재밌다고 난리난 나홀로 아프리카 \\\\",
     highlights: []
   },
   // [초마드] 홍콩 홍콩 - 홍콩 침사추이 리젠트 홍콩 & 빅토리아 하버 뷰 (2026-02-04)
@@ -79215,7 +79215,7 @@ const RECENT_VIDEOS = [
     id: "auto-MZKl_bS-KDk",
     creator: "희철리즘",
     youtubeId: "MZKl_bS-KDk",
-    title: "\\",
+    title: "\\\\",
     channel: "희철리즘",
     country: "방글라데시",
     city: "다카",
@@ -79225,7 +79225,7 @@ const RECENT_VIDEOS = [
     tags: ["다카", "방글라데시", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 다카 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-01-30",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [여행가 제이] 스리랑카 콜롬보 - 콜롬보 주요 명소 (2026-01-29)
@@ -81609,7 +81609,7 @@ const RECENT_VIDEOS = [
     id: "auto-tXUzaM9Qm0s",
     creator: "인싸돌 [ Wandering Soo ]",
     youtubeId: "tXUzaM9Qm0s",
-    title: "\\",
+    title: "\\\\",
     channel: "인싸돌 [ Wandering Soo ]",
     country: "아르헨티나",
     city: "부에노스아이레스",
@@ -81619,7 +81619,7 @@ const RECENT_VIDEOS = [
     tags: ["부에노스아이레스", "아르헨티나", "유튜브추천", "여행"],
     tip: "인싸돌 [ Wandering Soo ]의 부에노스아이레스 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-01-27",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [홍밋너 hongmeetu] 일본 나고야 - 나고야 주요 명소 (2026-01-27)
@@ -81717,7 +81717,7 @@ const RECENT_VIDEOS = [
     id: "auto-UQAh6aT92PY",
     creator: "괌 사는 코코 Guam Coco",
     youtubeId: "UQAh6aT92PY",
-    title: "\\",
+    title: "\\\\",
     channel: "괌 사는 코코 Guam Coco",
     country: "미국",
     city: "괌",
@@ -81727,7 +81727,7 @@ const RECENT_VIDEOS = [
     tags: ["괌", "미국", "유튜브추천", "여행", "맛집", "푸드투어"],
     tip: "괌 사는 코코 Guam Coco의 괌 여행 영상 추천 스팟입니다.",
     publishedAt: "2026-01-27",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [여니버스 Yeoniverse] 일본 도쿄 - 도쿄 시부야 (2026-01-27)
@@ -83337,7 +83337,7 @@ const RECENT_VIDEOS = [
     id: "auto-Ef64O0XuJR8",
     creator: "희철리즘",
     youtubeId: "Ef64O0XuJR8",
-    title: "사람들이 살아가기에 가장 힘들고 애절한 국가 \\",
+    title: "사람들이 살아가기에 가장 힘들고 애절한 국가 \\\\",
     channel: "희철리즘",
     country: "방글라데시",
     city: "다카",
@@ -83347,7 +83347,7 @@ const RECENT_VIDEOS = [
     tags: ["다카", "방글라데시", "유튜브추천", "여행"],
     tip: "희철리즘이 인터뷰한 다카 현지인들의 진짜 삶의 현장입니다.",
     publishedAt: "2026-01-22",
-    description: "사람들이 살아가기에 가장 힘들고 애절한 국가 \\",
+    description: "사람들이 살아가기에 가장 힘들고 애절한 국가 \\\\",
     highlights: []
   },
   // [쏘이 The World] 이집트 룩소르 - 이집트 룩소르 신전 & 왕가의 계곡 (Luxor) (2026-01-22)
@@ -85623,7 +85623,7 @@ const RECENT_VIDEOS = [
     id: "auto-MQqpLWoR6g0",
     creator: "잠티 JamTi",
     youtubeId: "MQqpLWoR6g0",
-    title: "[대마도여행]🇯🇵 부산 → 대마도 → 후쿠오카 당일치기 \\",
+    title: "[대마도여행]🇯🇵 부산 → 대마도 → 후쿠오카 당일치기 \\\\",
     channel: "잠티 JamTi",
     country: "일본",
     city: "후쿠오카",
@@ -85633,7 +85633,7 @@ const RECENT_VIDEOS = [
     tags: ["후쿠오카", "일본", "유튜브추천", "여행"],
     tip: "잠티 JamTi의 후쿠오카 여행 영상 추천 스팟입니다.",
     publishedAt: "2025-12-28",
-    description: "[대마도여행]🇯🇵 부산 → 대마도 → 후쿠오카 당일치기 \\",
+    description: "[대마도여행]🇯🇵 부산 → 대마도 → 후쿠오카 당일치기 \\\\",
     highlights: []
   },
   // [쑤록이 SSOLOG] 대한민국 제주 - 제주 주요 명소 (2025-12-28)
@@ -85803,7 +85803,7 @@ const RECENT_VIDEOS = [
     id: "auto-WGQNATahhL4",
     creator: "취미부자",
     youtubeId: "WGQNATahhL4",
-    title: "\\",
+    title: "\\\\",
     channel: "취미부자",
     country: "중국",
     city: "웨이하이",
@@ -85813,7 +85813,7 @@ const RECENT_VIDEOS = [
     tags: ["웨이하이", "중국", "유튜브추천", "여행"],
     tip: "취미부자의 웨이하이 여행 영상 추천 스팟입니다.",
     publishedAt: "2025-12-28",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [Yoonglog 융로그] 영국 런던 - 런던 코벤트가든 (2025-12-28)
@@ -88197,7 +88197,7 @@ const RECENT_VIDEOS = [
     id: "auto-FlD85iMhR4U",
     creator: "라오스 오지마을 한국인",
     youtubeId: "FlD85iMhR4U",
-    title: "라오스인 : \\",
+    title: "라오스인 : \\\\",
     channel: "라오스 오지마을 한국인",
     country: "라오스",
     city: "방비엥",
@@ -88207,7 +88207,7 @@ const RECENT_VIDEOS = [
     tags: ["방비엥", "라오스", "유튜브추천", "여행"],
     tip: "라오스 오지마을 한국인의 방비엥 여행 영상 추천 스팟입니다.",
     publishedAt: "2025-11-23",
-    description: "라오스인 : \\",
+    description: "라오스인 : \\\\",
     highlights: []
   },
   // [밥알] 일본 후쿠오카 - 후쿠오카 주요 명소 (2025-11-23)
@@ -90429,7 +90429,7 @@ const RECENT_VIDEOS = [
     id: "auto-9iM9aqHv7cI",
     creator: "소윤키친 | Soyun",
     youtubeId: "9iM9aqHv7cI",
-    title: "\\",
+    title: "\\\\",
     channel: "소윤키친 | Soyun",
     country: "미국",
     city: "로스앤젤레스",
@@ -90439,7 +90439,7 @@ const RECENT_VIDEOS = [
     tags: ["로스앤젤레스", "미국", "유튜브추천", "여행"],
     tip: "소윤키친 | Soyun의 로스앤젤레스 여행 영상 추천 스팟입니다.",
     publishedAt: "2025-11-23",
-    description: "\\",
+    description: "\\\\",
     highlights: []
   },
   // [묵화mookwa] 미국 뉴욕 - 뉴욕 주요 명소 (2025-11-23)
@@ -99627,7 +99627,7 @@ const RECENT_VIDEOS = [
     id: "auto-NuS4U0Xe8tk",
     creator: "잠티 JamTi",
     youtubeId: "NuS4U0Xe8tk",
-    title: "[사파여행]🇻🇳 \\",
+    title: "[사파여행]🇻🇳 \\\\",
     channel: "잠티 JamTi",
     country: "베트남",
     city: "사파",
@@ -99637,7 +99637,7 @@ const RECENT_VIDEOS = [
     tags: ["사파", "베트남", "유튜브추천", "여행"],
     tip: "잠티 JamTi의 사파 여행 영상 추천 스팟입니다.",
     publishedAt: "2025-11-23",
-    description: "[사파여행]🇻🇳 \\",
+    description: "[사파여행]🇻🇳 \\\\",
     highlights: []
   },
   // [잠티 JamTi] 베트남 사파 - 사파 주요 명소 (2025-11-23)
@@ -99645,7 +99645,7 @@ const RECENT_VIDEOS = [
     id: "auto-oAs00oTgSTA",
     creator: "잠티 JamTi",
     youtubeId: "oAs00oTgSTA",
-    title: "[사파여행]🇻🇳 \\",
+    title: "[사파여행]🇻🇳 \\\\",
     channel: "잠티 JamTi",
     country: "베트남",
     city: "사파",
@@ -99655,7 +99655,7 @@ const RECENT_VIDEOS = [
     tags: ["사파", "베트남", "유튜브추천", "여행"],
     tip: "잠티 JamTi의 사파 여행 영상 추천 스팟입니다.",
     publishedAt: "2025-11-23",
-    description: "[사파여행]🇻🇳 \\",
+    description: "[사파여행]🇻🇳 \\\\",
     highlights: []
   },
   // [잠티 JamTi] 베트남 하노이 - 하노이 주요 명소 (2025-11-23)
@@ -99717,7 +99717,7 @@ const RECENT_VIDEOS = [
     id: "auto-mfNH-vXkjug",
     creator: "잠티 JamTi",
     youtubeId: "mfNH-vXkjug",
-    title: "[대만여행]🇹🇼 \\",
+    title: "[대만여행]🇹🇼 \\\\",
     channel: "잠티 JamTi",
     country: "대만",
     city: "타이베이",
@@ -99727,7 +99727,7 @@ const RECENT_VIDEOS = [
     tags: ["타이베이", "대만", "유튜브추천", "여행"],
     tip: "잠티 JamTi의 타이베이 여행 영상 추천 스팟입니다.",
     publishedAt: "2025-11-23",
-    description: "[대만여행]🇹🇼 \\",
+    description: "[대만여행]🇹🇼 \\\\",
     highlights: []
   },
   // [잠티 JamTi] 대만 타이베이 - 타이베이 주요 명소 (2025-11-23)

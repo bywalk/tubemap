@@ -81,6 +81,10 @@ CANONICAL_CREATOR_MAP = {
     "여행가제이": "여행가 제이",
     "오사카에사는사람들": "오사카에사는사람들TV",
     "쏘이": "쏘이 The World",
+    "빠니보틀panibottle": "빠니보틀",
+    "빠니보틀pani": "빠니보틀",
+    "panibottle": "빠니보틀",
+    "시칠리안sicilian": "시칠리안",
 }
 
 def normalize_creator_name(name, handle=""):
