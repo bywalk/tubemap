@@ -954,6 +954,45 @@ def extract_granular_locations(youtube_id, title, description, creator_name):
 
     return []
 
+def prune_expired_videos(max_age_days=MAX_VIDEO_AGE_DAYS):
+    """
+    videos_recent.js 내의 기존 영상 중 1년(365일)이 경과한 영상을 자동 삭제하여
+    항상 최근 1년 이내의 최신 여행/맛집 영상 데이터만 유지하도록 보장.
+    """
+    target_path = DATA_RECENT_PATH
+    if not os.path.exists(target_path):
+        return 0
+
+    cutoff_date = (datetime.now() - timedelta(days=max_age_days)).strftime("%Y-%m-%d")
+
+    scripts_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts")
+    if scripts_dir not in sys.path:
+        sys.path.insert(0, scripts_dir)
+    try:
+        from build_data import extract_video_entries_from_js, format_js_file
+    except ImportError:
+        return 0
+
+    with open(target_path, "r", encoding="utf-8") as f:
+        entries = extract_video_entries_from_js(f.read())
+
+    valid_entries = []
+    expired_count = 0
+    for v in entries:
+        pub_date = v.get("publishedAt", "")
+        if pub_date and pub_date < cutoff_date:
+            expired_count += 1
+        else:
+            valid_entries.append(v)
+
+    if expired_count > 0:
+        new_content = format_js_file(valid_entries)
+        with open(target_path, "w", encoding="utf-8") as f:
+            f.write(new_content)
+        print(f"🧹 [자동 정리] 1년({max_age_days}일, {cutoff_date} 이전) 경과 과거 영상 {expired_count}건을 삭제하여 최신 1년 데이터셋을 유지했습니다.")
+
+    return expired_count
+
 def append_to_data_js(new_entries):
     """새로 발견된 여행 영상 목록을 videos_recent.js 파일 상단에 깔끔하게 추가"""
     target_path = DATA_RECENT_PATH
@@ -1009,6 +1048,9 @@ def append_to_data_js(new_entries):
 
     file_basename = os.path.basename(target_path)
     print(f"\n🎉 {file_basename} 파일에 총 {len(new_entries)}개의 최신 여행지가 성공적으로 추가되었습니다!")
+
+    # 1년(365일) 경과한 과거 영상 자동 만료 정리
+    prune_expired_videos()
 
 # =============================================================================
 # 4. 유튜버 실시간 검색 및 추가 워크플로우
@@ -1448,6 +1490,7 @@ def main():
 
     if not new_discovered_spots:
         print("💡 새로 추가할 여행 영상이 없습니다. 지도가 이미 최신 상태입니다.")
+        prune_expired_videos()
         return
 
     if not args.auto:
