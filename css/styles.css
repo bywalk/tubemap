@@ -1018,6 +1018,15 @@ body {
   margin: 0 !important;
   width: 270px !important;
   line-height: 1.4;
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+.leaflet-popup-scrolled {
+  overflow: visible !important;
+  max-height: none !important;
+  height: auto !important;
+  border: none !important;
 }
 
 .popup-card {
@@ -1958,8 +1967,13 @@ body.modal-open {
   }
 
   /* Leaflet Popups on Mobile */
-  .leaflet-popup-content {
+  .leaflet-popup-content,
+  .leaflet-popup-scrolled {
     width: 240px !important;
+    overflow: visible !important;
+    max-height: none !important;
+    height: auto !important;
+    border: none !important;
   }
 
   .popup-thumb-wrapper {

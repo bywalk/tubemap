@@ -187,7 +187,14 @@ function renderMapMarkers() {
       </div>
     `;
 
-    marker.bindPopup(popupContent, { maxWidth: 280, closeButton: false });
+    marker.bindPopup(popupContent, {
+      maxWidth: 280,
+      maxHeight: 520,
+      autoPan: true,
+      autoPanPaddingTopLeft: L.point(10, 70),
+      autoPanPaddingBottomRight: L.point(10, 20),
+      closeButton: false
+    });
 
     marker.on('click', () => {
       highlightActiveVideo(video.id, false);
@@ -223,7 +230,16 @@ function highlightActiveVideo(videoId, panMap = true) {
   const targetCard = document.getElementById(`card-${videoId}`);
   if (targetCard) {
     targetCard.classList.add('active');
-    targetCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    // 브라우저 윈도우 전체가 덜컹거리며 튀는 scrollIntoView 대신, 사이드바 컨테이너 내부 스크롤만 안전하게 조정
+    const container = document.getElementById('videoListContainer');
+    const isSidebarVisible = (window.innerWidth > 768 || document.getElementById('sidebar')?.classList.contains('open'));
+    if (container && isSidebarVisible) {
+      const cardTop = targetCard.offsetTop - container.offsetTop;
+      const isCardVisible = (cardTop >= container.scrollTop && (cardTop + targetCard.clientHeight) <= (container.scrollTop + container.clientHeight));
+      if (!isCardVisible) {
+        container.scrollTo({ top: Math.max(0, cardTop - 12), behavior: 'smooth' });
+      }
+    }
   }
 
   // Pan Map
