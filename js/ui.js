@@ -224,7 +224,9 @@ function openVideoModal(videoId, startTime = 0) {
 
   title.textContent = video.title;
   locationTag.innerHTML = `<span class="material-symbols-rounded icon-sm filled">location_on</span> ${video.country || ''} ${video.city || ''} · ${video.locationName}`;
+  locationTag.title = `${video.country || ''} ${video.city || ''} · ${video.locationName}`;
   creatorBadge.innerHTML = `<span class="material-symbols-rounded icon-sm" style="vertical-align: -3px;">person</span> ${video.creator || video.channel}`;
+  creatorBadge.title = video.creator || video.channel;
   
   const dateBadge = document.getElementById('modalDateBadge');
   if (dateBadge) {
