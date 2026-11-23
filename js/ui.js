@@ -186,16 +186,15 @@ function handleCardClick(videoId) {
 function updateModalBookmarkBtn(video) {
   const btn = document.getElementById('modalBookmarkBtn');
   if (!btn || !video) return;
+  btn.style.background = '';
+  btn.style.borderColor = '';
+  btn.style.color = '';
   if (video.bookmarked) {
+    btn.classList.add('bookmarked');
     btn.innerHTML = '<span class="material-symbols-rounded icon-sm filled">star</span> 찜됨';
-    btn.style.background = '#fffbeb';
-    btn.style.borderColor = '#fcd34d';
-    btn.style.color = '#b45309';
   } else {
+    btn.classList.remove('bookmarked');
     btn.innerHTML = '<span class="material-symbols-rounded icon-sm">star</span> 찜하기';
-    btn.style.background = '';
-    btn.style.borderColor = '';
-    btn.style.color = '';
   }
 }
 
