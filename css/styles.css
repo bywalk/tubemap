@@ -1305,7 +1305,7 @@ body.modal-open {
 .modal-desc {
   font-size: 0.92rem;
   line-height: 1.6;
-  color: #334155;
+  color: var(--text-main);
   margin-bottom: 16px;
 }
 
@@ -1320,7 +1320,7 @@ body.modal-open {
 .highlights-title {
   font-size: 0.88rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text-main);
   margin-bottom: 10px;
   display: flex;
   align-items: center;
@@ -1362,11 +1362,11 @@ body.modal-open {
 .modal-footer {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 12px;
   padding: 14px 20px;
   border-top: 1px solid var(--border);
-  background: #f8fafc;
+  background: var(--bg-sub);
   border-radius: 0 0 var(--radius-lg) var(--radius-lg);
   flex-shrink: 0;
 }
@@ -2204,13 +2204,29 @@ body.modal-open {
   border: 1px solid #27354f;
 }
 
-[data-theme="dark"] .video-list::-webkit-scrollbar-thumb,
-[data-theme="dark"] .filter-chips::-webkit-scrollbar-thumb {
-  background: #27354f;
+[data-theme="dark"] *::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
 }
 
-[data-theme="dark"] .video-list::-webkit-scrollbar-thumb:hover {
+[data-theme="dark"] *::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+[data-theme="dark"] *::-webkit-scrollbar-thumb {
+  background: #27354f;
+  border-radius: 4px;
+}
+
+[data-theme="dark"] *::-webkit-scrollbar-thumb:hover {
   background: #3b4d6b;
+}
+
+[data-theme="dark"] .modal-content,
+[data-theme="dark"] .video-list-container,
+[data-theme="dark"] .filter-chips {
+  scrollbar-color: #27354f #0f172a;
+  scrollbar-width: thin;
 }
 
 [data-theme="dark"] .sidebar-mobile-title {
@@ -2229,9 +2245,14 @@ body.modal-open {
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
 }
 
-[data-theme="dark"] .modal-header,
+[data-theme="dark"] .modal-header {
+  background: #0f172a !important;
+  border-bottom: 1px solid #27354f !important;
+}
+
 [data-theme="dark"] .modal-footer {
-  border-color: var(--border);
+  background: #0b1120 !important;
+  border-top: 1px solid #27354f !important;
 }
 
 [data-theme="dark"] .modal-title {
@@ -2302,7 +2323,7 @@ body.modal-open {
 }
 
 [data-theme="dark"] .modal-desc {
-  color: #cbd5e1 !important;
+  color: #f1f5f9 !important;
 }
 
 [data-theme="dark"] .highlights-section {
