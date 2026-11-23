@@ -1082,7 +1082,7 @@ body {
 .popup-title {
   font-size: 0.88rem;
   font-weight: 700;
-  color: #0f172a;
+  color: var(--text-main);
   margin-bottom: 6px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1092,8 +1092,8 @@ body {
 
 .popup-tip-text {
   font-size: 0.74rem;
-  color: #64748b;
-  background: #f8fafc;
+  color: var(--text-muted);
+  background: #f1f5f9;
   padding: 4px 6px;
   border-radius: 4px;
   margin-bottom: 6px;
@@ -2289,28 +2289,77 @@ body.modal-open {
 }
 
 [data-theme="dark"] .leaflet-popup-content-wrapper {
-  background: #0f172a !important;
+  background: #111a2e !important;
   color: #f8fafc !important;
   border: 1px solid #27354f !important;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.7) !important;
 }
 
 [data-theme="dark"] .leaflet-popup-tip {
-  background: #0f172a !important;
+  background: #111a2e !important;
 }
 
-[data-theme="dark"] .leaflet-popup-content h4 {
+[data-theme="dark"] .popup-title {
   color: #ffffff !important;
 }
 
+[data-theme="dark"] .popup-creator-tag {
+  color: #ff5252 !important;
+}
+
 [data-theme="dark"] .popup-location {
+  color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .popup-location span {
+  color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .popup-tip-text {
+  background: #1a253a !important;
+  color: #e2e8f0 !important;
+  border-left: 3px solid #f59e0b !important;
+}
+
+[data-theme="dark"] .popup-tip-text span {
+  color: #fbbf24 !important;
+}
+
+[data-theme="dark"] .popup-channel {
   color: #94a3b8 !important;
 }
 
-[data-theme="dark"] .popup-tip {
-  background: #161f30 !important;
+[data-theme="dark"] .popup-footer {
+  border-top-color: #27354f !important;
+}
+
+[data-theme="dark"] .popup-card .btn-icon {
   color: #cbd5e1 !important;
-  border-left-color: #f59e0b !important;
+}
+
+[data-theme="dark"] .popup-card .btn-icon:hover {
+  background: #1e293b !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .custom-pin.selected {
+  background: #ff2a2a !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.7), 0 8px 20px rgba(0, 0, 0, 0.8) !important;
+}
+
+[data-theme="dark"] .video-card.active {
+  border-color: var(--primary) !important;
+  background: rgba(255, 59, 48, 0.12) !important;
+}
+
+[data-theme="dark"] .video-card.active .video-card-title {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .video-card.active .card-tip-snippet {
+  color: #f1f5f9 !important;
+  background: #1a253a !important;
 }
 
 [data-theme="dark"] .leaflet-control-attribution {
