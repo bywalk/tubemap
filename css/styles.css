@@ -684,6 +684,14 @@ body {
   background: #e2e8f0;
   padding: 2px 7px;
   border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  min-width: 0;
 }
 
 .video-location-badge {
@@ -754,6 +762,10 @@ body {
   color: #475569;
   padding: 1px 5px;
   border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90px;
 }
 
 /* Empty State */
@@ -1207,6 +1219,12 @@ body.modal-open {
   font-size: 1.05rem;
   font-weight: 700;
   color: #0f172a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  flex: 1;
+  padding-right: 12px;
 }
 
 .video-frame-container {
@@ -1251,12 +1269,18 @@ body.modal-open {
   border-radius: var(--radius-full);
   font-size: 0.82rem;
   font-weight: 700;
+  max-width: 58%;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.modal-location-tag .tag-text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  flex: 1 1 auto;
   min-width: 0;
-  max-width: 60%;
+  display: inline-block;
 }
 
 .modal-meta-badges {
@@ -1274,13 +1298,21 @@ body.modal-open {
   background: var(--bg-sub);
   padding: 3px 10px;
   border-radius: var(--radius-full);
-  white-space: nowrap;
   max-width: 180px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  min-width: 0;
   display: inline-flex;
   align-items: center;
   gap: 3px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.creator-badge .tag-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+  display: inline-block;
 }
 
 .modal-date-badge {
@@ -1294,6 +1326,7 @@ body.modal-open {
   display: inline-flex;
   align-items: center;
   gap: 3px;
+  flex-shrink: 0;
 }
 
 /* YouTuber Tip Box */

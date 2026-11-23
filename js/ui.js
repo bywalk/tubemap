@@ -57,7 +57,7 @@ function renderFilteredList() {
       </div>
       <div class="video-card-content">
         <div class="card-top-row">
-          <span class="video-creator-pill"><span class="material-symbols-rounded icon-xs" style="vertical-align: -2px;">person</span> ${video.creator || '크리에이터'}</span>
+          <span class="video-creator-pill" title="${video.creator || '크리에이터'}"><span class="material-symbols-rounded icon-xs" style="vertical-align: -2px; flex-shrink: 0;">person</span> <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">${video.creator || '크리에이터'}</span></span>
           <div class="card-action-btns">
             <button class="card-icon-btn ${video.bookmarked ? 'bookmarked' : ''}" onclick="toggleBookmark('${video.id}', event)" title="나만의 맵에 찜하기">
               <span class="material-symbols-rounded icon-xs ${video.bookmarked ? 'filled' : ''}">star</span>
@@ -67,10 +67,10 @@ function renderFilteredList() {
             </button>
           </div>
         </div>
-        <div class="video-card-title">${video.title}</div>
-        ${video.tip ? `<div class="card-tip-snippet"><span class="material-symbols-rounded icon-xs" style="vertical-align: -2px;">lightbulb</span> ${video.tip}</div>` : ''}
+        <div class="video-card-title" title="${video.title}">${video.title}</div>
+        ${video.tip ? `<div class="card-tip-snippet" title="${video.tip}"><span class="material-symbols-rounded icon-xs" style="vertical-align: -2px; flex-shrink: 0;">lightbulb</span> <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">${video.tip}</span></div>` : ''}
         <div class="video-card-meta">
-          <span class="channel-name"><span class="material-symbols-rounded icon-xs filled" style="vertical-align: -2px; color: var(--accent);">location_on</span> ${video.country || ''} · ${video.locationName}</span>
+          <span class="channel-name" title="${video.country || ''} · ${video.locationName}"><span class="material-symbols-rounded icon-xs filled" style="vertical-align: -2px; color: var(--accent); flex-shrink: 0;">location_on</span> <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">${video.country || ''} · ${video.locationName}</span></span>
         </div>
         ${video.tags && video.tags.length > 0 ? `
           <div class="video-tags">
@@ -223,10 +223,13 @@ function openVideoModal(videoId, startTime = 0) {
   const highlightsList = document.getElementById('modalHighlightsList');
 
   title.textContent = video.title;
-  locationTag.innerHTML = `<span class="material-symbols-rounded icon-sm filled">location_on</span> ${video.country || ''} ${video.city || ''} · ${video.locationName}`;
-  locationTag.title = `${video.country || ''} ${video.city || ''} · ${video.locationName}`;
-  creatorBadge.innerHTML = `<span class="material-symbols-rounded icon-sm" style="vertical-align: -3px;">person</span> ${video.creator || video.channel}`;
-  creatorBadge.title = video.creator || video.channel;
+  title.title = video.title;
+  const fullLoc = `${video.country || ''} ${video.city || ''} · ${video.locationName}`.trim();
+  locationTag.innerHTML = `<span class="material-symbols-rounded icon-sm filled" style="flex-shrink: 0;">location_on</span><span class="tag-text">${fullLoc}</span>`;
+  locationTag.title = fullLoc;
+  const creatorName = video.creator || video.channel;
+  creatorBadge.innerHTML = `<span class="material-symbols-rounded icon-sm" style="vertical-align: -3px; flex-shrink: 0;">person</span><span class="tag-text">${creatorName}</span>`;
+  creatorBadge.title = creatorName;
   
   const dateBadge = document.getElementById('modalDateBadge');
   if (dateBadge) {

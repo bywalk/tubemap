@@ -165,8 +165,8 @@ function renderMapMarkers() {
           ${video.startTime ? `<span class="thumb-time-badge">${formatTime(video.startTime)}</span>` : ''}
         </div>
         <div class="popup-body">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px;">
-            <div class="popup-creator-tag" style="margin-bottom: 0; display: inline-flex; align-items: center; gap: 3px;"><span class="material-symbols-rounded icon-xs">person</span> ${video.creator || video.channel}</div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px; min-width: 0;">
+            <div class="popup-creator-tag" style="margin-bottom: 0; display: inline-flex; align-items: center; gap: 3px; max-width: 130px; min-width: 0; overflow: hidden;" title="${video.creator || video.channel}"><span class="material-symbols-rounded icon-xs" style="flex-shrink: 0;">person</span> <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">${video.creator || video.channel}</span></div>
             <div class="card-action-btns">
               <button class="card-icon-btn ${video.bookmarked ? 'bookmarked' : ''}" onclick="toggleBookmark('${video.id}', event)" title="나만의 맵에 찜하기">
                 <span class="material-symbols-rounded icon-xs ${video.bookmarked ? 'filled' : ''}">star</span> ${video.bookmarked ? '찜됨' : '찜'}
@@ -176,8 +176,8 @@ function renderMapMarkers() {
               </button>
             </div>
           </div>
-          <div class="popup-location" style="display: flex; align-items: center; gap: 2px;"><span class="material-symbols-rounded icon-xs filled">location_on</span> ${video.country || ''} · ${video.locationName}</div>
-          <div class="popup-title">${video.title}</div>
+          <div class="popup-location" style="display: flex; align-items: center; gap: 2px; min-width: 0; overflow: hidden;" title="${video.country || ''} · ${video.locationName}"><span class="material-symbols-rounded icon-xs filled" style="flex-shrink: 0;">location_on</span> <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0;">${video.country || ''} · ${video.locationName}</span></div>
+          <div class="popup-title" title="${video.title}">${video.title}</div>
           ${video.tip ? `<div class="popup-tip-text"><span class="material-symbols-rounded icon-xs" style="vertical-align: -2px;">lightbulb</span> ${video.tip}</div>` : ''}
           <div class="popup-footer">
             <span class="popup-channel">${video.city || ''}</span>
